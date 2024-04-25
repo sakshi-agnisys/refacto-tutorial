@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Agnisys'
+copyright = '© 2007 - 2023 Agnisys® Inc. All Rights Reserved. https://www.agnisys.com/submit-feedback/'
+author = 'Agnisys'
 
 release = '0.1'
 version = '0.1.0'
