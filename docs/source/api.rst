@@ -1,6 +1,9 @@
 Release Notes
 =====
 
+.. toctree::
+   :maxdepth: 2
+
 Ver 7.86.0.0
 -------
 
