@@ -3,7 +3,6 @@ Copyright Notice
 
 .. _installation:
 
-IDesignSpec™ 
-User Guide
-------------
+                          IDesignSpec™ 
+                          User Guide
 
