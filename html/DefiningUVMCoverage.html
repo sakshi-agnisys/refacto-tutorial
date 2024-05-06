@@ -1,0 +1,1556 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Defining UVM Coverage</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Advanced Topics,Coverage">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Defining UVM Coverage">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Defining UVM Coverage" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="DefiningUVMCoverage"
+		  data-hnd-context="58"
+		  data-hnd-title="Defining UVM Coverage"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AdvancedTopics.html">Advanced Topics</a></li><li><a href="AdvancedUVM.html">Advanced UVM</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="AdvancedUVM.html" title="Advanced UVM" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="HDL_PATH_GATE.html" title="HDL_PATH_GATE" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="CrossCoverage.html" title="Cross Coverage" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Defining UVM Coverage</h2>
+
+            <div class="main-content">
+                
+<h1 class="rvps106"><a name="_Toc341957333"></a><span class="rvts0"><span class="rvts316">Defining UVM Coverage in IDesignSpec™</span></span></h1>
+<p class="rvps151"><a class="rvts423" href="https://www.agnisys.com/idesignspec-training-videos-old1/#creatinguvm" target="_blank">Training Video: Creating UVM Models</a></p>
+<p class="rvps12"><span class="rvts14">UVM Register Model has its default coverage types i.e. fields, bits and address-map coverage types. IDesignSpec™ (IDS) automatically generates the coverage code for all the components inside the top level block. User can also control, what type of coverage code should be generated for any particular register or block. This is done using IDS property ‘</span><span class="rvts959">coverage</span><span class="rvts26">’</span><span class="rvts14"> which support values </span><span class="rvts959">‘on’, ‘off’,‘a’, ‘b’ and ‘f’</span><span class="rvts14"> .</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">The following covergroups are generated in the register model for different coverage types</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="1" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 172px;">
+   <p class="rvps2"><span class="rvts14">Coverage types</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts14">covergroups generated</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 544px;">
+   <p class="rvps2"><span class="rvts6">Description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 172px; height: 24px;">
+   <p class="rvps2"><span class="rvts26">a</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 283px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">cg_addr</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 544px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">covergroup for the addresses read or written in an address map(in block/memory)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td rowspan="2" style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 172px;">
+   <p class="rvps2"><span class="rvts26">b</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 283px; height: 23px;">
+   <p class="rvps2"><span class="rvts14">rd_cg_bits&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 544px; height: 23px;">
+   <p class="rvps2"><span class="rvts14">covergroups for all bits read from a register</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts14">wr_cg_bits</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 544px;">
+   <p class="rvps2"><span class="rvts14">covergroups for all bits written to a register</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td rowspan="2" style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 172px;">
+   <p class="rvps2"><span class="rvts6">f</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts14">rd_cg_vals&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 544px;">
+   <p class="rvps2"><span class="rvts14">covergroups for the values read from the fields of a register</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts14">wr_cg_vals</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 544px;">
+   <p class="rvps2"><span class="rvts14">covergroups for the values written to the fields of a register</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 172px;">
+   <p class="rvps2"><span class="rvts26">on (is equivalent to"abf")</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts14">cg_addr ( on block/memory)</span></p>
+   <p class="rvps2"><span class="rvts14">rd_cg_bits and/or wr_cg_bits(on register)</span></p>
+   <p class="rvps2"><span class="rvts14">rd_cg_vals and/or wr_cg_vals(on register)</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 544px;">
+   <p class="rvps2"><span class="rvts14">Coverage code for all types</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 172px;">
+   <p class="rvps2"><span class="rvts26">off</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 283px;">
+   <p class="rvps2"><span class="rvts14">-</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 544px;">
+   <p class="rvps2"><span class="rvts14">No coverage code will be generated</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts958"><br/></span></p>
+<p class="rvps12"><span class="rvts14">User can also restrict covergroups generation based on read or write access types using property ‘</span><span class="rvts26">coverage=f.rd’</span><span class="rvts14">, will generate only read access type covergroups(</span><span class="rvts26">rd_cg_vals</span><span class="rvts14">) or ‘</span><span class="rvts26">coverage=f.wr’</span><span class="rvts14"> will generate write access type(</span><span class="rvts26">wr_cg_vals</span><span class="rvts14">).&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">This </span><span class="rvts958">‘coverage’ property is hierarchical</span><span class="rvts14">, if mentioned in the block, it will be applied for all the registers that are inside the block. User can also mention this property for a particular register, which will over-ride this property value if mentioned above in its (parent) block.</span></p>
+<p class="rvps12"><span class="rvts14">Coverage code is generated for Blocks, Memories and Registers depending on where ’coverage’ property is applied.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">Consider a block "basic_blk" consisting of a memory "Mem1" and a register "reg1" having fields "fld1" &amp; "fld2". For the register "reg1" two types of covergroups will be generated.One according to the field values read and written to the fields of the register, and other bits read and written in the register.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">And for the block and memory, covergroup will be generated for the addresses read and written.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts392">Example</span><span class="rvts15">: </span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/coverage/coverage.zip">IDS-NG</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/coverage/coverage.docx">IDS-Word</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/coverage/coverage.xlsx">IDS-Excel</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/coverage/coverage.rdl">SystemRDL</a></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts15">IDS-NG Register View</span></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 630px; height : 288px; padding : 1px;" src="lib/NewItem5139.png"></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps12"><span class="rvts15">IDS-NG Spreadsheet View</span></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 899px; height : 238px; padding : 1px;" src="lib/NewItem5140.png"></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps12"><span class="rvts15">SystemRDL</span></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps12"><span class="rvts356">property coverage { type = string; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps12"><span class="rvts356">property map_type { type=string; component=addrmap|reg;}; &nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">addrmap basic_blk {</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; </span><span class="rvts385">coverage = "on";</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; reg Mem1 {&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp;map_type = "mem";</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = r; &nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; } Mem1[31:0] = 32'h0;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; };</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; reg reg1 {&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw; &nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; } fld1[3:0] = 4'h2;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; } fld2[7:4] = 4'hC;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; };</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; external Mem1 Mem1 @0x000;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; reg1 reg1 @0x400;</span></p>
+<p class="rvps12"><span class="rvts356">};</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts15">Following coverage code will be generated for ‘reg1’ register having ‘</span><span class="rvts25">coverage’</span><span class="rvts15"> property value equal to ‘</span><span class="rvts25">on’ or ‘bf’</span><span class="rvts15">:</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps154"><span class="rvts533">Tip: Coverage code is in </span><span class="rvts960">blue</span><span class="rvts533"> colour.</span></p>
+<p class="rvps154"><span class="rvts533"><br/></span></p>
+<p class="rvps2"><span class="rvts356">class basic_blk_reg1 extends uvm_reg;</span></p>
+<p class="rvps2"><span class="rvts356">rand uvm_reg_field fld1;</span></p>
+<p class="rvps2"><span class="rvts356">rand uvm_reg_field fld2;</span></p>
+<p class="rvps2"><span class="rvts470"><br/></span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; local uvm_reg_data_t m_current;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; local uvm_reg_data_t m_data;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; local uvm_reg_data_t m_be;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; local bit m_is_read;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; covergroup wr_cg_bits;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_0: coverpoint {m_current[0],m_data[0]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_1: coverpoint {m_current[1],m_data[1]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_2: coverpoint {m_current[2],m_data[2]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_3: coverpoint {m_current[3],m_data[3]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_4: coverpoint {m_current[4],m_data[4]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_5: coverpoint {m_current[5],m_data[5]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_6: coverpoint {m_current[6],m_data[6]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_7: coverpoint {m_current[7],m_data[7]} iff (!m_is_read &amp;&amp; m_be[0]); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; covergroup rd_cg_bits;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_0: coverpoint {m_current[0],m_data[0]} iff (m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_1: coverpoint {m_current[1],m_data[1]} iff (m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_2: coverpoint {m_current[2],m_data[2]} iff (m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_3: coverpoint {m_current[3],m_data[3]} iff (m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_4: coverpoint {m_current[4],m_data[4]} iff (m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_5: coverpoint {m_current[5],m_data[5]} iff (m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_6: coverpoint {m_current[6],m_data[6]} iff (m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field_7: coverpoint {m_current[7],m_data[7]} iff (m_is_read &amp;&amp; m_be[0]); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; covergroup wr_cg_vals;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fld1: coverpoint fld1.value[3:0];</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fld2: coverpoint fld2.value[3:0];</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; covergroup rd_cg_vals;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fld1: coverpoint fld1.value[3:0];</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fld2: coverpoint fld2.value[3:0];</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; function new(string name = "basic_blk_reg1");</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;super.new(name, 8, </span><span class="rvts972">build_coverage(UVM_CVR_REG_BITS + UVM_CVR_FIELD_VALS));</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;add_coverage(build_coverage(UVM_CVR_REG_BITS + UVM_CVR_FIELD_VALS)); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//Added because build coverage in the line above doesn’t work due to a bug in UVM 1.1 library</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; if (has_coverage(UVM_CVR_REG_BITS)) begin</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; wr_cg_bits = new();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rd_cg_bits = new();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; if (has_coverage(UVM_CVR_FIELD_VALS)) begin</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; wr_cg_vals = new();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rd_cg_vals = new();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; endfunction</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; virtual function void sample(uvm_reg_data_t data, uvm_reg_data_t byte_en, bit is_read, uvm_reg_map map);</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;super.sample(data, byte_en, is_read, map);&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;if (get_coverage(UVM_CVR_REG_BITS)) begin</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp;m_current = get();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp;m_data &nbsp; &nbsp;= data;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp;m_be &nbsp; &nbsp; &nbsp;= byte_en;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp;m_is_read = is_read;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp;if(!is_read)</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;wr_cg_bits.sample(); &nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp;if(is_read) &nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;rd_cg_bits.sample();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;end</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;if (get_coverage(UVM_CVR_FIELD_VALS)) begin&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(!is_read)</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;wr_cg_vals.sample();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(is_read)</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;rd_cg_vals.sample();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;end</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; endfunction</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; virtual function void sample_values();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;super.sample_values(); &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;if (get_coverage(UVM_CVR_FIELD_VALS)) begin &nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;wr_cg_vals.sample();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;rd_cg_vals.sample();</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp;end</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts972">&nbsp; endfunction</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; virtual function void build();</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; this.fld1 = uvm_reg_field::type_id::create("fld1");</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; this.fld2 = uvm_reg_field::type_id::create("fld2");</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; this.fld1.configure(this, 4, &nbsp;0, "RW", 0, 'd2, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; this.fld2.configure(this, 4, &nbsp;4, "RW", 0, 'd12, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; endfunction</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">`uvm_object_utils(basic_blk_reg1)</span></p>
+<p class="rvps2"><span class="rvts356">endclass</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps12"><span class="rvts15">Code generated for property ‘coverage = on/a</span><span class="rvts25">'</span><span class="rvts15"> specified on a Memory(Mem1) is as follows:-</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">class basic_blk_Mem1_Mem1 extends uvm_mem;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; `uvm_object_utils(basic_blk_Mem1_Mem1)</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp;</span><span class="rvts973"> local uvm_reg_addr_t m_offset;</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; covergroup cg_addr;</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; Mem1 : coverpoint m_offset</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; {</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins FIRST &nbsp;= {[0:63]};</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins SECOND = {[64:127]};</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins THIRD &nbsp;= {[128:191]};</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins FOURTH = {[192:255]};</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; function new(string name = "basic_blk_Mem1_Mem1");</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; super.new(name, 'h100, 32, "RO", </span><span class="rvts973">build_coverage(UVM_CVR_ADDR_MAP));</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; if (has_coverage(UVM_CVR_ADDR_MAP)) begin</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cg_addr= new();</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; endfunction</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp;&nbsp;</span><span class="rvts973"> &nbsp;protected virtual function void sample(uvm_reg_addr_t offset, bit is_read, uvm_reg_map map);</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; if (get_coverage(UVM_CVR_ADDR_MAP)) begin</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; m_offset &nbsp;= offset;</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cg_addr.sample();</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts973">&nbsp; &nbsp; endfunction</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">endclass</span></p>
+<p class="rvps12"><span class="rvts202"><br/></span></p>
+<p class="rvps12"><span class="rvts15">And when ‘</span><span class="rvts25">coverage’</span><span class="rvts15"> is </span><span class="rvts25">‘on’ or ‘a’ </span><span class="rvts15">for block(basic_blk) following coverage code will be generated for ‘basic_blk’ block:</span></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps12"><span class="rvts356">class basic_blk_block extends uvm_reg_block;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp;`uvm_object_utils(basic_blk_block)</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; rand basic_blk_Mem1_Mem1 Mem1;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; rand basic_blk_reg1 reg1;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; local uvm_reg_addr_t m_offset;</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; covergroup cg_addr;</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; &nbsp; &nbsp;Mem1 : coverpoint m_offset{ &nbsp;</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins hit = &nbsp;{ ['h0 : 'h3FF] }; }</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; &nbsp; &nbsp;reg1 &nbsp; : coverpoint m_offset {</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins hit = &nbsp;{ 'h400 }; }</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; endgroup</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">function new(string name = "basic_blk");</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; super.new(name, build_coverage(UVM_CVR_ADDR_MAP));</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; if (has_coverage(UVM_CVR_ADDR_MAP))</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; &nbsp; &nbsp; cg_addr = new();</span></p>
+<p class="rvps12"><span class="rvts356">endfunction</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">virtual function void build();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp;. . .</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp;. .&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">endfunction</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts972">virtual function void sample(uvm_reg_addr_t offset, bit is_read, uvm_reg_map map);</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; if (get_coverage(UVM_CVR_ADDR_MAP)) begin</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; &nbsp; &nbsp; m_offset &nbsp;= offset;</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; &nbsp; &nbsp; cg_addr.sample();</span></p>
+<p class="rvps12"><span class="rvts972">&nbsp; end</span></p>
+<p class="rvps12"><span class="rvts972">endfunction</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">endclass : basic_blk_block</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts16">covera</span><a name="coverage_at_least"></a><span class="rvts16">ge_at_least</span></p>
+<p class="rvps12"><span class="rvts16"><br/></span></p>
+<p class="rvps12"><span class="rvts392">Example</span><span class="rvts15">: </span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/coverage_at_least/coverage_at_least.zip">IDS-NG</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/coverage_at_least/coverage_at_least.docx">IDS-Word</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/coverage_at_least/coverage_at_least.xlsx">IDS-Excel</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/coverage_at_least/coverage_at_least.rdl">SystemRDL</a></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts15">IDS-NG Register View</span></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem5234.png"></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps12"><span class="rvts15">IDS-NG Spreadsheet View</span></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem5235.png"></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps12"><span class="rvts15">SystemRDL</span></p>
+<p class="rvps12"><span class="rvts16"><br/></span></p>
+<p class="rvps12"><span class="rvts356">property coverage { type = string; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">property coverage_at_least { type = number; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">addrmap block1 {</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; name &nbsp;= "block1 Address Map";</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; coverage = "on";</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; </span><span class="rvts385">coverage_at_least = 20</span><span class="rvts356">;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; addrmap reggroup_name {</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; name &nbsp;= "reggroup_name Address Map";</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; reg reg1 {&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; field {</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; onread=r;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; onwrite=w;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; } Fld[31:0] = 32'h0;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; };</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; reg1 reg1 @0x0;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; };</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; reggroup_name &nbsp;reggroup_name @0x0;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts15">Generated UVM Output</span></p>
+<p class="rvps12"><span class="rvts15"><br/></span></p>
+<p class="rvps12"><span class="rvts356">`ifndef CLASS_block1_reggroup_name_reg1</span></p>
+<p class="rvps12"><span class="rvts356">`define CLASS_block1_reggroup_name_reg1</span></p>
+<p class="rvps12"><span class="rvts356">class block1_reggroup_name_reg1 extends uvm_reg;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; `uvm_object_utils(block1_reggroup_name_reg1)</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; rand uvm_reg_field Fld;/**/</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; local uvm_reg_data_t m_current;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; local uvm_reg_data_t m_data;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; local uvm_reg_data_t m_be;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; local bit m_is_read;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; covergroup wr_cg_bits;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_0: coverpoint {m_current[0],m_data[0]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_1: coverpoint {m_current[1],m_data[1]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_2: coverpoint {m_current[2],m_data[2]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_3: coverpoint {m_current[3],m_data[3]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_4: coverpoint {m_current[4],m_data[4]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_5: coverpoint {m_current[5],m_data[5]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_6: coverpoint {m_current[6],m_data[6]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_7: coverpoint {m_current[7],m_data[7]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_8: coverpoint {m_current[8],m_data[8]} iff (!m_is_read &amp;&amp; m_be[1]);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_9: coverpoint {m_current[9],m_data[9]} iff (!m_is_read &amp;&amp; m_be[1]);</span></p>
+<p class="rvps12"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+<p class="rvps12"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_31: coverpoint {m_current[31],m_data[31]} iff (!m_is_read &amp;&amp; m_be[3]);</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps12"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+<p class="rvps12"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+<p class="rvps12"><span class="rvts356">covergroup rd_cg_bits;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_0: coverpoint {m_current[0],m_data[0]} iff (m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps12"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+<p class="rvps12"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_30: coverpoint {m_current[30],m_data[30]} iff (m_is_read &amp;&amp; m_be[3]);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; field_31: coverpoint {m_current[31],m_data[31]} iff (m_is_read &amp;&amp; m_be[3]);</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; covergroup wr_cg_vals;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; Fld: coverpoint Fld.value[31:0];</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; covergroup rd_cg_vals;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; Fld: coverpoint Fld.value[31:0];</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps12"><span class="rvts356">// Function : new</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; function new(string name = "block1_reggroup_name_reg1");</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; super.new(name, 32 , build_coverage(UVM_CVR_REG_BITS + UVM_CVR_FIELD_VALS));</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; add_coverage(build_coverage(UVM_CVR_REG_BITS + UVM_CVR_FIELD_VALS)); //Added because build coverage in the line above doesn't work due to a bug in UVM 1.1 library</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; if (has_coverage(UVM_CVR_REG_BITS)) &nbsp;begin</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; wr_cg_bits = new();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rd_cg_bits = new();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; if (has_coverage(UVM_CVR_FIELD_VALS)) &nbsp;begin</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; wr_cg_vals &nbsp;= new();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rd_cg_vals &nbsp;= new();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; endfunction</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; protected virtual function void sample(uvm_reg_data_t data, uvm_reg_data_t byte_en, bit is_read, uvm_reg_map map);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; super.sample(data, byte_en, is_read, map);</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; if (get_coverage(UVM_CVR_REG_BITS)) &nbsp;begin</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; m_current = get() ;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; m_data = data ;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; m_be = byte_en;</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; m_is_read = is_read;</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(!is_read) begin</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; wr_cg_bits.sample();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(is_read) begin</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rd_cg_bits.sample();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; if (get_coverage(UVM_CVR_FIELD_VALS)) &nbsp;begin</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(!is_read) begin</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; wr_cg_vals.sample();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(is_read) begin</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rd_cg_vals.sample();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; endfunction</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; virtual function void sample_values();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; super.sample_values();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; if (get_coverage(UVM_CVR_FIELD_VALS)) begin</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; wr_cg_vals.sample();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rd_cg_vals.sample();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; endfunction</span></p>
+<p class="rvps12"><span class="rvts356"><br/></span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; // Function : build</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; virtual function void build();</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; this.Fld = uvm_reg_field::type_id::create("Fld");</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; this.Fld.configure(.parent(this), .size(32), .lsb_pos(0), .access("RW"), .volatile(0), .reset(32'd0), .has_reset(1), .is_rand(1), .individually_accessible(0));</span></p>
+<p class="rvps12"><span class="rvts356">&nbsp; &nbsp; endfunction</span></p>
+<p class="rvps12"><span class="rvts356">endclass</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<h2 class="rvps111"><a name="_Toc341957334"></a><span class="rvts0"><span class="rvts292">Customize Auto-generated Coverage</span></span></h2>
+<p class="rvps12"><span class="rvts14">User can also customize the auto generated covergroups of coverage types ‘a’, ‘b’ or ‘f’ by adding bins to the coverpoints, or by including new coverpoints or by creating cross between different coverpoints in the covergroups. In IDS this is possible using “[uvm] &lt;custom code&gt;[/uvm]” tags. &nbsp;</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">The entire syntax is as follows:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp;&nbsp;</span><span class="rvts957">[uvm loc = (coverpoint/covergroup).(abf/b/f/a).&lt;rd/wr&gt; ] &lt;user code&gt; [/uvm</span><span class="rvts956">]</span></p>
+<p class="rvps2"><span class="rvts956"><br/></span></p>
+<p class="rvps12"><span class="rvts14">where, ‘rd’ or ‘wr’ is optional. If wr or rd is not mentioned then the code inside uvm tags will be added for both read and write access type covergroups/coverpoints. In this syntax, ‘a’ is valid only for blocks and memories, ‘b’ is valid for registers and ‘f’ for register fields.&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">This</span><span class="rvts421"> customization is hierarchical</span><span class="rvts14"> i.e if defined on the block, it applies automatically to the contained registers. User can also customize coverage for particular register, memory or register-file. If user has specified [uvm] tags both in block as well as in register, IDS will take which is nearest to the register.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Following are some examples of different usage of [uvm] tags at different location, for adding user defined bins, coverpoints and cross coverage.</span></p>
+<p class="rvps2"><span class="rvts461"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li style="text-indent: 0px" class="rvps171 noindent"><span class="rvts961"> &nbsp; &nbsp;</span><span class="rvts974">[uvm loc=coverpoint.b]</span></li>
+</ul>
+<p class="rvps72"><span class="rvts974">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;ignore_bins ig_b = {1,2};</span></p>
+<p class="rvps72"><span class="rvts974">&nbsp; &nbsp; &nbsp;[/uvm]</span></p>
+<p class="rvps72"><span class="rvts961"><br/></span></p>
+<p class="rvps72"><span class="rvts186">This will generate the code inside the [uvm] tag for all the Register bits' coverpoints:</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts252">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts469">covergroup wr_cg_bits;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;field_0: coverpoint {m_current[0],m_data[0]} iff (!m_is_read &amp;&amp; m_be[0]) {</span></p>
+<p class="rvps72"><span class="rvts976">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="rvts749">ignore_bins ig_b1 = {1,2}; </span><span class="rvts975">}</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;. . . .</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; &nbsp;covergroup rd_cg_bits;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; field_0: coverpoint {m_current[0],m_data[0]} iff (m_is_read &amp;&amp; m_be[0]) {</span></p>
+<p class="rvps72"><span class="rvts975">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i</span><span class="rvts749">gnore_bins ig_b1 = {1,2}; </span><span class="rvts975">}</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; . . . .</span></p>
+<p class="rvps72"><span class="rvts252">&nbsp;&nbsp;</span></p>
+<p class="rvps72"><span class="rvts186">Using “ignore_bins ig_b1 = {1,2};” auto-bins, auto[1] &amp; auto[2] won't be generated .</span></p>
+<p class="rvps72"><span class="rvts955"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li style="text-indent: 0px" class="rvps171 noindent"><span class="rvts954"> &nbsp; </span><span class="rvts749">[uvm loc= coverpoint.f.rd]</span></li>
+</ul>
+<p class="rvps72"><span class="rvts749">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;bins some_range = [0:3] };</span></p>
+<p class="rvps72"><span class="rvts749">&nbsp; &nbsp; [/uvm]</span></p>
+<p class="rvps72"><span class="rvts186">This will generate the code inside the [uvm] tag, for the coverpoints corresponding to Field Values that are read &nbsp;:</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts252">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts469">covergroup rd_cg_vals;</span></p>
+<p class="rvps11"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fld1: coverpoint fld1.value[31:0]{</span></p>
+<p class="rvps11"><span class="rvts979">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts972">bins some_range = { [0:3] }; </span><span class="rvts356">}</span></p>
+<p class="rvps11"><span class="rvts356">endgroup</span></p>
+<p class="rvps11"><span class="rvts202"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps11 noindent"><span class="rvts980">[uvm loc= covergroup.f.wr]&nbsp;</span></li>
+</ul>
+<p class="rvps72"><span class="rvts977">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;my_cross: cross &nbsp;cpt_field0, cpt_field1;&nbsp;</span></p>
+<p class="rvps72"><span class="rvts977">&nbsp; &nbsp; &nbsp;[/uvm]</span></p>
+<p class="rvps72"><span class="rvts186">&nbsp;Through this user can make own coverpoints and cross inside the auto generated covergroups for register bits and fields.</span></p>
+<p class="rvps11"><span class="rvts14">&nbsp;&nbsp;&nbsp; </span><span class="rvts202">&nbsp;&nbsp;</span></p>
+<p class="rvps11"><span class="rvts202">&nbsp;</span><span class="rvts463">covergroup wr_cg_vals;</span></p>
+<p class="rvps11"><span class="rvts463">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . . .</span></p>
+<p class="rvps11"><span class="rvts971">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts970">my_cross: cross cpt_field0, cpt_field1;</span></p>
+<p class="rvps11"><span class="rvts978">&nbsp;</span><span class="rvts463">endgroup</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<h3 class="rvps105"><a name="_Toc341957335"></a><span class="rvts0"><span class="rvts555">User-Defined Coverage</span></span></h3>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">But, often these default coverage types provided by UVM are not enough. What if the user has specific coverage code that needs to be generated?</span></p>
+<p class="rvps12"><span class="rvts14">In IDS, it is possible to generate the user-defined coverage code and also control the covergroups included in the coverage of that element in the auto-generated register or block UVM Register Model classes.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">Following are the steps/controls that IDS provides for generating the user-defined coverage code:</span></p>
+<p class="rvps12"><span class="rvts14">1. </span><span class="rvts962">Mention the Coverage Identifiers and their "one-hot" values.</span></p>
+<p class="rvps12"><span class="rvts962">2. Link the covergroups and its respective Identifiers.</span></p>
+<p class="rvps12"><span class="rvts962">3. Control the user-defined coverage</span></p>
+<p class="rvps12"><span class="rvts962"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1358.png"></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li style="text-indent: 0px" class="rvps377 noindent"><a name="_Toc341957336"></a><span class="rvts0"><span class="rvts981">1. Mention the Coverage Identifiers and their "one-hot" values</span></span></li>
+</ul>
+<p class="rvps127"><span class="rvts186">Coverage Identifiers are the identifiers for the user defined covergroups which the user wants to include in the UVM register model. Through these identifiers user can control the coverage. For details about how it is controlled, please refer the UVM User Guide 1.1.</span></p>
+<p class="rvps127"><span class="rvts186"><br/></span></p>
+<p class="rvps127"><span class="rvts186">In IDS, user can specify all the identifiers globally at the top level of the register specification in the block description using a property, as follows:</span></p>
+<p class="rvps72"><span class="rvts186">&nbsp; &nbsp; &nbsp;</span><span class="rvts749">{uvm.user_coverage=”&lt;IDENTIFIER_NAME1&gt;:&lt;its_value&gt;,</span><br/><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;IDENTIFIER_NAME2&gt;:&lt;its_value&gt;</span></p>
+<p class="rvps72"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . . .”}</span></p>
+<p class="rvps72"><span class="rvts209">Example:-</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps72 noindent"><span class="rvts186">Specify the following property on a block level</span></li>
+</ul>
+<p class="rvps72"><span class="rvts982">{uvm.user_coverage=FUNC0_COV_ID:'h01000,FUNC1_COV_ID:'h02000}</span><span class="rvts186"> &nbsp;</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps72 noindent"><span class="rvts186">This will generate an enum of type “uvm_reg_cvr_t”</span></li>
+</ul>
+<p class="rvps72"><span class="rvts983">typedef enum uvm_reg_cvr_t {</span></p>
+<p class="rvps72"><span class="rvts983">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts982">FUNC0_COV_ID</span><span class="rvts983"> = 'h01000,</span></p>
+<p class="rvps72"><span class="rvts983">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts982">FUNC1_COV_ID</span><span class="rvts983"> = 'h02000</span></p>
+<p class="rvps72"><span class="rvts983">&nbsp;} my_uvm_coverage_model_e;</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps127"><span class="rvts186">Note: Values of the coverage identifiers should be one-hot values. This is to avoid collisions with pre-defined UVM, vendor-defined, and user-defined coverage model identifiers, bits 0 through 7 are reserved for pre-defined UVM coverage, bits 8 through 15 are reserved for coverage models defined by vendors, and bits 16 through 23 are reserved for users.</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li style="text-indent: 0px" class="rvps377 noindent"><a name="_Toc341957337"></a><span class="rvts0"><span class="rvts981">2. Linking the Covergroups and Its respective Identifiers</span></span></li>
+</ul>
+<p class="rvps127"><span class="rvts186">Using IDS user can write the user-defined coverage code inside the uvm tags, [uvm]&lt;user_code&gt;[/uvm]. That code will be automatically included in the component class of that register or block. In UVM, user has to link its covergroup with the coverage Identifier, in order to include that covergroup(s) in the coverage database on running simulation environment. &nbsp;In IDS, user has to add the coverage identifier in the comment like a pragma in the first line of the covergroup, inside the [uvm] tags for register/block, using property ‘user_coverage=&lt;IDENTIFIER&gt;’ or ‘uvm.user_coverage=&lt;IDENTIFIER&gt;’, as follows :</span></p>
+<p class="rvps127"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts953">&nbsp; &nbsp; </span><span class="rvts749">[uvm]</span></p>
+<p class="rvps72"><span class="rvts749">&nbsp; &nbsp; covergroup cg_vals_my_cov1; //user_coverage=&lt;IDENTIFIER_NAME1&gt;</span></p>
+<p class="rvps72"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . . . .</span></p>
+<p class="rvps72"><span class="rvts749">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps72"><span class="rvts749">&nbsp; &nbsp; covergroup cg_vals_my_cov2; //uvm.user_coverage=&lt;IDENTIFIER_NAME2&gt;,&nbsp;</span><br/><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;IDENTIFIER_NAME3&gt;, &nbsp;. . . .</span></p>
+<p class="rvps72"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . . .. .</span></p>
+<p class="rvps72"><span class="rvts749">&nbsp; &nbsp; endgroup</span></p>
+<p class="rvps72"><span class="rvts749">&nbsp; &nbsp; [/uvm]</span></p>
+<p class="rvps72"><span class="rvts953"><br/></span></p>
+<p class="rvps127"><span class="rvts186">In UVM Register Model, this will include code for coverage in new() function of register/block and also create the sample() and sample_values() functions for the user defined covergroup(s).</span></p>
+<p class="rvps127"><span class="rvts186"><br/></span></p>
+<p class="rvps127"><span class="rvts209">Example:-</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps127 noindent"><span class="rvts186">Specify the following property in [uvm]...[\uvm] tag on the field of a register for linking of user-defined coverage</span></li>
+</ul>
+<p class="rvps2"><span class="rvts984">[uvm] typedef enum logic [1:0] {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; On1 = 2'h0,</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; On2 = 2'h1,&nbsp;</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; On3 = 2'h2,</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; On4 = 2'h3</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; &nbsp;} Fld3_e;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; covergroup cg_func0; //user_coverage=FUNC0_COV_ID, &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; &nbsp; FUNC1_COV_ID&nbsp;</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; &nbsp; Fld3: &nbsp;coverpoint Fld3.value[1:0]&nbsp;</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; &nbsp; &nbsp; { bins On1_bin = {On1};&nbsp;</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;bins On2_bin = {On2};</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;bins On3_bin = {On3};&nbsp;</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;bins On4_bin = {On4};&nbsp;</span></p>
+<p class="rvps2"><span class="rvts984">&nbsp; &nbsp; &nbsp; } endgroup</span></p>
+<p class="rvps2"><span class="rvts984">[/uvm]</span></p>
+<p class="rvps2"><span class="rvts963"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Following code will be generated in the register model(code in blue is the user-define code for coverage)</span></p>
+<p class="rvps127"><span class="rvts186"><br/></span></p>
+<p class="rvps11"><span class="rvts14">&nbsp; </span><span class="rvts356">class my_reg extends uvm_reg;</span></p>
+<p class="rvps101"><span class="rvts469">`uvm_object_utils(my_reg)</span></p>
+<p class="rvps101"><span class="rvts469">. . . . .</span></p>
+<p class="rvps101"><span class="rvts469">. . ..&nbsp;</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; //USER-CODE START</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp;covergroup cg_func0; //user_coverage=FUNC0_COV_ID, FUNC1_COV_ID</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; Fld3: &nbsp;coverpoint Fld3.value[1:0]</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; { bins On1_bin = {On1};</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins On2_bin = {On2};</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins On3_bin = {On3};</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins On4_bin = {On4};</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; } endgroup</span></p>
+<p class="rvps101"><span class="rvts749"><br/></span></p>
+<p class="rvps11"><span class="rvts356">&nbsp; &nbsp; &nbsp;function new();</span><br/><span class="rvts356">&nbsp; &nbsp; &nbsp; . . . . .</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp;if (has_coverage(FUNC0_COV_ID))</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cg_func0 = new();</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp;if (has_coverage(FUNC1_COV_ID))</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;begin</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cg_func0 = new();</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end</span></p>
+<p class="rvps11"><span class="rvts356">&nbsp; &nbsp; &nbsp;endfunction : new</span></p>
+<p class="rvps11"><span class="rvts356"><br/></span></p>
+<p class="rvps11"><span class="rvts356">&nbsp; &nbsp; &nbsp;virtual function void sample(uvm_reg_data_t data,&nbsp;</span><br/><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;uvm_reg_data_t byte_en, bit is_read, uvm_reg_map map);</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; super.sample(data, byte_en, is_read, map);</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; . . . .&nbsp;</span></p>
+<p class="rvps101"><span class="rvts749">if (get_coverage(FUNC0_COV_ID))&nbsp;</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cg_func0.sample();</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end</span></p>
+<p class="rvps101"><span class="rvts749">if (get_coverage(FUNC1_COV_ID))</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;begin</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cg_func0.sample();</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end</span></p>
+<p class="rvps11"><span class="rvts356">&nbsp; &nbsp; &nbsp; endfunction</span></p>
+<p class="rvps11"><span class="rvts356">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps11"><span class="rvts356">&nbsp; &nbsp; &nbsp; virtual function void sample_values();</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; &nbsp; super.sample_values();</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; &nbsp; . . . .&nbsp;</span></p>
+<p class="rvps101"><span class="rvts749">if (get_coverage(FUNC0_COV_ID))</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cg_func0.sample();</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps101"><span class="rvts749">if (get_coverage(FUNC1_COV_ID))&nbsp;</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cg_func0.sample();</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end</span></p>
+<p class="rvps101"><span class="rvts469">endfunction</span></p>
+<p class="rvps11"><span class="rvts356">&nbsp; endclass</span></p>
+<p class="rvps11"><span class="rvts202"><br/></span></p>
+<p class="rvps72"><span class="rvts209">Note</span><span class="rvts186">: Single covergroup can link with multiple coverage identifiers or vice-versa.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li style="text-indent: 0px" class="rvps377 noindent"><a name="_Toc341957338"></a><span class="rvts0"><span class="rvts981">3. Control the user-defined coverage&nbsp;</span></span></li>
+</ul>
+<p class="rvps127"><span class="rvts186">UVM provides a control for coverage collection where user can control for which identifiers containing covergroups are to be included in coverage database on running the simulation environment. In IDS, user has to add the identifier(s) linked to that covergroup(s) using the ‘coverage’ property, where its value is separated by comma ‘,’:</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts749">{coverage=f, &lt;IDENTIFIER_NAME1&gt;, &lt;IDENTIFIER_NAME2&gt; }</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps127"><span class="rvts186">In this case, coverage will be built for fields and user-defined covergroup(s) which is/are linked to the register by identifiers &lt;IDENTIFIER_NAME1&gt; and &lt;IDENTIFIER_NAME2&gt;</span></p>
+<p class="rvps127"><span class="rvts186"><br/></span></p>
+<p class="rvps127"><span class="rvts186">In UVM register model, it will create the add_coverage() for the listed coverage model identifiers.</span></p>
+<p class="rvps127"><span class="rvts186"><br/></span></p>
+<p class="rvps127"><span class="rvts209">Example:-</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps127 noindent"><span class="rvts186">coverage property applied on a register</span></li>
+</ul>
+<p class="rvps2"><span class="rvts984">{coverage=ab,FUNC0_COV_ID, FUNC1_COV_ID }</span></p>
+<p class="rvps2"><span class="rvts963"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">build coverage method has the identifiers for user-defined coverage also in its arguments</span></li>
+</ul>
+<p class="rvps11"><span class="rvts202">&nbsp;&nbsp;</span><span class="rvts356"> class my_reg extends uvm_reg;</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; &nbsp; . . . . .</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps101"><span class="rvts749">function new(string name = "my_reg");</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp;super.new(name, 16, build_coverage(UVM_CVR_FIELD_VALS));</span></p>
+<p class="rvps101"><span class="rvts749">&nbsp; &nbsp;add_coverage(build_coverage(UVM_CVR_REG_BITS + FUNC0_COV_ID + &nbsp;FUNC1_COV_ID));&nbsp;</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; &nbsp;. . . .</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp;endfunction</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp;. . . .&nbsp;</span></p>
+<p class="rvps11"><span class="rvts356">&nbsp; &nbsp;endclass</span></p>
+<h4 class="rvps218"><span class="rvts0"><span class="rvts967"><br/></span></span></h4>
+<h4 class="rvps218"><a name="Defining user-defined coverpoint value for register bit coverage in UVM"></a><span class="rvts0"><span class="rvts969">Defining user-defined coverpoint value for register bit coverage in UVM</span></span></h4>
+<p class="rvps14"><span class="rvts36"><br/></span></p>
+<p class="rvps12"><span class="rvts36">In IDS version 4.9.0.0 and above, for register bit cover groups “wr_cg_bits” and “rd_cg_bits”, the coverpoints are defined so as to keep track of bit values hit in both UVM register model and design (DUT).&nbsp;</span></p>
+<p class="rvps12"><span class="rvts36">The definition is as follows for a 1-bit wide register:-</span></p>
+<p class="rvps12"><span class="rvts36"><br/></span></p>
+<p class="rvps154"><span class="rvts984">covergroup wr_cg_bits;</span></p>
+<p class="rvps154"><span class="rvts984">&nbsp; &nbsp; &nbsp; &nbsp; field_0: coverpoint {m_current[0],m_data[0]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps11"><span class="rvts984">endgroup</span></p>
+<p class="rvps154"><span class="rvts984">covergroup rd_cg_bits;</span></p>
+<p class="rvps154"><span class="rvts984">&nbsp; &nbsp; &nbsp; &nbsp; field_0: coverpoint {m_current[0],m_data[0]} iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps11"><span class="rvts984">endgroup</span></p>
+<p class="rvps11"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts36">Where the coverpoint is defined to keep track of both register model and DUT bit values.</span></p>
+<p class="rvps2"><span class="rvts36">For meeting the user’s customization, IDS offers more flexibility in defining the coverage .It is now possible to generate register bit coverpoints that covers dut or register model only, by specifying the property defined in the following table.</span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts555">Implementation in IDS</span></span></h3>
+<p class="rvps3"><span class="rvts338"><br/></span></p>
+<div class="rvps143">
+<table width="689" style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 202px; height: 14px;">
+   <p class="rvps3"><span class="rvts31">Property</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 226px; height: 14px;">
+   <p class="rvps3"><span class="rvts31">code</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 220px; height: 14px;">
+   <p class="rvps3"><span class="rvts31">description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 202px; height: 35px;">
+   <p class="rvps3"><span class="rvts36">uvm.coverpoint.b = dut</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 226px; height: 35px;">
+   <p class="rvps3"><span class="rvts965">field_0: coverpoint m_data[0]&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 220px; height: 35px;">
+   <p class="rvps3"><span class="rvts36">Can be applied on register, block, and section. With this property the illegal bins that we create in the default case won’t be created.</span></p>
+   <p class="rvps3"><span class="rvts36"><br/></span></p>
+   <p class="rvps3"><span class="rvts965">illegal_bins b_x = {1,2};</span></p>
+   <p class="rvps3"><span class="rvts964"><br/></span></p>
+   <p class="rvps3"><span class="rvts36">won’t be created</span></p>
+   <p class="rvps3"><span class="rvts36"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 202px; height: 14px;">
+   <p class="rvps3"><span class="rvts36">uvm.coverpoint.b = regmodel</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 226px; height: 14px;">
+   <p class="rvps3"><span class="rvts965">field_0: coverpoint m_current[0]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 220px; height: 14px;">
+   <p class="rvps3"><span class="rvts36"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 202px; height: 14px;">
+   <p class="rvps3"><span class="rvts36">uvm.coverpoint.b_wr = dut</span></p>
+   <p class="rvps3"><span class="rvts36">or&nbsp;</span></p>
+   <p class="rvps3"><span class="rvts36">uvm.coverpoint.b_wr = regmodel</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 226px; height: 14px;">
+   <p class="rvps3"><span class="rvts965">field_0: coverpoint m_data[0]</span></p>
+   <p class="rvps3"><span class="rvts965">or</span></p>
+   <p class="rvps3"><span class="rvts965">field_0: coverpoint m_current[0]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 220px; height: 14px;">
+   <p class="rvps3"><span class="rvts36">This coverpoint will be created for wr_cg_bits only.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 202px; height: 49px;">
+   <p class="rvps3"><span class="rvts36">uvm.coverpoint.b_rd = dut</span></p>
+   <p class="rvps3"><span class="rvts36">or&nbsp;</span></p>
+   <p class="rvps3"><span class="rvts36">uvm.coverpoint.b_rd = regmodel</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 226px; height: 49px;">
+   <p class="rvps3"><span class="rvts965">field_0: coverpoint m_data[0]</span></p>
+   <p class="rvps3"><span class="rvts965">or</span></p>
+   <p class="rvps3"><span class="rvts965">field_0: coverpoint m_current[0]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 220px; height: 49px;">
+   <p class="rvps3"><span class="rvts36">This coverpoint will be created for rd_cg_bits only.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts968"><br/></span></p>
+<p class="rvps2"><span class="rvts126">Representation in IDS</span></p>
+<p class="rvps2"><span class="rvts968"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1586.png"></p>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts352">Generated UVM output for coverage</span></span></h1>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps154"><span class="rvts984">covergroup wr_cg_bits;</span></p>
+<p class="rvps154"><span class="rvts984">&nbsp; &nbsp; &nbsp; &nbsp; field_0: coverpoint </span><span class="rvts985">m_data[0]</span><span class="rvts984"> iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps154"><span class="rvts984">endgroup</span></p>
+<p class="rvps154"><span class="rvts984">covergroup rd_cg_bits;</span></p>
+<p class="rvps154"><span class="rvts984">&nbsp; &nbsp; &nbsp; &nbsp; field_0: coverpoint m_data[0] iff (!m_is_read &amp;&amp; m_be[0]);</span></p>
+<p class="rvps154"><span class="rvts984">endgroup</span></p>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts989">User-defined covergroup/coverpoint in input rdl format and also support the property “coverage=f”.</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts988">SystemRdl input</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">property coverage { type = string; component = addrmap | regfile | reg; };</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">addrmap block1{</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">reg REG {</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; coverage = "f";</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; field {</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fieldwidth = 8;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; desc = "[uvm loc=coverpoint.f]</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"></span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987">bins psc_val_range_1 = {[8'h01 : 8'h0F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"></span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp;bins psc_val_range_2 = {[8'h10 : 8'h1F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"></span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp;bins psc_val_range_3 = {[8'h20 : 8'h3F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"></span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp;bins psc_val_range_4 = {[8'h40 : 8'h7F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"></span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp;bins psc_val_range_5 = {[8'h80 : 8'hFF]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [/uvm]";</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reset = 0x0;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; } CUR_PCS[23:16];</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; field {</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; desc = "[uvm loc=coverpoint.f]</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"></span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp;bins val_range_1 = {[8'h01 : 8'h0F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"></span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp;bins val_range_2 = {[8'h10 : 8'h1F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"></span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp;bins val_range_3 = {[8'h20 : 8'h3F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"></span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp;bins val_range_4 = {[8'h40 : 8'h7F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"></span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts987"> &nbsp; &nbsp;bins val_range_5 = {[8'h80 : 8'hFF]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [/uvm]";</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reset = 0x0;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; } SUS [0:0];</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp;};REG REG;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; };</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts986"><br/></span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts988">Output(uvm)&nbsp;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp;covergroup wr_cg_vals;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"><br/></span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; CURPCS: coverpoint CURPCS.value[7:0]</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; {</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"><br/></span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins psc_val_range_1 = {[8'h01 : 8'h0F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins psc_val_range_2 = {[8'h10 : 8'h1F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins psc_val_range_3 = {[8'h20 : 8'h3F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins psc_val_range_4 = {[8'h40 : 8'h7F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins psc_val_range_5 = {[8'h80 : 8'hFF]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"><br/></span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; }</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; SUS: coverpoint SUS.value[0:0]</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; {</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"><br/></span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins val_range_1 = {[8'h01 : 8'h0F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins val_range_2 = {[8'h10 : 8'h1F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins val_range_3 = {[8'h20 : 8'h3F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins val_range_4 = {[8'h40 : 8'h7F]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins val_range_5 = {[8'h80 : 8'hFF]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"><br/></span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; }</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; endgroup</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"><br/></span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; covergroup rd_cg_vals;</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987"><br/></span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; CURPCS: coverpoint CURPCS.value[7:0]</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; {</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins psc_val_range_1 = {[8'h01 : 8'h0F]};bins psc_val_range_2 = {[8'h10 : 8'h1F]};bins psc_val_range_3 = {[8'h20 : 8'h3F]};bins psc_val_range_4 = {[8'h40 : 8'h7F]};bins psc_val_range_5 = {[8'h80 : 8'hFF]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; }</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; SUS: coverpoint SUS.value[0:0]</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; {</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bins val_range_1 = {[8'h01 : 8'h0F]};bins val_range_2 = {[8'h10 : 8'h1F]};bins val_range_3 = {[8'h20 : 8'h3F]};bins val_range_4 = {[8'h40 : 8'h7F]};bins val_range_5 = {[8'h80 : 8'hFF]};</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp; }</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts987">&nbsp; &nbsp; &nbsp; &nbsp;endgroup</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts986"><br/></span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts986">Note:-</span></span></h1>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps161 noindent"><span class="rvts36">This enables flexibility for user in creation of coverage model.</span></li>
+ <li class="rvps161 noindent"><span class="rvts36">This property is applicable on chip, block, section, register.</span></li>
+ <li class="rvps161 noindent"><span class="rvts36">It is hierarchical, i.e. if applied on block/section it is hierarchically applied to all registers within them. If the property is applied on different hierarchies, then the lowest in the hierarchy is applicable.</span></li>
+</ul>
+<p class="rvps12"><span class="rvts966"><br/></span></p>
+<p class="rvps2"><span class="rvts36"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h3 class="rvps105"><a name="_Toc341957339"></a><span class="rvts0"><span class="rvts272">Summary</span></span></h3>
+<p class="rvps2"><span class="rvts606"><br/></span></p>
+<div class="rvps264">
+<table style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">Property</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts186">Value</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Component</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps72"><span class="rvts186">Code</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td rowspan="8" style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">coverage</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts186">a</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Block/Memory</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps72"><span class="rvts186">Covergroup: &nbsp; cg_addr</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts186">f</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Register Group</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps72"><span class="rvts186">Covergroups: rd_cg_vals &amp; &nbsp;wr_cg_vals</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts186">f.rd</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Register Group</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps72"><span class="rvts186">Covergroup: &nbsp; rd_cg_vals</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts186">f.wr</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Register Group</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps72"><span class="rvts186">Covergroup: &nbsp; wr_cg_vals</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts186">b</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Register Group</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps72"><span class="rvts186">Covergroups: rd_cg_bits &amp; &nbsp;wr_cg_bits</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts186">b.rd</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Register Group</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps72"><span class="rvts186">Covergroup: &nbsp; rd_cg_bits</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts186">b.wr</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Register Group</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps72"><span class="rvts186">Covergroup: &nbsp; wr_cg_bits</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts208">IDENTIFIER_NAME1, IDENTIFIER_NAME2, . . . .</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Block/Register/RegisteGroup/Memory</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">This is used to identify user defined covergroups.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= covergroup.a] &nbsp;</span></p>
+   <p class="rvps72"><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Memory/Block</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup cg_addr;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= covergroup.b.rd] &nbsp;</span></p>
+   <p class="rvps72"><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup rd_cg_bits;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= covergroup.b.wr] &nbsp;</span></p>
+   <p class="rvps72"><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup wr_cg_bits;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= covergroup.b] &nbsp;</span></p>
+   <p class="rvps72"><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup rd_cg_bits;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">endgroup</span></p>
+   <p class="rvps2"><span class="rvts202"><br/></span></p>
+   <p class="rvps2"><span class="rvts202">covergroup wr_cg_bits;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= covergroup.f.rd] &nbsp;</span></p>
+   <p class="rvps72"><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup rd_cg_vals;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= covergroup.f.wr] &nbsp;</span></p>
+   <p class="rvps72"><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup wr_cg_vals;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= covergroup.f] &nbsp;</span></p>
+   <p class="rvps72"><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup rd_cg_vals;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">endgroup</span></p>
+   <p class="rvps2"><span class="rvts202"><br/></span></p>
+   <p class="rvps2"><span class="rvts202">covergroup wr_cg_vals;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= coverpoint.f.rd] &nbsp;</span></p>
+   <p class="rvps72"><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup rd_cg_vals;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; fld1: coverpoint fld1.value[31:0] {</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> }</span></p>
+   <p class="rvps72"><span class="rvts252">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= coverpoint.f.wr]&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup wr_cg_vals;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; fld1: coverpoint fld1.value[31:0] {</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> }</span></p>
+   <p class="rvps72"><span class="rvts252">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= coverpoint.f] &nbsp;</span></p>
+   <p class="rvps72"><span class="rvts252">&nbsp;</span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register/Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup rd_cg_vals;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; fld1: coverpoint fld1.value[31:0] {</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> }</span></p>
+   <p class="rvps2"><span class="rvts202">endgroup</span></p>
+   <p class="rvps2"><span class="rvts202"><br/></span></p>
+   <p class="rvps2"><span class="rvts202">covergroup wr_cg_vals;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; fld1: coverpoint fld1.value[31:0] {</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code</span><span class="rvts202"> }</span></p>
+   <p class="rvps72"><span class="rvts252">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= coverpoint.b.rd]&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">&nbsp;[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">&nbsp;covergroup rd_cg_bits;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp;field_0: coverpoint {m_current[0],m_data[0]} iff (!m_is_read &amp;&amp; m_be[0]) {</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code </span><span class="rvts202">}</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; endgroup &nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= coverpoint.b.wr]</span></p>
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">&nbsp; [/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">&nbsp;covergroup wr_cg_bits;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp;field_0: coverpoint {m_current[0],m_data[0]} iff (!m_is_read &amp;&amp; m_be[0]) {</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code </span><span class="rvts202">}</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; endgroup &nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= coverpoint.b] &nbsp;</span></p>
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">&nbsp; </span><span class="rvts951">user_code</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Register</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup rd_cg_bits;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp;field_0: coverpoint {m_current[0],m_data[0]} iff (!m_is_read &amp;&amp; m_be[0]) {</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code </span><span class="rvts202">}</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; endgroup &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202"><br/></span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp;covergroup wr_cg_bits;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp;field_0: coverpoint {m_current[0],m_data[0]} iff (!m_is_read &amp;&amp; m_be[0]) {</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts952">user_code </span><span class="rvts202">}</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . . . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; endgroup &nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 197px;">
+   <p class="rvps72"><span class="rvts186">[uvm loc= covergroup.(f/b/a).(wr/rd)]&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts252">&nbsp;</span><span class="rvts951"> &nbsp;my_cross: cross cvpt1, cvpt2;</span><span class="rvts252"> &nbsp;&nbsp;</span></p>
+   <p class="rvps72"><span class="rvts186">[/uvm]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts951">my_cross: cross cvpt1, cvpt2;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Block/Memory/Register/Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">covergroup xxx;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; cvpt1: coverpoint &nbsp;. . . . ;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp;. . . .&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; </span><span class="rvts952">my_cross: cross cvpt1, cvpt2;</span></p>
+   <p class="rvps72"><span class="rvts252">endgroup</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 197px;">
+   <p class="rvps127"><span class="rvts186">uvm.user_coverage</span></p>
+   <p class="rvps72"><span class="rvts186"><br/></span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 88px;">
+   <p class="rvps72"><span class="rvts252">”&lt;IDENTIFIER_NAME1&gt;:&lt;its_value&gt;,&lt;IDENTIFIER_NAME2&gt;:&lt;its_value&gt;. . . .”</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 106px;">
+   <p class="rvps72"><span class="rvts186">Block</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #4f81bd; border-style: solid; padding: 0px 7px; background-color: #d3dfee; vertical-align: top; width: 169px;">
+   <p class="rvps2"><span class="rvts202">typedef enum uvm_reg_cvr_t {</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;IDENTIFIER_NAME1 = 'h01000,</span></p>
+   <p class="rvps2"><span class="rvts202">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;IDENTIFIER_NAME2 = 'h02000,</span></p>
+   <p class="rvps2"><span class="rvts202">} my_uvm_coverage_model_e;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps264"><span class="rvts14"><br/></span></p>
+<p class="rvps141"><span class="rvts14"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour">Easily create HTML Help documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

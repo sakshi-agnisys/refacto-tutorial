@@ -1,0 +1,560 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Wider External Access with Smaller Width Bus</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="IDesignSpec">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Wider External Access with Smaller Width Bus">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Wider External Access with Smaller Width Bus" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="WiderExternalAccesswithSmallerWi"
+		  data-hnd-context="10"
+		  data-hnd-title="Wider External Access with Smaller Width Bus"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Customcodeoutput.html">Custom code output</a></li><li><a href="SpecificationCreation.html">Specification Creation</a></li><li><a href="Memory.html">Memory</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Memory.html" title="Memory" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="MultipleInterfacesofMemory.html" title="Multiple Interfaces of Memory" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Wideaccessmemorywithgreaterbuswi.html" title="Wide access memory with greater buswidth" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Wider External Access with Smaller Width Bus</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts35">Property name: “wide_external_access=true”</span></p>
+<p class="rvps2"><span class="rvts34">In </span><span class="rvts37">IDS,</span><span class="rvts34"> we have supported </span><span class="rvts37">direct access to external memories having width greater than the bus width using the above mentioned property.</span></p>
+<h1 class="rvps195"><span class="rvts0"><span class="rvts260">Logic Diagram:</span></span></h1>
+<p class="rvps3"><img alt="" style="width : 596px; height : 319px; padding : 1px;" src="lib/NewItem3351.png"></p>
+<p class="rvps3"><span class="rvts34">Fig: Wider External Access with Smaller Bus</span></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts37">Suppose we have a 128-bit memory which is being accessed by a 32-bit bus. For a combined write transaction, we will create a 96-bit internal buffer to store three 32-bit external write transactions on the bus interface, and generate a 128-bit write transaction on the external interface when a fourth 32-bit write transaction occurs on the bus interface.</span></p>
+<p class="rvps8"><span class="rvts34">In case of combined read transaction, we will read the entire 128-bit on the external interface when the first (LSB) read transaction comes on the bus interface. The lower </span><span class="rvts37">32-bits</span><span class="rvts34"> will be sent to the bus interface while the rest of the 96-bits will be stored in the buffer, which can then be read through the required 32-bit read transaction on the bus interface.</span></p>
+<p class="rvps168"><span class="rvts25">Note: </span><span class="rvts128">The wider memory width is a multiple of bus width and they should be aligned.</span></p>
+<p class="rvps168"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts16">In IDS-Word:</span></p>
+<p class="rvps3"><img alt="" style="width : 619px; height : 367px; padding : 1px;" src="lib/NewItem3350.png"></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts16">In IDS-Excel:</span></p>
+<p class="rvps3"><img alt="" style="width : 624px; height : 177px; padding : 1px;" src="lib/NewItem3349.png"></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts16">In SystemRDL</span></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">property wide_external_access {type = boolean;component = mem;};</span></p>
+   <p class="rvps2"><span class="rvts356">addrmap Chip1 {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; addrmap Block1 {</span></p>
+   <p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">mem {</span></p>
+   <p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp;memwidth = 128;</span></p>
+   <p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp;mementries &nbsp;= 4;</span></p>
+   <p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp;wide_external_access = true;</span></p>
+   <p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">}Mem1;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; reg &nbsp;{&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; field {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; hw = na;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; } F1[31:0] = 32'h0C;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; }Reg1;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; Block1 &nbsp;Block1 @0x00;</span></p>
+   <p class="rvps2"><span class="rvts356">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Generated Output:</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">module Chip1_IDS(</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Block1_IDSMem1_wr_req_in,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Block1_IDSMem1_rd_ack_in,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Block1_IDSMem1_rd_data_in,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Block1_IDSMem1_wr_valid_out,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Block1_IDSMem1_rd_valid_out,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; </span><span class="rvts512">Block1_IDSMem1_wr_data_out,</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts356">//Block1_IDS</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; input &nbsp; Block1_IDSMem1_rd_ack_in;</span></p>
+   <p class="rvps2"><span class="rvts367">&nbsp; &nbsp; </span><span class="rvts512">input &nbsp; [127 : 0] Block1_IDSMem1_rd_data_in;</span></p>
+   <p class="rvps2"><span class="rvts367">&nbsp; &nbsp; </span><span class="rvts356">output &nbsp;Block1_IDSMem1_rd_valid_out;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; input &nbsp; Block1_IDSMem1_wr_req_in;</span></p>
+   <p class="rvps2"><span class="rvts367">&nbsp; &nbsp; </span><span class="rvts512">output [127 : 0] Block1_IDSMem1_wr_data_out;</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts356">Block1_IDS #(.addr_width(addr_width),.block_offset( Block1_IDS_offset)</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; ) Block1_IDSinst(</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .Mem1_wr_req_in(Block1_IDSMem1_wr_req_in),</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .Mem1_rd_ack_in(Block1_IDSMem1_rd_ack_in),</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .Mem1_rd_data_in(Block1_IDSMem1_rd_data_in),</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .Mem1_wr_valid_out(Block1_IDSMem1_wr_valid_out),</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .Mem1_rd_valid_out(Block1_IDSMem1_rd_valid_out),</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; </span><span class="rvts512">.Mem1_wr_data_out(Block1_IDSMem1_wr_data_out),</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts356">module Block1_IDS(</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; // SECTION(EXTERNAL) : MEM1 PORT SIGNAL</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Mem1_rd_ack_in,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Mem1_rd_data_in,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Mem1_rd_valid_out,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Mem1_wr_req_in,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Mem1_wr_valid_out,</span></p>
+   <p class="rvps2"><span class="rvts367">&nbsp; &nbsp; </span><span class="rvts512">Mem1_wr_data_out,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; address_out,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; wr_data_out,</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts356">// REGISTER(EXTERNAL) : MEM1 SIGNALS</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; input &nbsp; Mem1_rd_ack_in;</span></p>
+   <p class="rvps2"><span class="rvts367">&nbsp; &nbsp; </span><span class="rvts512">input &nbsp;[128-1 : 0] Mem1_rd_data_in;</span></p>
+   <p class="rvps2"><span class="rvts367">&nbsp; &nbsp; </span><span class="rvts356">output &nbsp;Mem1_rd_valid_out;</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts512">wire &nbsp; &nbsp;[128-1 : 0] Mem1_rd_data;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp; Mem1_combined_write;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp; Mem1_combined_read;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; reg &nbsp; &nbsp; [96-1 : 0] Mem1_buff;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp; [bus_width-1:0]Mem1_rd_data1;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp; [bus_width-1:0]Mem1_rd_data2;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp; [bus_width-1:0]Mem1_rd_data3;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp; [bus_width-1:0]Mem1_rd_data4;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp; Mem1_buff1_decode;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp; Mem1_buff2_decode;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp; Mem1_buff3_decode;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp; Mem1_buff4_decode;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; output &nbsp;[128-1 : 0]Mem1_wr_data_out;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wire &nbsp; &nbsp;Mem1_write_error;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wor &nbsp; &nbsp; Mem1_write_error_wor;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; wor &nbsp; &nbsp;Mem1_error_wor;</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts512">assign address_out = (Mem1_decode) ? {address[(addr_width - 1) : 4],4'b0} : address;</span></p>
+   <p class="rvps2"><span class="rvts512">assign Mem1_wr_data_out = {wr_data ,Mem1_buff};</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts512">assign Mem1_wr_valid &nbsp; &nbsp; = Mem1_decode &amp;&amp; &nbsp;wr_stb;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_rd_valid &nbsp; &nbsp; = Mem1_decode &amp;&amp; rd_stb;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_wr_valid_out = (Mem1_combined_write) ? Mem1_wr_valid:1'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_rd_valid_out = (Mem1_combined_read) ? (Mem1_rd_valid &amp;&amp; rd_wait_state):1'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_decode_wor &nbsp; = Mem1_decode &amp; (Mem1_combined_read);</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts512">assign rd_data = int_rd_data | wide_access_rd_data ;</span><span class="rvts367"> &nbsp; &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">assign int_rd_data = (~external_access)? ( Reg1_rd_data) : {bus_width{1'b0}}; &nbsp; &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts512">assign wide_access_rd_data = Mem1_rd_data1 | Mem1_rd_data2 | Mem1_rd_data3 | Mem1_rd_data4;</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span><span class="rvts367"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts367">.</span></p>
+   <p class="rvps2"><span class="rvts512">assign Mem1_buff1_decode = (Mem1_decode &amp;&amp; (address[3: 0] == 4'h0)) ? 1'b1 : 1'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; always @ (posedge clk)</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; if( !reset_l )</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mem1_buff[31:0] &lt;= 32'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(Mem1_wr_valid &amp;&amp; Mem1_buff1_decode)</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mem1_buff[31:0] &lt;= wr_data ;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; end // always END</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_rd_data1 = (Mem1_rd_ack_in &amp;&amp; Mem1_buff1_decode) ? Mem1_rd_data[31:0] : 32'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_buff2_decode = (Mem1_decode &amp;&amp; (address[3: 0] == 4'h4)) ? 1'b1 : 1'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; always @ (posedge clk)</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; if( !reset_l )</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mem1_buff[63:32] &lt;= 32'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(Mem1_wr_valid &amp;&amp; Mem1_buff2_decode)</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mem1_buff[63:32] &lt;= wr_data ;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; end // always END</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_rd_data2 = (Mem1_rd_ack_in &amp;&amp; Mem1_buff2_decode) ? Mem1_rd_data[63:32] : 32'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_buff3_decode = (Mem1_decode &amp;&amp; (address[3: 0] == 4'h8)) ? 1'b1 : 1'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; always @ (posedMem1_buff4_decode) ? Mem1_rd_data[127:96] : 32'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_combined_write = (Mem1_wr_valid &amp;&amp; Mem1_buff4_decode) ? 1'b1 : 1'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_combined_read = (Mem1_rd_valid) ? 1'b1 : 1'b0;</span><span class="rvts367"> &nbsp;</span><span class="rvts512">ge clk)</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; if( !reset_l )</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mem1_buff[95:64] &lt;= 32'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(Mem1_wr_valid &amp;&amp; Mem1_buff3_decode)</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mem1_buff[95:64] &lt;= wr_data ;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; end // always END</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_rd_data3 = (Mem1_rd_ack_in &amp;&amp; Mem1_buff3_decode) ? Mem1_rd_data[95:64] : 32'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_buff4_decode = (Mem1_decode &amp;&amp; (address[3: 0] == 4'hC)) ? 1'b1 : 1'b0;</span></p>
+   <p class="rvps2"><span class="rvts512">&nbsp; &nbsp; assign Mem1_rd_data4 = (Mem1_rd_ack_in &amp;&amp;&nbsp;</span><span class="rvts367"> &nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps166"><span class="rvts472">Asyn</span><a name="F_22112"></a><span class="rvts472">c reset in memory with wide_external_access property</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Enhancement has been done to generate the RTL output with an async reset, using the wide external access parameter and the reset type=async property. Currently, a synchronous reset is there for memory even when using the reset_type=async property. Now, IDS&nbsp; generates RTL output with the “wide_external_access” property on memory with an asynchronous reset clock.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps197"><span class="rvts35">SystemRDL Input</span></p>
+<div class="rvps197">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts370">property map_type { type=string; component=addrmap|reg;};</span></p>
+   <p class="rvps196"><span class="rvts370">property reset_type {type =string; component = addrmap | reg | field ; };</span></p>
+   <p class="rvps196"><span class="rvts370">property wide_external_access {type =boolean; component = mem ; };</span></p>
+   <p class="rvps2"><span class="rvts71"><br/></span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addrmap block1 {</span></p>
+   <p class="rvps198"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp; = "block1 Address Map";</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span><span class="rvts373">reset_type = "async" ;</span></p>
+   <p class="rvps199"><span class="rvts370">&nbsp;&nbsp;desc = " ;";</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; reg reg1 {&nbsp;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; regwidth = 32;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; field {</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hw = r;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sw = rw;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} a1[31:0] = 32'h0;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts71"><br/></span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg mem {&nbsp;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map_type = "mem";</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 320;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hw = rw;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sw = r;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; } mem[319:0] = 320'h0;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp; &nbsp; &nbsp; reg1 reg1 @0x000;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; external mem mem @0x004;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps197"><span class="rvts514">Register View</span><span class="rvts513">&nbsp;</span></p>
+<p class="rvps200"><img alt="" style="width : 602px; height : 228px;" src="lib/NewItem4734.png"></p>
+<p class="rvps197"><span class="rvts514">Spreadsheet View</span></p>
+<p class="rvps200"><img alt="" style="width : 602px; height : 201px;" src="lib/NewItem4733.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps197"><span class="rvts35">Verilog Output:</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps197"><span class="rvts370">module block1_ids#(</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>
+   <p class="rvps197"><span class="rvts370">.</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;//------------------ mem --------------------</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;assign mem_buff1_decode = (mem_decode &amp;&amp; (address[6 : 0]&nbsp; == 7'h0)) ? 1'b1 : 1'b0 ;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;always @</span><span class="rvts373">(posedge clk or negedge reset_l )</span><span class="rvts370">&nbsp; begin</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;if(!reset_l)</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mem_buff[31:0]&lt;=32'b0;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;else</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(mem_wr_valid &amp;&amp; mem_buff1_decode)</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mem_buff[31:0] &lt;= wr_data;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(mem_rd_ack_in)</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mem_buff[31:0] &lt;= mem_rd_data[31:0];</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;end&nbsp; //end always</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;assign mem_rd_data1 = (mem_rd_ack_in &amp;&amp; mem_buff1_decode) ? &nbsp; mem_buff[31:0] : 32'b0;</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>
+   <p class="rvps197"><span class="rvts370">.</span></p>
+   <p class="rvps197"><span class="rvts370">.</span></p>
+   <p class="rvps197"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;//------------------ mem --------------------&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps197"><span class="rvts370">endmodule</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Effortlessly bring your documentation online with HelpNDoc</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

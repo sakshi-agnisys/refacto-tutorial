@@ -1,0 +1,629 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>SystemRDL UDPs</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="IDS Properties">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SystemRDL UDPs">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="SystemRDL UDPs" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="SystemRDLUDPs"
+		  data-hnd-context="132"
+		  data-hnd-title="SystemRDL UDPs"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Properties.html">Properties</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Properties.html" title="Properties" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="IP-XACTProperties.html" title="IP-XACT Properties" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ProtectionProperties.html" title="Protection Properties" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>SystemRDL UDPs</h2>
+
+            <div class="main-content">
+                
+<h1 class="rvps106"><span class="rvts0"><span class="rvts316">SystemRDL UDPs</span></span></h1>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">User-defined properties enable the creation of custom properties that extend the structural component types in a SystemRDL design. IDesignSpec™ support multiple properties for registers, which are currently not supported by SystemRDL. To Support these properties multiple UDP are given by Agnisys®, which can be used to add this functionality.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Below is the example to show how clock edge can be changed, which helps to sample the values of register on specific clock edge.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts243">User Defined Property declaration Syntax</span></p>
+<p class="rvps2"><span class="rvts62"><br/></span></p>
+<p class="rvps2"><span class="rvts62">property property_name {attribute; [attribute;]*};</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">where,</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts62">property_name</span><span class="rvts128"> </span><span class="rvts34">specifies the new property</span></li>
+ <li class="rvps2 noindent"><span class="rvts62">attributes</span><span class="rvts128"> </span><span class="rvts34">are specified as</span><span class="rvts128"> </span><span class="rvts62">attribute=value</span><span class="rvts128"> </span><span class="rvts34">pairs, e.g. type=number</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Please ref to </span><a class="rvts23" href="https://accellera.org/images/downloads/standards/SystemRDL_1.0.zip" target="_blank">SystemRDL spec</a><span class="rvts14"> for more semantics on SystemRDL UDPs.</span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts273">Sample SystemRDL code</span></span></h3>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts610">property clock_edge {type = string; component = addrmap|reg; &nbsp;}; // User Defined Property declaration</span></p>
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+   <p class="rvps2"><span class="rvts26">addrmap block_name {</span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp; name = "block_name Address Map";</span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp; </span><span class="rvts610">clock_edge = "negedge" ; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Use of UDP</span></p>
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp; reg reg_name {</span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp; &nbsp; } Fld[31:0] = 32'h0;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts26">&nbsp; reg_name reg_name @0x0000;</span></p>
+   <p class="rvps2"><span class="rvts26"><br/></span></p>
+   <p class="rvps2"><span class="rvts26">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts610"><br/></span></p>
+<p class="rvps2"><span class="rvts26">Note: All the IDS properties containing a dot (.) in its name will be converted to underscore (_) while specifying in SystemRDL. (For example: intr.pending will be converted to intr_pending)</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Following is the list of IDS properties supported in SystemRDL 1.0</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts318">General Properties</span></span></h2>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Note</span><span class="rvts14">: For description and all possible values to following properties </span><a class="rvts23" href="GeneralProperties.html">refer here</a><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property count {type = string; component = addrmap|regfile|reg; &nbsp;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property variant {type = string; component = addrmap|regfile|reg|field;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property lock { type=string; component = reg|field;}; &nbsp; &nbsp;// verilog, uvm</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property lock_set { type=string; component = reg|field;}; &nbsp; &nbsp;// verilog</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property lock_clear { type=string; component = reg|field;}; &nbsp; &nbsp;// verilog</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property lock_toggle { type=string; component = reg|field;}; &nbsp; &nbsp;// verilog</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rwpair { type = string; component = reg;}; &nbsp;//verilog,uvm</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property is_rsv { type = boolean; component = addrmap|regfile|reg|field; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property output_file_name { type = string; component = addrmap; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property doc { type = string; component = addrmap|regfile|reg|field; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property addr_sort { type = boolean; component = addrmap | regfile; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property reg_sw {type =string; component = reg ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property reg_hw {type =string; component = reg ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property reg_default {type =number; component = reg ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property display_name {type=string;component=addrmap|reg;};</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts318">RTL Properties</span></span></h2>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Note:</span><span class="rvts14"> For description and all possible values to following properties </span><a class="rvts23" href="RTLProperties.html">refer here</a><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property clock_edge {type = string; component = addrmap|reg; &nbsp;}; // VHDL Verilog</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property reset_type { type = string; component = addrmap|reg; }; &nbsp; &nbsp;// VHDL Verilog</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property reset_level { type = string; component = addrmap|reg; }; &nbsp; &nbsp; // VHDL Verilog</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property registered { type = boolean; component = addrmap|regfile|reg|field; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property module_name {type =string; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property vhdl_entity {type =string; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property vhdl_package {type =string; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rb_valid_stages {type = number; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rb_data_stages {type = number; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property shadow_address &nbsp;{type = number; component = reg ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rtl_bit_enable &nbsp;{type = boolean; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rtl_hw_w1p &nbsp;{type = boolean; component = reg|field ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rtl_hw_wp &nbsp;{type = boolean; component = reg|field ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rtl_hw_rp &nbsp;{type = boolean; component = reg|field ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rtl_hw_clear &nbsp;{type = boolean; component = reg|field ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property addr_decode_stages {type = number; component = addrmap; }; // Verilog</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property wr_stb_stages {type = number; component = addrmap|reg; }; // Verilog</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rd_stb_stages {type = number; component = addrmap|reg; }; // Verilog</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property buffer_trig {type = string; component = reg;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property endianness &nbsp;{type = string; component = reg;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property clock_name { type = string; component=reg;}; // verilog</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property reg_wprot { type = string; component=reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property reg_rprot { type = string; component=reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property reg_prot { type = string; component=reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property vhdl_arch {type =string; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property undefined_rd_val {type =boolean; component = addrmap | reg ; };</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14">property cdc_clock {type =string; component = reg | field; };</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property page_count {type =number; component = reg ; };</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property page_select {type =string; component = reg ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property hard_reset {type =boolean; component = reg | field ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rtl_hw_enb {type =boolean; component = reg | field ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rtl_reg_enb {type =boolean; component = reg ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rtl_precedence {type =string; component = addrmap|regfile|reg ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rtl_clock_name {type =string; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rtl_reset_name {type =string; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property rtl_default {type =string; component = reg|field ; };</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property virtual {type = string; component = addrmap; &nbsp;};</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property indirect_map {type = string; component = reg; &nbsp;};</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property datagroup {type = string; component = reg; &nbsp;};</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property clock_edge {type = string; component = reg; &nbsp;};</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property hw_rd_trigger {type = string; component = reg; &nbsp;};</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property hw_wr_trigger {type = string; component = reg; &nbsp;};</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property datagroup_order {type = string; component = reg; &nbsp;};</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property addressing {type = string; component = chip|block; };</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property </span><span class="rvts68">external_byte_acc_err</span><span class="rvts34"> { type = boolean; component = reg;};</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property bus_parity {type = boolean; component = addrmap ; };</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts318">Counter Properties</span></span></h2>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Note</span><span class="rvts14">: For description and all possible values to following properties </span><a class="rvts23" href="RTLProperties.html#COUNTER%20PROPERTIES">refer here</a><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property counter_signal {type =string; component = field ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property counter_sw_wr {type =string; component = field ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property counter_sw_rd {type =string; component = field ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property counter_precedence {type =string; component = field ; };</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts318">Interrupt Properties</span></span></h2>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Note</span><span class="rvts14">: For description and all possible values to following properties </span><a class="rvts23" href="RTLProperties.html#Interrupt%20Properties">refer here</a><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property intr_irq_per_channel {type =boolean; component = addrmap ; };</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts318">Memory Properties</span></span></h2>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Note</span><span class="rvts14">: For description and all possible values to following properties </span><a class="rvts23" href="RTLProperties.html#Memory%20Properties">refer here</a><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property sw_access {type = string; component =reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property hw_access {type = string; component =reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property wr_enb {type=boolean; component = reg;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property rd_enb {type=boolean; component = reg;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property sync_reset {type=boolean; component = reg;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property read_access {type = string; component =reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property reg_rd_addr {type=boolean; component = reg;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><a name="property memory"></a><span class="rvts14">property memory { type=string; component = addrmap;};</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts318">UVM Properties</span></span></h2>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Note</span><span class="rvts14">: For description and all possible values to following properties </span><a class="rvts23" href="UVMProperties.html">refer here</a><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property uvm_base_class { type = string; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property uvm_reg_class { type = string; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property uvm_class { type = string; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property uvm_inst_class { type = string; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property uvm_field_class {type =string; component = addrmap | reg ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property uvm_package { type = string; component = addrmap | regfile; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property uvm_user_coverage &nbsp;{ type = string; component = addrmap | regfile; }; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property uvm_map { type = string; component = addrmap | regfile; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property uvm_name_format { type = string; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property uvm_handle_name_format { type = string; component = addrmap | regfile | reg | field; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property coverage { type = string; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp;/*</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;String can be as one from the followings</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14">Generates appropriate coverage code in the output &nbsp;|</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">"a, b, f, f.rd, f.wr, b.rd, b.wr,on, off"</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">a - Generates CG cg_addr</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">f &nbsp;- Generates CG rd_cg_vals &amp; wr_cg_vals</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">f.rd - Generates CG rd_cg_vals</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">f.wr - Generates CG wr_cg_vals</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">b - Generates CG rd_cg_bits &amp; wr_cg_bits</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">b.rd - Generates CG rd_cg_bits</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">b.wr - Generates CG wr_cg_bits</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp;*/</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14">property coverage_per_instance { type = boolean; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property coverage_weight { type = number; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property coverage_goal { type = number; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property coverage_comment { type = string; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property coverage_at_least { type = number; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property coverage_detect_overlap { type = boolean; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property coverage_auto_bin_max { type = number; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property coverage_cross_num_print_missing { type = number; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property coverage_get_inst_coverage { type = boolean; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property is_rand { type = boolean; component = field; };</span></p>
+<p class="rvps2"><span class="rvts14"></span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14">property is_acc { type = boolean; component = field; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property has_reset { type = boolean; component = field; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property index_reg { type = string; component = reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property depth { type = number; component = reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property hdl_path { type = string; component = addrmap|regfile|reg|field; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property hdl_path_internal {type =string; component = addrmap ; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property volatile { type = boolean; component = field; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property constraint { type = string; component = reg|field; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts34">property uvm_runtime_buswidth {type=boolean; component=addrmap;};</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts318">Reg/Memory Test property</span></span></h2>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Note</span><span class="rvts14">: For description and all possible values to following properties </span><a class="rvts23" href="UVMProperties.html#Register/Memory%20Test%20Properties">refer here</a><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property no_mem_tests { type = boolean; component = reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property no_mem_access_test { type = boolean; component =reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property no_mem_walk_test { type = boolean; component =reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property no_reg_tests { type = boolean; component = addrmap|regfile|reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property no_reg_hw_reset_test { type = boolean; component = addrmap|regfile|reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property no_reg_bit_bash_test { type = boolean; component = addrmap|regfile|reg; };</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property no_reg_access_test { type = boolean; component = addrmap|regfile|reg; };</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts318">C Header Property</span></span></h2>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Note</span><span class="rvts14">: For description and all possible values to following properties </span><a class="rvts23" href="CCProperties.html">refer here</a><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14">property compiler_arrayindex_maxvalue { type = number; component = addrmap; };</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts318">IP-XACT &nbsp;Property</span></span></h2>
+<p class="rvps2"><span class="rvts611"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Note</span><span class="rvts14">: For description and all possible values to following properties </span><a class="rvts23" href="IP-XACTProperties.html">refer here</a><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property vendor {type=string; component=addrmap;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property library {type=string; component=addrmap;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">property version {type=string; component=addrmap;};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><a name="udp_allout"></a><span class="rvts198">Remove UDP’s forward declaration while converting to rdl&nbsp;from any input format</span></p>
+<p class="rvps35"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">When input test cases have some UDPs on any of its components “chip/block/section/reg/field” and generating SystemRDL output then, that particular UDP is declared in the generated RDL output file as shown below:</span></p>
+<p class="rvps14"><span class="rvts35">property &lt;property_name&gt; {type = string ; component = addrmap|regfile|field|reg ; };</span></p>
+<p class="rvps14"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Some users do not need a UDP declaration as they already have a companion package file </span><span class="rvts35">“IDSProperty2a.rdl”</span><span class="rvts34"> having all the UDPs already declared. Therefore, we implemented the guard band feature in SystemRDL output as well as in the companion package file</span><span class="rvts35"> “IDSProperty2a.rdl</span><span class="rvts34">”.</span></p>
+<p class="rvps2"><span class="rvts35">Input any format:</span></p>
+<p class="rvps2"><span class="rvts178"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 598px; height : 244px; padding : 1px;" src="lib/NewItem3623.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Output System RDL</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts520">`ifndef IDS_UDP</span></p>
+   <p class="rvps2"><span class="rvts430">property page_rd_select {type =string; component = reg; };</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts430">property page_wr_select {type =string; component = reg; };</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts430">property page_count {type =number; component = reg; };</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts520">`endif</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">// chip : chip1</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">addrmap chip1 {</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;name = "chip1 Address Map";</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;addrmap &nbsp;placeholder {</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp; = " placeholder Address Map";</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;……………………………………</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;………………………</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;……………</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;placeholder&nbsp; &nbsp;placeholder @0x0;</span></p>
+   <p class="rvps2"><span class="rvts370">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/news-and-articles/2022-09-27-why-use-a-help-authoring-tool-instead-of-microsoft-word-to-produce-high-quality-documentation/">Say Goodbye to Documentation Headaches with a Help Authoring Tool</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

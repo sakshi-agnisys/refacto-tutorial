@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Offset Overriding For Multiple Memory Maps</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Offset Overriding For Multiple Memory Maps">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Offset Overriding For Multiple Memory Maps" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="OffsetOverridingForMultipleMemor"
+		  data-hnd-context="605"
+		  data-hnd-title="Offset Overriding For Multiple Memory Maps"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="ApplicationNotes.html">Application Notes</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ApplicationNotes.html" title="Application Notes" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="IDesignSpec6xvs7x.html" title="IDesignSpec 6.x vs 7.x " role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="VerticalReuse1.html" title="Vertical Reuse" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Offset Overriding For Multiple Memory Maps</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts1233">“uvm_add_regmap_offset” Property</span></p>
+<p class="rvps2"><span class="rvts460"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Introduction</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts34">This property is used with the “uvm_add_regmap” property, using this we can change the offset of the regmap generated by “uvm_add_regmap”. The syntax to use this property is uvm_add_regmap_offset=”&lt;name&gt;:&lt;base address&gt;”.</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts35">SystemRDL Input</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts34">property uvm_add_regmap {type=string; component=addrmap;};</span></p>
+   <p class="rvps2"><span class="rvts34">property uvm_add_regmap_offset {type=string; component=addrmap;};&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts34">property chip {type=boolean; component=addrmap;};</span></p>
+   <p class="rvps2"><span class="rvts34">reg regA {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;field {}F1;</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+   <p class="rvps2"><span class="rvts34">addrmap block_1 {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;regA regA;</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+   <p class="rvps2"><span class="rvts34">addrmap block_2 {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;regA regA;</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+   <p class="rvps2"><span class="rvts34">addrmap block_3 {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;regA regA;</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+   <p class="rvps2"><span class="rvts34">addrmap chip {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;chip=true;</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;uvm_add_regmap &nbsp; &nbsp; = "map1:0x40000";</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;block_1 b1[2] @0x10;</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;</span><span class="rvts1380">b1-&gt;uvm_add_regmap_offset = "map1:0x20";</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;block_2 b2 @0x30;</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;block_3 b3 @0x40;</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+   <p class="rvps2"><span class="rvts34">addrmap top {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;chip=true;</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;uvm_add_regmap &nbsp; &nbsp; = "map1:0x40000,map2:0x200000";</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;chip c1 @30000;</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;</span><span class="rvts1380">c1-&gt;uvm_add_regmap_offset = "map2:0x200,map1:0x300";</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts387"><br/></span></p>
+<p class="rvps2"><span class="rvts35">UVM Output</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts370">`ifndef CLASS_top_block</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;`define CLASS_top_block</span></p>
+   <p class="rvps2"><span class="rvts370">class top_block extends uvm_reg_block;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`uvm_object_utils(top_block)</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rand c1_block c1;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uvm_reg_map map1;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uvm_reg_map map2;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Function : new</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function new(string name = "top_block");</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super.new(name, UVM_NO_COVERAGE);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Function : build</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;virtual function void build();</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//define default map and add reg/regfiles</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default_map= create_map("default_map", 'h0, 4, UVM_BIG_ENDIAN, 1);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map1&nbsp; = create_map("map1", 'h40000, 4, UVM_BIG_ENDIAN, 1);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map2&nbsp; = create_map("map2", 'h200000, 4, UVM_BIG_ENDIAN, 1);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//C1</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c1 = c1_block::type_id::create("c1");</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c1.configure(this, "c1");</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c1.build();</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default_map.add_submap(c1.default_map, 'h7530);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map1.add_submap(c1.map1, </span><span class="rvts431">'h300</span><span class="rvts370">);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map2.add_submap(c1.map2, </span><span class="rvts431">'h200</span><span class="rvts370">);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lock_model();</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;endclass</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;`endif</span></p>
+   <p class="rvps2"><span class="rvts370">....</span></p>
+   <p class="rvps2"><span class="rvts370">....</span></p>
+   <p class="rvps2"><span class="rvts370">class c1_block extends uvm_reg_block;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`uvm_object_utils(c1_block)</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rand b1_block b1;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rand b2_block b2;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rand b3_block b3;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uvm_reg_map map1;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uvm_reg_map map2;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Function : new</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function new(string name = "c1_block");</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super.new(name, UVM_NO_COVERAGE);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Function : build</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;virtual function void build();</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//define default map and add reg/regfiles</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default_map= create_map("default_map", 'h7530, 4, UVM_BIG_ENDIAN, 1);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map1&nbsp; = create_map("map1", 'h40000, 4, UVM_BIG_ENDIAN, 1);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map2&nbsp; = create_map("map2", 'h200000, 4, UVM_BIG_ENDIAN, 1);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//B1</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b1 = b1_block::type_id::create("b1");</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b1.configure(this, "b1");</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b1.build();</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default_map.add_submap(b1.default_map, 'h10);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map1.add_submap(b1.map1, </span><span class="rvts431">'h20</span><span class="rvts370">);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map2.add_submap(b1.map2, 'h10);</span></p>
+   <p class="rvps2"><span class="rvts370">....</span></p>
+   <p class="rvps2"><span class="rvts370">....</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts1233"><br/></span></p>
+<p class="rvps2"><span class="rvts1233">“cheader_add_regmap_offset” Property</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Introduction</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts34">This property is used with the “cheader_add_regmap” property, using this we can change the offset of the regmap generated by “cheader_add_regmap”. The syntax to use this property is uvm_add_regmap_offset=”&lt;name&gt;:&lt;base address&gt;”.</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts35">SystemRDL Input</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts34">property cheader_add_regmap {type=string; component=addrmap;};</span></p>
+   <p class="rvps2"><span class="rvts34">property cheader_add_regmap_offset {type=string; component=addrmap;};&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts34">property chip {type=boolean; component=addrmap;};</span></p>
+   <p class="rvps2"><span class="rvts34">reg regA {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;field {}F1;</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+   <p class="rvps2"><span class="rvts34">addrmap block_1 {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;regA regA;</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+   <p class="rvps2"><span class="rvts34">addrmap block_2 {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;regA regA;</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+   <p class="rvps2"><span class="rvts34">addrmap block_3 {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;regA regA;</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+   <p class="rvps2"><span class="rvts34">addrmap chip {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;chip=true;</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;cheader_add_regmap = "map1:0x40000";</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;block_1 b1[2] @0x10;</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;&nbsp;</span><span class="rvts1380">b1-&gt;cheader_add_regmap_offset = "map1:0x20";</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;block_2 b2 @0x30;</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;block_3 b3 @0x40;</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+   <p class="rvps2"><span class="rvts34">addrmap top {</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;chip=true;</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;cheader_add_regmap = "map1:0x40000,map2:0x200000";</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;chip c1 @30000;</span></p>
+   <p class="rvps2"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts1380">c1-&gt;cheader_add_regmap_offset = "map2:0x200,map1:0x300";</span></p>
+   <p class="rvps2"><span class="rvts34">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts35">C-header(headeralt4) Output:</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts60"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">//**************** MACROS FOR REGMAP : MAP1******************//</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;#define MAP1_TOP_S_OFFSET 0x0</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;#define MAP1_TOP_S_ADDRESS 0x40000</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;#defineMAP1_TOP_C1_S_OFFSET </span><span class="rvts431">0x300</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;#define MAP1_TOP_C1_S_ADDRESS </span><span class="rvts431">0x40300</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps2"><span class="rvts1381">&nbsp;&nbsp;#define MAP1_TOP_C1_B1_S_OFFSET </span><span class="rvts431">0x20</span></p>
+   <p class="rvps2"><span class="rvts1381">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts1381">&nbsp;&nbsp;#define MAP1_TOP_C1_B1_S_ADDRESS </span><span class="rvts431">0x40020</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">....</span></p>
+   <p class="rvps2"><span class="rvts370">....</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">//**************** MACROS FOR REGMAP : MAP2******************//</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;#define MAP2_TOP_S_OFFSET 0x0</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;#define MAP2_TOP_S_ADDRESS 0x200000</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;#defineMAP2_TOP_C1_S_OFFSET </span><span class="rvts431">0x200</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;#define MAP2_TOP_C1_S_ADDRESS </span><span class="rvts431">0x200200</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">....</span></p>
+   <p class="rvps2"><span class="rvts370">....</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/stunning-user-interface/">Experience the Power and Simplicity of HelpNDoc's User Interface</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

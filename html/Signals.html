@@ -1,0 +1,866 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Signals</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Advanced Topics">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Signals">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Signals" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Signals"
+		  data-hnd-context="114"
+		  data-hnd-title="Signals"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AdvancedTopics.html">Advanced Topics</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="AdvancedTopics.html" title="Advanced Topics" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Resetsignal.html" title="Reset signal" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Structs.html" title="Structs" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Signals</h2>
+
+            <div class="main-content">
+                
+<h1 class="rvps106"><a name="signals"></a><span class="rvts0"><span class="rvts316">Signals</span></span></h1>
+<p class="rvps2"><span class="rvts533">(Currently supported in Verilog RTL in IDS-Word version 5.14 and above )</span></p>
+<p class="rvps2"><span class="rvts533">(Currently supported in VHDL alt1 RTL in IDS-Word 5.14.16 version and above)</span></p>
+<p class="rvps2"><span class="rvts533">(Currently supported in IPXACT output in IDS version 5.16.8 and above)</span></p>
+<p class="rvps2"><span class="rvts533">(Currently supported with Turbo feature in IDS version 5.20.0 and above)</span></p>
+<p class="rvps2"><span class="rvts533">(Currently supported in Excel format with IDS-Batch version 6.0.0 and above)</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts312">Signals for RTL</span></span></h2>
+<p class="rvps14"><span class="rvts34"><br/></span></p>
+<p class="rvps14"><span class="rvts34">“Signals” create, named external ports, in the block or chip level ,and connect certain internal design signals to the external world.</span></p>
+<p class="rvps14"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 625px; height : 338px; padding : 1px;" src="lib/NewItem887.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts273">How to use Signals in IDS-Word</span></span></h3>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">The signals can be specified in the IDesignSpec™ Word using the Signals table. Signals table is shown in the figure given below.</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps3"><span class="rvts14">&nbsp; </span><img alt="" style="padding : 1px;" src="lib/NewItem939.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Signal template</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem984.png"></p>
+<p class="rvps3"><span class="rvts15">&nbsp;&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts15">User Defined Name: </span><span class="rvts36">It is a unique name given to a set of signals, that can also be used to ref those signals at a chip level.</span><span class="rvts14"> This name must be unique in a same level of hierarchy.&nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps499 noindent"><span class="rvts15">Signal Name: </span><span class="rvts36">Name of a signal in the port list, that can also be used to connect that signal in the design. Choosing a “Signal Name” is mandatory, and it must be unique within the same block/chip.</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts15">Port Type:</span><span class="rvts14"> It describes the type of port. The port can be input, output, and inout in the release 5.14.0.0 and above. User can use input/in for input port or output/out for output port and inout for an input-output port.&nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts15">Description: </span><span class="rvts14">User defined description for signal.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem985.png"></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<h3 class="rvps105"><a name="excel"></a><span class="rvts0"><span class="rvts273">How to use Signals in Excel</span></span></h3>
+<p class="rvps2"><span class="rvts533">(Compatible with IDS-Batch version 6.0.0 and above)</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">The signals can be specified in the Excel format using the IO Ports sheet. Add the IO Port sheet to the workbook using the button in ribbon</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps3"><span class="rvts14">&nbsp; </span><img alt="" style="padding : 1px;" src="lib/NewItem3614.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Signal template</span></p>
+<p class="rvps3"><img alt="" style="width : 589px; height : 114px; padding : 1px;" src="lib/NewItem3615.png"></p>
+<p class="rvps3"><span class="rvts15">&nbsp;&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps499 noindent"><span class="rvts15">port_name: </span><span class="rvts36">Name of a signal in the port list, that can also be used to connect that signal in the design. Choosing a “Signal Name” is mandatory, and it must be unique within the same block/chip.</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts15">direction:</span><span class="rvts14"> It describes the type of port. The port can be input, output, and inout in the release 6.0.0.0 and above. User can use input/in for input port or output/out for output port and inout for an input-output port.&nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts15">io description: </span><span class="rvts14">User defined description for signal.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Note:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts15">spec_type</span><span class="rvts14"> and </span><span class="rvts15">ams_discipline</span><span class="rvts14"> columns are reserved for future use.</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">By default,</span><span class="rvts15"> </span><span class="rvts14">port type is input.</span><span class="rvts15">&nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Other Properties for signals:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li style="text-indent: 0px" class="rvps114 noindent"><span class="rvts209">next- </span><span class="rvts186">The next property is used for an output signal to assign value on signal.&nbsp;</span></li>
+ <li style="text-indent: 0px" class="rvps114 noindent"><span class="rvts209">field_reset- </span><span class="rvts186">The field_reset property is used to make a signal default soft reset for the block.&nbsp;</span></li>
+ <li style="text-indent: 0px" class="rvps114 noindent"><span class="rvts209">level- </span><span class="rvts186">To change the level of signal to active high or active low, this property can be used. By default level is active low.</span></li>
+ <li style="text-indent: 0px" class="rvps114 noindent"><span class="rvts209">ref- </span><span class="rvts186">To reference the signals present in other blocks, user can use the ref property in signals definition as shown in examples below.&nbsp;</span></li>
+</ul>
+<p class="rvps114"><span class="rvts186"><br/></span></p>
+<p class="rvps114"><span class="rvts209"><br/></span></p>
+<p class="rvps171"><span class="rvts209">NOTE: </span><span class="rvts186">The "field_reset" property can be applied only on 1 signal within 1 block.</span></p>
+<p class="rvps171"><span class="rvts186"><br/></span></p>
+<p class="rvps171"><span class="rvts209">Example1</span></p>
+<p class="rvps171"><span class="rvts209"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Introduction</span><span class="rvts14">: This example shows the basic way to describe the signals.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps376"><img alt="" style="padding : 1px;" src="lib/NewItem949.png"></p>
+<p class="rvps376"><img alt="" style="padding : 1px;" src="lib/NewItem950.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In above example </span><span class="rvts1222">ReqErr_we, RmtErr_we, MemAccData_we </span><span class="rvts162">are 1 bit input signals as described in signals template. </span><span class="rvts1222">CoreDataErr_we </span><span class="rvts162">are not described in the above example, so by default it is 1 bit input signal.</span></p>
+<p class="rvps2"><span class="rvts162"><br/></span></p>
+<p class="rvps2"><span class="rvts15">NOTE:</span><span class="rvts14"> Inside a block if a signal is described and not connected, it gives an error.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts273">Multiple Signals Templates</span></span></h3>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps376"><img alt="" style="padding : 1px;" src="lib/NewItem889.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps376"><img alt="" style="padding : 1px;" src="lib/NewItem951.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps376"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In the above example, multiple signals are used to describe the reuse of all the signals.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Chip level signals</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Signals can also be described in chip level.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps172"><span class="rvts14"><br/></span></p>
+<p class="rvps4"><img alt="" style="padding : 1px;" src="lib/NewItem952.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts273">How to reuse Signals</span></span></h3>
+<p class="rvps2"><span class="rvts14">Signals can be reused using “</span><span class="rvts15">ref</span><span class="rvts14">” property as shown in the example below.</span></p>
+<p class="rvps2"><span class="rvts14">The “ref” property can contain</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp;</span></p>
+<div class="rvps264">
+<table style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts15">Property name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts15">Feature</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 150px;">
+   <p class="rvps2"><span class="rvts15">Applicable</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 129px;">
+   <p class="rvps2"><span class="rvts15">Value</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts14">ref</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts14">To ref other signals&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 150px;">
+   <p class="rvps2"><span class="rvts14">field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 129px;">
+   <p class="rvps2"><span class="rvts14">&lt;block_name&gt;.&lt;signals_name&gt;</span></p>
+   <p class="rvps2"><span class="rvts14">&lt;block_name&gt;.&lt;signals_name&gt;.&lt;signal_name&gt;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps264"><span class="rvts14"><br/></span></p>
+<p class="rvps264"><span class="rvts14"><br/></span></p>
+<p class="rvps264"><span class="rvts14"><br/></span></p>
+<p class="rvps172"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example in Word -</span></p>
+<p class="rvps172"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem953.png"></p>
+<p class="rvps172"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps172"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem954.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps172"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts14">Already declared signals can be referred for reuse as shown in above example.</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">At chip level “</span><span class="rvts202">Block_1_signals” contains 2 signals which are itself a set of signals, created using ref.</span></li>
+ <li class="rvps2 noindent"><span class="rvts202">“Err” refers to “block1.Error interrupts”, where “Error interrupts” is a set of signals in block1.</span></li>
+ <li class="rvps2 noindent"><span class="rvts202">“resets” refers to “block1.Error resets”, where “Error resets” is a set of signals in block1.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts202"><br/></span></p>
+<p class="rvps2"><span class="rvts357"><br/></span></p>
+<p class="rvps2"><span class="rvts357">Example in Excel -</span></p>
+<p class="rvps2"><span class="rvts357"><br/></span></p>
+<p class="rvps2"><span class="rvts357"><br/></span></p>
+<p class="rvps2"><span class="rvts202">The IDS-Excel file with top as 'block1' and signals 'blk1_rst_f' and 'blk1_rst2_f' -</span></p>
+<p class="rvps2"><span class="rvts357"><br/></span></p>
+<p class="rvps3"><span class="rvts357">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem2469.png"><span class="rvts357"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts357">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts357"><br/></span></p>
+<p class="rvps2"><span class="rvts202">Below is the IDS-Excel file with chip 'chip1' as top and file with block1 as top is referred and the signals 'blk1_rst_f' and 'blk1_rst2_f' are reffered in signals 'chip1_rst_f' and 'chip1_rst2_f' respectively-</span></p>
+<p class="rvps2"><span class="rvts357"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem2468.png"></p>
+<p class="rvps2"><span class="rvts357">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts357"><br/></span></p>
+<p class="rvps2"><span class="rvts357"><br/></span></p>
+<p class="rvps2"><span class="rvts357">Note:&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts202">Signals using ref are automatically connected.&nbsp;</span></li>
+ <li class="rvps2 noindent"><span class="rvts202">The signals those are not ref in chip are declared as wires in chip.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts273">Signals can be used in block using following properties</span></span></h3>
+<h4 class="rvps218"><span class="rvts0"><span class="rvts1184">we (write enable)</span></span></h4>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">“we” determines this field is hardware-writable when set, resulting in a generated input which enables hardware access.</span></p>
+<p class="rvps2"><span class="rvts14">By default IDesignSpec™ generates the 1 bit input “we” signal &lt;regName_fieldName_in_enb&gt; for HW writable field.</span></p>
+<p class="rvps2"><span class="rvts14">User can use we property to change the “we” of 1 field to dependent on some other functionality (advanced functionality) as shown in example given below.</span></p>
+<p class="rvps2"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">&nbsp;</span></p>
+<div class="rvps264">
+<table style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts15">Property name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts15">Feature</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 150px;">
+   <p class="rvps2"><span class="rvts15">Applicable</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 129px;">
+   <p class="rvps2"><span class="rvts15">Value</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts14">we</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts14">To change we of specific field.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 150px;">
+   <p class="rvps2"><span class="rvts14">field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 129px;">
+   <p class="rvps2"><span class="rvts14">Signal name,</span></p>
+   <p class="rvps2"><span class="rvts14">&lt;Reg_name&gt;.field_name</span></p>
+   <p class="rvps2"><span class="rvts14">&lt;Reg_name&gt;@&lt;property_name&gt;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts14">“we=a“ where “a” can be any signal name.</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">“we=reg1.b” field with this property has enable value modified by field b within register reg1.</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">“we=regc@intr” field with this property has enable value modified by the interrupt coming out from register regc.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example1</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps172"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem894.png"></p>
+<p class="rvps172"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In above example “we” property is used to change the HW enable of field “data1”, is dependent on the register “key”, field “value”. &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example2</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps172"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem895.png"></p>
+<p class="rvps172"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In above example “we” property is used to change the HW enable of field “data1”, is dependent on the interrupt from the register “key”. &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example3</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps172"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem955.png"></p>
+<p class="rvps172"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In above example we contains a signal key which is active low, as shown in signals description.</span></p>
+<h3 class="rvps105"><a name="resetsignal"></a><span class="rvts0"><span class="rvts273">Reset Signal (resetsignal)</span></span></h3>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">The IDesignSpec™ by default creates a reset signal for generated RTL called “reset_l”. This reset signal is active low by default and is used to synchronously reset the flip-flops. The “reset_l” is called hard reset because it is same for all the block or chip unless some other properties applies.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">A “resetsignal” property is used to reset the register/field with many other ways. “resetsignal” are used as soft reset to reset the register/field with more than 1 signals.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps264">
+<table style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts15">Property name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts15">Feature</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px;">
+   <p class="rvps2"><span class="rvts15">Applicable</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 211px;">
+   <p class="rvps2"><span class="rvts15">Value</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts14">resetsignal</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts14">External input signals to reset the field&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px;">
+   <p class="rvps2"><span class="rvts14">Field/reg</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 211px;">
+   <p class="rvps2"><span class="rvts14">resetsignal=&lt;signal_name&gt;</span></p>
+   <p class="rvps2"><span class="rvts14">resetsignal=&lt;register.field&gt;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">If "resetsignal" is applied on a register then all the fields have a same soft reset, unless, the field has a different "resetsignal".</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Other Properties</span></p>
+<p class="rvps2"><span class="rvts533">(Compatible with IDS version 6.0.0.0 and above)</span></p>
+<p class="rvps2"><span class="rvts533"><br/></span></p>
+<p class="rvps2"><span class="rvts14">The below properties change the nature of signals in register or field template. (refer example 5 below)</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps264">
+<table style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts15">Property name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts15">Feature</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px;">
+   <p class="rvps2"><span class="rvts15">Applicable</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 211px;">
+   <p class="rvps2"><span class="rvts15">Value</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px; height: 64px;">
+   <p class="rvps2"><span class="rvts14">&lt;signal_name&gt;.type</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px; height: 64px;">
+   <p class="rvps2"><span class="rvts14">To specify the reset signal to be of synchronous or asynchronous type&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px; height: 64px;">
+   <p class="rvps2"><span class="rvts14">Field/reg</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 211px; height: 64px;">
+   <p class="rvps2"><span class="rvts14">async or sync</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts14">&lt;signal_name&gt;.level</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts14">To specify the reset signal to be active low or high</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px;">
+   <p class="rvps2"><span class="rvts14">field, reg</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 211px;">
+   <p class="rvps2"><span class="rvts14">high or low</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts15">Example 1</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps172"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1011.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example 2</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1012.png"></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example 3</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1013.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example 4</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In the below example, soft reset for register fields in some another register bits.</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1443.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example 5</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In the example below, signal nature is changed using </span><span class="rvts15">&lt;signal_name&gt;.type</span><span class="rvts14"> and </span><span class="rvts15">&lt;signal_name&gt;.level</span><span class="rvts14"> properties</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts273">IDSWord</span></span></h3>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1448.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts273">IDSExcel</span></span></h3>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1449.png"></p>
+<p class="rvps172"><span class="rvts15"><br/></span></p>
+<h3 class="rvps105"><a name="next"></a><span class="rvts0"><span class="rvts273">NEXT&nbsp;</span></span></h3>
+<p class="rvps2"><span class="rvts14">Next property describe next input value of field.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps264">
+<table style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts15">Property name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts15">Feature</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px;">
+   <p class="rvps2"><span class="rvts15">Applicable</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 211px;">
+   <p class="rvps2"><span class="rvts15">Value</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts14">next</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts14">Next value of the field/signal&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px;">
+   <p class="rvps2"><span class="rvts14">field/signal</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 211px;">
+   <p class="rvps2"><span class="rvts14">next=&lt;signal_name&gt;;</span></p>
+   <p class="rvps2"><span class="rvts14">next=&lt;field_name&gt;;</span></p>
+   <p class="rvps2"><span class="rvts14">next=&lt;reg_name.field_name&gt;;</span></p>
+   <p class="rvps2"><span class="rvts14">next=&lt;reg_name@intr&gt;;</span></p>
+   <p class="rvps2"><span class="rvts14">next=&lt;reg_name@overflow&gt;;</span></p>
+   <p class="rvps2"><span class="rvts14">next=&lt;reg_name@underflow&gt;;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts15">Example1</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem900.png"></p>
+<p class="rvps172"><span class="rvts15"><br/></span></p>
+<p class="rvps172"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example2</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem901.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example3</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem959.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example 4</span></p>
+<p class="rvps4"><img alt="" style="padding : 1px;" src="lib/NewItem960.png"></p>
+<p class="rvps2"><span class="rvts15">Example5</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps172"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem961.png"></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<h4 class="rvps218"><a name="rtl.default"></a><span class="rvts0"><span class="rvts1184">rtl.default</span></span></h4>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">"</span><span class="rvts15">rtl.default</span><span class="rvts14">" property describes the reset value for the register</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps264">
+<table style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts15">Property name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts15">Feature</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px;">
+   <p class="rvps2"><span class="rvts15">Applicable</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 211px;">
+   <p class="rvps2"><span class="rvts15">Value</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 147px;">
+   <p class="rvps2"><span class="rvts14">rtl.default</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 144px;">
+   <p class="rvps2"><span class="rvts14">Reset value of the field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px;">
+   <p class="rvps2"><span class="rvts14">field/ register</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 211px;">
+   <p class="rvps2"><span class="rvts14">rtl.default=&lt;signal_name&gt;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps264"><span class="rvts14"><br/></span></p>
+<p class="rvps141"><span class="rvts14"><br/></span></p>
+<h5 class="rvps207"><span class="rvts0"><span class="rvts658">Example</span></span></h5>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1437.png"></p>
+<p class="rvps172"><span class="rvts15"><br/></span></p>
+<h2 class="rvps111"><a name="signals for IPXACT"></a><span class="rvts0"><span class="rvts292">Signals for IP-XACT</span></span></h2>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Now, by using </span><span class="rvts35">Signals</span><span class="rvts34"> table of IDS, user can generate one or more bus interfaces and signals interfaces at IP level. It generates a "bus definition" and an "abstraction definition" files for the specified bus in the output directory with the name of bus.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; For example, if bus is PROPRIETARY then the "bus definition" and "abstraction definition" will be as </span><span class="rvts35">PROPRIETARY_abstarction_defination.ipxact.xml</span><span class="rvts34"> and </span><span class="rvts35">PROPRIETARY_bus_defination.ipxact.xml</span><span class="rvts34">.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">&nbsp;For using this feature:</span></p>
+<p class="rvps96"><span class="rvts193">1. Buses are defined as “userDefinedBusNAme (Valid bus name)” in "Signals" template.</span></p>
+<p class="rvps96"><span class="rvts193">for example Bus1(AMBA-AXI), busIP (OCP) etc.</span></p>
+<p class="rvps72"><span class="rvts193">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps118"><span class="rvts193">&nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem1219.png"></p>
+<p class="rvps118"><span class="rvts193"><br/></span></p>
+<p class="rvps96"><span class="rvts193">Valid Buses are: AMBA-AXI, OCP, AMBA-AHB, AVALON, AMBA-APB, AMBA3-AHB-lite, WISHBONE, PROPRIETARY.&nbsp;</span></p>
+<p class="rvps118"><span class="rvts193"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+ <li class="rvps72 noindent"><span class="rvts193">All signals and buses defined in Signal table are by default created at IP level.</span></li>
+ <li class="rvps72 noindent"><span class="rvts193">If user does not want any signal defined in Signal table, to be created at IP level, using a property called </span><span class="rvts177">“export=false/0”</span><span class="rvts193"> can make it happen.&nbsp;</span></li>
+</ol>
+<p class="rvps72"><span class="rvts190"><br/></span></p>
+<h6 class="rvps213"><span class="rvts0"><span class="rvts1223">How to create multiple bus domain in IP-XACT using IDS:</span></span></h6>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside;">
+ <li class="rvps100 noindent"><span class="rvts193">Buses defined in bus domain table, should be defined in "Signals" table with same user defined name</span></li>
+</ol>
+<p class="rvps118"><img alt="" style="padding : 1px;" src="lib/NewItem1225.png"></p>
+<p class="rvps118"><span class="rvts193"><br/></span></p>
+<p class="rvps72"><img alt="" style="padding : 1px;" src="lib/NewItem1229.png"></p>
+<p class="rvps72"><span class="rvts186">&nbsp; &nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem1230.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts34">If "Bus" defined in "Signal" table is not present in Bus domain table, IDS will generate standard signal interfaces for IP level. The signal interface for "BUS3(WISHBONE)" bus in above example, is shown below-</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NewItem1231.png"></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps14"><span class="rvts34">All signals and bus signals are defined in </span><span class="rvts304">&lt;spirit:model&gt;</span><span class="rvts34">. In </span><span class="rvts304">&lt;spirit:modelParameters&gt;,</span><span class="rvts35"> </span><span class="rvts34">user can configure the address width and the bus width.&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34"><br/></span></p>
+<p class="rvps14"><span class="rvts34">&nbsp; </span><img alt="" style="padding : 1px;" src="lib/NewItem1232.png"></p>
+<p class="rvps14"><span class="rvts6"><br/></span></p>
+<h2 class="rvps111"><a name="systemrdl"></a><span class="rvts0"><span class="rvts312">Signals for SystemRDL</span></span></h2>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Now using Signals template in IDS, user gets the signals definition and connectivity specification in IDS generated SystemRDL standard.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Example: </span><a class="rvts1225" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/field_reset/field_reset.zip">IDS-NG</a><span class="rvts1226"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts1225" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/field_reset/field_reset.docx">IDS-Word</a><span class="rvts1226"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts1225" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/field_reset/field_reset.xlsx">IDS-Excel</a><span class="rvts1226"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts1225" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/field_reset/field_reset.rdl">SystemRDL</a></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<p class="rvps2"><span class="rvts35">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 727px; height : 456px; padding : 1px;" src="lib/NewItem5356.png"></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts35">IDS-NG Spreadsheet View</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 619px; height : 363px; padding : 1px;" src="lib/NewItem5357.png"></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts269">SystemRDL</span></span></h3>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts370">addrmap block1 {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; name &nbsp;= "block1 Address Map";</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; // Signals</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; </span><span class="rvts1224">signal { activelow; sync; signalwidth = 1;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts1224">&nbsp; &nbsp; &nbsp; &nbsp;desc= " This signal is sync and activelow with width 1"; } reset1;</span></p>
+<p class="rvps2"><span class="rvts1224">&nbsp; &nbsp; signal { activelow; sync; signalwidth = 1;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts1224">&nbsp; &nbsp; &nbsp; &nbsp;desc= " This signal is sync and activelow with width 1"; } signalA;</span></p>
+<p class="rvps2"><span class="rvts1224">&nbsp; &nbsp; signal { activelow; sync; signalwidth = 1; field_reset;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts1224">&nbsp; &nbsp; &nbsp; &nbsp;desc= "&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">"; } reset2;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; reg reg1 {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp;</span><span class="rvts1224">resetsignal = reset1;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; } fld[31:16] = 16'h0;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp;</span><span class="rvts1224">resetsignal = reset1;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; } fld2[15:0] = 16'h0;</span></p>
+<p class="rvps2"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; reg reg2 {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; } fld[31:16] = 16'h0;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; } fld2[15:0] = 16'h0;</span></p>
+<p class="rvps2"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; reg1 reg1 @0x0;</span></p>
+<p class="rvps2"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; reg2 reg2 @0x4;</span></p>
+<p class="rvps2"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts370">};</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Effortlessly create a professional-quality documentation website with HelpNDoc</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

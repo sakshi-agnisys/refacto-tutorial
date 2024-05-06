@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Address Calculation in IDS</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Address Calculation in IDS">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Address Calculation in IDS" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="AddressCalculationinIDS"
+		  data-hnd-context="611"
+		  data-hnd-title="Address Calculation in IDS"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="ApplicationNotes.html">Application Notes</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ApplicationNotes.html" title="Application Notes" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Alteringnamecaseformats1.html" title="Altering name case formats" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="IDSGeneratedJSONOutput.html" title="IDS Generated JSON Output " role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Address Calculation in IDS</h2>
+
+            <div class="main-content">
+                
+<p class="rvps12"><span class="rvts36">This document describes the algorithm used to calculate addresses of various elements in IDS. An element can be a register, a group of registers, a block or even a chip. An address is the location of an element on a bus as seen from the outside of a container (register group, block or chip described by an addrmap in SystemRDL). The offset of an element is relative to its parent container. If an offset is not explicitly assigned using an offset property, the compiler assigns the address according to the addressing mode specified on the command line. The address of an element from the top level addrmap is calculated by adding the element’s offset to the address of its container.&nbsp; If the element does not have a specified offset, it is calculated by adding the address of the previous element to the size of the previous element. In case there is no previous element (i.e. the current element is the first element in the container), the address of the element is the address of the container.</span></p>
+<p class="rvps12"><span class="rvts36">The foregoing algorithm is described for the compact addressing mode. There are certain additional addressing modes that are not described in this appnote.</span></p>
+<p class="rvps12"><span class="rvts36">In the following paragraphs&nbsp; we will discuss&nbsp; several possible scenarios with the explanation of how address calculation is done in IDS.&nbsp;&nbsp;</span></p>
+<h2 class="rvps305"><span class="rvts0"><span class="rvts126">Case I: When offsets are not provided by the user</span></span></h2>
+<p class="rvps2"><span class="rvts31">Example:</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp; &nbsp;reg my_reg {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; fieldwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; hw = r;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; } pin;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps11"><span class="rvts430">addrmap top {</span></p>
+<p class="rvps129"><span class="rvts430">name = "top";</span></p>
+<p class="rvps129"><span class="rvts430">my_reg my_reg1;&nbsp;</span></p>
+<p class="rvps129"><span class="rvts430">my_reg my_reg2;</span></p>
+<p class="rvps11"><span class="rvts430">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts36">In this case, when offsets are not provided by the user, IDS calculates the offsets of the element relative to its parent container. In the above example, there is a register instantiated twice in an addrmap. As the register’s width is 32, so the first register, my_reg1, occupies 0x0 to 0x3 while my_reg2 occupies the 0x4 to 0x7 address locations.</span></p>
+<p class="rvps12"><span class="rvts36">In this case the </span><span class="rvts31">regalign and fullalign UDP, </span><span class="rvts36">addressing remains the same i.e my_reg1 occupies 0x0 to 0x03 while my_reg2 occupies 0x4 to 0x7 address.</span></p>
+<h2 class="rvps305"><span class="rvts0"><span class="rvts126">Case II: When offsets are provided by the user</span></span></h2>
+<p class="rvps2"><span class="rvts31">Example:</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp; &nbsp;reg my_reg {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; fieldwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; hw = r;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; } pin;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps11"><span class="rvts430">addrmap top {</span></p>
+<p class="rvps84"><span class="rvts430">name = "top";</span></p>
+<p class="rvps84"><span class="rvts430">my_reg my_reg1 @0x10;&nbsp;</span></p>
+<p class="rvps84"><span class="rvts430">my_reg my_reg2 @0x15;</span></p>
+<p class="rvps84"><span class="rvts430">my_reg my_reg3;&nbsp;</span></p>
+<p class="rvps11"><span class="rvts430">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts36">In this case when offsets are provided by the user then IDS calculates addresses as per the offsets specified. In the above example, three instances of the register, my_reg, are created in the top addrmap. Offset value of 0x10 is specified for my_reg1 instance so, this register occupies address space from 0x10 to 0x13. The offset value specified for my_reg2 is 0x15 but the preceding register occupies address space till 0x13, so the 0x14 location remains as an empty space and my_reg2 occupies the 0x15 to 0x18 address space. As there is no offset specified for my_reg3, so IDS allocates the next available address location after the preceding register to&nbsp; my_reg3 i.e. from 0x19 to 0x1C address space.</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps12"><span class="rvts31">In case of Regalign :</span><span class="rvts36">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts36">In this case it throws the error at generation as the regwidth is 32(and regalign specifies that the components are packed so each component’s start address is a multiple of its size (in bytes).) because of that the starting address will be 0,4,8,...&nbsp; and as the offset of my_reg1 is 16 (0x10)&nbsp; which is multiple of 4 so the offset of my_reg2 should be 32(0x20) or more to prevent from the overlap error and the last register my_reg3 which has no default offset, starts just after the my_reg2. Like if it happens then my_reg1 starts at 0x10 and ends at 0x13 then empty space formed upto 0x19 then my_reg2 starts at 0x20 and ends at 0x23 and my_reg3 ranges from 0x24 to 0x27.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts31">In case of Fullalign:</span><span class="rvts36">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts36">In this case my_reg1 register address starts with 0x10 and end to 0x13 and the 0x14 address becomes the empty address at 0x14 then my_reg2 register address starts with 0x15 and ends to 0x18 and then by adding 4(as regwidth is 32bit) at the last address the my_reg3 register address starts at 0x1C and ends to 0x1F.</span></p>
+<h3 class="rvps260"><span class="rvts0"><span class="rvts284">Overlap scenario for case II:</span></span></h3>
+<p class="rvps12"><span class="rvts36">Overlap can be detected for the case II when the offset of </span><span class="rvts31">my_reg2</span><span class="rvts36"> would be between 0x10 to 0x13 as </span><span class="rvts31">my_reg1</span><span class="rvts36"> already occupies these address locations.</span></p>
+<h2 class="rvps305"><span class="rvts0"><span class="rvts126">Case III: When the user specifies size UDP for an addrmap</span></span></h2>
+<p class="rvps2"><span class="rvts31">Example:</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp; &nbsp;reg my_reg {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; fieldwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; hw = r;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; } pin;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps2"><span class="rvts430">reg reg7 {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; fieldwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; hw = r;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; } uart;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps22"><span class="rvts430">addrmap blk1 {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; name = "top";</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; my_reg my_reg1 @0x10;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; reg7 my_reg2;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; size=0x64;&nbsp;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps22"><span class="rvts430">addrmap blk2 {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; name = "top";</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; my_reg my_reg1;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; my_reg my_reg2;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; size=0x128;&nbsp;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps22"><span class="rvts430">addrmap top {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430">chip=true;</span></p>
+<p class="rvps129"><span class="rvts430">blk1 blk1 @0x10;&nbsp;</span></p>
+<p class="rvps129"><span class="rvts430">blk2 blk2;&nbsp;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts36">In this case, the user has specified the size UDP in the addrmaps. In the above example mentioned size UDP applied on the addrmap. Both the addrmap blk1 and blk2 have two registers of 32 bit each. Now the addrmap “blk1” started with offset 0x10 as there are 2 registers so blk1 occupies 0x10 to 0x17. But as size UDP applied so </span><span class="rvts111">blk1 starts occupying the spaces from 0x10 and as the size is 0x64 so blk1 occupies the address till 0x73. So the start address of blk1 is 0x10 and endaddress of blk1 is 0x73 and when we substrate the endaddress from the start address and then add 1 into the result then, we will get the size i.e 0x64</span><span class="rvts36">. So “blk1” will occupy 0x10 to 0x73 space. The next block “blk2” will start occupying the location from 0x74 and will occupy till 0x202 as there are two registers only so 0x74 to 0x7C spaces occupied by registers and the size UDP applied on blk2 as well. So “blk2” occupied 0x74 to 0x19C.</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps12"><span class="rvts31">In Case of Regalign and Fullalign:</span></p>
+<p class="rvps12"><span class="rvts36">In this case as per the regalign and fullalign property the size of the components rounds off to the nearest power of 2. As the size of blk1 is 0x64(100) which will become 0x80(128) which is nearest power of 2 now the blk1 starts with address 0x10 as given by the user and ends to 0x8f(143) ((0x80+0x10)-1=0x8F(143)) then blk2 starts just after blk1 with 0x90 and ends to 0x28f just like the blk1 the size of blk2 also goes to the nearest power of 2, 0x128(296) and its nearest power of 2 is 512(0x200) where 28f(655=512(0x200)+0x90(144)-1).</span></p>
+<h3 class="rvps260"><span class="rvts0"><span class="rvts284">Overlap scenario for case III:</span></span></h3>
+<p class="rvps2"><span class="rvts36">Overlap can be detected for the case III when the offset of </span><span class="rvts31">blk2 </span><span class="rvts36">would be provided between the 0x10 to 0x73 as </span><span class="rvts31">blk1</span><span class="rvts36"> already occupied these address locations.</span></p>
+<h2 class="rvps305"><span class="rvts0"><span class="rvts126">Case IV: When the user ref IP-XACT file in an addrmap</span></span></h2>
+<p class="rvps2"><span class="rvts36">In the case when an IP-XACT file is referred to in RDL, there are two possible scenarios.&nbsp;</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside;">
+ <li class="rvps2 noindent"><span class="rvts36">When the IP-XACT component is referred to in RDL.&nbsp;</span></li>
+ <li class="rvps2 noindent"><span class="rvts36">When the IP-XACT addressBlock is referred to in RDL.</span></li>
+</ol>
+<p class="rvps11"><span class="rvts125">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts31">Example1: When IP-XACT component is referred.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430"><br/></span></p>
+<p class="rvps2"><span class="rvts430">reg my_reg {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; fieldwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; hw = r;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; } pin;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps2"><span class="rvts430">reg reg7 {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; fieldwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; hw = r;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; } uart;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps22"><span class="rvts430">addrmap blk1 {</span></p>
+<p class="rvps2"><span class="rvts803">refpath=”XML_FILE.XML:XML_NAME”;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps22"><span class="rvts430">addrmap blk2 {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; name = "top";</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; my_reg my_reg1;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; my_reg my_reg2;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; size=0x128;&nbsp;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps22"><span class="rvts430">addrmap top {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430">chip=true;</span></p>
+<p class="rvps129"><span class="rvts430">blk1 blk1 @0x10;&nbsp;</span></p>
+<p class="rvps129"><span class="rvts430">blk2 blk2;&nbsp;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">IP-XACT file&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts430">&lt;spirit:component xmlns:spirit="&lt;path&gt;" &gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&lt;spirit:vendor&gt;XYZ&lt;/spirit:vendor&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&lt;spirit:library&gt;XYZ&lt;/spirit:library&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&lt;spirit:name&gt;</span><span class="rvts803">XML_NAME</span><span class="rvts430">&lt;/spirit:name&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&lt;spirit:memoryMaps&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:memoryMap&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:name&gt;MY_XML_MEM_MAP&lt;/spirit:name&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;</span><span class="rvts803">&nbsp;&nbsp;&nbsp;&lt;spirit:addressBlock&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:name&gt;</span><span class="rvts803">MY_XML_ADDR_BLOCK</span><span class="rvts430">&lt;/spirit:name&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:baseAddress&gt;0x100&lt;/spirit:baseAddress&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:range&gt;0xF0&lt;/spirit:range&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:width&gt;32&lt;/spirit:width&gt;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts36">In the case when a component of an IP-XACT file is referred to in an RDL, then the baseAddress effect is seen in the address of the block. Now in above scenario baseAddress of 0x100 and offset of the block given as 0x10 so ” blk1” starts from 0x10 address and addressBlock’s starting would be 0x110 (as it’s baseAddress is 0x100 and offset of 0x10 given to test1 block in RDL).&nbsp;</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps12"><span class="rvts1390">Note: </span><span class="rvts36">Range attribute of IP-XACT works as size UDP. The range of the addressBlock is given as 0xF0 so this is equivalent to&nbsp; size UDP in RDL. Let's say in IP XACT value of range attribute is 0xF0 while the baseAddress is 0x100 and the same IP XACT file is referred to in the RDL (example 1 case iv). In this case the blk1 starts occupying from 0x110 (baseAddress in IP-XACT is 0x100 and offset in RDL 0x10) and will be occupied till ((0x110+range) - 1) i.e&nbsp; 0x1FF.</span></p>
+<p class="rvps2"><span class="rvts36">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts31">Example2: When IP-XACT addressBlock is referred.&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430"><br/></span></p>
+<p class="rvps2"><span class="rvts430">reg my_reg {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; fieldwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; hw = r;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; } pin;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps2"><span class="rvts430">reg reg7 {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; fieldwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; hw = r;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; } uart;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps22"><span class="rvts430">addrmap blk1 {</span></p>
+<p class="rvps2"><span class="rvts430">refpath=”XML_FILE.XML:MY_XML_ADDR_BLOCK”;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps22"><span class="rvts430">addrmap blk2 {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; name = "top";</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; my_reg my_reg1;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; my_reg my_reg2;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; size=0x128;&nbsp;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps22"><span class="rvts430">addrmap top {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430">chip=true;</span></p>
+<p class="rvps129"><span class="rvts430">blk1 blk1 @0x10;&nbsp;</span></p>
+<p class="rvps129"><span class="rvts430">blk2 blk2;&nbsp;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">IP-XACT file&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts430">&lt;spirit:component xmlns:spirit="&lt;path&gt;" &gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&lt;spirit:vendor&gt;XYZ&lt;/spirit:vendor&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&lt;spirit:library&gt;XYZ&lt;/spirit:library&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&lt;spirit:name&gt;</span><span class="rvts803">XML_NAME</span><span class="rvts430">&lt;/spirit:name&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&lt;spirit:memoryMaps&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:memoryMap&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:name&gt;MY_XML_MEM_MAP&lt;/spirit:name&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;</span><span class="rvts803">&nbsp;&nbsp;&nbsp;&lt;spirit:addressBlock&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:name&gt;</span><span class="rvts803">MY_XML_ADDR_BLOCK</span><span class="rvts430">&lt;/spirit:name&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:baseAddress&gt;0x100&lt;/spirit:baseAddress&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:range&gt;0xF0&lt;/spirit:range&gt;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:width&gt;32&lt;/spirit:width&gt;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts36">When the addressBlock is referred to in the RDL file then there should be no effect of baseAddress in the address calculation. The address calculation should be based on the offset given to the block in the RDL file.</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts47">Note:</span><span class="rvts55"> </span><span class="rvts36">Range will work the same as earlier.&nbsp; In this case also the range will work as a size UDP.</span><span class="rvts55">&nbsp;</span></p>
+<h2 class="rvps305"><span class="rvts0"><span class="rvts126">Case V: Jumbled offset provided in input RDL file</span></span></h2>
+<p class="rvps2"><span class="rvts31">Example:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430"><br/></span></p>
+<p class="rvps2"><span class="rvts430">reg my_reg {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; fieldwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp; hw = r;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; } pin;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps22"><span class="rvts430">addrmap top {</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; name = "top";</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; my_reg my_reg1 @0x15;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; my_reg my_reg2 @0x10;</span></p>
+<p class="rvps2"><span class="rvts430">&nbsp;&nbsp; my_reg my_reg3 @0x4;&nbsp;</span></p>
+<p class="rvps22"><span class="rvts430">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts36">In the above case, jumbled offsets are provided i.e my_reg3 placed at last but offset 0x4 provided to it. Default behavior of IDS is that it will generate collateral in the same sequence as given in input RDL file. So as per default behavior, IDS will throw an error of </span><span class="rvts55">“Overlap detected”</span><span class="rvts36"> in this case. This is because IDS has already created empty address space from 0x0 to 0x14. If the user wants to generate the blocks as per the offsets provided (jumbled offset) then the user needs to add the “</span><span class="rvts55">-addr_sort</span><span class="rvts36">” switch in the command line option. This will change the default behavior of IDS and now IDS generates blocks sorted in ascending order as per their offsets.&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts620"></span><br/><span class="rvts238"><br/></span></p>
+<p class="rvps12"><span class="rvts47">NOTE: </span><span class="rvts36">In all the cases mentioned above, IDS throws the “Overlap Detected” error only when a component tries to place on the address locations which are already occupied by some other component.&nbsp;</span><span class="rvts170">&nbsp;</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour">Easily create Help documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

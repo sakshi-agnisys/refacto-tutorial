@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>TLM2.0 support in systemC alt2</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TLM2.0 support in systemC alt2">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="TLM2.0 support in systemC alt2" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="TLM20supportinsystemCalt2"
+		  data-hnd-context="589"
+		  data-hnd-title="TLM2.0 support in systemC alt2"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="OutputsExports.html">Outputs/Exports</a></li><li><a href="RTL.html">RTL</a></li><li><a href="SystemC.html">SystemC</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="SystemC.html" title="SystemC" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="DuologSystemC.html" title="Duolog SystemC" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="BusSupportinIDS.html" title="Bus Support in IDS" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>TLM2.0 support in systemC alt2</h2>
+
+            <div class="main-content">
+                
+<p class="rvps126"><span class="rvts34">IDS supports SystemC non-synthesizable register model through output “rtl_sysc_alt2”. It describes the complete register map, with register fields, access policy, register offsets, and access API’s.&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps126"><span class="rvts34">TLM-2.0 is a transaction level modeling standard from Open SystemC Initiative (OSCI) . </span><span class="rvts685">The focus of TLM is on the communication between the processes rather than the algorithms performed by the processes themselves. In TLM-2.0, an initiator is a module that initiates the new transactions, and a target is a module that responds to transactions initiated by other modules. A transaction is a C++ structure object passed between initiators and targets using sockets.&nbsp;</span></p>
+<p class="rvps126"><span class="rvts685">The advantage of a TLM 2.0 connection compared to a register bus connection is that the former is faster as individual events on the bus are not modeled. This is suitable for performance evaluation of the SoCs.</span></p>
+<p class="rvps2"><span class="rvts60"></span><br/><span class="rvts60"><br/></span></p>
+<p class="rvps12"><span class="rvts34">The TLM2.0 update in “rtl_sysc_alt2” output will be supported with IDS </span><span class="rvts35">-top_property “</span><span class="rvts62">virtual_prototype=true</span><span class="rvts35">”</span><span class="rvts34">.&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts60"></span><br/><span class="rvts60"><br/></span></p>
+<div class="rvps2">
+<table cellpadding="6" style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts681">Property Name&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts681">Possible Value</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts681">Default</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts681">Applies to template</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts682">Output</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts682">Is Hierarchical</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts683">virtual_prototype</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts579">true/false</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts579">false</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts579">top property</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps12"><span class="rvts579">rtl_sysc_alt2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts579">no</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts107">Note:</span><span class="rvts74"> </span><span class="rvts34">Supported for Block and Chip hierarchy. In the case of Chip, separate block level files are generated. No change is made in the register block and it is the same as generated for rtl_sysc_alt2 output , except for adding a TLM target wrapper module and missing register and access definition files.</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts34">Command line :</span><span class="rvts128">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts128"><br/></span></p>
+<div class="rvps12">
+<table width="100%" cellpadding="10" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps12"><span class="rvts128">%IDSbatch &lt;input case&gt; -out rtl_sysc_alt2 -dir &lt;out dir&gt; -top_property “virtual_prototype=true”</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<h3 class="rvps260"><span class="rvts0"><span class="rvts686">TLM-2.0 target module:</span></span></h3>
+<p class="rvps2"><span class="rvts451"><br/></span></p>
+<p class="rvps2"><span class="rvts451">struct Block1_tlm2_wrapper: sc_module</span></p>
+<p class="rvps2"><span class="rvts451">{</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;tlm_utils::simple_slave_socket&lt;Block1_tlm2_wrapper&gt; socket; </span><span class="rvts684">// TLM-2.0 socket for target module</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts684">&nbsp;</span><span class="rvts451">&nbsp;enum { Block1_size = 0x18 }; </span><span class="rvts684">// Block1 size</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;SC_CTOR(Block1_tlm2_wrapper)</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;: socket("socket")</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;{ </span><span class="rvts684">// constructor logic</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;virtual void b_transport( tlm::tlm_generic_payload&amp; trans, sc_time&amp; delay) </span><span class="rvts684">// TLM-2 transport method</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;{ tlm::tlm_command cmd = trans.get_command();</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;sc_dt::uint64&nbsp; &nbsp; adr = trans.get_address();</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;unsigned char* &nbsp; ptr = trans.get_data_ptr();</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;unsigned int &nbsp; &nbsp; len = trans.get_data_length();</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;unsigned char* &nbsp; byt = trans.get_byte_enable_ptr();</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;unsigned int &nbsp; &nbsp; byte_enb = trans.get_byte_enable_length();</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;unsigned int &nbsp; &nbsp; wid = trans.get_streaming_width();</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;if (adr &gt;= sc_dt::uint64(Block1_size)) {</span></p>
+<p class="rvps2"><span class="rvts451">trans.set_response_status( tlm::TLM_ADDRESS_ERROR_RESPONSE );</span></p>
+<p class="rvps2"><span class="rvts451">return;</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </span><span class="rvts684">// Error Response if incoming transaction address exceed Block size (address overflow)</span></p>
+<p class="rvps2"><span class="rvts451">if (len &gt; 4 || wid &lt; len) {</span></p>
+<p class="rvps2"><span class="rvts451">trans.set_response_status( tlm::TLM_BURST_ERROR_RESPONSE );</span></p>
+<p class="rvps2"><span class="rvts451">return;</span></p>
+<p class="rvps2"><span class="rvts451">} </span><span class="rvts684">// Error Response to indicate target does not support streaming width (burst)</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp; if ( cmd == tlm::TLM_READ_COMMAND ){ </span><span class="rvts684">// Read logic&nbsp;</span></p>
+<p class="rvps2"><span class="rvts451">int readBackVal;</span></p>
+<p class="rvps2"><span class="rvts451">if (byt == 0) { </span><span class="rvts684">// If byte enables not set</span></p>
+<p class="rvps2"><span class="rvts451">readBackVal = Block1_inst.readBlock1_intf(adr);</span></p>
+<p class="rvps2"><span class="rvts451">} else {&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts684">// With byte enables</span></p>
+<p class="rvps2"><span class="rvts451">readBackVal = Block1_inst.readByteLanesBlock1_intf(adr, byte_enb);</span></p>
+<p class="rvps2"><span class="rvts451">}</span></p>
+<p class="rvps2"><span class="rvts451">memcpy(ptr, &amp;readBackVal, len);</span></p>
+<p class="rvps2"><span class="rvts451">}</span></p>
+<p class="rvps2"><span class="rvts451">else if ( cmd == tlm::TLM_WRITE_COMMAND ) { </span><span class="rvts684">// Write logic</span></p>
+<p class="rvps2"><span class="rvts451">int writeVal;</span></p>
+<p class="rvps2"><span class="rvts451">memcpy(&amp;writeVal, ptr, len);</span></p>
+<p class="rvps2"><span class="rvts451">if (byt == 0) { </span><span class="rvts684">// If byte enables not set</span></p>
+<p class="rvps2"><span class="rvts451">Block1_inst.writeByteLanesBlock1_intf(adr, 0xF, writeVal);</span></p>
+<p class="rvps2"><span class="rvts451">} else {&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts684">// With byte enables</span></p>
+<p class="rvps2"><span class="rvts451">Block1_inst.writeByteLanesBlock1_intf(adr, byte_enb, writeVal);</span></p>
+<p class="rvps2"><span class="rvts451">}</span></p>
+<p class="rvps2"><span class="rvts451">}</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;trans.set_response_status( tlm::TLM_OK_RESPONSE ); </span><span class="rvts684">// response status to indicate successful completion of transaction</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;}</span></p>
+<p class="rvps2"><span class="rvts451">&nbsp;&nbsp;Block1 Block1_inst;</span><span class="rvts684"> // Block instance</span></p>
+<p class="rvps2"><span class="rvts451">};</span></p>
+<h3 class="rvps260"><span class="rvts0"><span class="rvts686">How is time being modeled:</span></span></h3>
+<h3 class="rvps260"><span class="rvts0"><span class="rvts34">Loosely timed. The initiator communicates with target (IDS block) via a blocking transport interface. </span></span><span class="rvts0"><span class="rvts685">The blocking transport call carries a timing value, which is added to the current simulation time to determine the time at which the transaction is to be processed. This value is passed by the initiator and read by the target.</span></span></h3>
+<h4 class="rvps261"><span class="rvts0"><span class="rvts687">Target blocking transport method definition:</span></span></h4>
+<p class="rvps22"><span class="rvts451">virtual void b_transport( tlm::tlm_generic_payload&amp; trans, </span><span class="rvts684">sc_time&amp; delay</span><span class="rvts451">)&nbsp;</span></p>
+<p class="rvps22"><span class="rvts451">{</span></p>
+<p class="rvps22"><span class="rvts451">………</span></p>
+<p class="rvps22"><span class="rvts451">};</span></p>
+<h3 class="rvps260"><span class="rvts0"><span class="rvts686">What type of Registers are handled:</span></span></h3>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 32px; list-style-position: outside;">
+ <li class="rvps2 noindent"><span class="rvts34">RW</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">RO&nbsp;</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">WO</span></li>
+</ol>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Note:</span><span class="rvts34"> Other field Writable and Readable accesses are mapped to to the above generic access types. Access Side Effects are not currently handled.</span></p>
+<p class="rvps2"><span class="rvts29"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-word-docx-file-to-an-epub-or-kindle-ebook/">Converting Word Documents to eBooks: A Step-by-Step Guide with HelpNDoc</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

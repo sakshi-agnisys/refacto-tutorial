@@ -1,0 +1,599 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Struct template in Headers</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Advanced Topics">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Struct template in Headers">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Struct template in Headers" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="StructtemplateinHeaders"
+		  data-hnd-context="405"
+		  data-hnd-title="Struct template in Headers"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AdvancedTopics.html">Advanced Topics</a></li><li><a href="Structs.html">Structs</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Structs.html" title="Structs" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Structs.html" title="Structs" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="UnalignedErrors.html" title="Unaligned Errors" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Struct template in Headers</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><a name="struct_sv_c"></a><span class="rvts198">Struct template for Svheader and Cheader&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">For Svheader velocity template is used and for Cheader normal command line is used. Struct is supported only for chip level and block level testcase.</span></p>
+<p class="rvps12"><span class="rvts14">For svheader there are two cases which are defined below:</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Case 1</span></p>
+<p class="rvps2"><span class="rvts16">&nbsp;</span></p>
+<div class="rvps143">
+<table width="624" cellpadding="0" style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td colspan="4" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 243px; height: 17px;">
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+  </td>
+  <td colspan="3" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 173px; height: 17px;">
+   <p class="rvps3"><span class="rvts505">Struct1</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 104px; height: 17px;">
+   <p class="rvps3"><span class="rvts1229">struct &nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 21px; height : 21px; padding : 1px;" src="lib/NewItem2990.png"><span class="rvts1229"> &nbsp; &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 104px; height: 17px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 156px; height: 17px;">
+   <p class="rvps3"><span class="rvts505">line length</span></p>
+  </td>
+  <td colspan="4" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #ffffff; vertical-align: top; width: 156px; height: 17px;">
+   <p class="rvps503"><span class="rvts505">128</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 156px; height: 17px;">
+   <p class="rvps3"><span class="rvts505">size unit</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #ffffff; vertical-align: top; width: 156px; height: 17px;">
+   <p class="rvps3"><span class="rvts505">bit</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="10" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 624px; height: 1px;">
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="10" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 624px; height: 1px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="10" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 624px;">
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 97px;">
+   <p class="rvps3"><span class="rvts505">Size</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 72px;">
+   <p class="rvps3"><span class="rvts505">name</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 78px;">
+   <p class="rvps3"><span class="rvts505">value</span></p>
+  </td>
+  <td colspan="5" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 378px;">
+   <p class="rvps3"><span class="rvts505">description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 97px;">
+   <p class="rvps3"><span class="rvts505">2</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 72px;">
+   <p class="rvps3"><span class="rvts505">F5</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 78px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+  <td colspan="5" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 378px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 97px;">
+   <p class="rvps3"><span class="rvts505">48</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 72px;">
+   <p class="rvps3"><span class="rvts505">T2</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 78px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+  <td colspan="5" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 378px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 97px;">
+   <p class="rvps3"><span class="rvts505">48</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 72px;">
+   <p class="rvps3"><span class="rvts505">Q5</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 78px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+  <td colspan="5" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 378px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">/*////////////////// Struct: &nbsp;</span><span class="rvts505">Struct1 </span><span class="rvts6">///////////////////*/</span></p>
+<p class="rvps2"><span class="rvts356">typedef struct {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; union {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; #ifdef IDS_BIG_ENDIAN</span></p>
+<p class="rvps22"><span class="rvts356">&nbsp; struct {&nbsp;</span></p>
+<p class="rvps129"><span class="rvts356">hwint F5 : 2;&nbsp;</span></p>
+<p class="rvps129"><span class="rvts356">hwint T2 : 48;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">hwint Q5 : 48;</span></p>
+<p class="rvps129"><span class="rvts356">hwint padding : 30;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp;} word0_bf;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; #else</span></p>
+<p class="rvps22"><span class="rvts356">&nbsp; struct {</span></p>
+<p class="rvps129"><span class="rvts356">hwint padding : 30;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps129"><span class="rvts356">hwint Q5 : 48;</span></p>
+<p class="rvps129"><span class="rvts356">hwint T2 : 48;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">hwint F5 : 2;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp;} word0_bf;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; #endif</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; hwint32 word1;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; };</span></p>
+<p class="rvps2"><span class="rvts356">} Struct1;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">//////// SV header</span></p>
+<p class="rvps2"><span class="rvts356">typedef struct packed {</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">logic [1:0] F5;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">logic [47:0] T2;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">logic [47:0} Q5;</span></p>
+<p class="rvps2"><span class="rvts356">} Struct1;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts351">If padding&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts356">typedef struct packed {</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">Struct1 Struct1_data;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">logic [29:0] padding;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">} Struct1_padded;</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Case 2</span></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<div class="rvps143">
+<table width="624" cellpadding="0" style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td colspan="4" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 243px; height: 17px;">
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+  </td>
+  <td colspan="3" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 173px; height: 17px;">
+   <p class="rvps3"><span class="rvts505">Struct2</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 104px; height: 17px;">
+   <p class="rvps3"><span class="rvts1229">struct &nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 21px; height : 21px; padding : 1px;" src="lib/NewItem2989.png"><span class="rvts1229"> &nbsp; &nbsp;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 104px; height: 17px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 156px; height: 17px;">
+   <p class="rvps3"><span class="rvts505">line length</span></p>
+  </td>
+  <td colspan="4" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #ffffff; vertical-align: top; width: 156px; height: 17px;">
+   <p class="rvps503"><span class="rvts505">600</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 156px; height: 17px;">
+   <p class="rvps3"><span class="rvts505">size unit</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #ffffff; vertical-align: top; width: 156px; height: 17px;">
+   <p class="rvps3"><span class="rvts505">byte</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="10" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 624px; height: 1px;">
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="10" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 624px; height: 1px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="10" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 624px;">
+   <p class="rvps3"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 97px;">
+   <p class="rvps3"><span class="rvts505">Size</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 72px;">
+   <p class="rvps3"><span class="rvts505">name</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 78px;">
+   <p class="rvps3"><span class="rvts505">value</span></p>
+  </td>
+  <td colspan="5" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; background-color: #f3f3f3; vertical-align: top; width: 378px;">
+   <p class="rvps3"><span class="rvts505">description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 97px;">
+   <p class="rvps3"><span class="rvts505">2</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 72px;">
+   <p class="rvps3"><span class="rvts505">F5</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 78px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+  <td colspan="5" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 378px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 97px;">
+   <p class="rvps3"><span class="rvts505">32</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 72px;">
+   <p class="rvps3"><span class="rvts505">T2</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 78px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+  <td colspan="5" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 378px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 97px;">
+   <p class="rvps3"><span class="rvts505">32</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 72px;">
+   <p class="rvps3"><span class="rvts505">Q5</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 78px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+  <td colspan="5" style="border-width : 1px; border-color: #d9d9d9; border-style: solid; vertical-align: top; width: 378px;">
+   <p class="rvps3"><span class="rvts505"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">/*////////////////// Struct : &nbsp;</span><span class="rvts505">Struct2 </span><span class="rvts6">///////////////////*/</span></p>
+<p class="rvps2"><span class="rvts356">typedef struct {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; union {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; #ifdef IDS_BIG_ENDIAN</span></p>
+<p class="rvps22"><span class="rvts356">&nbsp; struct {&nbsp;</span></p>
+<p class="rvps129"><span class="rvts356">hwint F5 : 16;&nbsp;</span></p>
+<p class="rvps129"><span class="rvts356">hwint T2 : 256;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">hwint Q5 : 256;</span></p>
+<p class="rvps129"><span class="rvts356">hwint padding : 72;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp;} word0_bf;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; #else</span></p>
+<p class="rvps22"><span class="rvts356">&nbsp; struct {</span></p>
+<p class="rvps129"><span class="rvts356">hwint padding : 72;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps129"><span class="rvts356">hwint Q5 : 256;</span></p>
+<p class="rvps129"><span class="rvts356">hwint T2 : 256;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">hwint F5 : 16;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp;} word0_bf;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; #endif</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; hwint32 word2;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; };</span></p>
+<p class="rvps2"><span class="rvts356">} Struct2;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; ///////SV header /////////</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts356">typedef struct packed {</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">logic [15:0] F5;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">logic [255:0] T2;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">logic [255:0} Q5;</span></p>
+<p class="rvps2"><span class="rvts356">} &nbsp;Struct1;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In case of padding,</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts356">typedef struct packed {</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">Struct1 Struct1_data;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">logic [71:0] padding;</span></p>
+<p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">} Struct1_padded;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts14">If testcase is a chip level testcase then, use “chip:” before velocity template name.</span></p>
+<p class="rvps2"><span class="rvts14">e.g., if velocity file name is “xyz” then command line is</span></p>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2"><span class="rvts26">IDSbatch &lt;input-file&gt; -velocity chip:xyz&nbsp;</span><span class="rvts14">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">For Block level testcase command line is</span></p>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2"><span class="rvts26">IDSbatch &lt;input-file&gt; -velocity “xyz”</span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts25"><br/></span></p>
+<p class="rvps2"><span class="rvts107">Structs generated for the structure template when present inside chip as well as block</span></p>
+<p class="rvps2"><a name="chipTemp"></a><span class="rvts107"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Example -&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34">Suppose we have a chip level testcase with struct inside chip as well as block as follows -</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem3465.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts386">Code</span></p>
+<p class="rvps2"><span class="rvts386"><br/></span></p>
+<p class="rvps2"><span class="rvts386">SVHeader</span></p>
+<p class="rvps2"><span class="rvts386"><br/></span></p>
+<p class="rvps126"><span class="rvts356">typedef struct packed {</span><br/><span class="rvts356">logic [9:0] S1;&nbsp;</span><br/><span class="rvts356">logic [19:0] S2;&nbsp;</span><br/><span class="rvts356">} Struct1;</span></p>
+<p class="rvps126"><span class="rvts356">typedef struct packed {</span><br/><span class="rvts356">Struct1 Struct1_data;&nbsp;</span><br/><span class="rvts356">logic [69:0] padding;&nbsp;</span><br/><span class="rvts356">} Struct1_padded;</span></p>
+<p class="rvps126"><span class="rvts356">typedef struct packed {</span><br/><span class="rvts356">logic [29:0] S1;&nbsp;</span><br/><span class="rvts356">logic [59:0] S2;&nbsp;</span><br/><span class="rvts356">} Struct2;</span></p>
+<p class="rvps126"><span class="rvts356">typedef struct packed {</span><br/><span class="rvts356">Struct2 Struct2_data;&nbsp;</span><br/><span class="rvts356">logic [9:0] padding;&nbsp;</span><br/><span class="rvts356">} Struct2_padded;</span></p>
+<p class="rvps126"><span class="rvts15"><br/></span></p>
+<p class="rvps126"><span class="rvts15">CHEADER -</span><span class="rvts14">&nbsp;</span></p>
+<p class="rvps126"><span class="rvts356">/*////////////////// Struct : Struct1 ///////////////////*/</span></p>
+<p class="rvps126"><span class="rvts356">typedef struct {</span><br/><span class="rvts356">union {</span><br/><span class="rvts356">#ifdef IDS_BIG_ENDIAN</span><br/><span class="rvts356">struct {</span><br/><span class="rvts356">hwint S1 : 10;</span><br/><span class="rvts356">hwint S2 : 20;</span><br/><span class="rvts356">hwint padding : 70;</span><br/><span class="rvts356">} word0_bf;</span><br/><span class="rvts356">#else</span><br/><span class="rvts356">struct {</span><br/><span class="rvts356">hwint padding : 70;</span><br/><span class="rvts356">hwint S2 : 20;</span><br/><span class="rvts356">hwint S1 : 10;</span><br/><span class="rvts356">} word0_bf;</span><br/><span class="rvts356">#endif</span><br/><span class="rvts356">hwint32 word0;</span><br/><span class="rvts356">};</span><br/><span class="rvts356">}Struct1;</span></p>
+<p class="rvps126"><span class="rvts356"><br/></span></p>
+<p class="rvps126"><span class="rvts356">/*////////////////// Struct : Struct2 ///////////////////*/</span></p>
+<p class="rvps126"><span class="rvts356">typedef struct {</span><br/><span class="rvts356">union {</span><br/><span class="rvts356">#ifdef IDS_BIG_ENDIAN</span><br/><span class="rvts356">struct {</span><br/><span class="rvts356">hwint S1 : 30;</span><br/><span class="rvts356">hwint S2 : 60;</span><br/><span class="rvts356">hwint padding : 10;</span><br/><span class="rvts356">} word0_bf;</span><br/><span class="rvts356">#else</span><br/><span class="rvts356">struct {</span><br/><span class="rvts356">hwint padding : 10;</span><br/><span class="rvts356">hwint S2 : 60;</span><br/><span class="rvts356">hwint S1 : 30;</span><br/><span class="rvts356">} word0_bf;</span><br/><span class="rvts356">#endif</span><br/><span class="rvts356">hwint32 word0;</span><br/><span class="rvts356">};</span><br/><span class="rvts356">}Struct2;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts351"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/advanced-project-analyzer/">HelpNDoc's Project Analyzer: Incredible documentation assistant</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

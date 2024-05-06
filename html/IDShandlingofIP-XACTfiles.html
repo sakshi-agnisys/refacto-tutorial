@@ -1,0 +1,1268 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>IDS handling of IP-XACT files</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Outputs/Exports">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IDS handling of IP-XACT files">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="IDS handling of IP-XACT files" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="IDShandlingofIP-XACTfiles"
+		  data-hnd-context="569"
+		  data-hnd-title="IDS handling of IP-XACT files"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="OutputsExports.html">Outputs/Exports</a></li><li><a href="IndustryStandards.html">Industry Standards</a></li><li><a href="IP-XACT1.html">IP-XACT</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="IP-XACT1.html" title="IP-XACT" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="IP-XACT1.html" title="IP-XACT" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="SystemRDL.html" title="SystemRDL" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>IDS handling of IP-XACT files</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<h1 class="rvps195"><span class="rvts0"><span class="rvts35">IP-XACT supported</span></span></h1>
+<p class="rvps2"><span class="rvts34">Following versions are supported by IDesignSpec (IDS):</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">1.4 (spirit consortium)</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">1.5 | 1685-2009 (spirit consortium)</span></li>
+ <li class="rvps35 noindent"><span class="rvts34">1685-2014</span></li>
+</ul>
+<p class="rvps35"><span class="rvts34">IP-XACT files can be used to describe a component or a design. Components are connected in a design.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<h1 class="rvps195"><span class="rvts0"><span class="rvts35">Structure of IP-XACT component file</span></span></h1>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<div class="rvps2">
+<table style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps3"><span class="rvts35">IP-XACT-1.4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts35">IDesignSpec</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps3"><span class="rvts34">&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts35">Default</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&lt;spirit:component&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">Block</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &lt;spirit:memoryMap&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; Section</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &lt;spirit:addressBlock&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; Section</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &lt;spirit:register&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; Register</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;spirit:field&gt;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Field</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts34"></span><br/><span class="rvts34"><br/></span></p>
+<div class="rvps2">
+<table style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps3"><span class="rvts35">IP-XACT-2014</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps3"><span class="rvts35">IP-XACT-2009</span></p>
+  </td>
+  <td colspan="2" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps3"><span class="rvts35">IDesignSpec</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps3"><span class="rvts34">&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps3"><span class="rvts34">&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: middle;">
+   <p class="rvps3"><span class="rvts35">-ipxact_comp</span><span class="rvts34"> board</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps3"><span class="rvts35">Default</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&lt;ipxact:component&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&lt;spirit:component&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">Board</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">Block</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &lt;ipxact:memoryMap&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &lt;spirit:memoryMap&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; Chip</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; Section</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &lt;ipxact:addressBlock&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &lt;spirit:addressBlock&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; Block</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; Section</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ipxact:registerFile&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &lt;spirit:registerFile&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; Section</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; Section</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ipxact:register&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &lt;spirit:register&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; Register</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; Register</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ipxact:field&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;spirit:field&gt;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Field</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: bottom;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Field</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<h1 class="rvps195"><span class="rvts0"><span class="rvts35">Referencing IP-XACT components</span></span></h1>
+<h1 class="rvps195"><span class="rvts0"><span class="rvts35"><br/></span></span></h1>
+<p class="rvps35"><span class="rvts34">IDS can refer to IP-XACT components. The input format of the IDS file determines how the component is referenced.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<h2 class="rvps324"><span class="rvts0"><span class="rvts35">Default referencing</span></span></h2>
+<h2 class="rvps324"><span class="rvts0"><span class="rvts35"><br/></span></span></h2>
+<p class="rvps35"><span class="rvts34">IP-XACT component is referenced as a block in IDS chip. Another hierarchy inside IP-XACT component is treated as section present above registers. If offset (offset = 0x81000) is provided at the referred component, then absolute address of the addressBlock is the sum of addressoffset and offset provided at referred block{0x81000 + 0x0 = 0x81000}.</span></p>
+<div class="rvps2">
+<table style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Address</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Size</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Hierarchy</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x0000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x82000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">IDS Chip</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x1000&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; Block 🡪 IP-XACT component {refer offset&nbsp; </span><span class="rvts346">@0x81000</span><span class="rvts34">}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34"><br/></span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section : IP-XACT memoryMap</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x0 = 0x81000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x1000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section : IP-XACT addressBlock {</span><span class="rvts346">@0</span><span class="rvts34"> ; Size = 0x1000)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x4 = 0x81004</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register : IP-XACT register {@0x4; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x8 = 0x81008</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register : IP-XACT register {@0x8; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x104 = 0x81104</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register : IP-XACT register {@0x104; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x208 = 0x81208</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register </span><span class="rvts35">N :</span><span class="rvts34"> IP-XACT register {@0x208; 32 bits}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<h4 class="rvps325"><span class="rvts0"><span class="rvts128">In case of Multiple memoryMap and addressBlock</span></span></h4>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">The IP-XACT component is referenced as a block in IDS chip. Another hierarchy inside IP-XACT component is treated as section present above registers. If offset is provided at the referred component(offset = 0x81000), then absolute address of the addressBlock is sum of addressoffset and offset provided at referred block{0x81000 + 0x81000 = 102000}.</span></p>
+<p class="rvps35"><span class="rvts34">&nbsp;&nbsp;&nbsp;</span><span class="rvts35">&nbsp;</span></p>
+<div class="rvps2">
+<table style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Address</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Size</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Hierarchy</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x0000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x108000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">IDS Chip</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x107000 + 0x1000 = 0x108000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; Block 🡪 IP-XACT component {refer offset&nbsp; </span><span class="rvts346">@0x81000</span><span class="rvts34">}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34"><br/></span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section : IP-XACT memoryMap</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x4000 = 0x85000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x1000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section : IPXACT addressBlock {</span><span class="rvts346">@4000</span><span class="rvts34"> ; Size = 0x1000)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x85000 + 0x4 = 0x85004</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register : IP-XACT register {@0x4; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x85000 + 0x8 = 0x85008</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register : IP-XACT register {@0x8; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x85000 + 0x104 = 0x85104</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register : IP-XACT register {@0x104; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x85000 + 0x208 = 0x85208</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register </span><span class="rvts35">N :</span><span class="rvts34"> IP-XACT register {@0x208; 32 bits}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x5000 = 0x86000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section : IP-XACT memoryMap</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x86000 + 0x81000 = 107000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x1000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section : IP-XACT addressBlock {</span><span class="rvts346">@81000</span><span class="rvts34"> ; Size = 0x1000)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x107000 + 0x4 = 0x107004</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register : IP-XACT register {@0x4; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x107000 + 0x8 = 0x107008</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register : IP-XACT register {@0x8; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x107000 + 0x104 = 0x107104</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register : IP-XACT register {@0x104; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x107000 + 0x208 = 107208</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register </span><span class="rvts35">N :</span><span class="rvts34"> IP-XACT register {@0x208; 32 bits}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts34"></span><br/><span class="rvts34"><br/></span></p>
+<h2 class="rvps324"><span class="rvts0"><span class="rvts34">Referencing while removing hierarchy from IP-XACT file (use of ipxact_compact)</span></span></h2>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Referencing with {ipxact_compact=true} will remove the section hierarchy of memoryMap and addressBlock. It works only in case Components contain only single memoryMap or memoryMap contain only single addressBlock. Below are the scenarios with {ipxact_compact=true}.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">The IP-XACT component is referenced as a block in IDS chip with flattened registers in the block. The hierarchy of IP-XACT memoryMap and addressBlock is removed and addressoffset of addressBlock from IP-XACT is added to the offset of registers to make the position of registers consistent with respect to addressBlock.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<div class="rvps2">
+<table style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Address</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Size</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Hierarchy</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x0000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x8120C = 0x10220c</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">IDS Chip</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x8120C</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; Block 🡪 IP-XACT component {refer offset&nbsp; @</span><span class="rvts346">0x81000</span><span class="rvts34">}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; background-color: #920000; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; background-color: #920000; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x1000 = 0x82000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; background-color: #920000; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section 🡪 IP-XACT memoryMap</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; background-color: #920000; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x81000 = 102000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; background-color: #920000; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x1000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; background-color: #920000; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section 🡪 IP-XACT addressBlock {@81000 ; Size = 0x1000)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x81004 = 0x102004</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register 🡪 IP-XACT register {@0x4; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x81008 = 0x102008</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register 🡪 IP-XACT register {@0x8; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x81104 = 0x102104</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register 🡪 IP-XACT register {@0x104; 32 bits}&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x81000 + 0x81208 = 0x102208</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">0x4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register </span><span class="rvts35">N </span><span class="rvts34">🡪 IP-XACT register {@0x208; 32 bits}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">Note – Hierarchy is removed with {ipxact_compact=true} property</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<h3 class="rvps326"><span class="rvts0"><span class="rvts35">Referencing from SystemRDL</span></span></h3>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<h4 class="rvps325"><span class="rvts0"><span class="rvts128">&nbsp;IP-XACT referred with refpath in addrmap in System-RDL.&nbsp; Below method for referencing IP-XACT file in RDL.</span></span></h4>
+<h4 class="rvps325"><span class="rvts0"><span class="rvts128"><br/></span></span></h4>
+<p class="rvps35"><span class="rvts370">addrmap top {</span></p>
+<p class="rvps35"><span class="rvts370">addrmap chip1{</span></p>
+<p class="rvps35"><span class="rvts370">refpath ="ipxact_rdl.ipxact.xml:Chipmodel_model" ;</span></p>
+<p class="rvps35"><span class="rvts370">}chip1[4] @0x81000;</span></p>
+<p class="rvps35"><span class="rvts370">};</span></p>
+<p class="rvps2"><span class="rvts34"></span><br/><span class="rvts34"><br/></span></p>
+<h3 class="rvps326"><span class="rvts0"><span class="rvts34">Referencing from IDS-Word, IDS-Excel, IDS-NG</span></span></h3>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts35">IDS-Word example “top” chip referencing IP-XACT Component with ref-Template.</span></p>
+<p class="rvps35"><span class="rvts35">IDS-Excel example referencing IP-XACT file</span></p>
+<p class="rvps35"><img alt="" style="width : 621px; height : 137px; padding : 1px;" src="lib/NewItem4146.png"></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts35">IDS-NG example referencing IP-XACT file</span></p>
+<p class="rvps2"><img alt="" style="width : 545px; height : 185px; padding : 1px;" src="lib/NewItem4147.png"><br/><span class="rvts34"><br/></span></p>
+<h1 class="rvps195"><span class="rvts0"><span class="rvts35">Import of IP-XACT</span></span></h1>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">IDS can import and export IP-XACT files.</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">IP-XACT design can be imported. In IDS they become a “Chip” by default.</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">IP-XACT component becomes a Block in IDS. Deep hierarchy becomes section-in-section.</span></li>
+ <li class="rvps35 noindent"><span class="rvts34">If “-ipxact_comp board” is applied,&nbsp; then the IP-XACT component becomes a Board in IDS, memoryMap becomes chip, addressBlock becomes block.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts128">NOTE: “-ipxact_comp“ is supported only in IP-XACT-2014 and IP-XACT-1.5</span></p>
+<p class="rvps35"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts128">- In IP-XACT-1.4 we only import registers which is inside memoryMap</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<h1 class="rvps195"><span class="rvts0"><span class="rvts35">Export of IP-XACT</span></span></h1>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">“-multi_out” can be used to create multiple files for each of the blocks.</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">While exporting with the “-multi_out” option, a chip becomes a design and each of the blocks becomes a component.&nbsp;</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">A Block in IDS is exported as a Component in IP-XACT.</span></li>
+ <li class="rvps35 noindent"><span class="rvts34">Properties are handled using vendor extensions.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">&nbsp;&nbsp;&nbsp;</span><span class="rvts128">&nbsp;&nbsp;&nbsp;&nbsp;NOTE:&nbsp; supported&nbsp; in IP-XACT-2014 ,IP-XACT-1.5 and IP-XACT-1.4</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">Generated IP-XACT-2014 Code</span></p>
+<p class="rvps169"><img alt="" style="width : 419px; height : 363px; padding : 1px;" src="lib/NewItem4148.png"></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<h1 class="rvps327"><span class="rvts0"><span class="rvts35">Signals/Ports in IP-XACT</span></span></h1>
+<p class="rvps14"><span class="rvts34"></span><br/><span class="rvts34">By using&nbsp;”</span><span class="rvts35">Signals”</span><span class="rvts34">&nbsp;table of IDS, users can generate one or more bus interfaces and signals interfaces at IP level. It generates a "bus definition" and an "abstraction definition" file for the specified bus in the output directory with the name of the bus.</span></p>
+<p class="rvps14"><span class="rvts34"></span><br/><span class="rvts34">For example, if bus is PROPRIETARY then the "bus definition" and "abstraction definition" will be as&nbsp;</span><span class="rvts35">PROPRIETARY_abstarction_defination.ipxact.xml</span><span class="rvts34">&nbsp;and&nbsp;</span><span class="rvts35">PROPRIETARY_bus_defination.ipxact.xml</span><span class="rvts34">.</span></p>
+<p class="rvps14"><span class="rvts34">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts128">NOTE:&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts128">Signals/Ports are supported&nbsp; in&nbsp; IP-XACT-2014 and IP-XACT-1.5 not in IP-XACT-1.4</span></li>
+ <li class="rvps35 noindent"><span class="rvts128">Multiple bus domains are supported in IP-XACT-2014 and&nbsp; IP-XACT-1.5&nbsp; not in IP-XACT-1.4</span><span class="rvts34">&nbsp;</span></li>
+</ul>
+<p class="rvps14"><span class="rvts34">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34">For using this feature:</span></p>
+<p class="rvps90"><span class="rvts34">1. Buses are defined as “userDefinedBusName (Valid bus name)” in "Signals" template.</span></p>
+<p class="rvps90"><span class="rvts34">for example Bus1(AMBA-AXI), busIP (OCP) etc.</span></p>
+<p class="rvps14"><span class="rvts34">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps14"><img alt="" style="width : 499px; height : 115px; padding : 1px;" src="lib/NewItem4149.png"></p>
+<p class="rvps191"><span class="rvts34"></span><br/><span class="rvts34"><br/></span></p>
+<p class="rvps90"><span class="rvts34">Valid Buses are: AMBA-AXI, OCP, AMBA-AHB, AVALON, AMBA-APB, AMBA3-AHB-lite, WISHBONE, PROPRIETARY.</span></p>
+<p class="rvps191"><span class="rvts34"></span><br/><span class="rvts34"><br/></span></p>
+<p class="rvps14"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts128">&nbsp;&nbsp;&nbsp;NOTE:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps328 noindent"><span class="rvts128">All signals and buses defined in “</span><span class="rvts62">Signal”</span><span class="rvts128"> table are by default created at IP level.</span></li>
+ <li class="rvps329 noindent"><span class="rvts128">If user does not want any signal defined in “</span><span class="rvts62">Signal”</span><span class="rvts128"> table, to be created at IP level, using a property called&nbsp;</span><span class="rvts62">“ex</span><a name="export"></a><span class="rvts62">port”</span></li>
+</ul>
+<p class="rvps330"><span class="rvts34">&nbsp;</span></p>
+<p class="rvps35"><span class="rvts31">&nbsp;&nbsp;How to create multiple bus domain in IP-XACT OUTPUT using IDS:</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Buses defined in bus domain table, should be defined in "</span><span class="rvts35">Signals</span><span class="rvts34">" table with same user defined&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">Input Register Specification</span></p>
+<p class="rvps35"><img alt="" style="width : 721px; height : 430px; padding : 1px;" src="lib/NewItem4150.png"></p>
+<p class="rvps35"><img alt="" style="width : 734px; height : 237px; padding : 1px;" src="lib/NewItem4151.png"></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">Generated IP-XACT-1.5 Code</span></p>
+<p class="rvps35"><img alt="" style="width : 501px; height : 386px; padding : 1px;" src="lib/NewItem4152.png"></p>
+<p class="rvps35"><img alt="" style="width : 347px; height : 263px; padding : 1px;" src="lib/NewItem4153.png"></p>
+<p class="rvps35"><img alt="" style="width : 353px; height : 226px; padding : 1px;" src="lib/NewItem4154.png"></p>
+<p class="rvps35"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps35"><span class="rvts36">If "Bus" defined in "Signal" table is not present in Bus domain table, IDS will generate standard signal interfaces for IP level. The signal interface for "Bus3(WISHBONE)" bus in above example, is shown below-</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">Generated IP-XACT-1.5 Code</span></p>
+<p class="rvps2"><img alt="" style="width : 526px; height : 325px; padding : 1px;" src="lib/NewItem4155.png"><br/><span class="rvts34"><br/></span></p>
+<p class="rvps35"><span class="rvts34">All signals and bus signals are defined in&nbsp;</span><span class="rvts35">&lt;spirit:model&gt;</span><span class="rvts34">. In&nbsp;</span><span class="rvts35">&lt;spirit:modelParameters&gt;,&nbsp;</span><span class="rvts34">user can configure the address width and the bus width.</span></p>
+<p class="rvps35"><span class="rvts34">Generated IP-XACT-1.5 Code</span></p>
+<p class="rvps35"><img alt="" style="width : 633px; height : 297px; padding : 1px;" src="lib/NewItem4156.png"></p>
+<h1 class="rvps195"><span class="rvts0"><span class="rvts34">Summary of command line options/properties for IP-XACT</span></span></h1>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">{ipxact_compact=true}</span></li>
+</ul>
+<p class="rvps84"><span class="rvts34">To remove extra section hierarchy while referencing IP-XACT. Note that this property can be added using the command line switch -top_property</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">-ipxact_comp [block|board]</span></li>
+</ul>
+<p class="rvps331"><span class="rvts34">By default, IP-XACTis imported as top block, when applied with “-ipxact_comp board” then the IP-XACT is imported as top board in IDS.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">-if_ipxact : Generates separate files for each block.</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">-bus_comp&lt;”comma separated files”&gt; : Specified component files for IP-XACT.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts34"></span><br/><span class="rvts34"><br/></span></p>
+<p class="rvps332"><span class="rvts34">Added advanced import options</span></p>
+<p class="rvps333"><span class="rvts35">like,</span><span class="rvts31"> “xml_addr_mux”</span><span class="rvts35">, “ipxact_exclude_param” and “ipxact_compact” for importing IP-XACT files in IDS-NG.</span></p>
+<p class="rvps14"><span class="rvts36">“xml_addr_mux”</span><span class="rvts34">, “ipxact_exclude_param” and “ipxact_compact” is supported in -top_property on import of IP-XACT file in IDS-NG</span></p>
+<p class="rvps10"><span class="rvts34">&nbsp;</span></p>
+<p class="rvps10"><span class="rvts34">On importing IP-XACT, users can provide three additional options.</span></p>
+<p class="rvps10"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<div class="rvps2">
+<table cellpadding="1" style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Property</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">UI Name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Hint Text</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">UI Type</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">{-top_property "</span><span class="rvts36">xml_addr_mux</span><span class="rvts34">=4;"}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">Addr Mux</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">This option is use for&nbsp; Address Multiplication</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">Text Box type</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">{-top_property "ipxact_exclude_param=true"}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">Exclude Param</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">This option exclude Parameter while importing IP-XACT</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">Checkbox Button</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">{-top_property "ipxact_compact =true"}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">Compact</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">This option remove extra hierarchy in case of single memoryMap or addressBlock</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">Checkbox Button</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps14"><span class="rvts34">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps14 noindent"><span class="rvts34">Addr MUX </span><span class="rvts35">- </span><span class="rvts34">It can be used to multiply addresses of registers by the value applied in the box.</span></li>
+ <li class="rvps14 noindent"><span class="rvts34">Exclude Param </span><span class="rvts35">- &nbsp;</span><span class="rvts34">this can be used to exclude parameters while importing.</span></li>
+ <li class="rvps14 noindent"><span class="rvts34">Compact</span><span class="rvts35"> - </span><span class="rvts34">To remove the</span><span class="rvts35"> </span><span class="rvts34">hierarchy of MemoryMap and AddressBlocks while importing IP-XACTfile. This switch will be effective&nbsp; when there is a single memoryMap or single addressBlock in IP-XACTfile.</span></li>
+</ul>
+<p class="rvps14"><span class="rvts34">&nbsp;</span></p>
+<p class="rvps203"><img alt="" style="width : 485px; height : 282px; padding : 1px;" src="lib/NewItem4157.png"><span class="rvts31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps203"><span class="rvts34">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<div class="rvps2">
+<table style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Property name&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">Property Description</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">IP-XACT-1.4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">IP-XACT-2009</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts35">IP-XACT-2014</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><a class="rvts149" href="https://www.agnisys.com/release/docs/ids/IPXACTProperties.html">vendor</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts36">Name of the vendor of the IP-XACT model</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><a class="rvts149" href="https://www.agnisys.com/release/docs/ids/IPXACTProperties.html">library</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts36">Name of the library of the IP-XACT model</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><a class="rvts149" href="https://www.agnisys.com/release/docs/ids/IPXACTProperties.html">version</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts36">Version number of the IP-XACT model</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><a class="rvts149" href="https://www.agnisys.com/release/docs/ids/IPXACTProperties.html">ipxact_ignore</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts36">To remove bus/ports from bus component node.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><a class="rvts149" href="https://www.agnisys.com/release/docs/ids/IPXACTProperties.html">xml_addr_mux</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts36">This property will multiply each register offset with the property value (Note: in case of third party&nbsp;</span><span class="rvts34">IP-XACT</span><span class="rvts36">&nbsp;input)</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><a class="rvts149" href="https://www.agnisys.com/release/docs/ids/IPXACTProperties.html">{ipxact_exclude_param</a></p>
+   <p class="rvps2"><a class="rvts149" href="https://www.agnisys.com/release/docs/ids/IPXACTProperties.html">&nbsp;&nbsp;&nbsp;=true}</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts36">To remove parameter while importing the&nbsp;</span><span class="rvts34">IP-XACT</span><span class="rvts36">&nbsp;file in IDS.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><a class="rvts149" href="https://www.agnisys.com/release/docs/ids/IDSBatch.html">{ipxact_compact=true}</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">It will remove the section hierarchy of memoryMap and addressBlock.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; -</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><a class="rvts149" href="https://www.agnisys.com/release/docs/ids/IPXACT.html">ipxact_exclude_vendorextensions</a></p>
+   <p class="rvps2"><a class="rvts149" href="https://www.agnisys.com/release/docs/ids/IPXACT.html">&nbsp;&nbsp;=true</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts36">It is&nbsp; applied only on the top node. This property is used for&nbsp;excluding "spirit:vendorExtensions" nodes from the IP-XACT output.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; -</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top;">
+   <p class="rvps2"><span class="rvts34">supported</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts396"><br/></span></p>
+<p class="rvps2"><a class="rvts835" href="IDShandlingofIP-XACTfiles.html">ipxact_decrease_o</a><a name="ipxact_decrease_offset"></a><a class="rvts835" href="IDShandlingofIP-XACTfiles.html">ffset</a><span class="rvts396"> property</span><span class="rvts396">:</span></p>
+<p class="rvps2"><span class="rvts396"><br/></span></p>
+<p class="rvps2"><span class="rvts379">ipxact_decrease property decreases the offset value in ipxact file when it is referred by any input type file.</span></p>
+<p class="rvps2"><span class="rvts379"><br/></span></p>
+<p class="rvps2"><span class="rvts72">We ref two ip-xact in the rdl, first is test.ipxact.xml from which we ref the chip addressblock which has offset 0x100 and when ipxact_decrease_offset property applied then in html output the final decreased offset(original_offset - decrease_offset) come to the rf1 block, same thing is done with second block in which we ref the test1.ipxact.xml addressblock chip whose offset is 0x500 and after the ipxact_decrease_offset property applied it reflects in the html output with rf2 offset.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps12"><span class="rvts379"><br/></span></p>
+<p class="rvps2"><span class="rvts834">&nbsp;</span><span class="rvts398">SystemRDL input:-</span></p>
+<p class="rvps27"><span class="rvts833">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts73">&nbsp;&nbsp;</span><span class="rvts397">&nbsp;&nbsp;property refpath { type = string; component = addrmap; };</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;property ipxact_decrease_offset { type = number; component = addrmap; };</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps6"><span class="rvts397">&nbsp;&nbsp;&nbsp;addrmap ref_block{</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts403">ipxact_decrease_offset = 0x50; </span><span class="rvts397">&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;refpath = "test.ipxact.xml:chip";</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;addrmap ref_block1{</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts403">ipxact_decrease_offset = 0x50; </span><span class="rvts397">&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;refpath = "test1.ipxact.xml:chip";</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;addrmap my_ip{</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ref_block rf1;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ref_block1 rf2;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;};</span></p>
+<p class="rvps27"><span class="rvts397"><br/></span></p>
+<p class="rvps27"><span class="rvts836">&nbsp;&nbsp;</span><span class="rvts608">IP-XACT Input:-</span></p>
+<p class="rvps2"><span class="rvts460"><br/></span></p>
+<p class="rvps27"><span class="rvts63">&nbsp;&nbsp;</span><span class="rvts398">&nbsp;&nbsp;&nbsp;</span><span class="rvts63">test.ipxact.xml</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps27"><span class="rvts833">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts397">&nbsp; &lt;spirit:name&gt;chipmap&lt;/spirit:name&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:addressBlock&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:name&gt;chip&lt;/spirit:name&gt;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts403">&nbsp;&lt;spirit:description/&gt;&nbsp; &lt;!-- //</span></p>
+<p class="rvps27"><span class="rvts403">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;block : chip&nbsp; --&gt;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts403">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:baseAddress&gt;0x100&lt;/spirit:baseAddress&gt; </span><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:range&gt;0x2C4&lt;/spirit:range&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:width&gt;32&lt;/spirit:width&gt;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&lt;!-- reg group</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:b1&nbsp; --&gt;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:registerFile&gt;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:name&gt;b1&lt;/spirit:name&gt;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:addressOffset&gt;0x160&lt;/spirit:addressOffset&gt;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:range&gt;0x84&lt;/spirit:range&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:register&gt;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps27"><span class="rvts833">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts833">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts15">&nbsp;&nbsp;test1.ipxact.xml</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:name&gt;chipmap&lt;/spirit:name&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:addressBlock&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:name&gt;chip&lt;/spirit:name&gt;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts403">&nbsp;&lt;spirit:description/&gt;&nbsp; &lt;!-- //</span></p>
+<p class="rvps27"><span class="rvts403">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;block : chip&nbsp; --&gt;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts403">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:baseAddress&gt;0x500&lt;/spirit:baseAddress&gt;&nbsp; &nbsp; &nbsp; </span><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:range&gt;0x2C4&lt;/spirit:range&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:width&gt;32&lt;/spirit:width&gt;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;!-- reg group</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:b1&nbsp; --&gt;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:registerFile&gt;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:name&gt;b1&lt;/spirit:name&gt;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:addressOffset&gt;0x160&lt;/spirit:addressOffset&gt;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:range&gt;0x84&lt;/spirit:range&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps27"><span class="rvts397">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;spirit:register&gt;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts398">IDSWord Input:-</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps27"><img alt="" style="width : 619px; height : 536px;" src="lib/NewItem4592.png"><br/><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts398">IDSExcel Input:-</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps27"><img alt="" style="width : 642px; height : 143px;" src="lib/NewItem4591.png"></p>
+<p class="rvps2"><span class="rvts29"></span><br/><span class="rvts29"></span><br/><span class="rvts29"></span><br/><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts398">Output HTML:-</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps27"><img alt="" style="width : 648px; height : 314px;" src="lib/NewItem4590.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts396"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/advanced-project-analyzer/">Ensure High-Quality Documentation with HelpNDoc's Hyperlink and Library Item Reports</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

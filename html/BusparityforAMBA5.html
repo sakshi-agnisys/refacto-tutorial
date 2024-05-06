@@ -1,0 +1,938 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Bus parity for AMBA5</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bus parity for AMBA5">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Bus parity for AMBA5" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="BusparityforAMBA5"
+		  data-hnd-context="97"
+		  data-hnd-title="Bus parity for AMBA5"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="OutputsExports.html">Outputs/Exports</a></li><li><a href="RTL.html">RTL</a></li><li><a href="BusSupportinIDS.html">Bus Support in IDS</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="BusSupportinIDS.html" title="Bus Support in IDS" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="AMBAAXI5lite.html" title="AMBA AXI5lite" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="AVALON.html" title="AVALON" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Bus parity for AMBA5</h2>
+
+            <div class="main-content">
+                
+<p class="rvps12"><span class="rvts36">The AMBA 5 protocol defines a parity checking and generation feature that can be implemented in the interconnect fabric between different functional blocks within an SoC. This feature allows for the detection and correction of single-bit errors in transmitted data, improving the overall reliability and integrity of data transfers.</span></p>
+<p class="rvps12"><span class="rvts36">A new property "bus_parity" is being introduced which could be applied at the block. IDS will generate two module parity checker and parity generator with this property and these modules will be instantiated&nbsp; inside the IDS generated main module.</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps14"><span class="rvts35">IDS-NG Register View:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 663px; height : 317px; padding : 1px;" src="lib/NewItem5063.png"></p>
+<p class="rvps14"><span class="rvts29"><br/></span></p>
+<p class="rvps14"><span class="rvts35">IDS-NG Spreadsheet View:&nbsp;</span></p>
+<p class="rvps14"><span class="rvts35"><br/></span></p>
+<p class="rvps191"><img alt="" style="width : 780px; height : 164px; padding : 1px;" src="lib/NewItem5064.png"></p>
+<p class="rvps14"><span class="rvts35"><br/></span></p>
+<p class="rvps14"><span class="rvts35">SystemRDL:</span></p>
+<p class="rvps14"><span class="rvts35"><br/></span></p>
+<div class="rvps14">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">property bus_parity {type = boolean; component = addrmap ; };</span></p>
+   <p class="rvps14"><span class="rvts370">addrmap Top_blk {</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; name &nbsp;= "Top_blk Address Map";</span></p>
+   <p class="rvps266"><span class="rvts385"><br/></span></p>
+   <p class="rvps2"><span class="rvts697">&nbsp; &nbsp;</span><span class="rvts385">bus_parity=true;</span></p>
+   <p class="rvps266"><span class="rvts356"><br/></span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; reg reg_n1 {&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; } F1[31:0] = 32'h0;</span></p>
+   <p class="rvps14"><span class="rvts370"><br/></span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; };</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; reg reg_n2 {&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; } F1[31:0] = 32'h0;</span></p>
+   <p class="rvps14"><span class="rvts370"><br/></span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; };</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; reg_n1 reg_n1 @0x0;</span></p>
+   <p class="rvps14"><span class="rvts370"><br/></span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; reg_n2 reg_n2 @0x4;</span></p>
+   <p class="rvps14"><span class="rvts370"><br/></span></p>
+   <p class="rvps14"><span class="rvts370">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps14"><span class="rvts35"><br/></span></p>
+<p class="rvps14"><span class="rvts35">Command Line:</span></p>
+<p class="rvps14"><span class="rvts35"><br/></span></p>
+<div class="rvps14">
+<table width="100%" cellpadding="10" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps14"><span class="rvts34">idsbatch &lt;input_file&gt; -bus axi5lite -dir ids</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps14"><span class="rvts34"><br/></span></p>
+<p class="rvps14"><span class="rvts35">Generated Verilog Output:&nbsp;</span></p>
+<p class="rvps14"><span class="rvts35"><br/></span></p>
+<div class="rvps14">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts370">module Top_blk_ids(</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; // REGISTER : REG_N1 PORT SIGNAL</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; reg_n1_enb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; reg_n1_F1_in,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; reg_n1_F1_in_enb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; reg_n1_F1_r,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; // REGISTER : REG_N2 PORT SIGNAL</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; reg_n2_enb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; reg_n2_F1_in,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; reg_n2_F1_in_enb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; reg_n2_F1_r,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; //AXI5LITE signals</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; aclk, &nbsp; // Bus clock</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; aresetn, &nbsp; // Reset</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; awaddr, &nbsp; // Write address</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; awvalid, &nbsp; // Write address valid : This signal indicates that write address is valid</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; awready, &nbsp; // Write address ready : This signal indicates that the slave is ready to accept an address</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; awprot, &nbsp; // Write Protection Type</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; awid, &nbsp; // Write ID</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; wdata, &nbsp; // Write data</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; wvalid, &nbsp; // Write valid &nbsp; &nbsp; &nbsp; &nbsp; : This signal indicates that valid write data and strobes are available</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; wready, &nbsp; // Write ready &nbsp; &nbsp; &nbsp; &nbsp; : This signal indicates that the slave can accept the write data</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; wstrb, &nbsp; // Write Strobes</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; bresp, &nbsp; // Write Response</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; bready, &nbsp; // Response Ready</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; bvalid, &nbsp; // Response valid</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; bid, &nbsp; // Response ID</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; araddr, &nbsp; // Read &nbsp;address</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; arvalid, &nbsp; // Read address valid &nbsp;: This signal indicates that the read address is valid and will remain stable until ARREADY is high</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; arready, &nbsp; // Read address ready &nbsp;: This signal indicates that the slave is ready to accept an address</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; arprot, &nbsp; // Read Protection Type</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; arid, &nbsp; // Read ID</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; rdata, &nbsp; // Read data</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; rvalid, &nbsp; // Read valid &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: This signal indicates that the required read data is available and the read transfer can complete</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; rid, &nbsp; // Read ID</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; rready, &nbsp; // Read ready &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: This signal indicates that the master can accept the read data</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; rresp, &nbsp; // Read Response</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_awaddrchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_awvalidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_awreadychk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_awprotchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_awidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_wdatachk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_wvalidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_wreadychk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_wstrbchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_breadychk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_bvalidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_brespchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_bidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_araddrchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_arvalidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_arreadychk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_arprotchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_aridchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_rvalidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_rreadychk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_rdatachk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_rrespchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_ridchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_awaddrchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_awvalidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_awreadychk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_awprotchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_awidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_wdatachk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_wvalidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_wreadychk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_wstrbchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_breadychk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_bvalidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_brespchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_bidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_araddrchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_arvalidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_arreadychk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_arprotchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_aridchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_rvalidchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_rreadychk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_rdatachk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_rrespchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; i_ridchk,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; //Parity error outputs</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_aw_parity_err_stb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_aw_ctrl_parity_err_stb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_w_parity_err_stb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_w_ctrl_parity_err_stb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_b_parity_err_stb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_b_ctrl_parity_err_stb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_ar_parity_err_stb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_ar_ctrl_parity_err_stb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_r_parity_err_stb,</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; o_r_ctrl_parity_err_stb</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp; &nbsp; );</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370"> &nbsp;.</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">.</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370"> &nbsp;.</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">.</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;//AXI5LITE signals</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input aclk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input aresetn;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [addr_width-1 : 0] awaddr;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input awvalid;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output awready;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [2 : 0] awprot;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [4 : 0] awid;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; wire [2 : 0] awprot_i;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [bus_width-1 : 0] wdata;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input wvalid;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output wready;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [bus_width/8 - 1 : 0] wstrb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output [1 : 0] bresp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input bready;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output bvalid;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [4 : 0] bid;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [addr_width-1 : 0] araddr;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input arvalid;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output arready;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [2 : 0] arprot;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [4 : 0] arid;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; wire [2 : 0] arprot_i;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output [bus_width-1 : 0] rdata;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output rvalid;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input rready;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output [1 : 0] rresp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [4 : 0] rid;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; //Parity error outputs</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; o_aw_parity_err_stb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; o_aw_ctrl_parity_err_stb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; o_w_parity_err_stb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; o_w_ctrl_parity_err_stb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; o_b_parity_err_stb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; o_b_ctrl_parity_err_stb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; o_ar_parity_err_stb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; o_ar_ctrl_parity_err_stb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; o_r_parity_err_stb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;o_r_ctrl_parity_err_stb;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [addr_width/8-1:0] i_awaddrchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_awvalidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_awreadychk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_awprotchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_awidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; //Write data channel</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [bus_width/8-1:0] i_wdatachk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_wvalidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_wreadychk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [STRB_WIDTH/8-1:0] i_wstrbchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; //Write response channel</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_breadychk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_bvalidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_brespchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_bidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; //Read address channel</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [addr_width/8-1:0] i_araddrchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_arvalidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_arreadychk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_arprotchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_aridchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; //Read data/response channel</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_rvalidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_rreadychk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input [bus_width/8-1:0] i_rdatachk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i_rrespchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; input &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i_ridchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output [addr_width/8-1:0] o_awaddrchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_awvalidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_awreadychk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_awprotchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_awidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; //Write data channel</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output [bus_width/8-1:0] o_wdatachk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_wvalidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_wreadychk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output [STRB_WIDTH/8-1:0] o_wstrbchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; //Write response channel</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_breadychk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_bvalidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_brespchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_bidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; //Read address channel</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output [addr_width/8-1:0] o_araddrchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_arvalidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_arreadychk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_arprotchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_aridchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; //Read data/response channel</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_rvalidchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_rreadychk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output [bus_width/8-1:0] o_rdatachk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;o_rrespchk;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; output &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o_ridchk;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts304">// generator module instantiation</span></p>
+   <p class="rvps12"><span class="rvts304"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;axi_parity_generator #(.ADDR_WIDTH(addr_width), .DATA_WIDTH(bus_width), .STRB_WIDTH(STRB_WIDTH))axi_parity_generator (</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .awid(awid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_awidchk(o_awidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .awaddr(awaddr),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_awaddrchk(o_awaddrchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .awvalid(awvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_awvalidchk(o_awvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .awready(awready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_awreadychk(o_awreadychk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .awprot(awprot),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_awprotchk(o_awprotchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .wdata(wdata),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_wdatachk(o_wdatachk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .wvalid(wvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_wvalidchk(o_wvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .wready(wready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_wreadychk(o_wreadychk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .wstrb({4'b0, wstrb}),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_wstrbchk(o_wstrbchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .bid(bid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_bidchk(o_bidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .bready(bready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_breadychk(o_breadychk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .bvalid(bvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_bvalidchk(o_bvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .bresp(bresp),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_brespchk(o_brespchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .arid(arid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_aridchk(o_aridchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .araddr(araddr),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_araddrchk(o_araddrchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .arvalid(arvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_arvalidchk(o_arvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .arready(arready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_arreadychk(o_arreadychk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .arprot(arprot),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_arprotchk(o_arprotchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rid(rid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_ridchk(o_ridchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rvalid(rvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_rvalidchk(o_rvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rready(rready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_rreadychk(o_rreadychk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rdata(rdata),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_rdatachk(o_rdatachk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rresp(rresp),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_rrespchk(o_rrespchk));</span></p>
+   <p class="rvps12"><span class="rvts370"><br/></span></p>
+   <p class="rvps12"><span class="rvts304">// checker module instantiation </span><span class="rvts370">&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;axi_parity_checker #(.ADDR_WIDTH(addr_width), .DATA_WIDTH(bus_width), .STRB_WIDTH(STRB_WIDTH), .IS_FOR_SLAVE(IS_FOR_SLAVE))axi_parity_checker (</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .clk(aclk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rstb(aresetn),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .awid(awid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_awidchk(i_awidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .awaddr(awaddr),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_awaddrchk(i_awaddrchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .awvalid(awvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_awvalidchk(i_awvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .awready(awready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_awreadychk(i_awreadychk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .awprot(awprot),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_awprotchk(i_awprotchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .wdata(wdata),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_wdatachk(i_wdatachk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .wvalid(wvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_wvalidchk(i_wvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .wready(wready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_wreadychk(i_wreadychk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .wstrb({4'b0, wstrb}),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_wstrbchk(i_wstrbchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .bid(bid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_bidchk(i_bidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .bready(bready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_breadychk(i_breadychk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .bvalid(bvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_bvalidchk(i_bvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .bresp(bresp),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_brespchk(i_brespchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .arid(arid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_aridchk(i_aridchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .araddr(araddr),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_araddrchk(i_araddrchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .arvalid(arvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_arvalidchk(i_arvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .arready(arready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_arreadychk(i_arreadychk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .arprot(arprot),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_arprotchk(i_arprotchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rid(rid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_ridchk(i_ridchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rvalid(rvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_rvalidchk(i_rvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rready(rready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_rreadychk(i_rreadychk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rdata(rdata),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_rdatachk(i_rdatachk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .rresp(rresp),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .i_rrespchk(i_rrespchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_aw_parity_err_stb(o_aw_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_aw_ctrl_parity_err_stb(o_aw_ctrl_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_w_parity_err_stb(o_w_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_w_ctrl_parity_err_stb(o_w_ctrl_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_b_parity_err_stb(o_b_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_b_ctrl_parity_err_stb(o_b_ctrl_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_ar_parity_err_stb(o_ar_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_ar_ctrl_parity_err_stb(o_ar_ctrl_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_r_parity_err_stb(o_r_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; .o_r_ctrl_parity_err_stb(o_r_ctrl_parity_err_stb));</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;assign reg_enb = {</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;{8{byte_enb[3]}} ,</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;{8{byte_enb[2]}} ,</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;{8{byte_enb[1]}} ,</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;{8{byte_enb[0]}}};</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;. &nbsp; .</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">.</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;. &nbsp; . &nbsp; .</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">endmodule</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps14"><span class="rvts35">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps14"><a name="B2288"></a><span class="rvts35">Generated SystemVerilog Output:&nbsp;</span></p>
+<p class="rvps14"><span class="rvts35"><br/></span></p>
+<div class="rvps14">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps12"><span class="rvts304">. . .</span></p>
+   <p class="rvps12"><span class="rvts304">. . .</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps12"><span class="rvts373">`include "axi_parity_checker_if.sv"</span></p>
+   <p class="rvps12"><span class="rvts373">`include "axi_parity_generator_if.sv"</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">module&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts304">. . .</span></p>
+   <p class="rvps12"><span class="rvts304">. . .</span></p>
+   <p class="rvps154"><span class="rvts373">axi_parity_checker_if.axi_parity_checker_mp Block1_axi_parity_checker_if,</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps154"><span class="rvts373">axi_parity_generator_if.axi_parity_generator_mp Block1_axi_parity_generator_if,</span></p>
+   <p class="rvps12"><span class="rvts304">. . .</span></p>
+   <p class="rvps12"><span class="rvts304">. . .</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">Block1_ids #(.addr_width(addr_width), .bus_width(bus_width), .block_size(block_size), .block_offset(block_offset)) Block1ids (</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;//Block1_ids</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts304">. . .</span></p>
+   <p class="rvps12"><span class="rvts304">. . .</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;</span><span class="rvts698">&nbsp;//AXI Parity Checker</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts373">.i_awaddrchk(Block1_axi_parity_checker_if.i_awaddrchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_awvalidchk(Block1_axi_parity_checker_if.i_awvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_awreadychk(Block1_axi_parity_checker_if.i_awreadychk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_awprotchk(Block1_axi_parity_checker_if.i_awprotchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_wdatachk(Block1_axi_parity_checker_if.i_wdatachk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_wvalidchk(Block1_axi_parity_checker_if.i_wvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_wreadychk(Block1_axi_parity_checker_if.i_wreadychk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_wstrbchk(Block1_axi_parity_checker_if.i_wstrbchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_breadychk(Block1_axi_parity_checker_if.i_breadychk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_bvalidchk(Block1_axi_parity_checker_if.i_bvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_brespchk(Block1_axi_parity_checker_if.i_brespchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_araddrchk(Block1_axi_parity_checker_if.i_araddrchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_arvalidchk(Block1_axi_parity_checker_if.i_arvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_arreadychk(Block1_axi_parity_checker_if.i_arreadychk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_arprotchk(Block1_axi_parity_checker_if.i_arprotchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_rvalidchk(Block1_axi_parity_checker_if.i_rvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_rreadychk(Block1_axi_parity_checker_if.i_rreadychk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_rdatachk(Block1_axi_parity_checker_if.i_rdatachk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.i_rrespchk(Block1_axi_parity_checker_if.i_rrespchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_aw_parity_err_stb(Block1_axi_parity_checker_if.o_aw_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_aw_ctrl_parity_err_stb(Block1_axi_parity_checker_if.o_aw_ctrl_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_w_parity_err_stb(Block1_axi_parity_checker_if.o_w_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_w_ctrl_parity_err_stb(Block1_axi_parity_checker_if.o_w_ctrl_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_b_parity_err_stb(Block1_axi_parity_checker_if.o_b_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_b_ctrl_parity_err_stb(Block1_axi_parity_checker_if.o_b_ctrl_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_ar_parity_err_stb(Block1_axi_parity_checker_if.o_ar_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_ar_ctrl_parity_err_stb(Block1_axi_parity_checker_if.o_ar_ctrl_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_r_parity_err_stb(Block1_axi_parity_checker_if.o_r_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_r_ctrl_parity_err_stb(Block1_axi_parity_checker_if.o_r_ctrl_parity_err_stb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;</span><span class="rvts304">&nbsp;</span><span class="rvts699">//AXI Parity Generator</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;</span><span class="rvts373">&nbsp;.o_awaddrchk(Block1_axi_parity_generator_if.o_awaddrchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_awvalidchk(Block1_axi_parity_generator_if.o_awvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_awreadychk(Block1_axi_parity_generator_if.o_awreadychk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_awprotchk(Block1_axi_parity_generator_if.o_awprotchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_wdatachk(Block1_axi_parity_generator_if.o_wdatachk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_wvalidchk(Block1_axi_parity_generator_if.o_wvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_wreadychk(Block1_axi_parity_generator_if.o_wreadychk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_wstrbchk(Block1_axi_parity_generator_if.o_wstrbchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_breadychk(Block1_axi_parity_generator_if.o_breadychk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_bvalidchk(Block1_axi_parity_generator_if.o_bvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_brespchk(Block1_axi_parity_generator_if.o_brespchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_araddrchk(Block1_axi_parity_generator_if.o_araddrchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_arvalidchk(Block1_axi_parity_generator_if.o_arvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_arreadychk(Block1_axi_parity_generator_if.o_arreadychk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_arprotchk(Block1_axi_parity_generator_if.o_arprotchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_rvalidchk(Block1_axi_parity_generator_if.o_rvalidchk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_rreadychk(Block1_axi_parity_generator_if.o_rreadychk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_rdatachk(Block1_axi_parity_generator_if.o_rdatachk),</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;.o_rrespchk(Block1_axi_parity_generator_if.o_rrespchk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;//AXI signals</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.aclk(Block1_axi_if.aclk),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.aresetn(Block1_axi_if.aresetn),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.awaddr(Block1_axi_if.awaddr),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.awvalid(Block1_axi_if.awvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.awready(Block1_axi_if.awready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.awprot(Block1_axi_if.awprot),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.wdata(Block1_axi_if.wdata),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.wvalid(Block1_axi_if.wvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.wready(Block1_axi_if.wready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.wstrb(Block1_axi_if.wstrb),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.bresp(Block1_axi_if.bresp),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.bready(Block1_axi_if.bready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.bvalid(Block1_axi_if.bvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.araddr(Block1_axi_if.araddr),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.arvalid(Block1_axi_if.arvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.arready(Block1_axi_if.arready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.arprot(Block1_axi_if.arprot),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.rdata(Block1_axi_if.rdata),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.rvalid(Block1_axi_if.rvalid),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.rready(Block1_axi_if.rready),</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.rresp(Block1_axi_if.rresp)</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;);</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps12"><span class="rvts304">. . .</span></p>
+   <p class="rvps12"><span class="rvts304">. . .</span></p>
+   <p class="rvps12"><span class="rvts370">endmodule</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps14"><span class="rvts35"><br/></span></p>
+<p class="rvps2"><span class="rvts34">In a similar way, parity checker and parity generator will be generated </span><span class="rvts37">for apb5 and ahb3lite too</span><span class="rvts83">.</span></p>
+<p class="rvps12"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Note:</span><span class="rvts34">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34">1. Currently "bus_parity" property is supported with buses apb, amba3ahblite, axi4lite and axi5lite. This functionality is supported for Verilog 1995 as well as </span><span class="rvts36">Verilog2001 and SystemVerilog.</span></p>
+<p class="rvps2"><span class="rvts36"><br/></span></p>
+<p class="rvps2"><span class="rvts27">bus_parity_e2e</span><br/><a name="bus_parity_e2e"></a><span class="rvts27"><br/></span></p>
+<p class="rvps267"><span class="rvts36">Currently, register and bus parity checks are performed separately. Therefore, we need to establish communication or interaction between register and bus parity checks.&nbsp;</span></p>
+<p class="rvps267"><span class="rvts36">Parity is a continuous flow through the design, so errors at any stage of the design can be detected and handled as soon as possible, preventing incorrect data/control from corrupting something down the pipeline.</span></p>
+<p class="rvps267"><span class="rvts36">We have introduced the new property “bus_parity_e2e=true/false” which establishes communication between register and bus parity. Possible values of this property are true/ false.</span><span class="rvts700">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts35">Example: </span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/bus_parity_e2e/bus_parity_e2e.zip">IDS-NG</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/bus_parity_e2e/bus_parity_e2e.docx">IDS-Word</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/bus_parity_e2e/bus_parity_e2e.xlsx">IDS-Excel</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/bus_parity_e2e/bus_parity_e2e.rdl">SystemRDL</a></p>
+<p class="rvps12"><span class="rvts35"><br/></span></p>
+<p class="rvps12"><span class="rvts35">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 624px; height : 400px;" src="lib/NewItem5394.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts35">IDS-NG Spreadsheet View</span><span class="rvts34">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 624px; height : 192px;" src="lib/NewItem5393.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts35">SystemRDL&nbsp;</span></p>
+<p class="rvps12"><span class="rvts35"><br/></span></p>
+<div class="rvps12">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps12"><span class="rvts370">property assign {type =string; component = signal ; };</span></p>
+   <p class="rvps12"><span class="rvts370">property parity {type =string; component = addrmap|regfile|reg ; };</span></p>
+   <p class="rvps12"><span class="rvts370">property parity_error {type =string; component = addrmap|regfile|reg ; };</span></p>
+   <p class="rvps12"><span class="rvts370">property direction {type = string; component = signal ; };</span></p>
+   <p class="rvps12"><span class="rvts370">property bus_parity {type = string; component = addrmap ; };</span></p>
+   <p class="rvps12"><span class="rvts370">property bus_parity_e2e {type = string; component = addrmap ; }; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">addrmap block_na1 {</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp;name &nbsp;= "block_na1 Address Map";</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp;parity = "even" ;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp;parity_error = "S1:noread" ;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp;bus_parity= "true" ;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp;bus_parity_e2e = "true" ;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; // Signals</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; signal { activelow; sync; signalwidth = 1; direction = "out";</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;desc= " This signal is sync and activelow with width 1"; } S1;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; reg reg_n1 {&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; regwidth = 32;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; } F1[31:0] = 32'h0;</span></p>
+   <p class="rvps12"><span class="rvts370"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; };</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; reg reg_n2 {&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; regwidth = 32;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; &nbsp; } F2[31:0] = 32'h0;</span></p>
+   <p class="rvps12"><span class="rvts370"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; };</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; reg_n1 reg_n1 @0x0;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp; reg_n2 reg_n2[2] @0x4;</span></p>
+   <p class="rvps12"><span class="rvts370">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts35">Generated RTL</span></p>
+<p class="rvps12"><span class="rvts35"><br/></span></p>
+<div class="rvps12">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts701">&nbsp;</span><span class="rvts703">...</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;assign reg_n1_F1_r = reg_n1_F1_q; // Field : F1</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;// ===================================================</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;// Parity logic for reg_n1</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;// ===================================================</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;always @(posedge clk)&nbsp; begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;if(!reset_l)</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_n1_parity_reg &lt;= parity_gen({32'd0});</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;else</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(reg_n1_F1_in_enb)</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_n1_parity_reg &lt;= parity_gen({reg_n1_F1_in});</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(reg_n1_wr_valid)</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps247"><span class="rvts702">reg_n1_parity_reg &lt;= parity_gen({(wr_data[31:0] &amp; reg_enb[31:0])}) ^ ((^(~reg_enb[31:0] &amp; wr_data[31:0]))&nbsp; ^ (^i_pwdatachk) ^ ( pwrite_parity_err | prdata_parity_err | paddr_parity_err | pctrl_parity_err));</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;end //end clk</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;// ===================================================</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;assign reg_n1_parity_error = (parity_gen({reg_n1_F1_q}))^reg_n1_parity_reg;</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;assign reg_n1_rd_data&nbsp; = reg_n1_rd_valid ? {reg_n1_F1_q} : 32'd0;</span></p>
+   <p class="rvps247"><span class="rvts451">.</span></p>
+   <p class="rvps247"><span class="rvts451">.</span></p>
+   <p class="rvps247"><span class="rvts451">.</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// ===================================================</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Parity logic for reg_n2</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// ===================================================</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;always @(posedge clk)&nbsp; begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!reset_l)</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_n2_parity_reg[reg_n2_i] &lt;= parity_gen({32'd0});</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(reg_n2_F2_in_enb[reg_n2_i])</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_n2_parity_reg[reg_n2_i] &lt;= parity_gen({reg_n2_F2_in[(reg_n2_i) *32+31 : (reg_n2_i) *32]});</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(reg_n2_wr_valid[reg_n2_i])</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;</span><span class="rvts702">&nbsp;reg_n2_parity_reg[reg_n2_i] &lt;= parity_gen({(wr_data[31:0] &amp; reg_enb[31:0])}) ^ ((^(~reg_enb[31:0] &amp; wr_data[31:0]))&nbsp; ^ (^i_pwdatachk) ^ ( pwrite_parity_err | prdata_parity_err | paddr_parity_err | pctrl_parity_err));</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end //end clk</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// ===================================================</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assign reg_n2_parity_error[reg_n2_i] = (parity_gen({reg_n2_F2_q[reg_n2_i]}))^reg_n2_parity_reg[reg_n2_i];</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assign reg_n2_rd_data [reg_n2_i] = reg_n2_rd_valid[reg_n2_i] ? {reg_n2_F2_q[reg_n2_i]} : 32'd0;</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end //reg_n2</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;endgenerate</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;assign&nbsp; reg_n2_parity_error_wire = (|reg_n2_parity_error);</span></p>
+   <p class="rvps247"><span class="rvts701">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps247"><span class="rvts370">.</span></p>
+   <p class="rvps247"><span class="rvts370">.</span></p>
+   <p class="rvps247"><span class="rvts370">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/news-and-articles/2022-09-27-why-use-a-help-authoring-tool-instead-of-microsoft-word-to-produce-high-quality-documentation/">Make Documentation a Breeze with a Help Authoring Tool</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

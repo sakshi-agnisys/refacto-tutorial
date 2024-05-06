@@ -1,0 +1,949 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Clock Enable</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Advanced Topics">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Clock Enable">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Clock Enable" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="ClockEnable"
+		  data-hnd-context="242"
+		  data-hnd-title="Clock Enable"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AdvancedTopics.html">Advanced Topics</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="AdvancedTopics.html" title="Advanced Topics" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="FunctionalSafety.html" title="Functional Safety" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="RegDiff.html" title="Reg Diff" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Clock Enable</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts14">Clock_enable property has been introduced to make write on a register depend upon either the signal or the access types. There are two ways in which we can apply this property in IDS:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">1) By defining a signal and then assigning it to the property on the register {eg: clock_enable=signal_name). In this case the write on the register depend upon the signal.</span></p>
+<p class="rvps2"><span class="rvts14">2) By giving the value "true" on the property, then the write on register depends upon the access type of the field. </span><span class="rvts34">It basically gates the HW and SW logic depending on the access of the register. </span><span class="rvts14">The example below represents how clock_enable property is applied in IDS-Word. where, the register reg_name depends upon the signal and register R1 depends upon the field access type.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Example:</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/clock_enable/clock_enable.idsng.zip">IDS-NG</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/clock_enable/clock_enable.docx">IDS-Word</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/clock_enable/clock_enable.xlsx">IDS-Excel</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/clock_enable/clock_enable.rdl">SystemRDL</a></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 644px; height : 398px; padding : 1px;" src="lib/NewItem4939.png"></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">IDS-NG Spreadsheet View</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 753px; height : 217px; padding : 1px;" src="lib/NewItem4940.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">SystemRDL</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps223"><span class="rvts356">property clock_enable {type = string ; component = addrmap|reg ; };</span></p>
+   <p class="rvps223"><span class="rvts356"><br/></span></p>
+   <p class="rvps223"><span class="rvts356">addrmap B1 {</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp;signal {}S1;</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp;reg reg_name {</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; clock_enable &nbsp;= "S1";</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; field {</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sw = rw;</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hw = r;</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; }F0[31:0];</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp;};</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp;reg R1{</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; clock_enable = "true";</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; regwidth = 16;</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; field {</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hw = r;</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sw = rw;</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;onread = rclr; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; &nbsp; &nbsp; }F1[15:0];</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; reg_name reg_name;</span></p>
+   <p class="rvps223"><span class="rvts356">&nbsp; R1 R1;</span></p>
+   <p class="rvps223"><span class="rvts356">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Verilog Code:-</span></p>
+<p class="rvps2"><span class="rvts367"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps6"><span class="rvts356">module B1_IDS(</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; regname_enb,</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; regname_F0_r,</span></p>
+   <p class="rvps6"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps6"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps6"><span class="rvts356">//Signal Name</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; S1,</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; .</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; always @(posedge clk)</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; if (!reset_l)</span></p>
+   <p class="rvps6"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin&nbsp;</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385"> if (S1)</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin&nbsp;</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (regname_wr_valid) &nbsp; // F0 : SW Write</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; regname_F0_q &lt;= ( wr_data[31 : 0] &amp; reg_enb[31 : 0] ) | (regname_F0_q &amp; (~reg_enb[31 : 0]));</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end&nbsp;</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp; //S1</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; end // always clk</span></p>
+   <p class="rvps6"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps6"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps6"><span class="rvts356">.</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; always @(posedge clk)&nbsp;</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; if (!reset_l)</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;….</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps147"><span class="rvts385">if (R1_rd_valid || R1_wr_valid)</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin&nbsp;</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (R1_wr_valid) &nbsp; // F1 : SW Write</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R1_F1_q &lt;= ( wr_data[15 : 0] &amp; reg_enb[15 : 0] ) | (R1_F1_q &amp; (~reg_enb[15 : 0]));</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp;&nbsp;</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+   <p class="rvps6"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps147"><span class="rvts356">&nbsp;end</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp; //true</span></p>
+   <p class="rvps6"><span class="rvts356">&nbsp; &nbsp; end // always clk</span></p>
+   <p class="rvps6"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps6"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps6"><span class="rvts356">endmodule</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts31">clock_enable property at hi</span><a name="hierarchy"></a><span class="rvts31">erarchy</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<p class="rvps2"><span class="rvts31">SRDL Input (at block) :-</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps146"><span class="rvts36">property clock_enable {type = string; component = addrmap|regfile|reg;};</span></p>
+   <p class="rvps146"><span class="rvts60"><br/></span></p>
+   <p class="rvps146"><span class="rvts346">signal {} Yclk;</span></p>
+   <p class="rvps146"><span class="rvts60"><br/></span></p>
+   <p class="rvps146"><span class="rvts36">addrmap block1 {</span></p>
+   <p class="rvps146"><span class="rvts36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts346">&nbsp;clock_enable = "yclk";</span></p>
+   <p class="rvps146"><span class="rvts60"><br/></span></p>
+   <p class="rvps146"><span class="rvts36">&nbsp;&nbsp;regfile {</span></p>
+   <p class="rvps146"><span class="rvts36">&nbsp;&nbsp;&nbsp;reg {</span></p>
+   <p class="rvps146"><span class="rvts36">&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps146"><span class="rvts36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps146"><span class="rvts36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = na;</span></p>
+   <p class="rvps146"><span class="rvts60"><br/></span></p>
+   <p class="rvps146"><span class="rvts36">&nbsp;&nbsp;&nbsp;} f1[31:0]=0;</span></p>
+   <p class="rvps146"><span class="rvts36">&nbsp;&nbsp;&nbsp;} reg1;</span></p>
+   <p class="rvps146"><span class="rvts36">&nbsp;&nbsp;&nbsp;} reggroup;</span></p>
+   <p class="rvps146"><span class="rvts36">&nbsp;&nbsp;&nbsp;};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">SRDL Input (at section) :-</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps225"><span class="rvts356">property clock_enable {type = string; component = addrmap|regfile|reg;};</span></p>
+   <p class="rvps225"><span class="rvts356"><br/></span></p>
+   <p class="rvps225"><span class="rvts356">signal {} Yclk;</span></p>
+   <p class="rvps225"><span class="rvts356"><br/></span></p>
+   <p class="rvps225"><span class="rvts356">addrmap block1 {&nbsp;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;&nbsp;regfile {</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clock_enable = "yclk";</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;&nbsp;&nbsp;reg {</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = na;</span></p>
+   <p class="rvps225"><span class="rvts356"><br/></span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;&nbsp;&nbsp;} f1[31:0]=0;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;&nbsp;&nbsp;} reg1;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;&nbsp;&nbsp;} reggroup;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp;&nbsp;&nbsp;};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">IDS-NG Input</span></p>
+<p class="rvps2"><span class="rvts36"><br/></span></p>
+<p class="rvps2"><span class="rvts36">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 624px; height : 411px;" src="lib/NewItem4349.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Verilog Output:- &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps163"><span class="rvts356">always @(posedge clk)&nbsp; begin</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;if (!reset_l)</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reggroup_reg1_f1_q &lt;= 32'd0;</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;else</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (yclk)</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (reggroup_reg1_wr_valid)&nbsp; //F1 : SW Write</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps163"><span class="rvts356">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts386">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts386"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 657px; height : 424px; padding : 1px;" src="lib/NewItem%2014.png"></p>
+<p class="rvps3"><span class="rvts386"><br/></span></p>
+<p class="rvps2"><span class="rvts386">IDS-NG Spreadsheet View</span></p>
+<p class="rvps2"><span class="rvts386"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 848px; height : 264px; padding : 1px;" src="lib/NewItem%2015.png"></p>
+<p class="rvps2"><span class="rvts386"><br/></span></p>
+<p class="rvps2"><span class="rvts31">SystemRDL Input</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts430">property clock_enable {type = string ; component = addrmap|reg ; };</span></p>
+   <p class="rvps2"><span class="rvts430">addrmap B1 {</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">signal {}S1;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">reg reg_name {</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">clock_enable &nbsp;= "S1";</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">field {</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">sw = rw;{</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">clock_enable = "true";</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">regwidth = 16;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">field {</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">hw = r;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">onread = rclr; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">}F1[15:0];</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp;}; reg_name reg_name;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts430">}; R1 R1;</span><span class="rvts430"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts430">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Generated Verilog Output</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">always @(posedge clk) &nbsp;begin</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; if (!reset_l)</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg_name_F0_q &lt;= 32'bx;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; else</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385"> if (S1)</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (reg_name_wr_valid) &nbsp; &nbsp; &nbsp; //F0 : SW Write</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg_name_F0_q &lt;= (wr_data [31 : 0] &nbsp;&amp; reg_enb &nbsp;[31 : 0] ) | (reg_name_F0_q &amp; (~reg_enb &nbsp;[31 : 0] ));</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; end //end always</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; assign reg_name_F0_r = reg_name_F0_q; // Field : F0</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; assign reg_name_rd_data &nbsp;= reg_name_rd_valid ? {reg_name_F0_q} : 32'd0;</span></p>
+   <p class="rvps2"><span class="rvts356">…………………………….</span></p>
+   <p class="rvps2"><span class="rvts356">…………………………….</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;always @(posedge clk) &nbsp;begin</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;</span><span class="rvts385"> if (!reset_l)</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R1_F1_q &lt;= 16'bx;</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; else</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; if(R1_rd_valid || R1_wr_valid)</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin if (R1_wr_valid) &nbsp; &nbsp; &nbsp; //F1 : SW Write</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R1_F1_q &lt;= (wr_data [15 : 0] &nbsp;&amp; reg_enb &nbsp;[15 : 0] ) | (R1_F1_q &amp; (~reg_enb &nbsp;[15 : 0] ));</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (R1_rd_valid) &nbsp; &nbsp; &nbsp; &nbsp; //F1 : SW Read to Clear</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R1_F1_q &lt;= 16'h0;</span></p>
+   <p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; end //end always</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Generated </span><a name="VHDL_82"></a><span class="rvts31">VHDL</span><span class="rvts27"> </span><span class="rvts31">Output</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">………………………</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;………………………</span></p>
+   <p class="rvps2"><span class="rvts356">…………………………</span></p>
+   <p class="rvps2"><span class="rvts356">…………………………</span></p>
+   <p class="rvps2"><span class="rvts356">reg_name_F0 : &nbsp;process (clk)</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if &nbsp;rising_edge (clk) then</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if reset_l = '0' then</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q_reg_name_F0 &nbsp; &nbsp; &nbsp; &lt;= default_reg_name_F0;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if S1 = '0' then</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp;if (wr_valid_reg_name = '1' &nbsp;) then &nbsp; &nbsp; &nbsp; &nbsp; -- &nbsp;SW Write</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q_reg_name_F0 &nbsp; &lt;= ( wr_data(31 downto 0) and reg_enb(31 downto 0) ) or ( q_reg_name_F0 and (not(reg_enb(31 downto 0))) );</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end if;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end if;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end if;-- reset</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end if;-- clock edge</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end process reg_name_F0;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;…………………………</span></p>
+   <p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> …………………………</span></p>
+   <p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> …………………………</span></p>
+   <p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">……………………………</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;R1_F1 : &nbsp;process (clk)</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if &nbsp;rising_edge (clk) then</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if reset_l = '0' then</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q_R1_F1 &nbsp; &nbsp; &lt;= default_R1_F1;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (rd_valid_R1 = '1' or wr_valid_R1 = '1') then</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (wr_valid_R1 = '1' &nbsp;) then &nbsp; &nbsp; &nbsp; &nbsp; -- &nbsp;SW Write</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q_R1_F1 &lt;= ( wr_data(15 downto 0) and reg_enb(15 downto 0) ) or ( q_R1_F1 and (not(reg_enb(15 downto 0))) );</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elsif (rd_valid_R1 &nbsp;= '1') then &nbsp;--SW Read to Clear</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; q_R1_F1 &lt;= (others =&gt; '0');</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end if;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end if;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end if;-- reset</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end if;-- clock edge</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end process R1_F1;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; -- End R1_F1 process</span></p>
+   <p class="rvps2"><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">…………………………………</span></p>
+   <p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">…………………………………</span></p>
+   <p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">…………………………………</span></p>
+   <p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">…………………………………</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts31">&nbsp;</span></p>
+<p class="rvps2"><a name="clk_gating"></a><span class="rvts329">Clock Gating</span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">With the increasing number of transistors and clock frequency, it is required to have low power designs. Largest part of overall power consumption is due to dynamic power which is contributed due to every transition at register. Clock Gating is one of the ways to have low power circuit.</span></p>
+<p class="rvps2"><span class="rvts14">Clock Gating is a method to turn-off the power when it is not needed. It is used by SOC design today as an effective technique to save power. In IDS, clock gating is done through property “clock_enable” and a switch “Optimize for low power”.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">There is another method to provide an argument for clock_enable signal: -</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps2 noindent"><span class="rvts14">clock_enable=&lt;name of the gated clock logic&gt;, &lt;gated clockenb&gt;, &lt;name of the gated clock&gt;</span></li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Property</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps2 noindent"><span class="rvts14">clock_enable=&lt;name of the gated clock logic&gt;, &lt;gated clockenb&gt;, &lt;name of the gated clock&gt;, &lt;default&gt;</span></li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps2"><span class="rvts14">IDS provide a single clock input (clk) that drives all sequential logic in the generated RTL. With this property, now there will be two clock one gated clock and another normal clock(clk). User will define its own logic for gated clock which will be instantiated in IDS block.</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Diagram</span></p>
+<p class="rvps72"><span class="rvts209"><br/></span></p>
+<p class="rvps118"><img alt="" style="width : 395px; height : 245px; padding : 1px;" src="lib/NewItem2494.png"></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example</span></p>
+<p class="rvps72"><span class="rvts209"><br/></span></p>
+<div class="rvps72">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps225"><span class="rvts356">property clock_enable {type = string ; component = addrmap|reg ; };</span></p>
+   <p class="rvps225"><span class="rvts356"><br/></span></p>
+   <p class="rvps225"><span class="rvts356">addrmap B1 {</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp;clock_enable = "clk_gating,gclk_en,gclk";</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp;reg Reg1 {</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; clock_enable &nbsp;= "S1";</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; field {</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sw = rw;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hw = w;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; }F1[31:0] = 31'h1;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp;};</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp;reg Reg2{</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; clock_enable = "true";</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; regwidth = 16;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; field {</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hw = r;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sw = rw;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;onread = rclr; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; &nbsp; &nbsp; }F2[31:0] = 32'h12;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; Reg1 Reg1;</span></p>
+   <p class="rvps225"><span class="rvts356">&nbsp; Reg2 Reg2;</span></p>
+   <p class="rvps225"><span class="rvts356">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">In IDS-Word</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps118"><img alt="" style="width : 608px; height : 332px; padding : 1px;" src="lib/NewItem2493.png"></p>
+<p class="rvps2"><span class="rvts15">Generated Code:-</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<div class="rvps72">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px; height: 217px;">
+   <p class="rvps72"><img alt="" style="width : 185px; height : 43px; padding : 1px;" src="lib/NewItem2492.png"></p>
+   <p class="rvps72"><img alt="" style="padding : 1px;" src="lib/NewItem%201.png"></p>
+   <p class="rvps72"><img alt="" style="width : 684px; height : 424px; padding : 1px;" src="lib/NewItem2490.png"></p>
+   <p class="rvps72"><span class="rvts190"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Flow Diagram</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps118"><img alt="" style="width : 710px; height : 430px; padding : 1px;" src="lib/NewItem2489.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><a name="clk"></a><span class="rvts154">Clock Gating- Default Logic Addition</span></p>
+<p class="rvps14"><span class="rvts34"><br/></span></p>
+<p class="rvps14"><span class="rvts34">‘</span><span class="rvts370">clock_enable</span><span class="rvts1249">’</span><span class="rvts34"> can also take a fourth argument ‘default’. By which the clock gating logic will be automatically generated and instantiated in IDS block.</span></p>
+<p class="rvps14"><span class="rvts178"><br/></span></p>
+<p class="rvps14"><span class="rvts175">Property:-</span><span class="rvts34">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34"><br/></span></p>
+<div class="rvps14">
+<table width="100%" cellpadding="10" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts34">clock_enable=&lt;module_name of the gated clock logic&gt;, &lt;gated clock_enb&gt;, &lt;name of the gated clock&gt;, &lt;default&gt;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps14"><span class="rvts34"><br/></span></p>
+<div class="rvps14">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps84"><span class="rvts356">property clock_enable {type = string ; component = addrmap|reg ; };</span></p>
+   <p class="rvps84"><span class="rvts356"><br/></span></p>
+   <p class="rvps84"><span class="rvts356">addrmap Block1 {</span></p>
+   <p class="rvps84"><span class="rvts356">&nbsp; &nbsp;clock_enable = "clk_gate1,test_en,gclk,default";</span></p>
+   <p class="rvps84"><span class="rvts356">&nbsp; &nbsp;reg Reg1 {</span></p>
+   <p class="rvps84"><span class="rvts356">&nbsp; &nbsp; &nbsp; clock_enable &nbsp;= "S1";</span></p>
+   <p class="rvps84"><span class="rvts356">&nbsp; &nbsp; &nbsp; field {</span></p>
+   <p class="rvps84"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sw = rw;</span></p>
+   <p class="rvps84"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hw = w;</span></p>
+   <p class="rvps84"><span class="rvts356">&nbsp; &nbsp; &nbsp; }F1[31:0] = 31'h1;</span></p>
+   <p class="rvps84"><span class="rvts356">&nbsp; &nbsp;};</span></p>
+   <p class="rvps84"><span class="rvts356">&nbsp; Reg1 Reg1;</span></p>
+   <p class="rvps84"><span class="rvts356">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps14"><span class="rvts34"><br/></span></p>
+<p class="rvps14"><span class="rvts35">IDSWord</span></p>
+<p class="rvps14"><span class="rvts178"><br/></span></p>
+<p class="rvps191"><span class="rvts34"></span><br/><img alt="" style="padding : 1px;" src="lib/NewItem2948.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Generated code:-</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px; height: 392px;">
+   <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NewItem2930.png"><span class="rvts6">&nbsp;</span></p>
+   <p class="rvps2"><img alt="" style="width : 706px; height : 388px; padding : 1px;" src="lib/NewItem2929.png"></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Clock gating logic</span></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NewItem2928.png"></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<p class="rvps2"><span class="rvts329"><br/></span></p>
+<p class="rvps2"><span class="rvts391">exclude_clock_gating</span></p>
+<p class="rvps2"><a name="exclude_clock_gating"></a><span class="rvts391"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Example:</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/Exclude_clock_gating/Exclude_clock_gating.idsng.zip">IDS-NG</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/Exclude_clock_gating/Exclude_clock_gating.docx">IDS-Word</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/Exclude_clock_gating/Exclude_clock_gating.xls">IDS-Excel</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/Exclude_clock_gating/Exclude_clock_gating.rdl">SystemRDL</a></p>
+<p class="rvps2"><span class="rvts391"><br/></span></p>
+<p class="rvps2"><span class="rvts558">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts558"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 580px; height : 293px; padding : 1px;" src="lib/NewItem4931.png"></p>
+<p class="rvps3"><img alt="" style="width : 573px; height : 298px; padding : 1px;" src="lib/NewItem4932.png"></p>
+<p class="rvps3"><img alt="" style="width : 571px; height : 155px; padding : 1px;" src="lib/NewItem4933.png"></p>
+<p class="rvps3"><span class="rvts558"><br/></span></p>
+<p class="rvps2"><span class="rvts558">IDS-NG Spreadsheet View</span></p>
+<p class="rvps2"><span class="rvts558"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 871px; height : 309px; padding : 1px;" src="lib/NewItem4934.png"></p>
+<p class="rvps3"><span class="rvts558"><br/></span></p>
+<p class="rvps2"><span class="rvts558">SystemRDL</span></p>
+<p class="rvps2"><span class="rvts558"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps224"><span class="rvts370">property clock_enable { type = string ; component=&nbsp;addrmap; };</span></p>
+   <p class="rvps224"><span class="rvts370">property exclude_clock_gating { type = boolean ; component = regfile|reg ;};</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps224"><span class="rvts370">addrmap block {</span></p>
+   <p class="rvps224"><span class="rvts370"><br/></span></p>
+   <p class="rvps224"><span class="rvts370">clock_enable ="clk_gate1,test_en,gclk,default";</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regfile sec1{</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regfile sec1_1{</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exclude_clock_gating=true;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg reg1 {&nbsp;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = rw;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}F1[31:0] = 32'h0;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}reg1;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg reg2 {&nbsp;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = rw;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}F1[31:0] = 32'h0;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}reg2;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }sec1_1;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; regfile sec1_2{</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg reg3 {&nbsp;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = rw;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}F1[31:0] = 32'h0;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}reg3;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg reg4{&nbsp;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; exclude_clock_gating=true;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = rw;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}F1[31:0] = 32'h0;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}reg4;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }sec1_2;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}sec1;&nbsp;</span></p>
+   <p class="rvps224"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts558"><br/></span></p>
+<p class="rvps2"><span class="rvts558">Generated RTL output:-</span></p>
+<p class="rvps2"><span class="rvts558"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps163"><span class="rvts451">assign&nbsp; reg_in_enb = reg3_F1_in_enb ;</span></p>
+   <p class="rvps163"><span class="rvts451">assign&nbsp; ids_clk_en&nbsp; =&nbsp; psel | reg_in_enb;</span></p>
+   <p class="rvps163"><span class="rvts451">assign&nbsp; qactive = ids_clk_en;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts451"><br/></span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Here, the example above shows that any register in section sec1_1 and register reg4 in section sec1_2 are excluded from the clock gating, as both the sections and the register have the 'exclude_clock_gating=true' property.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Note:</span><span class="rvts34"> This functionality makes sense only with -top_property "power_opt=1".</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts126">po</span><a name="power_opt"></a><span class="rvts126">wer_opt</span></p>
+<p class="rvps2"><span class="rvts126"><br/></span></p>
+<p class="rvps2"><span class="rvts34">When the top property “power_opt” is used then this will generate an ‘qactive’ signal.</span></p>
+<p class="rvps2"><span class="rvts126"><br/></span></p>
+<p class="rvps2"><span class="rvts35">SystemRDL Example:-</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps223"><span class="rvts370">property clock_enable { type = string ; component = addrmap; };</span><br/><span class="rvts370"><br/></span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;addrmap block {</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;clock_enable ="clk_gate1,test_en,gclk,default";</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg reg1 {</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = r;</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}F1[31:0] = 32'h0;</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}reg1;</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;reg reg2 {</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = rw;</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = r;</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}F1[31:0] = 32'h0;</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}reg2;</span></p>
+   <p class="rvps223"><span class="rvts370">&nbsp;&nbsp;};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts126"><br/></span></p>
+<p class="rvps2"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts35">1. power_opt=1</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<p class="rvps2"><span class="rvts34">When the command line property </span><span class="rvts164">-top_property</span><span class="rvts34"> “power_opt=1” is applied then this will generate an ‘qactive’ signal and assign the clock enable signal to ‘qactive’ signal.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">For example:</span></p>
+<p class="rvps2"><span class="rvts34">&nbsp;</span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps6"><span class="rvts34">&nbsp;</span><span class="rvts370">output wire qactive;</span></p>
+   <p class="rvps110"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; assign &nbsp;reg_in_enb = reg2_F1_in_enb;</span></p>
+   <p class="rvps110"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; assign &nbsp;ids_clk_en &nbsp;= &nbsp;psel | reg_in_enb;</span></p>
+   <p class="rvps110"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; assign &nbsp;qactive = ids_clk_en;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts34">&nbsp;&nbsp;</span><span class="rvts34"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts34"> &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts35">2. power_opt=2</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<p class="rvps2"><span class="rvts34">When the property </span><span class="rvts164">-top_property </span><span class="rvts34">“power_opt=2” is applied on a block then this will group all registers which have a hardware access read-write and write-only (hw = rw or; hw = w) and these registers will be excluded from clock gating and additionally it will group all Registers which have a software access read-write and read-only (sw = rw or ; sw = r) and these CSR will be executed from the gated clock.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">For example:</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; assign &nbsp;ids_clk_en &nbsp;= &nbsp;psel;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts35">3. power_opt=3</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<p class="rvps2"><span class="rvts34">If the command line property </span><span class="rvts164">-top_property </span><span class="rvts34">"power_opt=3" is enabled, it will result in the selection of both the 1 and 2 values.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">For example:</span></p>
+<p class="rvps2"><span class="rvts451"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="1" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px;">
+   <p class="rvps11"><span class="rvts451">output wire qactive;</span></p>
+   <p class="rvps11"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assign&nbsp; ids_clk_en&nbsp; =&nbsp; psel;</span></p>
+   <p class="rvps11"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assign&nbsp; qactive = ids_clk_en;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts451">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/news-and-articles/2022-09-27-why-use-a-help-authoring-tool-instead-of-microsoft-word-to-produce-high-quality-documentation/">Eliminate the Struggles of Documentation with a Help Authoring Tool</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

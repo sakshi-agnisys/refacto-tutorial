@@ -1,0 +1,439 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Getting Started with IDS-NG</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="IDS-NG">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Getting Started with IDS-NG">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Getting Started with IDS-NG" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="GettingStartedwithIDSNextGen"
+		  data-hnd-context="253"
+		  data-hnd-title="Getting Started with IDS-NG"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="IDS-NGT.html">IDS-NG&trade;</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="IDS-NGT.html" title="IDS-NG&trade;" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Troubleshooting1.html" title="Troubleshooting" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ApplicationLayout.html" title="Application Layout" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Getting Started with IDS-NG</h2>
+
+            <div class="main-content">
+                
+<p class="rvps28"><span class="rvts360">IDS-NG enables users to capture the specification of IP and SoC. It is a platform independent tool with which user can create specifications on all version of RedHat, Ubuntu and others, Windows.</span></p>
+<p class="rvps28"><span class="rvts1419"><br/></span></p>
+<p class="rvps10"><span class="rvts34">The steps given below explain how to get started with IDS-NG:</span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts269">1. Creating a new Project:</span></span></h3>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps105 noindent"><span class="rvts0"><span class="rvts232">Select File &gt; New Project &gt; create project to launch the new project wizard.</span></span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps484 noindent"><span class="rvts0"><span class="rvts1420">In the Project Name field, enter a name for the project.&nbsp;</span></span></li>
+  <li class="rvps484 noindent"><span class="rvts0"><span class="rvts232">In the Project Location field, enter the directory name or browse to the directory location.</span></span></li>
+ </ul>
+</ul>
+<p class="rvps101"><span class="rvts193"><br/></span></p>
+<p class="rvps717"><img alt="" style="width : 641px; height : 461px; padding : 1px;" src="lib/NewItem4658.png"></p>
+<p class="rvps101"><span class="rvts193"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts36">Click ‘Create Project’ to create the project.</span></li>
+</ul>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts248">2. Opening an existing project:</span></span></h3>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">User can open an existing project by following step:</span></li>
+</ul>
+<p class="rvps2"><span class="rvts34">&nbsp; &nbsp; Select File &gt;&nbsp;</span><span class="rvts34"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts34">Open Project &gt;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">A window will pop up where the project to be open can be selected. User can create new IP, Register Spec or Text file in this existing project.</span></li>
+</ul>
+<p class="rvps75"><span class="rvts193"><br/></span></p>
+<p class="rvps2"><span class="rvts35">NOTE:</span><span class="rvts34"> User can also open an existing file, but that file won’t be included in the current project. To add any new file, User&nbsp;</span><span class="rvts34"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts34">must create a new file.</span></p>
+<p class="rvps22"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts126">3. Create a new file:</span></p>
+<p class="rvps2"><span class="rvts126"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps72 noindent"><span class="rvts193">Select File &gt; New File &gt; (‘Create IP’ or ‘Register Spec’ or ‘Text File’)</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps75 noindent"><span class="rvts193">Creating IP: - A folder with a same name Register Spec in it.</span></li>
+  <li class="rvps75 noindent"><span class="rvts193">Register Spec: - Specification file with a block and register in it.</span></li>
+  <li class="rvps75 noindent"><span class="rvts193">Text File: - This is a simple Text Editor File.&nbsp;</span></li>
+ </ul>
+</ul>
+<p class="rvps715"><img alt="" style="width : 609px; height : 433px; padding : 1px;" src="lib/NewItem4659.png"></p>
+<p class="rvps191"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps14 noindent"><a name="quick start"></a><span class="rvts34">For referring documentation quickly, a link has been provided in menu help, i.e., Quick Start, as shown below:</span></li>
+ </ul>
+</ul>
+<p class="rvps191"><span class="rvts34"><br/></span></p>
+<p class="rvps716"><span class="rvts193">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem4660.png"></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><span class="rvts55">Fig: </span><span class="rvts26">Click on ‘Create’ to create a file.</span></p>
+<p class="rvps712"><span class="rvts195"><br/></span></p>
+<p class="rvps2"><span class="rvts31">NOTE: </span><span class="rvts36">There are three types of file that a user can create in IDS-NG. These are: IDS-NG Document and IDS-NG Spreadsheet.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">If a user creates IDS-NG Document , then user can create its specification by adding IDS-NG Templates as:</span></li>
+</ul>
+<p class="rvps10"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps10 noindent"><span class="rvts34">Click on the appropriate button from the tool bar to add an IDS-NG template.</span></li>
+  <li class="rvps10 noindent"><span class="rvts34">Fill in the template with an appropriate name according to the desired specifications.</span></li>
+  <li class="rvps10 noindent"><span class="rvts34">IDS-NG also has an additional feature of hints for both s/w and h/w access, which can be used by typing dot, that is '.', in the respective section.</span></li>
+ </ul>
+</ul>
+<p class="rvps3"><img alt="" style="width : 815px; height : 408px; padding : 1px;" src="lib/NewItem4661.png"></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">If user is creating an IDS-NG Document then user is in the 'Register View'. From Register View, user can either switch the Param View or Sequence view.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem4662.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts36">If a user creates IDS-NG RDL Editor, then user can create its specification by following steps:</span></li>
+</ul>
+<p class="rvps72"><span class="rvts194"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps72 noindent"><span class="rvts1418">IDS-NG uses a default template for register data specification as shown in the picture below. Fill in the template with appropriate data according to the desired specifications</span></li>
+  <li class="rvps72 noindent"><span class="rvts1418">Create new project </span><span class="rvts194">then user can open a rdl testcase by adding IDS-NG Templates as:</span></li>
+  <li class="rvps72 noindent"><span class="rvts1418">Create new project and select Register Spec.</span></li>
+ </ul>
+</ul>
+<p class="rvps72"><span class="rvts1418"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 672px; height : 482px; padding : 1px;" src="lib/NewItem4663.png"></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2 noindent"><span class="rvts49">After select Register Spec where three options will be given.</span></li>
+  <li class="rvps2 noindent"><span class="rvts49">These are: IDS-NG Document and IDS-NG Spreadsheet and RDL Editor</span><span class="rvts36">.</span></li>
+  <li class="rvps2 noindent"><span class="rvts36">After that select RDL Editor &nbsp;and open a rdl test case in editor.</span></li>
+ </ul>
+</ul>
+<p class="rvps2"><span class="rvts49"><br/></span></p>
+<p class="rvps3"><span class="rvts49">&nbsp;</span><img alt="" style="width : 732px; height : 361px; padding : 1px;" src="lib/NewItem4664.png"></p>
+<p class="rvps2"><span class="rvts36"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 689px; height : 354px; padding : 1px;" src="lib/NewItem4565.png"></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2 noindent"><span class="rvts14">System RDL Editor support keyword hinting also dynamic hinting&nbsp;</span></li>
+  <li class="rvps2 noindent"><span class="rvts14">This editor supports syntax checker, means it will show error if there is an syntax error in the spec.</span></li>
+ </ul>
+</ul>
+<p class="rvps2"><a name="spreadsheet view"></a><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">If a user creates IDS-NG Spreadsheet, then user can create its specification by following steps:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2 noindent"><span class="rvts34"> IDS-NG uses a default template for register data specification as shown in the picture below. Fill in the template with&nbsp;</span><span class="rvts34"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts34">appropriate data according to the desired &nbsp;specifications.</span></li>
+ </ul>
+</ul>
+<p class="rvps713"><img alt="" style="width : 547px; height : 298px; padding : 1px;" src="lib/NewItem2043.png"></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps713 noindent"><span class="rvts34">However, these templates can be changed by the user by altering the 'User Header' column. For example, if a user changes 'chip' to&nbsp;</span><span class="rvts34"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts34">'chip_name' in 'User Header' then while using chip in spreadsheet, the template name must be changed to 'chip_name' from 'chip'.</span></li>
+ </ul>
+</ul>
+<p class="rvps175"><span class="rvts34"><br/></span></p>
+<p class="rvps713"><img alt="" style="width : 765px; height : 376px; padding : 1px;" src="lib/NewItem2321.jpg"></p>
+<p class="rvps175"><a name="system rdl editor"></a><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">If user is creating an IDS-NG Spreadsheet then user is in the 'Spreadsheet View'. From Spreadsheet View, user can either switch to the Param View or Sequence view.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts180"><br/></span></p>
+<p class="rvps2"><span class="rvts126">4. “Configuring” the Specification:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps2 noindent"><span class="rvts34">The Configure button can be used to make settings according to the requirement and choose the kind of files that need to be generated. User can make the appropriate settings in the Configure window.</span></li>
+  <li class="rvps2 noindent"><span class="rvts36">User can select the desired outputs to generate under the Outputs tab.&nbsp;</span><span class="rvts34">Click on the required check boxes from Options available.</span></li>
+  <li class="rvps2 noindent"><span class="rvts34">Click OK to apply the chosen options.</span></li>
+ </ul>
+</ul>
+<p class="rvps3"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts16"> </span><img alt="" style="width : 779px; height : 428px; padding : 1px;" src="lib/NewItem4567.png"></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 663px; height : 540px; padding : 1px;" src="lib/NewItem4568.png"></p>
+<p class="rvps714"><span class="rvts16"><br/></span></p>
+<p class="rvps90"><a name="tcl"></a><span class="rvts14">User can also generate their own user defined output, like tcl by going to the following configuration settings:</span></p>
+<p class="rvps90"><span class="rvts14"><br/></span></p>
+<p class="rvps714"><img alt="" style="width : 644px; height : 550px; padding : 1px;" src="lib/NewItem4429.png"></p>
+<p class="rvps714"><span class="rvts34"><br/></span></p>
+<p class="rvps714"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts126">5. Supported System RDL alt1 and alt2 outputs IDSNG:</span></p>
+<p class="rvps2"><span class="rvts96"><br/></span></p>
+<p class="rvps2"><span class="rvts36">User can select the system RDL alt1 and alt2 &nbsp;outputs to generate under the Outputs tab.&nbsp;</span><span class="rvts34">Click on the required check boxes from Options available.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><span class="rvts34">&nbsp; &nbsp; </span><img alt="" style="width : 618px; height : 525px; padding : 1px;" src="lib/NewItem4430.png"></p>
+<p class="rvps2"><span class="rvts126"><br/></span></p>
+<p class="rvps72"><span class="rvts246">6. Supported inline enum declaration in IDSNG.</span></p>
+<p class="rvps72"><span class="rvts487"><br/></span></p>
+<p class="rvps72"><span class="rvts186">&nbsp; &nbsp; &nbsp;Now user can declare inline enum in IDS-NG.</span></p>
+<p class="rvps72"><span class="rvts190"><br/></span></p>
+<p class="rvps72"><span class="rvts190"><br/></span></p>
+<p class="rvps118"><img alt="" style="width : 943px; height : 175px; padding : 1px;" src="lib/NewItem3480.png"></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts126">7. Resolutions of the buttons and graphics are improved in the toolbar:</span></p>
+<p class="rvps2"><span class="rvts96"><br/></span></p>
+<p class="rvps2"><span class="rvts96">Introduction:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps12 noindent"><span class="rvts34">IDS-NG toolbar needs to be enhanced to work with different resolution operating systems. To achieve this functionality, there is need to make some changes in toolbar’s internal structure&nbsp;.&nbsp;</span></li>
+ </ul>
+</ul>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps12 noindent"><span class="rvts34">This new toolbar is more clear, smooth and responsive to any resolution OS.</span></li>
+ </ul>
+</ul>
+<p class="rvps12"><span class="rvts34"><br/></span></p>
+<p class="rvps12"><span class="rvts96">Before on Linux:</span></p>
+<p class="rvps12"><span class="rvts126">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 1185px; height : 117px; padding : 1px;" src="lib/NewItem4432.png"></p>
+<p class="rvps12"><span class="rvts34">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts96">Now on Linux:</span></p>
+<p class="rvps2"><span class="rvts126">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts126"> &nbsp; &nbsp; &nbsp;</span><span class="rvts126"> </span><img alt="" style="width : 982px; height : 115px; padding : 1px;" src="lib/NewItem4431.png"><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/advanced-project-analyzer/">Elevate Your Documentation with HelpNDoc's Project Analyzer Features</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

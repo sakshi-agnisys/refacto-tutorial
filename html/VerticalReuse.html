@@ -1,0 +1,471 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Vertical Reuse</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Advanced Topics">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vertical Reuse">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Vertical Reuse" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="VerticalReuse"
+		  data-hnd-context="231"
+		  data-hnd-title="Vertical Reuse"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AdvancedTopics.html">Advanced Topics</a></li><li><a href="AdvancedUVM.html">Advanced UVM</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="AdvancedUVM.html" title="Advanced UVM" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="UVMClassNameExtension1.html" title="UVM Class Name Extension" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="UsingIDesignSpecTforUVMRegModel.html" title="Using IDesignSpec&trade; for UVM RegModel" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Vertical Reuse</h2>
+
+            <div class="main-content">
+                
+<p class="rvps113"><span class="rvts710">Vertical reuse</span></p>
+<p class="rvps2"><span class="rvts533">(Compatible with IDS version 6.8.0.0 and above)</span></p>
+<p class="rvps2"><span class="rvts392"><br/></span></p>
+<p class="rvps2"><span class="rvts14">When a block is vertically reused in a chip/system environment (top level flow). The block related UVM classes (register UVM classes and block UVM class) are getting regenerated again by IDS at the chip/system level. It shouldn't be regenerated but should reuse the block related UVM class definitions generated at the block/IP level. For this property </span><span class="rvts15">vertical_reuse</span><span class="rvts14"> can be used. The value of this property can be "true" or "false".&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts329">Example</span></p>
+<p class="rvps2"><span class="rvts329"><br/></span></p>
+<p class="rvps2"><span class="rvts329">IDS-Excel</span><span class="rvts15">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 552px; height : 89px; padding : 1px;" src="lib/NewItem2126.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts329">IDS-Word</span><span class="rvts15">&nbsp;</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1731.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps396"><img alt="" style="padding : 1px;" src="lib/NewItem1732.png"></p>
+<p class="rvps396"><span class="rvts14"><br/></span></p>
+<p class="rvps396"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps219 noindent"><span class="rvts14">In the above example a ref of the block named "Simple_block" is created inside a chip "Chip". The spec for "Simple_block" is defined in another document "Simple_block.docx" and lets assume it contains 3 regsiters say Reg_1, Reg_2, Reg_3</span></li>
+ <li class="rvps394 noindent"><span class="rvts186">The property </span><span class="rvts209">{vertical_reuse = true}</span><span class="rvts186"> is used</span><span class="rvts209"> </span><span class="rvts186">at the block "Simple_block"&nbsp;</span></li>
+</ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps395 noindent"><span class="rvts186">By this property, the block level UVM classes (Simple_block_Reg_1, Simple_block_Reg_2, Simple_block_Reg_3 and Simple_block_block) will not be regenerated in the chip level register model file.</span></li>
+  <li class="rvps395 noindent"><span class="rvts186">The block level package (Simple_block_regmem_pkg) generated at the user's block level environment will be imported inside the chip package as shown in below example.</span></li>
+ </ul>
+</ul>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps219"><span class="rvts14">The block level UVM classes will not be regenerated in the chip level register model file, the block level package generated at the user’s block level environment will be imported inside the chip package.</span></p>
+<p class="rvps396"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">With the above property, when we select </span><span class="rvts15">Configure-&gt; Registers-&gt; Outputs-&gt; UVM</span><span class="rvts14">, the output files with following highlighted changes will be generated:-</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside; list-style-type: lower-roman;">
+ <li class="rvps395 noindent"><span class="rvts209">Basic_Example_pkg.regmem.sv</span></li>
+</ol>
+<p class="rvps395"><span class="rvts784"><br/></span></p>
+<p class="rvps101"><span class="rvts1009">`ifndef CHIP_REGMEM</span></p>
+<p class="rvps101"><span class="rvts1009">`define CHIP_REGMEM</span></p>
+<p class="rvps101"><span class="rvts1009"><br/></span></p>
+<p class="rvps101"><span class="rvts1009">package Chip_regmem_pkg;</span></p>
+<p class="rvps101"><span class="rvts1009">&nbsp; &nbsp; import uvm_pkg::*;</span></p>
+<p class="rvps101"><span class="rvts1009">&nbsp; &nbsp; </span><span class="rvts1010">import Simple_block_regmem_pkg::*;</span></p>
+<p class="rvps101"><span class="rvts1009">&nbsp; &nbsp; `include "uvm_macros.svh"</span></p>
+<p class="rvps101"><span class="rvts1009">&nbsp; &nbsp; &nbsp;`include "Basic_Example_regmem.regmem.sv"</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; &nbsp; endpackage</span></p>
+<p class="rvps101"><span class="rvts469">`endif</span></p>
+<p class="rvps101"><span class="rvts186"><br/></span></p>
+<p class="rvps100"><span class="rvts1011">NOTE</span><span class="rvts920">: -</span><span class="rvts521"> We are using property for the above changes to make it backward compatible</span></p>
+<p class="rvps100"><span class="rvts941"><br/></span></p>
+<p class="rvps100"><span class="rvts285"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 72px; list-style-position: outside; list-style-type: lower-roman;">
+ <li value="2" class="rvps397 noindent"><span class="rvts209">Basic_Example.regmem.sv</span></li>
+</ol>
+<p class="rvps100"><span class="rvts209">&nbsp;</span><span class="rvts920">(</span><span class="rvts521">The block level UVM classes will not be generated when property “vertical_reuse” is true</span><span class="rvts920">)</span></p>
+<p class="rvps101"><span class="rvts1008"><br/></span></p>
+<p class="rvps101"><span class="rvts1012">class Simple_block_Reg_1 extends uvm_reg;</span></p>
+<p class="rvps101"><span class="rvts1012">. . . .&nbsp;</span></p>
+<p class="rvps101"><span class="rvts1012">endclass</span></p>
+<p class="rvps101"><span class="rvts1012"><br/></span></p>
+<p class="rvps101"><span class="rvts1012">class Simple_block_Reg_1 extends uvm_reg;</span></p>
+<p class="rvps101"><span class="rvts1012">. . . .&nbsp;</span></p>
+<p class="rvps101"><span class="rvts1012">endclass</span></p>
+<p class="rvps101"><span class="rvts1012"><br/></span></p>
+<p class="rvps101"><span class="rvts1012">class Simple_block_Reg_1 extends uvm_reg;</span></p>
+<p class="rvps101"><span class="rvts1012">. . . .&nbsp;</span></p>
+<p class="rvps101"><span class="rvts1012">endclass</span></p>
+<p class="rvps101"><span class="rvts1012"><br/></span></p>
+<p class="rvps101"><span class="rvts1012">class Simple_block_block extends uvm_reg_block;</span></p>
+<p class="rvps101"><span class="rvts1012">. . . .</span></p>
+<p class="rvps101"><span class="rvts1012">endclass : Simple_block_block</span></p>
+<p class="rvps101"><span class="rvts469"><br/></span></p>
+<p class="rvps101"><span class="rvts469">`ifndef CLASS_Chip_block</span></p>
+<p class="rvps101"><span class="rvts469">`define CLASS_Chip_block</span></p>
+<p class="rvps101"><span class="rvts469"><br/></span></p>
+<p class="rvps101"><span class="rvts469">class Chip_block extends uvm_reg_block;</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; &nbsp; `uvm_object_utils(Chip_block)</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; &nbsp; . . . . . . . .</span></p>
+<p class="rvps101"><span class="rvts469">&nbsp; &nbsp;. . .&nbsp;</span></p>
+<p class="rvps101"><span class="rvts469">endclass : Chip_block</span></p>
+<p class="rvps101"><span class="rvts469">`endif</span></p>
+<p class="rvps101"><span class="rvts1007"><br/></span></p>
+<p class="rvps101"><span class="rvts521"><br/></span></p>
+<h1 class="rvps398"><a name="uvm: vertical: no leaf"></a><span class="rvts0"><span class="rvts352">Top Level Flow without generation of register level outputs</span></span></h1>
+<p class="rvps2"><span class="rvts42">When we apply vertical_reuse=true at the top level with </span><span class="rvts14">out_third_party="d" </span><span class="rvts42">feature, only the intermediate and top-level files will be generated and the files containing register (that is, at the leaf level) will not be generated.</span></p>
+<p class="rvps2"><span class="rvts42"><br/></span></p>
+<p class="rvps2"><span class="rvts452">Vertical_reuse command line option</span></p>
+<p class="rvps2"><span class="rvts42"><br/></span></p>
+<p class="rvps2"><span class="rvts42">"-vertical_reuse" command line option is used to create package for all level of hierarchy, i.e., Chip/Block/Subblock. Each package imports its corresponding child container package. This option works with "-if" or "-if_uvm" command line option. It generates separate file for each block and chip.</span></p>
+<p class="rvps2"><span class="rvts162"><br/></span></p>
+<p class="rvps166"><span class="rvts126">Enhanced support of vert</span><span class="rvts126">ica</span><a name="Vertical"></a><span class="rvts126">l reuse</span><span class="rvts125">&nbsp;&nbsp;</span></p>
+<p class="rvps166"><span class="rvts125">&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts36">In IDS, when a block is vertically reused in a chip/system environment (top level flow), the block related UVM classes (register UVM classes and block UVM class) are getting regenerated again by IDS at the chip/system level. It shouldn't be regenerated but should reuse the block-related UVM class definitions generated at the block/IP level. For this property, vertical_reuse can be used.</span></p>
+<p class="rvps12"><span class="rvts101"><br/></span></p>
+<p class="rvps2"><span class="rvts102">“vertical_reuse” property can have the following values, “</span><span class="rvts646">vertical_reuse=verilog</span><span class="rvts102">” for verilog output and “</span><span class="rvts646">vertical_reuse=uvm</span><span class="rvts102">” fo uvm outputs, in case of uvm output it is similar to “vertical_reuse=true” property. Property can also have both the values comma separated, i.e., “</span><span class="rvts646">vertical_reuse=verilog,uvm</span><span class="rvts102">”.</span></p>
+<p class="rvps2"><span class="rvts71"><br/></span></p>
+<p class="rvps2"><span class="rvts452">IDS-NG input:</span></p>
+<p class="rvps12"><span class="rvts1013">1) Top file</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem4493.png"><span class="rvts29"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps12"><span class="rvts1013">2) Referred file (ref.idsng)</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 602px; height : 140px;" src="lib/NewItem4514.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts452">SystemRDL input:</span></p>
+<p class="rvps12"><span class="rvts452"><br/></span></p>
+<div class="rvps12">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps12"><span class="rvts1013">1)Top file</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;property vertical_reuse {type = string; component=addrmap; };</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;property chip {type = boolean; component=addrmap; };</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;property refpath {type = string; component=addrmap|regfile|reg;};</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addrmap ChipTop {</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chip=true;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addrmap B1 {</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts373">vertical_reuse="verilog";</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;refpath="ref.rdl:Block1";</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addrmap Block2 {</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg {</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw=rw;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw=rw;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}F1[31:0]=0;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}Reg2;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B1 B1;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Block2 Block2;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts96">2) Referred file (ref.rdl)</span></p>
+   <p class="rvps2"><span class="rvts96">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts370">addrmap Block1 {</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg {</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw=rw;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw=rw;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}F1[31:0]=0;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}Reg1;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts452">Generated Output :</span></p>
+<p class="rvps12"><span class="rvts452"><br/></span></p>
+<p class="rvps12"><span class="rvts34">In case of&nbsp;“</span><span class="rvts1014">vertical</span><span class="rvts31">_</span><span class="rvts1014">reuse=verilog</span><span class="rvts34">” the “B1.v” file will not be generated in&nbsp;the output directory but it will be selected in the parent aggregator file. The aggregator file has been mentioned below:</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts370">&nbsp;.</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;wire slave_hready;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;reg [1:0] hresp_f;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;reg [1:0] hresp_ff;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;wire [1:0] slave_hresp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;wire invalid_address;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;assign invalid_address = 1'b0;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts373">wire B1_ids_select;</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_select = ( ((haddr &gt;=&nbsp; 'h0) &amp;&amp; (haddr &lt;=&nbsp; 'h3)) &amp;&amp; (hsel == 1'b1) &amp;&amp; (hready == 1'b1) &amp;&amp; (invalid_address != 1'b1) ) ? 1'b1 : 1'b0;</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_hsel = B1_ids_select;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;wire Block2_ids_select;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;assign Block2_ids_select = ( ((haddr &gt;=&nbsp; 'h4) &amp;&amp; (haddr &lt;=&nbsp; 'h7)) &amp;&amp; (hsel == 1'b1) &amp;&amp; (hready == 1'b1) &amp;&amp; (invalid_address != 1'b1) ) ? 1'b1 : 1'b0;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;assign Block2_ids_hsel = Block2_ids_select;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts431">// B1 ASSIGN STATEMENTS</span></p>
+   <p class="rvps12"><span class="rvts431">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_hclk = hclk;</span></p>
+   <p class="rvps12"><span class="rvts431">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_hresetn = hresetn;</span></p>
+   <p class="rvps12"><span class="rvts431">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_hwrite = hwrite;</span></p>
+   <p class="rvps12"><span class="rvts431">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_haddr = haddr[B1_addr_width-1 : 0];</span></p>
+   <p class="rvps12"><span class="rvts431">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_hwdata = hwdata;</span></p>
+   <p class="rvps12"><span class="rvts431">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_htrans = htrans;</span></p>
+   <p class="rvps12"><span class="rvts431">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_hsize = hsize;</span></p>
+   <p class="rvps12"><span class="rvts431">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_hprot = hprot;</span></p>
+   <p class="rvps12"><span class="rvts431">&nbsp;&nbsp;&nbsp;&nbsp;assign B1_ids_hburst = hburst;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;</span><br/><span class="rvts35">NOTE: </span><span class="rvts238">“vertical_reuse” property works with “-if” switch only.</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/markdown-import-export-using-helpndoc-help-authoring-tool/">Powerful and User-Friendly Help Authoring Tool for Markdown Documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

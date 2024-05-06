@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>TCL based configuration of IDesignSpec</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Application Notes">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TCL based configuration of IDesignSpec">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="TCL based configuration of IDesignSpec" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="TCLbasedconfigurationofIDesignSp"
+		  data-hnd-context="475"
+		  data-hnd-title="TCL based configuration of IDesignSpec"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="ApplicationNotes.html">Application Notes</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ApplicationNotes.html" title="Application Notes" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="IDSArchitecture.html" title="IDS Architecture" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="RefsupportinSystemRDL.html" title="Ref support in SystemRDL" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>TCL based configuration of IDesignSpec</h2>
+
+            <div class="main-content">
+                
+<p class="rvps590"><a name="_qery7gcrbcv4"></a><span class="rvts710">TCL based configuration of IDesignSpec™</span></p>
+<p class="rvps2"><span class="rvts323"><br/></span></p>
+<p class="rvps55"><span class="rvts34">Over the last decade IDS has grown in its capability. This has largely been because of the customer feedback. Since there are a large number of customers with varied requirements, it has been a challenge to please everyone. A side effect of this approach has been that the product’s command line options, its properties and possible outputs have grown in a rather haphazard manner. We have recently added options for generating widgets from the command line. Constantly users are asking for more ways to customize various aspects of the generation and this will lead to many additional options and properties.</span></p>
+<p class="rvps55"><span class="rvts34">Although this is adding powerful capabilities for the tool, it is also making it difficult to use and even more difficult to get started. Hence it is envisioned to have a Tcl Based Config API so that various aspects of the tool can be controlled via it. The config can be versioned and diffed as well. Standard configs can be created for various standard outputs. E.g. a config for 3rd party outputs rather than a 3rd party output switch.</span></p>
+<p class="rvps578"><span class="rvts34"><br/></span></p>
+<p class="rvps578"><span class="rvts34">Its main objective is to provide a convenient way to the customer to check and generate the outputs using the tcl Script.</span></p>
+<p class="rvps578"><span class="rvts35">Usage</span></p>
+<p class="rvps367"><span class="rvts34">The usage syntax of&nbsp;IDSBatch with TCL script is shown below:</span></p>
+<p class="rvps367"><span class="rvts14">&nbsp;</span><span class="rvts35">IDSbatch -s &lt;TCL script&gt;&nbsp;</span><span class="rvts175">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps579"><span class="rvts6">&nbsp;</span><img alt="" style="width : 597px; height : 167px; padding : 1px;" src="lib/NewItem3323.png"></p>
+<p class="rvps367"><span class="rvts6">&nbsp;</span></p>
+<p class="rvps579"><span class="rvts35">Fig.1. Process of TCL based configuration of IDS</span></p>
+<p class="rvps367"><span class="rvts6"><br/></span></p>
+<p class="rvps367"><span class="rvts35">TCL Based IDS configuration API Methods</span></p>
+<p class="rvps367"><span class="rvts34">List of implementing methods that are used in TCL Script:</span></p>
+<p class="rvps367"><span class="rvts34">Note: Symbol [&lt;command&gt;] is used for optional Argument</span><span class="rvts841">.</span></p>
+<p class="rvps367"><span class="rvts368"><br/></span></p>
+<p class="rvps367"><span class="rvts841">&nbsp;&nbsp;&nbsp;</span><span class="rvts1358">&nbsp;</span><span class="rvts35">General</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps580 noindent"><span class="rvts35">IDS_read&nbsp; </span><span class="rvts21">&lt;input_File&gt;</span><span class="rvts35"> [</span><span class="rvts21">-s &lt;sheet_name&gt;</span><span class="rvts35">] [</span><span class="rvts21">-csv_template &lt;file_name&gt;</span><span class="rvts35">][</span><span class="rvts21">-variant &lt;list_of_variants&gt;</span><span class="rvts35">]:</span><span class="rvts34"> Read the input Files that are used for generating the&nbsp; output.</span></li>
+</ul>
+<p class="rvps581"><span class="rvts35">-sheet &lt;sheet_name&gt;:</span><span class="rvts34">&nbsp; (optional)Specify the sheet name that is required when the input file is excel.</span></p>
+<p class="rvps581"><span class="rvts35">-csv_template &lt;file_name&gt; :</span><span class="rvts34">(optional) For CSV input - Override the default csv template.</span></p>
+<p class="rvps581"><span class="rvts35">-variant&nbsp; &lt;list_of_variants&gt;: </span><span class="rvts34">(optional) Specify or override the variants.</span></p>
+<p class="rvps580"><span class="rvts14">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps580 noindent"><span class="rvts35">set_outputs&nbsp; </span><span class="rvts21">&lt;list_of_output_formats&gt;</span><span class="rvts35">&nbsp; [</span><span class="rvts21">-blk &lt;object_of_block&gt;</span><span class="rvts35">] [</span><span class="rvts21">all_IDS_command</span><span class="rvts35">] :</span><span class="rvts34"> set the outputs on specific blocks or globally&nbsp; .</span></li>
+</ul>
+<p class="rvps582"><span class="rvts35">-blk:</span><span class="rvts34">&nbsp; </span><span class="rvts34">(optional) Objects of block that are used to generate the output.</span></p>
+<p class="rvps582"><span class="rvts35">-all_IDS_command:</span><span class="rvts34"> (optional) Supports&nbsp;all IDS command line options</span></p>
+<p class="rvps581"><span class="rvts35">Note :</span><span class="rvts34">&nbsp; It supports&nbsp; all IDS command line options.</span></p>
+<p class="rvps581"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It overrides the generate command list&nbsp;configuration.&nbsp;</span></p>
+<p class="rvps583"><span class="rvts14">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps580 noindent"><span class="rvts35">generate &nbsp; </span><span class="rvts35">-output [</span><span class="rvts21">&lt;list_of_output_formats&gt;]</span><span class="rvts35">[&lt;</span><span class="rvts21">all_IDS_command&gt;</span><span class="rvts35">] :</span><span class="rvts34">&nbsp; Used for generating the outputs.&nbsp;</span></li>
+</ul>
+<p class="rvps583"><span class="rvts35">-all_IDS_command:</span><span class="rvts34"> (optional) Supports&nbsp;all IDS command line options</span></p>
+<p class="rvps583"><span class="rvts14">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps580 noindent"><span class="rvts35">check:</span><span class="rvts34"> Used for only check the spec.</span></li>
+ <li class="rvps580 noindent"><span class="rvts175">set_traceablity:</span><span class="rvts35"> </span><span class="rvts34">To enable Traceability .</span></li>
+ <li class="rvps580 noindent"><span class="rvts35">set_multi_out_file </span><span class="rvts35">&lt; value &gt;: </span><span class="rvts34">Generate a separate file for each block or chip [Verilog/VHDL/UVM/HTML].</span></li>
+ <li class="rvps580 noindent"><span class="rvts35">reset_config</span><span class="rvts35">:</span><span class="rvts34"> Reset all config settings that are changed.&nbsp;</span></li>
+ <li class="rvps580 noindent"><span class="rvts35">set_inp</span><span class="rvts21"> </span><span class="rvts21">&lt;input_format&gt;</span><span class="rvts35"> :</span><span class="rvts34"> forces the input format to be the specified format. This option is useful when input files have nonstandard extensions.</span></li>
+ <li class="rvps580 noindent"><span class="rvts35">set_vertical_reuse</span><span class="rvts35">:</span><span class="rvts34">&nbsp;Used&nbsp; to a void regeneration of the code.</span><span class="rvts111"> It is mentioned for only C header output (effect can only be seen in uvm output). Vertical reuse will only work for out_third_party option, in case the users don’t wish to generate the UVM model again at board or chip level.</span></li>
+</ul>
+<p class="rvps367"><span class="rvts154">config settings</span></p>
+<ul style="text-indent: -48px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps584 noindent"><span class="rvts35">set_config </span><span class="rvts21">&lt;list_of_prop_and_value&gt;</span><span class="rvts35">: </span><span class="rvts34">Used for setting the configuration values. Where</span><span class="rvts35"> </span><span class="rvts34">&lt;List_of_prop_and_value&gt; List of property and value by using “=” operator. e.g., {repeat=2 external=true}.</span></li>
+</ul>
+<p class="rvps585"><span class="rvts35">&nbsp;&nbsp;</span><span class="rvts225"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts35">List of config Properties</span><span class="rvts35">:</span></p>
+<p class="rvps582"><span class="rvts178"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts35">company_name=&lt;company_name&gt;:</span><span class="rvts34"> Specify Company Name.</span></p>
+<p class="rvps582"><span class="rvts225"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts35">copyright=&lt;Copyright Heade</span><span class="rvts34">r</span><span class="rvts35">&gt;:</span><span class="rvts34"> Specify Copyright Header.</span></p>
+<p class="rvps582"><span class="rvts178"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts35">board_size=&lt;value&gt;:</span><span class="rvts34"> Set default board size</span></p>
+<p class="rvps583"><span class="rvts35">chip_size=&lt;value&gt;:</span><span class="rvts34"> Set default chip size</span></p>
+<p class="rvps586"><span class="rvts35">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;block_size=&lt;value&gt;:</span><span class="rvts34"> Set default block size</span></p>
+<p class="rvps587"><span class="rvts35">top=&lt;topName&gt;:</span><span class="rvts34"> Name of the top element that needs to be transformed. This option is used for input files where there can be more than one top level element. If there is only one top level element, then that is transformed automatically. Specify chip:&lt;top_elem_name&gt; to make the top level address map as chip and all the underlying address maps as blocks. By default top level address map maps to block and all others maps to regroups</span></p>
+<p class="rvps587"><span class="rvts35">endian= &lt;little|big&gt; : </span><span class="rvts34">For C header output, if &lt;little&gt; then Little Endian output is generated and if &lt;big&gt; then Big Endian output is generated. If nothing is mentioned then </span><span class="rvts111">it overrides the setting in the XRSL or ODT file and does not generate the output.</span></p>
+<p class="rvps587"><span class="rvts35">addr_sort:</span><span class="rvts34"> To sort registers in ascending order.</span></p>
+<p class="rvps587"><span class="rvts35">bus=&lt;bus_name&gt;: </span><span class="rvts34">For RTL (Verilog or VHDL or SV) code output the specified bus interface is generated.</span></p>
+<p class="rvps587"><span class="rvts35">unit=&lt;address unit&gt;:</span><span class="rvts34"> Set &nbsp;Default address unit.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps580 noindent"><span class="rvts35">hide_htmlalt2_prop </span><span class="rvts35">[</span><span class="rvts21">&lt;List_of_prop&gt;]</span><span class="rvts35">: </span><span class="rvts34">Used to hide the property. This method works only on Html alt2 output. </span><span class="rvts36">By using “</span><span class="rvts31">-hide_htmlalt2_prop” none or “-hide_htmlalt2_prop “&lt;space separated property list&gt;”” or “-hide_htmlalt2_prop all” </span><span class="rvts36">switch in the command line, user can hide property English description and shows the property name with their values in description.</span></li>
+ <li class="rvps580 noindent"><span class="rvts35">set_prop&nbsp; </span><span class="rvts21">&lt;List_of_prop_and_value&gt; &lt;</span><span class="rvts1359">hierarchy</span><span class="rvts21">_of_block&gt;</span><span class="rvts35">: </span><span class="rvts34">Used for setting the property.&nbsp;&nbsp;&nbsp;</span></li>
+</ul>
+<p class="rvps580"><span class="rvts178"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts35"> &lt;List_of_prop_and_value&gt;: </span><span class="rvts34">List of property and value by using “=” operator.</span></p>
+<p class="rvps580"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex:&nbsp; {repeat=2 external=true}</span></p>
+<p class="rvps580"><span class="rvts178"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts35"> &lt;</span><span class="rvts110">hierarchy</span><span class="rvts35">_of_block&gt;: </span><span class="rvts34">Used to set the property by using name.</span></p>
+<p class="rvps587"><span class="rvts35">Ex: set_prop repeat=2&nbsp; block1/reg1/f2</span></p>
+<p class="rvps587"><span class="rvts35">Ex: </span><span class="rvts110">set_prop widget=apb::ff::apb_widget chip1/block1</span></p>
+<p class="rvps367"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps367"><span class="rvts154">Command to enable the switches</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps580 noindent"><span class="rvts35">set_switch </span><span class="rvts21">&lt;list_of_switch&gt;</span><span class="rvts35"> : </span><span class="rvts34">Used to enable the different types of switches which can affect the&nbsp; output generation..</span></li>
+</ul>
+<p class="rvps580"><span class="rvts34">Where</span><span class="rvts35"> </span><span class="rvts34">&nbsp;&lt;</span><span class="rvts35">list_of_switch</span><span class="rvts34">&gt; is a list of different types of switch of specific output.</span></p>
+<p class="rvps580"><span class="rvts34">User passes the switch value(if required) separated with “=” operator eg {</span><span class="rvts35"> third_party_out=d </span><span class="rvts34">&nbsp;</span><span class="rvts35">&nbsp;parity_widget</span><span class="rvts34">}</span></p>
+<p class="rvps580"><span class="rvts35">E.g.&nbsp; set_switch&nbsp;{ low power third_party_out=d parity_widget no_lint_warn}</span></p>
+<p class="rvps580"><span class="rvts34">where</span><span class="rvts35"> </span><span class="rvts34">&lt;List_of_prop_and_value&gt; List of property and value by using “=” operator. eg( {repeat=true external=true}).</span></p>
+<p class="rvps580"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps580"><span class="rvts35">Switch list&nbsp; for RTL Design</span></p>
+<ul style="text-indent: -48px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps584 noindent"><span class="rvts35">low_power:</span><span class="rvts34"> Generate low power rtl design.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">out_third_party_out=&lt;type&gt; :</span><span class="rvts34"> Support specific output format where type is user format like “d” for duolog</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">in_third_party_in=&lt;type&gt; :</span><span class="rvts34"> Support specific input format&nbsp; where type is user format like “d” for duolog and “m” for </span><span class="rvts111">Mentor CSV format</span><span class="rvts34"> .</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">parity_widget:</span><span class="rvts34">&nbsp;It will remove PPROT &amp; PSTRB ports at TOP (only supported in verilog).</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">no_lint_warn: </span><span class="rvts34">This option removes IP_ERROR &amp; IP_BE_MASK related warnings for third party output and offsets in case of unaligned memory (only supported in verilog).</span></li>
+</ul>
+<h4 class="rvps588"><span class="rvts0"><span class="rvts596">Switch for Html and PDF</span></span></h4>
+<ul style="text-indent: -48px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps584 noindent"><span class="rvts35">no_formatting:</span><span class="rvts34"> It&nbsp; does not preserve the formatting of spec description in output for HTML, PDF only text in description is created.</span></li>
+</ul>
+<p class="rvps582"><span class="rvts14">&nbsp;</span></p>
+<h4 class="rvps589"><span class="rvts0"><span class="rvts596">Switch for Word</span></span></h4>
+<ul style="text-indent: -48px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps584 noindent"><span class="rvts35">docexclude =&lt;list_of_table&gt; :</span><span class="rvts34">To exclude post-processors (define/Enum/variant) for word output</span><span class="rvts35">. </span><span class="rvts34">Where&nbsp;</span></li>
+</ul>
+<p class="rvps580"><span class="rvts34">&nbsp;&nbsp;&nbsp;</span><span class="rvts178"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts34"> &nbsp;&nbsp;</span><span class="rvts178"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts34">&lt;</span><span class="rvts35">list_of_table&gt; :</span><span class="rvts34">Tables formats can be one of the following types:-</span></p>
+<p class="rvps583"><span class="rvts34">Define, Enum, Variant and UDP (User Defined Property)</span></p>
+<h4 class="rvps588"><span class="rvts0"><span class="rvts596">Switch list for UVM&nbsp;</span></span></h4>
+<ul style="text-indent: -48px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps584 noindent"><span class="rvts35">hdlpath:</span><span class="rvts34"> Automatically generates hdlpath.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">coverage:</span><span class="rvts34"> Automatically turn coverage on.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">illegal_bins:</span><span class="rvts34"> Automatically generates illegal bins in coverage.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">arv_constraint:</span><span class="rvts34"> Automatically generates constraint from constraint expression.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">arv_coverage: </span><span class="rvts34">Automatically generates coverage from constraint expression.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">arv_assertion:</span><span class="rvts34"> Automatically generates assertion from constraint expression.</span></li>
+</ul>
+<h4 class="rvps588"><span class="rvts0"><span class="rvts596">Switch list for Verilog</span></span></h4>
+<ul style="text-indent: -48px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps584 noindent"><span class="rvts35">rtl_wire:</span><span class="rvts34"> Generates wire data-type instead of wor in case of repeat property on block or reg.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">bus_port_case=&lt;upper | lower&gt;: </span><span class="rvts34">Generates Bus ports in uppercase or lowercase format.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">default_reset=&lt;async | sync&gt;:</span><span class="rvts34"> Generates asynchronous or synchronous reset by default. It overrides the properties in the spec.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">rtl_no_error:</span><span class="rvts34"> This</span><span class="rvts44"> disables the generation of all the error signals in the IDS block. No error signals are generated by using this command-line option, irrespective of any access.</span><span class="rvts34">.</span></li>
+ <li class="rvps584 noindent"><span class="rvts191">no_external_mask:</span><span class="rvts42"> For turning on and off the external signal IP_BE_MASK in case of third party rtl. The test case must have external registers or memory.</span></li>
+</ul>
+<p class="rvps367"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps580"><span class="rvts35">Switch for PDF&nbsp;</span></p>
+<ul style="text-indent: -48px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps584 noindent"><span class="rvts35">limit_toc :</span><span class="rvts34"> limit TOC hierarchy in pdf output</span></li>
+</ul>
+<p class="rvps367"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps580"><span class="rvts35">Switch list for System RDL</span></p>
+<ul style="text-indent: -48px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps584 noindent"><span class="rvts35">searchpath=&lt;path&gt;:</span><span class="rvts34"> This&nbsp;IDSBatch switch has been added which will override the default path and will search included rdl files in the directory specified in the search path switch.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">incdir=&lt;list-of-paths&gt;:</span><span class="rvts34"> This switch is used in case multiple files are included/referred from different directories in another systemRDL file. The relative path of multiple files can be given semi colon separated.</span></li>
+</ul>
+<p class="rvps367"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps580"><span class="rvts35">Switch list for IP-XACT&nbsp;</span></p>
+<ul style="text-indent: -48px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps584 noindent"><span class="rvts35">ipxact_comp=&lt;block | board&gt;:</span><span class="rvts34"> Output is generated as per the specified Hierarchy for IPXACT taking the top level as board/chip if board is used in the option, otherwise top level is considered as block.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">bus_comp=&lt;List_of_ files&gt;:</span><span class="rvts34"> specified components files for IP-XACT.</span></li>
+</ul>
+<p class="rvps580"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps580"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps580"><span class="rvts35">Switch for C header</span></p>
+<p class="rvps580"><span class="rvts14">&nbsp;</span></p>
+<ul style="text-indent: -48px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps584 noindent"><span class="rvts35">c_type=&lt;value&gt;:</span><span class="rvts34"> For C header output, the specified data type is used in the output.</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">c_tests:</span><span class="rvts34">&nbsp; Generates C tests automatically.&nbsp;</span><span class="rvts36">-out header option is mandatory for getting this</span><span class="rvts34">.</span><span class="rvts178"> &nbsp; &nbsp; &nbsp; &nbsp;</span></li>
+ <li class="rvps584 noindent"><span class="rvts35">c_api:</span><span class="rvts34"> Generate C API.</span><span class="rvts6"></span></li>
+</ul>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Produce online help for Qt applications</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

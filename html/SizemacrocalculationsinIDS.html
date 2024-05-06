@@ -1,0 +1,486 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Size macro calculations in IDS</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Size macro calculations in IDS">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Size macro calculations in IDS" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="SizemacrocalculationsinIDS"
+		  data-hnd-context="613"
+		  data-hnd-title="Size macro calculations in IDS"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="ApplicationNotes.html">Application Notes</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ApplicationNotes.html" title="Application Notes" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="IDSGeneratedJSONOutput.html" title="IDS Generated JSON Output " role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="UsingOriginalNameasPrimary.html" title="Using Original Name as Primary" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Size macro calculations in IDS</h2>
+
+            <div class="main-content">
+                
+<p class="rvps12"><span class="rvts36">This document describes how the value of the Size macro is calculated in the C header.&nbsp; In the Mid Jan 2022, we moved the *_PER_INSTANCE_SIZE macro from the top_address.h file to&nbsp; that component’s header file and change the name of the&nbsp; *_PER_INSTANCE_SIZE with *_SIZE. Also *_PER_INSTANCE_SIZE macro only generates for the arrayed components but *_SIZE macro will be generated for all the components (Arrayed and Non Arrayed). Now the value of the * _SIZE component will be the total space occupied by that instance. But there are some scenarios in which calculation(with STRIDE) of *_SIZE&nbsp; looks improper.&nbsp;</span></p>
+<p class="rvps12"><span class="rvts36">In the following paragraphs&nbsp; we discuss&nbsp; several possible scenarios with the explanation of how SIZE macro calculation should be done.&nbsp;&nbsp;</span></p>
+<h2 class="rvps305"><span class="rvts0"><span class="rvts126">Case I: When Stride is not applied</span></span></h2>
+<p class="rvps2"><span class="rvts31">SystemRDL Input:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts473"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap block1 {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg reg2{</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;field_sRW_hR_t #(.WIDTH(1)) f0[8:8] = 1'd0;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;f0-&gt;sw = w;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;field_sRW_hR_t #(.WIDTH(1)) f1[15:15] = 1'd0;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;f1-&gt;sw = w;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;};</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg2 reg0_0;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg2 reg2_1 @0xC;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg2 reg2_2 @0x10;</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap ip1 {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;chip = true;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;block1 block1_0;</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap ss1 {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;chip = true;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;block1 block1_0;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;ip1 ip1_0;</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap top {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;chip = true;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;ss1 ss1_0;</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Expected value of *_SIZE Macros&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">Block1.h&nbsp;</span></p>
+<p class="rvps12"><span class="rvts430">&nbsp;</span><span class="rvts1371">BLOCK1_SIZE 0x14</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">ip.h</span><span class="rvts1395">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;IP1_SIZE 0x14</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">ss1.h</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;SS1_SIZE 0x28&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">top.h</span><span class="rvts1395">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;TOP_SIZE 0x28</span></p>
+<h2 class="rvps305"><span class="rvts0"><span class="rvts126">Case II : When Count is applied but Stride is not applied.&nbsp;&nbsp;</span></span></h2>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<p class="rvps2"><span class="rvts31">SystemRDL Input:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap block1 {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg reg2{</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;field_sRW_hR_t #(.WIDTH(1)) f0[8:8] = 1'd0;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;f0-&gt;sw = w;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;field_sRW_hR_t #(.WIDTH(1)) f1[15:15] = 1'd0;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;f1-&gt;sw = w;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;};</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg2 reg0_0;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg2 reg2_1 @0xC;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg2 reg2_2 @0x10;</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap ip1 {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;chip = true;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;block1 block1_0[4];</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap ss1 {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;chip = true;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;block1 block1_0[3];</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;ip1 ip1_0[2];</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap top {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;chip = true;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;ss1 ss1_0[2];</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Expected value of *_SIZE Macros&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">Block1.h&nbsp;</span></p>
+<p class="rvps12"><span class="rvts430">&nbsp;&nbsp;</span><span class="rvts1371">BLOCK1_SIZE 0x14</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">ip.h</span><span class="rvts1395">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;IP1_SIZE 0x50 </span><span class="rvts1396">(block1 size is 0x14 and repeat of 4 on block1)</span><span class="rvts1397">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">ss1.h</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;SS1_SIZE 0xDC</span><span class="rvts1396"> (Size of ip1 is 0x50 and repeat of 2 on it. Block1 size is 0x14 and</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts1396">repeat of 3 present on block)</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">top.h</span><span class="rvts1395">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;TOP_SIZE 0x1B8 </span><span class="rvts1396">(Size of SS1 is 0xDC and repeat of 2 present on it.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts38">In the current implementation, IDS generates the size of components based on the instances for that particular component which is wrong.&nbsp;</span></p>
+<h2 class="rvps305"><span class="rvts0"><span class="rvts126">Case III : When Stride is applied.&nbsp;&nbsp;</span></span></h2>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<p class="rvps2"><span class="rvts31">SystemRDL Input:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap block1 {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg reg2{</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;field_sRW_hR_t #(.WIDTH(1)) f0[8:8] = 1'd0;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;f0-&gt;sw = w;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;field_sRW_hR_t #(.WIDTH(1)) f1[15:15] = 1'd0;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;&nbsp;&nbsp;f1-&gt;sw = w;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;};</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg2 reg0_0;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg2 reg2_1 @0xC;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;reg2 reg2_2 @0x10;</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap ip1 {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;chip = true;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;block1 block1_0[3] @0x0110 += 0x0050;</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap ss1 {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;chip = true;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;block1 block1_0[3] @0x0100 += 0x0200;</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;ip1 ip1_0[2] 0x0000_2000 += 0x01000;</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">addrmap top {</span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;chip = true;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts473">&nbsp;&nbsp;ss1 ss1_0[2];</span></p>
+<p class="rvps2"><span class="rvts473">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Current Value of *_SIZE macros.</span></p>
+<p class="rvps2"><span class="rvts1277">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts1394">Block1.h&nbsp;</span></p>
+<p class="rvps12"><span class="rvts430">&nbsp;</span><span class="rvts1371">BLOCK1_SIZE 0x414</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">ip.h</span><span class="rvts1395">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;IP1_SIZE 0x11C4 </span><span class="rvts1397">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">ss1.h</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;SS1_SIZE 0x6388&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">top.h</span><span class="rvts1395">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts811">&nbsp;&nbsp;TOP_SIZE 0x6388 </span><span class="rvts1398">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Expected value of *_SIZE Macros&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">Block1.h&nbsp;</span></p>
+<p class="rvps12"><span class="rvts1277">&nbsp;</span><span class="rvts1371">BLOCK1_SIZE </span><span class="rvts473">0x14</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">ip.h</span><span class="rvts1395">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;IP1_SIZE 0x200 </span><span class="rvts1396">(As Stride Size is 0x50 and count on 3 applied on block and first</span><span class="rvts1371">&nbsp; </span><span class="rvts1396">block is starting from 0x110.)</span><span class="rvts1397">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">ss1.h</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;SS1_SIZE 0x4000 </span><span class="rvts1396">(Stride Size of ip1 is 0x1000 and it is starting from 0x2000.)</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1394">top.h</span><span class="rvts1395">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts370">&nbsp;&nbsp;</span><span class="rvts811">TOP_SIZE 0x8000</span><span class="rvts1371">&nbsp; </span><span class="rvts1396">(repeat of ss1 is 2).</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Reg/Regfile address macro</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts38">In current implementation, in case of Register and Regfile the value of *_SIZE macro is the total size occupied by that component i.e with the repeat value and while the original size of the reg/regfile is used by the *_PER_INSTANCE_SIZE macro.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts38">Now as per the new enhancement in case of count there is a new argument(idx) added in the *_address macro. The value of this argument is ((idx * reg_SIZE)+ reg_OFFSET). But in case of reg and regfile, logically this is not correct as&nbsp; value *_SIZE macros is the (original size of reg/regfile * count value). So after the new enhancement, in case of reg/regfile *_SIZE macro is replaced by the *_PER_INSTANCE_SIZE.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts31">SystemRDL Input:</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1371">field field_sRW_hR_t #(longint unsigned WIDTH = 1) {</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;name = "Config CSR field name";</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;desc = "Config CSR field description";</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;sw = rw;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;hw = r;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;fieldwidth = WIDTH;</span></p>
+<p class="rvps12"><span class="rvts1371">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1371">addrmap ip1 {</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;reg csr {</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;&nbsp;&nbsp;field_sRW_hR_t #(.WIDTH(4)) VAL;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;&nbsp;&nbsp;VAL-&gt;reset = 0;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;&nbsp;&nbsp;VAL-&gt;onwrite = woset;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;};</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;csr reg0;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;csr reg1[5];</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;regfile rf {</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;&nbsp;&nbsp;csr reg2;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;&nbsp;&nbsp;csr reg3[4];</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;};</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;rf rf0;</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;rf rf1[3];</span></p>
+<p class="rvps12"><span class="rvts1371">};</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts31">Old Implementation&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1371">#define IP1_REG1_OFFSET 0x4U</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1371">#define IP1_REG1_SIZE 0x14U</span></p>
+<p class="rvps12"><span class="rvts1371">#define IP1_REG1_PER_INSTANCE_SIZE 0x4</span></p>
+<p class="rvps12"><span class="rvts1371">#define IP1_REG1_COUNT 5</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1371">#define IP1_REG1_ADDRESS(baseAddress,idx) \</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;(baseAddress + (idx*</span><span class="rvts1396">IP1_REG1_SIZE</span><span class="rvts1371">) + IP1_REG1_OFFSET)</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts31">After Enhancement</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1371">#define IP1_REG1_OFFSET 0x4U</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1371">#define IP1_REG1_SIZE 0x14U</span></p>
+<p class="rvps12"><span class="rvts1371">#define IP1_REG1_PER_INSTANCE_SIZE 0x4</span></p>
+<p class="rvps12"><span class="rvts1371">#define IP1_REG1_COUNT 5</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts1371">#define IP1_REG1_ADDRESS(baseAddress,idx) \</span></p>
+<p class="rvps12"><span class="rvts1371">&nbsp;&nbsp;(baseAddress + (idx*</span><span class="rvts1396">IP1_REG1_PER_INSTANCE_SIZE</span><span class="rvts1371">) + IP1_REG1_OFFSET)</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/step-by-step-guides/how-to-generate-an-encrypted-password-protected-pdf-document/">Don't Let Unauthorized Users View Your PDFs: Learn How to Set Passwords</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

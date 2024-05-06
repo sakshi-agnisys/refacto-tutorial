@@ -1,0 +1,619 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Customizing reset value of registers</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Advanced Topics">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Customizing reset value of registers">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Customizing reset value of registers" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Customizingresetvalueofregisters"
+		  data-hnd-context="480"
+		  data-hnd-title="Customizing reset value of registers"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AdvancedTopics.html">Advanced Topics</a></li><li><a href="AdvancedRTL.html">Advanced RTL</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="AdvancedRTL.html" title="Advanced RTL" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="PartialAccessError.html" title="Partial Access Error" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Customizingclocksignal.html" title="Customizing clock signal" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Customizing reset value of registers</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts27">rtl.default</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts14">This pro</span><a name="property"></a><span class="rvts14">perty is used to customize the register reset value to be driven by an external signal. It is applied on a register/field. It is for the vhdl/verilog output. Here, in this example the property is applied on the register and field.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Example:</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/rtl_default/rtl_default.idsng.zip">IDS-NG</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/rtl_default/rtl_default.docx">IDS-Word</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/rtl_default/rtl_default.xlsx">IDS-Excel</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/rtl_default/rtl_default_.rdl">SystemRDL</a></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts126">IDS-NG Register View:</span></p>
+<p class="rvps2"><span class="rvts24"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 677px; height : 381px; padding : 1px;" src="lib/NewItem4815.png"></p>
+<p class="rvps3"><img alt="" style="width : 673px; height : 355px; padding : 1px;" src="lib/NewItem4816.png"></p>
+<p class="rvps3"><img alt="" style="width : 670px; height : 311px; padding : 1px;" src="lib/NewItem4818.png"></p>
+<p class="rvps2"><span class="rvts419"><br/></span></p>
+<p class="rvps2"><span class="rvts126">IDS-NG Spreadsheet View:</span></p>
+<p class="rvps2"><span class="rvts24"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 783px; height : 305px; padding : 1px;" src="lib/NewItem4819.png"></p>
+<p class="rvps3"><img alt="" style="width : 783px; height : 243px; padding : 1px;" src="lib/NewItem4820.png"></p>
+<p class="rvps2"><span class="rvts440"><br/></span></p>
+<p class="rvps2"><span class="rvts126">SystemRDL:</span></p>
+<p class="rvps2"><span class="rvts1323"><br/></span></p>
+<p class="rvps2"><span class="rvts327">&nbsp; &nbsp; &nbsp;</span><span class="rvts420"> property reg_default {type =number; component = reg ; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; property rtl_default {type =string; component = reg|field ; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">addrmap Block1 {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; // Signals &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; signal { activelow; sync; signalwidth = 32;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp;desc= " This signal is sync and activelow with width 32"; } sig;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; reg regname #(def1 = 0x1234) {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;reg_default = "4660" ;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp;&nbsp;</span><span class="rvts458"> &nbsp;rtl_default = "sig" ;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F[31:0] = 32'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; reg Reg2 #(def2 = 9) {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp;&nbsp;</span><span class="rvts458"> rtl_default = "sig" ;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F1[21:0] = 22'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F2[27:22] = 6'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = r;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F3[31:28] = 4'h9;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">addrmap sect {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp;reg regname {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp;reg_default = "0xffff" ;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; hw = w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; sw = na;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; } F[31:0] = 32'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; reg Reg3 #(def1 = 0x1234) {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp;reg_default = "4660" ;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; } F1[30:0] = 31'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; } F2[31:31] = 1'h1;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; }; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; regname regname @0x00;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; Reg3 Reg3 @0x04;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; reg Reg5 #(def2 = 9) {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F1[14:0] = 15'h09;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F2[31:15] = 17'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; regname regname @0x00;</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; Reg2 Reg2 @0x04;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; sect &nbsp;sect @0x08;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; Reg5 Reg5 @0x10;</span></p>
+<p class="rvps2"><span class="rvts420">};</span></p>
+<p class="rvps2"><span class="rvts327"><br/></span></p>
+<p class="rvps2"><span class="rvts19">Here below is the portion of rtl code and we can see the change.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts19"><br/></span></p>
+<p class="rvps2"><span class="rvts420">always @(posedge clk)</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; if (!reset_l)</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts422"> &nbsp;regname_F_q &nbsp;&lt;=sig;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (regname_F_in_enb) &nbsp; // F : HW Write</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; regname_F_q &lt;= regname_F_in;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (regname_wr_valid) &nbsp; // F : SW Write</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; regname_F_q &lt;= &nbsp;( wr_data[31 : 0] &amp; reg_enb[31 : 0] ) | (regname_F_q &amp; (~reg_enb[31 : 0]));</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp;// sw_write_close</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp;end</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp;always @(posedge clk)</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; if (!reset_l)</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts422"> &nbsp; Reg2_F1_q &nbsp;&lt;=sig[21:0];</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (Reg2_F1_in_enb) &nbsp; // F1 : HW Write</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reg2_F1_q &lt;= Reg2_F1_in;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (Reg2_wr_valid) &nbsp; // F1 : SW Write</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reg2_F1_q &lt;= &nbsp;( wr_data[21 : 0] &amp; reg_enb[21 : 0] ) | (Reg2_F1_q &amp; (~reg_enb[21 : 0]));</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp;// sw_write_close</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; end // always clk</span></p>
+<p class="rvps2"><span class="rvts479">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts171">default_reset</span><a name="default_reset_name"></a><span class="rvts171">_name</span></p>
+<p class="rvps2"><span class="rvts480"><br/></span></p>
+<p class="rvps2"><span class="rvts19">The rtl property default_reset_name is used to change the default name of the hard reset signal. In the programs, the default name of reset signal is reset_l and the user can write any string in this place. The example below shows that the property is used on block so the whole code has changed with the property string.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts480"><br/></span></p>
+<p class="rvps2"><span class="rvts1164">Example</span><span class="rvts20">: </span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/default_reset_name/default_reset_name.zip">IDS-NG</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/default_reset_name/default_reset_name.docx">IDS-Word</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/default_reset_name/default_reset_name.xlsx">IDS-Excel</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/default_reset_name/default_reset_name.rdl">SystemRDL</a></p>
+<p class="rvps2"><span class="rvts419"><br/></span></p>
+<p class="rvps2"><span class="rvts419"><br/></span></p>
+<p class="rvps2"><span class="rvts1164">IDS-NG Register View:</span></p>
+<p class="rvps2"><span class="rvts1164"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 592px; height : 283px; padding : 1px;" src="lib/NewItem5189.png"></p>
+<p class="rvps2"><span class="rvts1164"><br/></span></p>
+<p class="rvps2"><span class="rvts1164">IDS-NG Spreadsheet View:</span></p>
+<p class="rvps2"><span class="rvts1164"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 774px; height : 165px; padding : 1px;" src="lib/NewItem5190.png"></p>
+<p class="rvps2"><span class="rvts1164"><br/></span></p>
+<p class="rvps2"><span class="rvts1164">SystemRDL:</span></p>
+<p class="rvps2"><span class="rvts1164"><br/></span></p>
+<p class="rvps2"><span class="rvts420">property reg_default {type =number; component = reg ; };</span></p>
+<p class="rvps2"><span class="rvts420">property rtl_default {type =string; component = reg|field ; };</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">addrmap Block1 {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; signal { activelow; sync; signalwidth = 32;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; desc= " This signal is sync and activelow with width 32"; } sig[32];</span></p>
+<p class="rvps2"><span class="rvts420"></span><span class="rvts420"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts420"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; reg reg1 #(def1 = 0x1234) {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;reg_default = "4660" ;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; rtl_default = "sig" ;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onread=r;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onwrite=w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F[31:0] = 32'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; reg reg2 #(def2 = 9) {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp;rtl_default = "sig" ;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onread=r;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onwrite=w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F1[21:0] = 22'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onread=r;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onwrite=w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F2[27:22] = 6'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = r;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onread=r;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F3[31:28] = 4'h9;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; regfile sect {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; reg reg1 {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;reg_default = "0xffff" ;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; hw = w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; sw = na; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; } F[31:0] = 32'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420"><br/></span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; reg reg2 #(def1 = 0x1234) {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;reg_default = "4660" ;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; onread=r;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; onwrite=w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; } F1[30:0] = 31'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; onread=r;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; &nbsp; onwrite=w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; } F2[31:31] = 1'h1;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; reg1 reg1 @0x00;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; reg2 reg2 @0x04;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; reg reg5 #(def2 = 9) { F</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onread=r;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onwrite=w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F1[14:0] = 15'h09;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onread=r;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; &nbsp; onwrite=w;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; &nbsp; } F2[31:15] = 17'h0;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; reg1 reg1 @0x00;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; reg2 reg2 @0x04;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; sect &nbsp;sect @0x08;</span></p>
+<p class="rvps2"><span class="rvts420">&nbsp; reg5 reg5 @0x10;</span></p>
+<p class="rvps2"><span class="rvts420">};</span></p>
+<p class="rvps2"><span class="rvts419"><br/></span></p>
+<p class="rvps2"><span class="rvts1164">Generated RTL Output:</span></p>
+<p class="rvps2"><span class="rvts1164"><br/></span></p>
+<p class="rvps2"><span class="rvts1324">With top property "default_reset_name=reset_change"</span></p>
+<p class="rvps2"><span class="rvts419"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Here below is the portion of rtl code and we can see the yellow on the change.</span></p>
+<p class="rvps2"><span class="rvts456">&nbsp; &nbsp; </span><span class="rvts370">wire &nbsp;clk;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp;</span><span class="rvts373"> wire &nbsp;reset_change;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire &nbsp; rd_stb;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire &nbsp; rd_wait;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire &nbsp; wr_stb;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire &nbsp;[addr_width-1:0] &nbsp;address;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire &nbsp;[bus_width-1:0] &nbsp;wr_data;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire &nbsp; request;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire &nbsp;rd_data_vld;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire &nbsp;[bus_width-1:0] rd_data;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire &nbsp;error;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire [bus_width-1 : 0] reg_enb;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; wire [bus_width/8 -1 : 0] byte_enb;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; amba_widget #(.addr_width(addr_width), .bus_width(bus_width)) amba(</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hclk(hclk),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hresetn(hresetn),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hsize(hsize),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hresp(hresp),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hwrite(hwrite),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hwdata(hwdata),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .haddr(haddr),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hrdata(hrdata),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hready(hready),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .htrans(htrans),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hburst(hburst),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hsel(hsel),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hprot(hprot),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .error(error),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .clk(clk),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts373">.reset_l(reset_change),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .byte_enb(byte_enb),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .request(request),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hprot_i(hprot_i),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .wr_stb(wr_stb),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .rd_stb(rd_stb),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .rd_data(rd_data),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .wr_data(wr_data),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .address(address),</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .rd_data_vld(rd_data_vld),</span></p>
+<p class="rvps2"><span class="rvts370"></span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;.rd_wait(rd_wait));</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; //end widget</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; always @(posedge clk)</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts373"> if (!reset_change)</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">reg_1_F1_q &nbsp;&lt;= 32'd0;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (reg_1_F1_in_enb) &nbsp; // F1 : HW Write</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">reg_1_F1_q &lt;= reg_1_F1_in;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">end</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">if (reg_1_wr_valid) &nbsp; // F1 : SW Write</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">reg_1_F1_q &lt;= &nbsp;( wr_data[31 : 0] &amp; reg_enb[31 : 0] ) | (reg_1_F1_q &amp; (~reg_enb[31 : 0]));</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">end</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">end &nbsp;// sw_write_close</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; end // always clk</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; //--------------------------------------------------------------------------</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; always @(posedge clk)</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts373">if (!reset_change)</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">reg_2_F1_q &nbsp;&lt;= 32'd0;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (reg_2_F1_in_enb) &nbsp; // F1 : HW Write</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">reg_2_F1_q &lt;= reg_2_F1_in;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">end</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">if (reg_2_wr_valid) &nbsp; // F1 : SW Write</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">begin</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">reg_2_F1_q &lt;= &nbsp;( wr_data[31 : 0] &amp; reg_enb[31 : 0] ) | (reg_2_F1_q &amp; (~reg_enb[31 : 0]));</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">end</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370">end &nbsp;// sw_write_close</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; end // always clk</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Qt Help documentation made easy</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
