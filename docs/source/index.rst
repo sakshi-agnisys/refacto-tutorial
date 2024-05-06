@@ -17,3 +17,4 @@ Contents
    api
    IntroductionIdesignSpec
    AccumulatorRegister
+   Addressallocation
