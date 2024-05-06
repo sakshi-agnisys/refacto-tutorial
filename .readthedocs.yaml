@@ -13,6 +13,3 @@ sphinx:
   configuration: docs/source/conf.py
 
 
-commands: 
-      - mkdir --parents _readthedocs/html/
-      - cp --recursive html/* _readthedocs/html/  
