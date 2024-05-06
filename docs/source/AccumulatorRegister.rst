@@ -3,16 +3,14 @@ Accumulator Register
 ====================
 
 .. rubric:: Introduction
-:name: introduction
-:class: rvps334
 
 The accumulator is a register in which intermediate arithmetic logic unit results are stored. While a device is working on multi-step operations, intermediate values are sent to the accumulator and then overwritten as needed. Accumulator adds a value with each write but reads back the total accumulated result of the sum of the current value and the previous value of the field.
 “accumulate=true” property has been used, so that the register can sum the previously written value and the current update values of the fields flop.
 The register would be written from the software side to update the value. The HW access of fields would be NA or the RO for this feature.
 
-Note: This property is only supported at reg level.
+**Note** : This property is only supported at reg level.
 
-Example:  \ `IDS-NG <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.idsng.zip>`__\   \ `IDS-Word <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.docx>`__\ \ `IDS-Excel <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.xls>`__\ \ `SystemRDL <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.rdl>`__
+Example:  \ `IDS-NG <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.idsng.zip>`__\    \ `IDS-Word <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.docx>`__\    \ `IDS-Excel <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.xls>`__\    \ `SystemRDL <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.rdl>`__
                     
 IDS-NG Register View
 
