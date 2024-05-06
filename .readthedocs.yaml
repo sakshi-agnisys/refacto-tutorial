@@ -5,6 +5,6 @@ build:
   tools:
     python: "3.10"
   commands: 
-      - mkdir --parents readthedocs/html/
-      - cp --recursive html/* readthedocs/html/
+      - mkdir --parents _readthedocs/html/
+      - cp --recursive html/* _readthedocs/html/
 
