@@ -10,17 +10,17 @@ The register would be written from the software side to update the value. The HW
 
 **Note** : This property is only supported at reg level.
 
-Example:  \ `IDS-NG <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.idsng.zip>`__\    \ `IDS-Word <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.docx>`__\    \ `IDS-Excel <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.xls>`__\    \ `SystemRDL <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.rdl>`__
+**Example**:  \ `IDS-NG <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.idsng.zip>`__\    \ `IDS-Word <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.docx>`__\    \ `IDS-Excel <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.xls>`__\    \ `SystemRDL <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.rdl>`__
                     
-IDS-NG Register View
+**IDS-NG Register View**
 
 .. image:: lib/NewItem4962.png
 
-IDS-NG Spreadsheet View
+**IDS-NG Spreadsheet View**
 
 .. image:: lib/NewItem4963.png
 
-SystemRDL
+**SystemRDL**
 
 | property accumulate{type = boolean; component = reg;
   };addrmap block1{
@@ -33,7 +33,7 @@ SystemRDL
 | };   reg1 r1;
 | };
 
-Generated accumulate UVM callback in the package file 
+**Generated accumulate UVM callback in the package file**
 
 //   \*.regmem.sv file
 
@@ -48,6 +48,7 @@ UVM_BIG_ENDIAN, 1);        //R1
 |         default_map.add_reg( r1, 'h0, "RW");        //
 
 Registering callback class instances with register
+
   fields        begin
 |             acum_cb_class  block1_r1_f1;
 |             block1_r1_f1 = new( "block1_r1_f1",r1.f1);
@@ -78,7 +79,7 @@ rw);
 "\ `block1.regmem.sv <http://block1.regmem.sv/>`__\ "
 | endpackage
 
-Generated RTL Output
+**Generated RTL Output**
 
 module block1_ids(
 
@@ -167,40 +168,8 @@ module block1_ids(
 
          endmodule
 
-         Created with the Personal Edition of HelpNDoc: \ `Experience
-         the Power and Ease of Use of a Help Authoring
-         Tool <https://www.helpndoc.com>`__
-
-      .. container::
-         :name: topic_footer
-
          .. container::
             :name: topic_footer_content
 
             © 2007 - 2023 Agnisys® Inc. All Rights Reserved.
             https://www.agnisys.com/submit-feedback/
-
-.. container:: mask
-
-.. container:: modal fade
-   :name: hndModal
-
-   .. container:: modal-dialog
-
-      .. container:: modal-content
-
-         .. container:: modal-header
-
-            ×
-            .. rubric:: 
-               :name: hndModalLabel
-               :class: modal-title
-
-         .. container:: modal-body
-
-         .. container:: modal-footer
-
-            Close
-
-.. container::
-   :name: hnd-splitter
