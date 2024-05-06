@@ -2,105 +2,87 @@
 Accumulator Register
 ====================
 
-         .. rubric:: Introduction
-            :name: introduction
-            :class: rvps334
+.. rubric:: Introduction
+:name: introduction
+:class: rvps334
 
-         The accumulator is a register in which intermediate arithmetic
-         logic unit results are stored. While a device is working on
-         multi-step operations, intermediate values are sent to the
-         accumulator and then overwritten as needed. Accumulator adds a
-         value with each write but reads back the total accumulated
-         result of the sum of the current value and the previous value
-         of the field.
+The accumulator is a register in which intermediate arithmetic logic unit results are stored. While a device is working on multi-step operations, intermediate values are sent to the accumulator and then overwritten as needed. Accumulator adds a value with each write but reads back the total accumulated result of the sum of the current value and the previous value of the field.
+“accumulate=true” property has been used, so that the register can sum the previously written value and the current update values of the fields flop.
+The register would be written from the software side to update the value. The HW access of fields would be NA or the RO for this feature.
 
-         “accumulate=true” property has been used, so that the register
-         can sum the previously written value and the current updated
-         values of the fields flop.
+Note: This property is only supported at reg level.
 
-         The register would be written from the software side to update
-         the value. The HW access of fields would be NA or the RO for
-         this feature.
+Example:  \ `IDS-NG <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.idsng.zip>`__\   \ `IDS-Word <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.docx>`__\ \ `IDS-Excel <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.xls>`__\ \ `SystemRDL <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.rdl>`__
+                    
+IDS-NG Register View
 
-         Note: This property is only supported at reg level.
+.. image:: lib/NewItem4962.png
 
-         Example:      
-          \ `IDS-NG <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.idsng.zip>`__\ 
-              
-          \ `IDS-Word <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.docx>`__\ 
-              
-          \ `IDS-Excel <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.xls>`__\ 
-              
-          \ `SystemRDL <https://www.portal.agnisys.com/release/idsdocs/examples/properties/accumulator/accumulator.rdl>`__
+IDS-NG Spreadsheet View
 
-         IDS-NG Register View
+.. image:: lib/NewItem4963.png
 
-         .. image:: lib/NewItem4962.png
+SystemRDL
 
-         IDS-NG Spreadsheet View
+| property accumulate{type = boolean; component = reg;
+  };addrmap block1{
+|    reg reg1{
+|          accumulate = true;
+|          field field1{
+|                hw = na;   //hw can be(Read-Only or NA)
+|                sw = rw;
+|          };field1 f1[31:0] = 0;
+| };   reg1 r1;
+| };
 
-         .. image:: lib/NewItem4963.png
+Generated accumulate UVM callback in the package file 
 
-         SystemRDL
+//   \*.regmem.sv file
 
-         | property accumulate{type = boolean; component = reg;
-           };addrmap block1{
-         |    reg reg1{
-         |          accumulate = true;
-         |          field field1{
-         |                hw = na;   //hw can be(Read-Only or NA)
-         |                sw = rw;
-         |          };field1 f1[31:0] = 0;
-         | };   reg1 r1;
-         | };
+| / Function : build
+|     virtual function void build();
+|         //define default map and add reg/regfiles
+|         default_map= create_map("default_map", 'h0, 4,
+UVM_BIG_ENDIAN, 1);        //R1
+|         r1 = block1_r1::type_id::create("r1");
+|         r1.configure(this, null, "r1");
+|         r1.build();
+|         default_map.add_reg( r1, 'h0, "RW");        //
 
-         Generated accumulate UVM callback in the package file 
+Registering callback class instances with register
+  fields        begin
+|             acum_cb_class  block1_r1_f1;
+|             block1_r1_f1 = new( "block1_r1_f1",r1.f1);
+|             uvm_reg_field_cb::add(r1.f1,block1_r1_f1);        end        lock_model();
+|     endfunction
 
-         //   \*.regmem.sv file
+   //   \*_pkg.regmem.sv file
 
-         | / Function : build
-         |     virtual function void build();
-         |         //define default map and add reg/regfiles
-         |         default_map= create_map("default_map", 'h0, 4,
-           UVM_BIG_ENDIAN, 1);        //R1
-         |         r1 = block1_r1::type_id::create("r1");
-         |         r1.configure(this, null, "r1");
-         |         r1.build();
-         |         default_map.add_reg( r1, 'h0, "RW");        //
-           Registering callback class instances with register
-           fields        begin
-         |             acum_cb_class  block1_r1_f1;
-         |             block1_r1_f1 = new( "block1_r1_f1",r1.f1);
-         |             uvm_reg_field_cb::add(r1.f1,block1_r1_f1);        end        lock_model();
-         |     endfunction
+| package block1_block_regmem_pkg;
+|     import uvm_pkg::*;
+|     `include
+  "uvm_macros.svh"    /*----------------------------------------------------------
+|     Class       : acum_CB
+|     Description : UVM Callback class for secded register
+|     ------------------------------------------------------------*/    class
+acum_cb_class extends uvm_reg_cbs;
+|         uvm_reg_field m_estatus;        function new(string
+name, uvm_reg_field estatus);
+|             super.new();
+|             m_estatus = estatus;
+|         endfunction        virtual task pre_read(uvm_reg_item
+rw);
+|             if(rw.status == UVM_IS_OK) begin
+|                 void'(m_estatus.predict(m_estatus.get_mirrored_value()
++ m_estatus.get()));
+|             end
+|         endtask    endclass    `include
+"\ `block1.regmem.sv <http://block1.regmem.sv/>`__\ "
+| endpackage
 
-         //   \*_pkg.regmem.sv file
+Generated RTL Output
 
-         | package block1_block_regmem_pkg;
-         |     import uvm_pkg::*;
-         |     `include
-           "uvm_macros.svh"    /*----------------------------------------------------------
-         |     Class       : acum_CB
-         |     Description : UVM Callback class for secded register
-         |     ------------------------------------------------------------*/    class
-           acum_cb_class extends uvm_reg_cbs;
-         |         uvm_reg_field m_estatus;        function new(string
-           name, uvm_reg_field estatus);
-         |             super.new();
-         |             m_estatus = estatus;
-         |         endfunction        virtual task pre_read(uvm_reg_item
-           rw);
-         |             if(rw.status == UVM_IS_OK) begin
-         |                 void'(m_estatus.predict(m_estatus.get_mirrored_value()
-           + m_estatus.get()));
-         |             end
-         |         endtask    endclass    `include
-           "\ `block1.regmem.sv <http://block1.regmem.sv/>`__\ "
-         | endpackage
-
-         Generated RTL Output
-
-         module block1_ids(
+module block1_ids(
 
              
 
