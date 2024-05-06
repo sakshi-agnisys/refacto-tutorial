@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Custom CSV output</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Outputs/Exports">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Custom CSV output">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Custom CSV output" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="CustomCSVoutput"
+		  data-hnd-context="162"
+		  data-hnd-title="Custom CSV output"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="OutputsExports.html">Outputs/Exports</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="OutputsExports.html" title="Outputs/Exports" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="PythonInterpreter.html" title="Python Interpreter" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="CSV.html" title="CSV" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Custom CSV output</h2>
+
+            <div class="main-content">
+                
+<h1 class="rvps106"><span class="rvts0"><span class="rvts316"><br/></span></span></h1>
+<p class="rvps2"><span class="rvts613">(Compatible in IDS version 5.16.8 and above, in IDS-Batch only)</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">It is possible to generate a user customizable file in CSV format, using</span><span class="rvts15">IDS</span><span class="rvts14"> </span><span class="rvts15">Word</span><span class="rvts14">,</span><span class="rvts15"> IDS-Excel</span><span class="rvts14"> and all input file types supported by</span><span class="rvts15"> IDS-Batch.</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts292">IDSBatch</span></span></h2>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">To generate Custom CSV output using IDS-Batch include "customcsv" in list of outputs required to be generated, followed by an option "-csvheader" which is optional.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Syntax:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&lt;cmd&gt;</span><span class="rvts15"> IDS-Batch &lt;input_file&gt; -out customcsv [-csvheader "&lt;custom header mapping&gt;"]</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Note:</span><span class="rvts14"> </span><span class="rvts15">'-csvheader'</span><span class="rvts14"> is required only when user wants to customize the header for CSV output file, else default IDS header is selected.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts292">IDSWord/IDSExcel</span></span></h2>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">To generate custom CSV file using IDS-Word/IDSExcel, select the "</span><span class="rvts15">Custom CSV</span><span class="rvts14">" output under the </span><span class="rvts15">Header</span><span class="rvts14"> section in "</span><span class="rvts15">Configuration Outputs Settings</span><span class="rvts14">" as shown below-</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1235.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">User can customize the header for CustomCSV output through "Configure-&gt;CustomCSV" settings. A window which allows user to select the templates and make the properties as header is shown below-</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1239.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts14">Select the checkboxes corresponding to IDS templates that are required in CSV output. User can change the name of the header by editing textboxes provided in front of each "IDS Header" as shown below-</span></li>
+</ul>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1240.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts14">Below the Properties section in "CustomCSV" settings, user can add the properties, which will become header in the output. (see snapshot above)</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">Value in left textbox is IDS properties (like "repeat" in above snapshot) or user defined properties (like "u_expression" in above snapshot).</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">Value in right textbox is the new name for that property, which will appear in the CustomCSV output.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Note:</span><span class="rvts14">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts14">CSV Header's should have no spaces in its name.</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">Right text box can be left empty if user does not want to change the name for the property (see for "hdl_path" in above snapshot).</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">If a value is written in right text box, it is mandatory to mention the actual property name in left textbox.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp;</span><span class="rvts329">IDSNG</span></p>
+<p class="rvps2"><span class="rvts329"><br/></span></p>
+<p class="rvps2"><span class="rvts14">To generate custom CSV file using IDSNG, select the "</span><span class="rvts15">Custom CSV</span><span class="rvts14">" output in import &nbsp;as shown below-</span><span class="rvts329">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts329"><br/></span></p>
+<p class="rvps2"><span class="rvts329">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="padding : 1px;" src="lib/NewItem4292.png"></p>
+<p class="rvps2"><span class="rvts329"><br/></span></p>
+<p class="rvps2"><span class="rvts329"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Note</span><span class="rvts329"> - </span><span class="rvts14">Please make sure that csv header component should be same as csv input file .</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - User can add csv header component in csv header box as shown below.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="image003.png (557×446)" style="width : 614px; height : 446px; vertical-align: bottom;" src="lib/NewItem4291.png"></p>
+<p class="rvps2"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts16"><br/></span></p>
+<p class="rvps2"><a name="CSVEnhancement"></a><span class="rvts16">Enhancement for custom CSV output&nbsp;</span></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<p class="rvps2"><span class="rvts44">IDS supports a wide range of output types and one of them is custom CSV. To use this output in IDS user can give customCSV in -out args through which helps to generate CSV output from different types of IDS supported input types like docx, rdl, IDSng etc.</span><span class="rvts119">example: - IDS-Batch &lt;input file&gt; -out customeCSV -dir &lt;output_dir_name&gt;</span><span class="rvts44">Now IDS has improved the performance, flexibility and accuracy for CSV output.</span><br/><span class="rvts44">This customCSV output has capability to customize the header by using “-csvheader” switch else it will use default header&nbsp;</span><span class="rvts119">“chip, block , section name, register, repeat, width, offset, field, bits, sw access, hw access, field default, description”</span><span class="rvts44">. In case of using&nbsp; higher level components than block, it will contain their name header cell also.</span><span class="rvts119">example: - IDS-Batch &lt;input file&gt; -out customeCSV -dir &lt;output_dir_name&gt;</span><br/><span class="rvts119">-csvheader "chip:SOCmap,block:addrmap,reg:rtl_reg,reg_width:RegWidth,offset:offset,field:field,bits:field_bits,default:default_val,sw:sw_access,hw:hw_access,doc:Information"</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Input -&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem4380.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts460">Output -&nbsp;</span></p>
+<p class="rvps2"><span class="rvts460"><br/></span></p>
+<p class="rvps2"><span class="rvts460">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts178">chip,block&nbsp; ,section name ,register ,repeat,width,offset,field&nbsp; ,bits ,sw access ,hw access ,field default&nbsp; ,description</span></p>
+<p class="rvps2"><span class="rvts892"><br/></span></p>
+<p class="rvps11"><span class="rvts894">chipTop,,,,,,0,,,,,,</span></p>
+<p class="rvps11"><span class="rvts894">,blockA,,,,,0,,,,,,</span></p>
+<p class="rvps11"><span class="rvts894">,,,Reg1,,32,0,,,,,,</span></p>
+<p class="rvps11"><span class="rvts894">,,,,,,,Fld11,[30:10],rw,rw,0x0,</span></p>
+<p class="rvps11"><span class="rvts894">,,groupMidA,,,,4,,,,,,</span></p>
+<p class="rvps11"><span class="rvts894">,,,Reg2,,32,0,,,,,,</span></p>
+<p class="rvps11"><span class="rvts894">,,,,,,,Fld21,[30:20],rw,rw,0x0,</span></p>
+<p class="rvps11"><span class="rvts894">,,end section,,,,,,,,,,</span></p>
+<p class="rvps11"><span class="rvts894">,,,Reg3,,32,8,,,,,,</span></p>
+<p class="rvps11"><span class="rvts894">,,,,,,,Fld31,[30:23],rw,rw,0x0,</span></p>
+<p class="rvps2"><span class="rvts893"><br/></span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-word-docx-file-to-an-epub-or-kindle-ebook/">Transform Your Word Doc into a Professional-Quality eBook with HelpNDoc</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,717 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Memory</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="IDesignSpec">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Memory">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Memory" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Memory"
+		  data-hnd-context="33"
+		  data-hnd-title="Memory"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Customcodeoutput.html">Custom code output</a></li><li><a href="SpecificationCreation.html">Specification Creation</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="SpecificationCreation.html" title="Specification Creation" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="RegisterArray.html" title="Register Array" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="RepeatonMemory.html" title="Repeat on Memory" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Memory</h2>
+
+            <div class="main-content">
+                
+<p class="rvps188"><a class="rvts423" href="https://www.portal.agnisys.com/dashboard/s/IDesignSpecVideo" target="_blank">Training Video: Getting Started</a></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">A memory is a </span><span class="rvts205">storage with contiguous address locations.</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205">The IDS's memory templates is as shown below:</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 945px; height : 94px; padding : 1px;" src="lib/NewItem4763.png"></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts425">IDS-Word</span></span></h2>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><span class="rvts205">&nbsp;</span><span class="rvts14"> </span><img alt="" style="width : 822px; height : 87px; padding : 1px;" src="lib/NewItem4764.png"></p>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts425">IDS-Excel</span></span></h2>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205">In IDS-Excel, to create a memory, define a register inside an external reg group (section) as shown below-</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 808px; height : 126px; padding : 1px;" src="lib/NewItem2679.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Like all other IDS templates supports various properties, the memory template also provides the same capabilities. The various properties that can be defined for a memory template are explained below :</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="1" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 169px;">
+   <p class="rvps2"><span class="rvts15">Property</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 875px;">
+   <p class="rvps3"><span class="rvts15">Definition</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 169px;">
+   <p class="rvps2"><span class="rvts14">name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 875px;">
+   <p class="rvps2"><span class="rvts14">A unique string that identifies the name of the system.&nbsp;</span></p>
+   <p class="rvps141"><span class="rvts14"><br/></span></p>
+   <p class="rvps141"><span class="rvts14">&nbsp; Example : Memory_name</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 169px;">
+   <p class="rvps2"><span class="rvts14">offset</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 875px;">
+   <p class="rvps2"><span class="rvts14">The address of the register in the address map is with respect to the address of the container. If the user defines the offset then value in the offset is the displacement added to the memory location of the container. The value can be decimal value or a hexadecimal value.</span></p>
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+   <p class="rvps2"><span class="rvts14">Example : 10 or 0x10</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 169px; height: 16px;">
+   <p class="rvps2"><span class="rvts14">depth</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 875px; height: 16px;">
+   <p class="rvps2"><span class="rvts14">The depth property specifies the depth of the memory.</span></p>
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+   <p class="rvps2"><span class="rvts14">In IDS-Excel, repeat value on a section determines the memory's depth.</span></p>
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+   <p class="rvps2"><span class="rvts14">Example : 10 or 0xf</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 169px;">
+   <p class="rvps2"><span class="rvts14">width</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 875px;">
+   <p class="rvps2"><span class="rvts14">The width property specifies the width of the memory.</span></p>
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+   <p class="rvps2"><span class="rvts14">In IDS-Excel, register width becomes width of the memory.</span></p>
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+   <p class="rvps2"><span class="rvts14">Example : 8 or 0xa&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 169px;">
+   <p class="rvps2"><span class="rvts14">default</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 875px;">
+   <p class="rvps2"><span class="rvts14">The default property specifies the reset/default value of the memory.</span></p>
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+   <p class="rvps2"><span class="rvts14">Example : 1 or 0xa</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><a name="memory inside section"></a><span class="rvts16">Memory Inside Section</span></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts425">IDSWord</span></span></h2>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem2307.png"></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts425">Verilog output:</span></span></h2>
+<p class="rvps2"><span class="rvts486">.</span><span class="rvts486"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts486">.</span><span class="rvts486"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts486">.</span></p>
+<p class="rvps2"><span class="rvts486">&nbsp;</span><span class="rvts483"> &nbsp; assign memoryname1_offset &nbsp; &nbsp; &nbsp; = (block_offset/'h20) +'h0;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_decode &nbsp; &nbsp; &nbsp; = ((address[addr_width - 1 : 0] &gt;= block_offset + &nbsp;'h0) &amp;&amp; (address[addr_width - 1 : 0] &lt;= block_offset + &nbsp;'h1F)) ? 1'b1 : 1'b0;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_wr_valid &nbsp; &nbsp; = memoryname1_decode &amp;&amp; &nbsp;wr_stb;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_rd_valid &nbsp; &nbsp; = memoryname1_decode &amp;&amp; rd_stb &amp;&amp; rd_wait_state;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_wr_valid_out = memoryname1_wr_valid;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_rd_valid_out = memoryname1_rd_valid;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_decode_wor &nbsp; = memoryname1_decode;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_wr_req_wor &nbsp; = memoryname1_wr_req_in;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_rd_ack_wor &nbsp; = memoryname1_rd_ack_in;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_rd_data &nbsp; &nbsp; &nbsp;= memoryname1_rd_ack_in ? memoryname1_rd_data_in : 8'b00000000;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_write_error &nbsp;= memoryname1_decode &amp;&amp; wr_stb;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_write_error_wor &nbsp;= memoryname1_write_error;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; assign memoryname1_error_wor = memoryname1_write_error_wor;</span></p>
+<p class="rvps2"><span class="rvts483">.</span><span class="rvts483"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts483">.</span><span class="rvts483"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts483">. &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts486">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14">In IDS, memories</span><span class="rvts15"> </span><span class="rvts14">are conceptualized as external section (register group). This definition provides multiple approaches of defining a memory component in IDS flow.</span></p>
+<p class="rvps187"><span class="rvts246">1. External section with IDS property {type=mem}:</span></p>
+<p class="rvps127"><span class="rvts246"><br/></span></p>
+<p class="rvps178"><span class="rvts186">IDS property {type=mem} on an external section explicitly defines it as a memory component. Depth of this memory can be provided using property {depth=&lt;positive int&gt;}. Repeat on memory is provided using {repeat=&lt;positive &nbsp; int&gt;}. Its effect on different IDS outputs:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 120px; list-style-position: outside; list-style-type: lower-alpha;">
+ <li class="rvps179 noindent"><span class="rvts186">RTL:</span></li>
+</ol>
+<p class="rvps180"><span class="rvts186">In RTL separate decode logic is generated for aligned/unaligned memories. IDS currently support memories having width same as bus width.&nbsp;</span></p>
+<p class="rvps180"><span class="rvts186">Limitation: -</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps186 noindent"><span class="rvts186">Currently IDS do not support memory having width different than the bus width through direct access.</span></li>
+    <li class="rvps186 noindent"><span class="rvts186">With {type=mem} only one register can be defined inside the external section. However multiple fields are allowed.</span></li>
+   </ul>
+  </ul>
+ </ul>
+</ul>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 120px; list-style-position: outside; list-style-type: lower-alpha;">
+ <li value="2" class="rvps179 noindent"><span class="rvts186">UVM:</span></li>
+</ol>
+<p class="rvps180"><span class="rvts186">Memory object is extended from the uvm_mem class.</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 120px; list-style-position: outside; list-style-type: lower-alpha;">
+ <li value="3" class="rvps179 noindent"><span class="rvts186">HTML:</span></li>
+</ol>
+<p class="rvps180"><span class="rvts186">Memory object is created in the HTML output.</span></p>
+<p class="rvps180"><span class="rvts186">Limitation: -</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps181 noindent"><span class="rvts186">With {type=mem} only one register with one complete field can be defined inside the external section. Multiple fields are not allowed.</span></li>
+   </ul>
+  </ul>
+ </ul>
+</ul>
+<p class="rvps181"><span class="rvts186"><br/></span></p>
+<p class="rvps187"><span class="rvts246">2. External section:</span></p>
+<p class="rvps187"><span class="rvts246"><br/></span></p>
+<p class="rvps178"><span class="rvts186">Memory depth can be provided using property {repeat=&lt;positive int&gt;} and width is defined on the external section. Effect on different IDS outputs:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 120px; list-style-position: outside; list-style-type: lower-alpha;">
+ <li class="rvps179 noindent"><span class="rvts186">RTL:&nbsp;</span></li>
+</ol>
+<p class="rvps180"><span class="rvts186">Decode logic condition same as with {type=mem} for aligned/unaligned memories. Multiple Register with multiple field can be defined inside the external section.</span></p>
+<p class="rvps180"><span class="rvts186">Limitation: -</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps181 noindent"><span class="rvts186">Currently IDS do not support memory having width different than the bus width through direct access.</span></li>
+   </ul>
+  </ul>
+ </ul>
+</ul>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 120px; list-style-position: outside; list-style-type: lower-alpha;">
+ <li value="2" class="rvps179 noindent"><span class="rvts186">UVM:</span></li>
+</ol>
+<p class="rvps182"><span class="rvts186">Memory object is extended from the uvm_regfile class.</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 120px; list-style-position: outside; list-style-type: lower-alpha;">
+ <li value="3" class="rvps179 noindent"><span class="rvts186">HTML:</span></li>
+</ol>
+<p class="rvps180"><span class="rvts186">External section is created in the HTML output.</span></p>
+<p class="rvps180"><span class="rvts487"><br/></span></p>
+<p class="rvps187"><span class="rvts246">3.External section with IDS property {memory=all/rtl/uvm}:</span></p>
+<p class="rvps187"><span class="rvts246"><br/></span></p>
+<p class="rvps178"><span class="rvts186">Memory depth is the total number of registers in the external section and width is max width of these registers. Repeat on memory is provided using {repeat=&lt;positive &nbsp; int&gt;}. Implemented to support structures inside a memory. One limitation, for large depth multiple registers must be defined. Effect on different IDS outputs:</span></p>
+<p class="rvps179"><span class="rvts186">a) RTL:&nbsp;</span></p>
+<p class="rvps180"><span class="rvts186">Decode logic condition same as with {type=mem} for aligned/unaligned memories. Multiple Register with multiple field can be defined inside the external section.</span></p>
+<p class="rvps180"><span class="rvts186">Limitation: -</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps181 noindent"><span class="rvts186">Currently IDS do not support memory having width different than the bus width through direct access.</span></li>
+   </ul>
+  </ul>
+ </ul>
+</ul>
+<p class="rvps179"><span class="rvts186">b) UVM:</span></p>
+<p class="rvps182"><span class="rvts186">Memory object is extended from the uvm_mem class.</span></p>
+<p class="rvps179"><span class="rvts186">c) HTML:</span></p>
+<p class="rvps180"><span class="rvts186">External section is created in the HTML output.</span></p>
+<p class="rvps180"><span class="rvts186"><br/></span></p>
+<p class="rvps2"><span class="rvts494">memo</span><a name="memory_all"></a><span class="rvts494">ry=all property for PDF output</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts37">Property "memory=all" for PDF output has now been supported.</span></p>
+<p class="rvps2"><span class="rvts37"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Example:</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/memory_all/test.idsng.zip">IDS-NG</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/memory_all/test.docx">IDS-Word</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/memory_all/test.xls">IDS-Excel</a><span class="rvts21"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/memory_all/test.rdl">SystemRDL</a></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts175">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 763px; height : 349px; padding : 1px;" src="lib/NewItem4895.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts175">IDS-NG Spreadsheet View</span></p>
+<p class="rvps2"><span class="rvts175"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem4894.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts175">SystemRDL</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts430">property memory { type = string; component = regfile; };</span></p>
+   <p class="rvps2"><span class="rvts430">addrmap test {</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;name&nbsp; = "test Address Map";</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;addrmap reggroup_name {</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp; = "reggroup_name Address Map";</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;memory = "all" ;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;reg reg1 {&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} f1[31:0] = 32'h0;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;&nbsp;&nbsp;reg1 reg1 @0x00;</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts430">&nbsp;&nbsp;external reggroup_name reggroup_name[4] @0x00;</span></p>
+   <p class="rvps2"><span class="rvts430">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts497"><br/></span></p>
+<p class="rvps2"><span class="rvts497">Generated PDF Output</span></p>
+<p class="rvps2"><span class="rvts497"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem4893.png"></p>
+<p class="rvps12"><span class="rvts16">Summary:</span></p>
+<p class="rvps12"><span class="rvts16"><br/></span></p>
+<p class="rvps144"><span class="rvts16">&nbsp;&nbsp;</span></p>
+<div class="rvps144">
+<table width="693" style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td colspan="3" style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 680px; height: 38px;">
+   <p class="rvps2"><span class="rvts16">External Section</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 203px; height: 38px;">
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 203px; height: 38px;">
+   <p class="rvps2"><span class="rvts15">{memory=rtl}</span></p>
+   <p class="rvps2"><span class="rvts15">{memory=uvm</span><span class="rvts14">}</span></p>
+   <p class="rvps2"><span class="rvts15">{memory=all}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 246px; height: 38px;">
+   <p class="rvps2"><span class="rvts14">{</span><span class="rvts15">type=mem</span><span class="rvts14">}</span></p>
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 203px; height: 256px;">
+   <p class="rvps183"><span class="rvts186"><br/></span></p>
+   <ul style="text-indent: 10px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186">Memory depth: {repeat=&lt;positive int&gt;}</span></li>
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186">Memory width = width specified on the External section</span></li>
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186"> Repeat not supported</span></li>
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts209">Structures in memory supported</span></li>
+   </ul>
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+   <div class="rvps144">
+   <table style="border-width: 0px; border-collapse: collapse;">
+    <tr style="vertical-align: top;">
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 46px; height: 19px;">
+      <p class="rvps72"><span class="rvts186">RTL</span></p>
+     </td>
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 82px; height: 19px;">
+      <p class="rvps72"><span class="rvts488">Repeat do not translate to generate block</span></p>
+     </td>
+    </tr>
+    <tr style="vertical-align: top;">
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 46px; height: 19px;">
+      <p class="rvps72"><span class="rvts186">UVM</span></p>
+     </td>
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 82px; height: 19px;">
+      <p class="rvps72"><span class="rvts489">Uvm_regfile</span></p>
+     </td>
+    </tr>
+    <tr style="vertical-align: top;">
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 46px; height: 19px;">
+      <p class="rvps72"><span class="rvts186">HTML</span></p>
+     </td>
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 82px; height: 19px;">
+      <p class="rvps72"><span class="rvts489">No memory</span></p>
+     </td>
+    </tr>
+   </table>
+   </div>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 203px; height: 256px;">
+   <p class="rvps183"><span class="rvts186"><br/></span></p>
+   <ul style="text-indent: 10px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186">Memory depth = total number of registers in the external section</span></li>
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186"> Memory width = max width of registers</span></li>
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186">For repeat: {repeat=&lt;positive int&gt;}</span></li>
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186">Structures in memory supported</span></li>
+   </ul>
+   <p class="rvps183"><span class="rvts186"><br/></span></p>
+   <div class="rvps144">
+   <table style="border-width: 0px; border-collapse: collapse;">
+    <tr style="vertical-align: top;">
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 70px; height: 19px;">
+      <p class="rvps72"><span class="rvts186">RTL</span></p>
+     </td>
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 39px; height: 19px;">
+      <p class="rvps72"><span class="rvts490">Repeat translate to generate block</span></p>
+     </td>
+    </tr>
+    <tr style="vertical-align: top;">
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 70px; height: 19px;">
+      <p class="rvps72"><span class="rvts186">UVM</span></p>
+     </td>
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 39px; height: 19px;">
+      <p class="rvps72"><span class="rvts489">Uvm_mem</span></p>
+     </td>
+    </tr>
+    <tr style="vertical-align: top;">
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 70px; height: 19px;">
+      <p class="rvps72"><span class="rvts186">HTML</span></p>
+     </td>
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 39px; height: 19px;">
+      <p class="rvps72"><span class="rvts245">No memory</span></p>
+     </td>
+    </tr>
+   </table>
+   </div>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 246px; height: 256px;">
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+   <ul style="text-indent: 10px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186">Memory depth:&nbsp;</span></li>
+   </ul>
+   <p class="rvps183"><span class="rvts186">{</span><span class="rvts209">depth=&lt;positive int&gt;</span><span class="rvts186">}</span></p>
+   <ul style="text-indent: 10px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186">Memory width = width specified on the External section</span></li>
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186">For Repeat:&nbsp;</span></li>
+   </ul>
+   <p class="rvps183"><span class="rvts186">{</span><span class="rvts209">repeat =&lt;positive int&gt;</span><span class="rvts186">}</span></p>
+   <ul style="text-indent: 10px; padding: 0; margin: 0 0 0 0px; list-style-position: inside; list-style-type: disc;">
+    <li style="text-indent: 10px" class="rvps185 noindent"><span class="rvts186">Structure of memory not supported</span></li>
+   </ul>
+   <p class="rvps184"><span class="rvts186"><br/></span></p>
+   <div class="rvps144">
+   <table style="border-width: 0px; border-collapse: collapse;">
+    <tr style="vertical-align: top;">
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 93px; height: 19px;">
+      <p class="rvps184"><span class="rvts186">RTL</span></p>
+     </td>
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px; height: 19px;">
+      <p class="rvps72"><span class="rvts490">Repeat translate to generate block</span></p>
+     </td>
+    </tr>
+    <tr style="vertical-align: top;">
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 93px; height: 19px;">
+      <p class="rvps184"><span class="rvts186">UVM</span></p>
+     </td>
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px; height: 19px;">
+      <p class="rvps2"><span class="rvts491">Uvm_mem</span></p>
+     </td>
+    </tr>
+    <tr style="vertical-align: top;">
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 93px; height: 19px;">
+      <p class="rvps184"><span class="rvts186">HTML</span></p>
+     </td>
+     <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 69px; height: 19px;">
+      <p class="rvps72"><span class="rvts492">Proper memory box</span></p>
+     </td>
+    </tr>
+   </table>
+   </div>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Note :</span><span class="rvts14">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14">1. The memory cannot lie outside of the two to the power boundary i.e. </span><span class="rvts34">The start address of a memory should have zeros in the lsb bits.The number of lsb bits should be as many as required to address all address locations in the memory/regGroup.For example : if size is 8, then 3 lsb bits should be 000 for the start address.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts14">2. By default the memories created by IDS are software read-only (ro) but the user can change them to software read-writable (rw) using "sw" property.</span></p>
+<p class="rvps2"><span class="rvts162">&nbsp;</span></p>
+<p class="rvps2"><a name="memory_non_multiple"></a><span class="rvts418">support of memory-width other than power of 2 and non-multiple of bus-width</span></p>
+<p class="rvps2"><span class="rvts37"><br/></span></p>
+<p class="rvps2"><span class="rvts37">The generation of various respected output for memory with memwidth nonpower of 2 and also non multiple of bus-width.</span></p>
+<p class="rvps2"><span class="rvts37">Case1:The memwidth 96 bit, which is non-power of 2, multiple of bus-width and 8 is being generated by considering only 96 bit.</span></p>
+<p class="rvps2"><span class="rvts37">Case2:The memwidth 97 bit, which is neither power of 2 nor multiple of bus-width and 8 would consider 104 bit wide memwidth, i.e. We would allocate one byte address for the value of memwidth for this.</span></p>
+<p class="rvps2"><span class="rvts37"><br/></span></p>
+<p class="rvps2"><span class="rvts494">IDS-NG input:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem4689.png"></p>
+<p class="rvps2"><span class="rvts494">Word input:</span></p>
+<p class="rvps3"><span class="rvts494">&nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem4690.png"></p>
+<p class="rvps28"><span class="rvts495"><br/></span></p>
+<p class="rvps2"><span class="rvts494">Verilog output:</span></p>
+<p class="rvps2"><span class="rvts494"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts496">//----------------------------------------------------------------------------------------------------</span></p>
+   <p class="rvps2"><span class="rvts496">&nbsp; &nbsp; </span><span class="rvts415">assign mem96_decode = ((address[(addr_width - 1): 0] &gt;= block_offset + </span><span class="rvts435">'h0</span><span class="rvts415">) &amp;&amp; (address[(addr_width - 1): 0] &lt;= block_offset + </span><span class="rvts435">'h17</span><span class="rvts415">)) ? 1'b1 : 1'b0;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem96_offset = &nbsp;(block_offset/'h20) + 'h0;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem96_wr_valid = mem96_decode &amp;&amp; wr_stb;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem96_rd_valid = mem96_decode &amp;&amp; rd_stb &nbsp;&amp;&amp; &nbsp;rd_wait_state;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem96_wr_valid_out = mem96_wr_valid;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem96_rd_valid_out = mem96_rd_valid;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem96_rd_data = mem96_rd_ack_in ? mem96_rd_data_in : 32'd0;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem96_decode_wire = mem96_decode;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem96_wr_req_wire = mem96_wr_req_in;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem96_rd_ack_wire = mem96_rd_ack_in;</span></p>
+   <p class="rvps2"><span class="rvts415"><br/></span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; //----------------------------------------------------------------------------------------------------</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; // SECTION(EXTERNAL) : MEM97</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; // ADDRESS &nbsp; &nbsp; &nbsp; : &nbsp; (block_offset/'h20) + 'h0</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; //----------------------------------------------------------------------------------------------------</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem97_decode = ((address[(addr_width - 1): 0] &gt;= block_offset + </span><span class="rvts435">'h18</span><span class="rvts415">) &amp;&amp; (address[(addr_width - 1): 0] &lt;= block_offset + </span><span class="rvts435">'h31</span><span class="rvts415">)) ? 1'b1 : 1'b0;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem97_offset = &nbsp;(block_offset/'h20) + 'h0;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem97_wr_valid = mem97_decode &amp;&amp; wr_stb;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem97_rd_valid = mem97_decode &amp;&amp; rd_stb &nbsp;&amp;&amp; &nbsp;rd_wait_state;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem97_wr_valid_out = mem97_wr_valid;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem97_rd_valid_out = mem97_rd_valid;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem97_rd_data = mem97_rd_ack_in ? mem97_rd_data_in : 32'd0;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem97_decode_wire = mem97_decode;</span></p>
+   <p class="rvps2"><span class="rvts415">&nbsp; &nbsp; assign mem97_wr_req_wire = mem97_wr_req_in;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts415"><br/></span></p>
+<p class="rvps2"><span class="rvts494">Htmlalt2 output:</span></p>
+<p class="rvps2"><span class="rvts494"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem4691.png"></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem4692.png"></p>
+<p class="rvps2"><span class="rvts493"><br/></span></p>
+<p class="rvps2"><span class="rvts494">UVM output:</span></p>
+<p class="rvps2"><span class="rvts494"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem4693.png"><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour">Easily create Help documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

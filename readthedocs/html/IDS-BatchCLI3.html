@@ -1,0 +1,2332 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>IDS-Batch CLI</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="IDesignSpec">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IDS-Batch CLI">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="IDS-Batch CLI" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="IDS-BatchCLI3"
+		  data-hnd-context="467"
+		  data-hnd-title="IDS-Batch CLI"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="GettingStartedwithSpecCreation.html">Getting Started with Spec Creation</a></li><li><a href="Flavours.html">Flavours</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Flavours.html" title="Flavours" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="SystemRDL2.html" title="SystemRDL" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Addressallocation.html" title="Address allocation" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>IDS-Batch CLI</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts14">IDS-Batch CLI is a command line utility for transforming register specifications. It accepts various input formats and can generate a variety of outputs. This tool is typically used by Design, Verification, Firmware, and documentation groups for managing register map and memory map information.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">To install, refer section </span><a class="rvts23" href="InstallationSteps.html">Installation Steps-&gt; IDS-Batch</a></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Following command line can be used to generate requisite output from IDS-Batch CLI:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps22"><a name="command_line"></a><span class="rvts15">idsbatch [optional arguments] –out “format(s)” [-tcl "&lt;list of TCL files&gt;”] input_file&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">input_file: It is the input file to be transformed. Supported input files are:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps144">
+<table width="306" style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 26px;">
+   <p class="rvps3"><span class="rvts15">Input file format</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-left: none; background-color: #a5a5a5; vertical-align: top; width: 126px; height: 26px;">
+   <p class="rvps3"><span class="rvts15">Extension</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">Word</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #dbdbdb; vertical-align: top; width: 126px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">.docx</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">Excel</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #dbdbdb; vertical-align: top; width: 126px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">.xlsx, .xls, .xlsm</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">OpenOffice</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #dbdbdb; vertical-align: top; width: 126px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">.ods</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">IDS-NG</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #dbdbdb; vertical-align: top; width: 126px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">.idsng</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">IPXACT</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #dbdbdb; vertical-align: top; width: 126px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">.xml</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 26px;">
+   <p class="rvps2"><span class="rvts15">XRSL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 126px; height: 26px;">
+   <p class="rvps2"><span class="rvts14">.xrsl</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">System RDL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 126px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">.rdl</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">CSV</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 126px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">.csv</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">RALF</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 126px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">.ralf</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">YAML</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 126px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">.yaml, .yml</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">JSON</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 126px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">.json</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps143"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts14">–out switch: It is a separated list of output formats. Supported output arguments are:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps144">
+<table width="604" style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 26px;">
+   <p class="rvps3"><span class="rvts15">Output Format</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-left: none; background-color: #a5a5a5; vertical-align: top; width: 424px; height: 26px;">
+   <p class="rvps3"><span class="rvts15">Description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">verilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #dbdbdb; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Synthesizable Verilog output as per 1995 standard</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 26px;">
+   <p class="rvps2"><span class="rvts15">verilog2001</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 26px;">
+   <p class="rvps2"><span class="rvts14">Synthesizable Verilog RTL as per 2001 standard</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">vhdl</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Synthesizable VHDL RTL</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">vhdlalt2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Alternate synthesizable VHDL output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">rtl_sysc</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Synthesizable SystemC RTL</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">rtl_sysc_alt2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Non-Synthesizable &nbsp;SystemC RTL</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">sv</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Synthesizable System Verilog RTL</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">ovm</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Mentor Graphics OVM 1.0 Register Package</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">vmm</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Synopsys RALF version 1.13 for VMM</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">uvm</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">UVM 1.1 register model</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">header</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">C header using structs</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">headeralt2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Alternate C header output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">misrac</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Standard C header created by the Motor Industry Software Reliability Association</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">htmlalt2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Alternate HTML output with graphics</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">xrsl</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Internal XML format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">pdf</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Adobe PDF format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">pdfalt2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Adobe PDF format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">pdfalt4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Adobe PDF format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">ipxact2014</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">IP-XACT 2014 (IEEE-1685)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">ipxact1_4</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">IP-XACT 1.4</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">ipxact1_5</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">IP-XACT 1.5 &nbsp;(IEEE-1685)/2009</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">rdl</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates SystemRDL 1.0</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">rdlalt2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates SystemRDL 2.0</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">word</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Microsoft Word</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">word2007</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Microsoft Word 2007</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Only generated in IDS-Batch windows machine</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">word2010</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Microsoft Word 2010</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Only generated in IDS-Batch windows machine</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">excel</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Microsoft Excel</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">svg</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">SVG memory map</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">svgalt2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Advanced SVG memory map</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">erm</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Cadence erm register description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">ivs</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">IVerifySpec verification plan XML</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">autoseq</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Automatically generate constraint random register sequence based on the constraint expression for verification</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">cmsis</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">System view description format - ARM standard</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">arv</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Register Verification Environment</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">perl</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Perl data structure</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">python</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Python data structure</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">svheader</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">System Verilog header</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">vhdheader</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">VHDL header</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">vheader</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Verilog header</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">cpp</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">C++ header</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">formal</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Assertion for formal verification</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">customcsv</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Custom csv</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">worddatasheet</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Microsoft (docx) format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">dita</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Generates dita format</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Only supported for IDS-Batch</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_uvm</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates UVM format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_firmware</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates C format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_sv</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates system verilog format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_csv</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates CSV format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_matlab</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates MATLAB format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_tcl</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates TCL format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_perpsec</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates PSS format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_infact</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates PSS format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_platform</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates C format compatible with specified board types</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_html</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates HTML output for documentation purposes</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">iss_graph</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For IDesignSpec™, generates flowchart for sequence specification</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 152px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">json</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 424px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">JSON format&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Also, users can pass optional arguments to the command line mentioned </span><a class="rvts383" href="IDS-BatchCLI3.html#command_line">above.</a><span class="rvts375"> </span><span class="rvts14">Supported optional arguments are:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts374"><br/></span></p>
+<div class="rvps144">
+<table width="604" style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 26px;">
+   <p class="rvps3"><span class="rvts15">Optional argument</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-left: none; background-color: #a5a5a5; vertical-align: top; width: 379px; height: 26px;">
+   <p class="rvps3"><span class="rvts15">Description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For System Verilog output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 26px;">
+   <p class="rvps2"><span class="rvts15">-memtechmapping</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 26px;">
+   <p class="rvps2"><span class="rvts14">Memory technology mapping</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 26px;">
+   <p class="rvps2"><span class="rvts15">-fileli</span><a name="filelist"></a><span class="rvts15">st</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 26px;">
+   <p class="rvps2"><span class="rvts53">For removal of `include &nbsp;from the top wrapper file in SV and verilog</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For IP-XACT output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-bus_comp “&lt;comma separated files&gt;”</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Specified component files for IP-XACT</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-if_ipxact</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates separate files for each block</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-ipxact_comp “&lt;block|board&gt;”</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Output is generated as per the specified hierarchy for IP-XACT</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">It takes top level as board/chip if board is used in the option, otherwise top level is considered as block</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">&nbsp;-ipxact_inp_fast</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates output through java</span></p>
+   <p class="rvps2"><span class="rvts213">IPXACT -&gt; XRSL(through JAVA) -&gt; Annotated XRSL -&gt; Annotation Checks -&gt; Output</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-</span><a name="trace_80"></a><span class="rvts35">trace</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Used for generating the unique ID's for every component in the IDS and it is currently supported for the IP-XACT output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For HTML output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-no_formatting</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">It skips the formatting of spec description in output</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Only text in description is created</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-if_html</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates separate files for each block, chip and board</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-if_html_sec</span><a name="if_html_section"></a><span class="rvts15">tion</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">generate multiple outputs with block elements as the top element for HTML-alt2 output, </span><a class="rvts23" href="HTMLALT2.html#multiout_blk_28">click here</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-fast_html</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates HTML code at very high speed</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-hide_htmlalt2_prop</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Hides property's description, only the property name with their values are visible in the description (HTMLalt2 output)</span></p>
+   <p class="rvps2"><span class="rvts14">For more details, </span><a class="rvts23" href="HTMLALT2.html#htlm_alt2">click here</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For Word output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-template &lt;dir&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For Word 2007 output, it specifies the directory for user-defined templates</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For Automatic Register Verification in UVM</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-hdlpath</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Automatically generates hdlpath</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-hdlpath_all</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Automatically generates hdlpath for registered=false and external</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-coverage</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Automatically turns coverage ON</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-illegalbins</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Automatically generates illegal bins in coverage</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-arv_constraint</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Automatically generates constraints from constraint expression</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-arv_coverage</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Automatically generates coverage from constraint expression</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-arv_assertion</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Automatically generates assertion from constraint expression</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-arv_report</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Automatically generates the HTML report from coverage</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For Verilog output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-rtl_wire</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates wire data type instead of ‘wor’</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-special_reg</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Generates special registers</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Available in professional flavor&nbsp;</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-bus_port_case &lt;upper/lower&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates bus ports in upper or lower case format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-default_reset &lt;async/sync&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Generates asynchronous or synchronous reset by default</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">It overrides the properties in the specification</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-rtl_no_error</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts44">Disables generation of all the error signals in the IDS block</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-no_external_mask</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Turns ON and OFF the external signal ‘IP_BE_MASK’ in case of third party RTL</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-if_verilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates separate files for each block and chip</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-fast_verilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates Verilog code at very high speed</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-no_lint_warn</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Removes IP_ERROR and IP_BE_MASK related warnings for third party output and offsets in case of unaligned memory</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-parity_widget</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Removes PPROT and PSTRB ports at top level</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-lowpower</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Switch for low power</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-reg_port_case</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates port Signals in upper or lower case format.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-verbosity</span><a name="verbosity"></a><span class="rvts15"> &lt;high|low&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">increases readability of the code</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts382">-rtl_array "pack"</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts384">Avoid unpack array in verilog</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 22px;">
+   <p class="rvps2"><span class="rvts382">-rtl_pack_array="true"</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 22px;">
+   <p class="rvps148"><span class="rvts384">Avoid unpack array in verilog</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For PDF output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-ltoc</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Limits table of content hierarchy</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-no_formatting</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">It skips the formatting of spec description in output</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Only text in description is created</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-if_pdf</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates separate files for each block</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For C header output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-c_type &lt;val&gt;&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Specified data type is used in the output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 27px;">
+   <p class="rvps2"><span class="rvts15">-big_endian &lt;true|false&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 27px;">
+   <p class="rvps2"><span class="rvts14">If true, big endian output is generated and if false, it overrides the setting in the XRSL or ODT file and does not generate the output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-little_endian &lt;true|false&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">If true, little endian output is generated and if false, it overrides the setting in the XRSL or ODT file and does not generate the output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-if_header</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates separate files for each block and chip</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-vertical_reuse</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Avoids regeneration of the code</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-c_tests</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Generates C tests automatically&nbsp;</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Mandatory to generate header output</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">It works for simple blocks with register and uses CheaderAlt1 as output and is not compatible with CheaderAlt2</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">User can get the IDS-Validate product for complete support of deep hierarchy.</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-c_type_std</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts34">Changes the data types as defined in the argument of the switch</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For UVM output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-if_uvm</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates separate files for each block and chip</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-fast_uvm</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates UVM code at very high speed</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-auto_mirror</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Enables the feature of auto mirroring</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-verbosity &lt;high|low&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">increases readability of the code</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-third_pa</span><a name="third_party_rtl"></a><span class="rvts35">rty_rtl</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts381">It stops the generation of the hardware interface and instantiation in case of third party RTL</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For SV header output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-if_svheader</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates separate files for each block</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 24px;">
+   <p class="rvps3"><span class="rvts15">For SystemC output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-if_sysc</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates separate files for each block</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For CSV input</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-template_file &lt;csv_template_file&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Overrides the default csv template</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For Excel input</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-sheet_name &lt;sheet_name&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Name of the sheet that needs to be transformed</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-variant “&lt;list of variants&gt;”</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Specify a comma separated list of variants</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">For Word (docx) input&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-force</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates outputs without checking the time-stamps of immediate XRSL (XML) files</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-force_out&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Used for forcefully generating all modules</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">If module is already generated then it will skip the generation</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-nocache</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates outputs without checking cache files (intermediate XRSL (XML))</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">XQ file input</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-ixq &lt;file_name&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Input XQ file</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Uses this file as the Xquery input processing file</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td colspan="2" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 590px; height: 27px;">
+   <p class="rvps3"><span class="rvts15">General optional arguments</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-tcl “&lt;list of TCL files&gt;”</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">List of TCL transformation files</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Note that an output for each of the specified file is created</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-velocity “&lt;list of velocity template files&gt;”</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">List of velocity template files</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Note that an output for each of the specified file is created</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-out/-o</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Specifies all the outputs to be created</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-inp &lt;docx|gdoc|excel|gsheet|csv|ralf&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Forces input format to be the specified format</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">This option is useful when input files have nonstandard extensions</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-top &lt;top_elem_name&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Name of the top element that needs to be transformed</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">This option is used for input files where there can be more than one top level elements</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">If there is only one top level element, then that is transformed automatically</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Specify chip:&lt;top_elem_name&gt; to make the top level address map as chip and all the underlying address maps as blocks</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">By default top level address map maps to block and all others maps to reggroups</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-dir &lt;output_dir&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">If specified, all outputs are created in the specified directory</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">By default, output directory is “IDS”</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-preserve</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Does not compact the names in the output</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-lowpower</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates low power rtl design</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-bus &lt;any of the IDS supported bus interface&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">For RTL (verilog, vhdl and sv) code output, the specified bus interface is generated</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-block_size &lt;val&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Default block size</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-chip_size &lt;val&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Default chip size</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-unit &lt;8|16|32|64|128&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Default address unit</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-reg_width &lt;8|16|32|64|128&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Default register width</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-help</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Displays the help message</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-ver</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Displays the version</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-log &lt;file_name&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Creates a log for the run in the specified file name</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-log_</span><a name="log_verbose"></a><span class="rvts35">verbose &lt;file_name&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts34">To dump out verbose log into separate file</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-lic</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Displays the license information</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-design</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Specifies design xml file in IP-XACT</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-D &lt;macro_name = value or macro_name&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Specifies pre-defined macro with their value or default</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-U &lt;macro_name&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Specifies undefined macro</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-if</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates separate files for each block or chip (verilog, VHDL, UVM, PDF and HTML)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-addr_sort</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Sorts registers in ascending order</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-addr_sort_</span><a name="addr_sort_chip_block"></a><span class="rvts15">chip_block</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Sorts the blocks and chip components inside a register map</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-get_license</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Automatically receive and install nodelocked license for evaluation</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-c_api</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates C API</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-company &lt;specify company&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Specifies company name</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-copyright &lt;specify copyright&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Specifies copyright header</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-in_third_party d</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Used when input is duolog format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-out_thir</span><a name="out_third_party"></a><span class="rvts15">d_party d</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Used when output is duolog format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-in_third_party m</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Used when input is mentor CSV format</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-fast</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Generates outputs at a very high speed</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">Option currently works for UVM, Verilog and HTML output</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-search_path</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Overrides the default path and will search included rdl files in the directory specified in the search path switch</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-traceablity</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Enables traceability</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-incdir</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 18px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps145 noindent"><span class="rvts14">Used in case multiple files are included/referred from different directories in another SystemRDL file</span></li>
+    <li class="rvps145 noindent"><span class="rvts14">The relative path of multiple files can be given semi colon separated</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><a name="no_warn"></a><span class="rvts15">-no_warn</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Skips RDL warnings while output generation.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-rdl_perl_d</span><a name="rdl_perl_debug"></a><span class="rvts15">ebug</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Dumps the generated RDL output from embedded PERL into .IDS directory</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><a name="-verbose"></a><span class="rvts15">-verbose</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Shows the process of generation by which the user can see the running position of the Batch. For more details, </span><a class="rvts23" href="IDSdebugmode.html#SRS%20for%20Concurrent%20debug%20log%20on%20generation%20using%20verbose%20%20">click here</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-rdl_perl_no_verbos</span><a name="rdl_perl_no_verbose"></a><span class="rvts15">e</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Removes the content of the “-verbose” data from the log file when the user will use the switch “-rdl_perl_debug”</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-python_api</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Generates Python HAL. For more details, </span><a class="rvts23" href="PythonAPIforIDS-Interface.html">click here</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><a name="slipg_sdk table awitch"></a><span class="rvts15">-slipg_sdk</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Creates standard APIs for IPs in SLIP-G™. Currently, APIs are covered for I2C IP. For command line usage, </span><a class="rvts23" href="IDS-BatchCLI3.html#slipg_sdk">click here.</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-</span><span class="rvts378">dir_out_specific</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">User can specify specific output directory in case of ARV™, V header and C-API output as well. Directs the outputs to specific folders. For command line usage, </span><a class="rvts23" href="IDS-BatchCLI3.html#dir_ids_output">click here</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts15">-arch_size</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts14">Considers the software architecture size in C headers to access larger register definitions in an array of size equal to the maximum supported architecture size. </span><a class="rvts23" href="CHeader.html#architecture_size_CHeader">More Details</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><a name="cache_dir"></a><span class="rvts378">-cache_dir</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts33">Provides a path (absolute/relative) where ‘.IDS’ directory will be created. If this is not mentioned, then the ‘.IDS’ directory will be created at the default location.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-verilog_dep</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts33">Gets verilog output with 6.x.x.x series.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-uvm_dep</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts33">Gets uvm output with 6.x.x.x series.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-htmlalt2_dep</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts33">Gets htmlalt2 output with 6.x.x.x series.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-oxrsl</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts33">Gets obfuscated xrsl</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-disable_</span><a name="disable_overlap_check"></a><span class="rvts35">overlap_check</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts33">generates warning instead of error when addresses overlaps each other</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">+top_</span><a name="top_property"></a><span class="rvts35">property</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts33">It will append existing top_property values instead of override.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-capi_r</span><a name="capi_return_type"></a><span class="rvts35">eturn_type &lt;int/hwint&gt;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts34">generate an int/hwint type write API in the generated C APIs.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><a name="out_new"></a><span class="rvts35">+out&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts34">Generates additional outputs through +out switch in IDS-Batch command line</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-pp</span><a name="pprint"></a><span class="rvts35">rint "notab"</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts34">Replacement of tabs with spaces in all the outputs</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-reg_port_case</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts34">changes the upper and lower of the &lt;upper/lower&gt; _q register with port</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><a name="profile_84"></a><span class="rvts34">-</span><span class="rvts35">profile</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts34">Captures the raw data in terms of the runtime, components, memory and sw-hw access pair for processing chip level and block level at different stages.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts34">NOTE: profile.json will be created automatically upon using this switch.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-log_hermetic</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts34">Enhancing log readability and potentially reducing the size of log files</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-header_doc</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts34">Displaying pertinent information, such as the revision number, confidentiality status, classification, company logo, and page number</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; border-top: none; background-color: #a5a5a5; vertical-align: top; width: 191px; height: 24px;">
+   <p class="rvps2"><span class="rvts35">-tool</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 0px 7px; border-top: none; border-left: none; background-color: #ededed; vertical-align: top; width: 379px; height: 24px;">
+   <p class="rvps2"><span class="rvts34">User can specify the name of the tool for which the generated bus widgets have to be encrypted.</span></p>
+   <p class="rvps2"><span class="rvts34">Possible values of -tool command line option are: QUESTA, XCELIUM, VCS, VIVADO.</span></p>
+   <p class="rvps2"><span class="rvts34">This option works when the widget property is used in the input specification.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps144"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts352">Generating MS Word files&nbsp;</span></span></h1>
+<p class="rvps2"><span class="rvts14">One of the real advantages of IDS-Batch is its ability to create Word files from register specifications. This allows you to automatically document the register specification. The format of the output files can be specified via user defined templates. IDS-Batch understands special keywords that are substituted for real data when generating the files.&nbsp;</span></p>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts352">User Defined Templates&nbsp;</span></span></h1>
+<p class="rvps2"><span class="rvts14">The templates used by IDS-Batch are those provided in the templates directory of the installation area. In order to create new ones, copy the templates directory and modify the template files in them. The following “keywords” are understood by the IDS-Batch system in the various templates.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps2">
+<table cellpadding="1" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts15">Template</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts15">&nbsp;Keyword Meaning</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts15">&nbsp;Applicable in templates&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$heading</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Heading of template</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">All&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Name of template</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">All&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$offset</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Offset value of template</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">All except system ,board&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$external</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">External value of template</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">All except system ,board&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$size</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Size of template</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">All except system ,board&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$address</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Absolute Address</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">All except system , board&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$address range</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Absolute Address Range</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">Block , chip , reggroup&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$repeat</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Repeat value</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">Reggroup&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$default</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Default value</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">Register, Register-Field&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$description</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Description</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">Register&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$bits</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Bit numbers of field in a register</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">&nbsp;Register-Field,</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$field_name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Name of field in a register</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">Register-Field&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$field_description</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Description of field in a register&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">Register-Field&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$sw</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Software access of field in a register</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">Register-Field</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$hw</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Hardware access of field in a register</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">Register-Field</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 214px;">
+   <p class="rvps3"><span class="rvts14">$$page</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 382px;">
+   <p class="rvps3"><span class="rvts14">Page number of the item pointed to</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 445px;">
+   <p class="rvps3"><span class="rvts14">Index</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts352">Sample Runs&nbsp;</span></span></h1>
+<p class="rvps6"><span class="rvts14">1. IDS-Batch command to generate OVM from IPXACT</span></p>
+<p class="rvps6"><span class="rvts25">% IDS-Batch -out ovm chip1.xml&nbsp;</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts14">2a. IDS-Batch command to use MS-Word as an input on Windows OS.&nbsp;</span></p>
+<p class="rvps6"><span class="rvts25">% IDS-Batch –out “rdl vmm uvm” soc_chip.docx&nbsp;</span></p>
+<p class="rvps6"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps6"><span class="rvts14">2b. &nbsp;IDS-Batch command to use MS-Word as an input on Linux/Windows OS and not using IDS cache files to create the outputs.</span></p>
+<p class="rvps6"><span class="rvts25">% IDS-Batch -nocache –out “rdl vmm uvm” soc_chip.docx&nbsp;</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts14">3. IDS-Batch command to use MS-Excel as an input on Windows OS.&nbsp;</span></p>
+<p class="rvps6"><span class="rvts25">% IDS-Batch –out “uvm verilog” mem_bdl.xlsx&nbsp;</span></p>
+<p class="rvps6"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps6"><span class="rvts14">4. IDS-Batch command to use CSV as an input on Linux/Windows OS.&nbsp;</span></p>
+<p class="rvps6"><span class="rvts25">% IDS-Batch –out “uvm verilog” hre_krsn.csv&nbsp;</span></p>
+<p class="rvps6"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps6"><span class="rvts14">5. IDS-Batch command to generate Word 2007/10 files in output directory ‘doc’ using default templates from System RDL&nbsp;</span></p>
+<p class="rvps6"><span class="rvts25">% IDS-Batch –out word2007 –dir doc chip1.rdl&nbsp;</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts14">6. IDS-Batch command to generate RALF and Word 2007 files using Custom Word templates from System RDL</span></p>
+<p class="rvps6"><span class="rvts25">% IDS-Batch –out “vmm word2007” –template my_template_dir chip1.rdl&nbsp;</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts14">7. &nbsp;IDS-Batch command to generate custom outputs using tcl file from OpenOffice</span></p>
+<p class="rvps6"><span class="rvts25">% IDS-Batch –tcl myout.hxx.tcl chip1.odt&nbsp;</span></p>
+<p class="rvps6"><span class="rvts25"><br/></span></p>
+<p class="rvps6"><span class="rvts205">8.</span><span class="rvts14"> IDS-Batch command to generate </span><span class="rvts205">Verilog and XRSL output using CSV input file</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch -out "verilog xrsl" -bus amba DesignSpec.csv</span></p>
+<p class="rvps146"><span class="rvts205"><br/></span></p>
+<p class="rvps6"><span class="rvts205">9.</span><span class="rvts14"> IDS-Batch command to use</span><span class="rvts205"> customized "IDS_template" sheet</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch -out xrsl -template_file D:\IDS_examples\IDS_template.csv DesignSpec.csv</span></p>
+<p class="rvps6"><span class="rvts376"><br/></span></p>
+<p class="rvps6"><span class="rvts205">10.</span><span class="rvts14"> IDS-Batch command t</span><span class="rvts205">o import IP-XACT design with bus and other IP components&nbsp;</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch -design "&lt;top design file&gt;" &nbsp;"&lt;component reference file(s)&gt;" -bus_comp "&lt;bus component file(s) separated by comma&gt;" -chip_size "&lt;any integer value&gt;" -addr_sort &nbsp;-out &nbsp;"xrsl verilog uvm" -dir "&lt;desired output directory&gt;"</span></p>
+<p class="rvps6"><span class="rvts376"><br/></span></p>
+<p class="rvps6"><span class="rvts205">11.</span><span class="rvts14"> IDS-Batch command to use</span><span class="rvts205"> customized word template directory for word output&nbsp;</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch "&lt;input file path&gt;" -template_dir "&lt;path to word template directory&gt;" -out "word"</span></p>
+<p class="rvps6"><span class="rvts376"><br/></span></p>
+<p class="rvps6"><span class="rvts205">12.</span><span class="rvts14"> IDS-Batch command t</span><span class="rvts205">o exclude post-processors (define/enum/variant) for word output.</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch -out word &nbsp;-docexclude "&lt;any of the following, enum|define|variant|udp&gt;" "&lt;any input filename&gt;"</span></p>
+<p class="rvps6"><span class="rvts376">&nbsp;</span></p>
+<p class="rvps6"><span class="rvts205">13.</span><span class="rvts14"> IDS-Batch command t</span><span class="rvts205">o discard formatting from excel|word input for html/pdf</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch -out html -no_formatting "docx or xlsx file"</span></p>
+<p class="rvps6"><span class="rvts376"><br/></span></p>
+<p class="rvps6"><span class="rvts205">14.</span><span class="rvts14"> IDS-Batch command t</span><span class="rvts205">o create word datasheet (SoCe datasheet).</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch -out worddatasheet &nbsp;"&lt;any input filename&gt;"&nbsp;</span></p>
+<p class="rvps6"><span class="rvts376"><br/></span></p>
+<p class="rvps6"><span class="rvts205">15.</span><span class="rvts14"> IDS-Batch command t</span><span class="rvts205">o create output in form of Duolog format using IDS input file&nbsp;</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch "&lt;any IDS input filename&gt;" &nbsp;-out "&lt;any output type&gt;" -out_third_party d&nbsp;</span></p>
+<p class="rvps6"><span class="rvts376"><br/></span></p>
+<p class="rvps6"><span class="rvts205">16.</span><span class="rvts14"> IDS-Batch command t</span><span class="rvts205">o create output in form of Duolog format using Doulog input file&nbsp;</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch "&lt;any Duolog format input filename&gt;" -in_third_party d &nbsp;-out "&lt;any output type&gt;" -out_third_party d&nbsp;</span></p>
+<p class="rvps6"><span class="rvts376"><br/></span></p>
+<p class="rvps6"><span class="rvts205">17.</span><span class="rvts14"> IDS-Batch command t</span><span class="rvts205">o create output in form of IDS format using Doulog input file&nbsp;</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch "&lt;any Duolog format input filename&gt;" &nbsp;-in_third_party d &nbsp;-out "&lt;any output type&gt;"&nbsp;</span></p>
+<p class="rvps6"><span class="rvts376"><br/></span></p>
+<p class="rvps6"><span class="rvts205">18.</span><span class="rvts14"> IDS-Batch command t</span><span class="rvts205">o override multiple bus domain table</span></p>
+<p class="rvps6"><a name="-mbdc"></a><span class="rvts376">% IDS-Batch "&lt;any IDS input filename&gt;" -out "&lt;any output type&gt;" &nbsp;-mbdc &nbsp;&lt;"busDomianName:bus:AddressWidth"&gt;&nbsp;</span></p>
+<p class="rvps6"><span class="rvts376"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts376"> &nbsp; &nbsp; &nbsp;</span><span class="rvts205">Note: arguments of -mbdc must be semi semi-colon separated</span></p>
+<p class="rvps6"><span class="rvts376"><br/></span></p>
+<p class="rvps6"><span class="rvts205">19.</span><span class="rvts14"> IDS-Batch command t</span><span class="rvts205">o specify property at top level</span></p>
+<p class="rvps6"><a name="-top_property"></a><span class="rvts376">% IDS-Batch "&lt;any IDS input filename&gt;" -out "&lt;any output type&gt;" &nbsp;-top_property &lt;"property_name=property_value"&gt;</span></p>
+<p class="rvps147"><span class="rvts205">Note: arguments of -top_property must be semi-colon separated&nbsp;</span></p>
+<h1 class="rvps106"><a name="To ignore enums"></a><span class="rvts0"><span class="rvts377">&nbsp; &nbsp; &nbsp;20. IDS-Batch command to ignore enums</span></span></h1>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;</span><span class="rvts15">% IDS-Batch "&lt;input xml filename&gt;" -ignore_enums -out "&lt;any output type&gt;"</span><span class="rvts14">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;21. IDS-Batch command to remove redundant hierarchy in IP-XACT import</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; </span><span class="rvts15">% IDS-Batch "&lt;input IP-XACT filename&gt;" &nbsp;-out "&lt;any output type&gt;"</span><span class="rvts14"> </span><span class="rvts15">-top_property "ipxact_compact=true"</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;22. IDS-Batch command to switch from big-endian to little-endian</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; </span><span class="rvts15">%IDSbatch &lt;filename&gt; -out &lt;output format&gt; -big_endian false -little endian true</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;23. IDS-Batch command to switch from little-endian to big-endian</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; </span><span class="rvts15">%IDSbatch &lt;filename&gt; -out &lt;output format&gt; -big_endian true -little endian false</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">&nbsp; &nbsp; &nbsp;</span><span class="rvts14">24. IDS-Batch command to define board hierarchy in SystemRDL</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp;</span><a name="board hierarchy rdl"></a><span class="rvts15">%IDSbatch &lt;filename&gt; -out rdl</span><span class="rvts14"> </span><span class="rvts15">-top_element board:&lt;top element name&gt;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">&nbsp; &nbsp; &nbsp;</span><span class="rvts14">25. IDS-Batch command to override with default path and will search included rdl files in the requisite directory</span></p>
+<p class="rvps2"><span class="rvts15">&nbsp; &nbsp; &nbsp; &nbsp; %IDSbatch &nbsp;&lt;top.rdl&gt; &nbsp;-search_path &lt;path of the included files&gt; -out &lt;output format&gt; -bus &lt;supported bus protocol&gt;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;26. IDS-Batch command switch used in case multiple files are included/referred from different directories in another systemRDL file. The relative path of multiple files can be given semi colon separated</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts15">%IDSbatch &lt;top.rdl&gt; -incdir &lt;relative path of the included files; relative path of other included file&gt; -out &lt;output format&gt;</span></p>
+<p class="rvps2"><span class="rvts15">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15">&nbsp; &nbsp; &nbsp;</span><a name="incr"></a><span class="rvts14">27.IDSBatch command:</span></p>
+<p class="rvps2"><span class="rvts15">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;%IDSbatch &lt;top.rdl&gt; -incdir &lt;relative path of the included files; relative path of other included file&gt; -out &lt;output format</span><span class="rvts26">&gt;</span></p>
+<p class="rvps2"><span class="rvts26"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;28. IDS-Batch command to run SystemRDL 1.0</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp;</span><a name="board hierarchy rdl"></a><span class="rvts15">%IDSbatch &lt;filename&gt; -out &lt;output format&gt; -rdl_version 1</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">&nbsp; &nbsp; &nbsp;</span><a name="dir_ids_output"></a><span class="rvts14">29. IDS-Batch command to direct output to a specific folder</span></p>
+<p class="rvps2"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts15">%IDSbatch &lt;top.rdl&gt; -out "&lt;output1&gt; &lt;output2&gt; &lt;output3&gt;" -dir IDS_output -dir_out_specific "&lt;output1&gt;:folder_name1, &lt;output2&gt;:folder_name2, &lt;output3&gt;:folder_name3" -bus custom</span></p>
+<p class="rvps2"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">Syntax: -dir_out_specific "&lt;name of the output&gt;:&lt;name of the folder&gt;" multiple outputs should be comma separated</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;30. IDS-Batch command to generate standard APIs for IP</span></p>
+<p class="rvps2"><a name="slipg_sdk"></a><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp;</span><a name="board hierarchy rdl"></a><span class="rvts15">%IDSbatch &lt;IDSng file of IP&gt; -out &lt;verilog&gt; -slipg_sdk "uvm firmware"&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">NOTE: APIs are generated in UVM and Firmware format only.</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;31. IDS-Batch command t</span><span class="rvts37">o support hierarchical generation of files w.r.t chip/block/section</span></p>
+<p class="rvps6"><span class="rvts376">% IDS-Batch "&lt;input_file&gt;" -out htmlalt2 &nbsp;-if_html &nbsp;-if_html_section&nbsp;</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts14">32. IDS-Batch command for low power coding style&nbsp;</span></p>
+<p class="rvps2"><span class="rvts37">&nbsp; &nbsp; &nbsp;</span><span class="rvts376">% IDS-Batch "&lt;input_file&gt;" -out verilog -bus </span><span class="rvts15">&lt;bus_name&gt; -lowpower</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; 33. IDS-Batch command to use "</span><span class="rvts379">capi_add_name_prefix" property</span><span class="rvts14">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts37">&nbsp; &nbsp; &nbsp;</span><span class="rvts376">% IDS-Batch "&lt;input_file&gt;" -out header -</span><span class="rvts15">c_api&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; 34. IDS-Batch command to use </span><span class="rvts379">verbosity switch</span><span class="rvts14">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts37">&nbsp; &nbsp; &nbsp;</span><span class="rvts376">%</span><span class="rvts380"> IDS-Batch "&lt;input_file&gt;" -out "uvm verilog" -bus &lt;bus name&gt; -verbosity high</span></p>
+<p class="rvps2"><span class="rvts380"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;35. IDS-Batch command to use </span><span class="rvts34">-capi_return_type switch</span></p>
+<p class="rvps2"><span class="rvts37">&nbsp; &nbsp; &nbsp;</span><span class="rvts376">% IDS-Batch&nbsp;</span><span class="rvts107"> </span><span class="rvts62">"&lt;input file&gt;" -out header &nbsp;-c_api &nbsp;-capi_return_type &lt;int/hwint&gt;</span></p>
+<p class="rvps2"><span class="rvts62"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp;36. IDS-Batch command to use </span><span class="rvts36">-third_party_rtl</span><span class="rvts34"> switch</span></p>
+<p class="rvps2"><span class="rvts37">&nbsp; &nbsp; &nbsp;</span><span class="rvts376">% IDS-Batch&nbsp;</span><span class="rvts107"> </span><span class="rvts62">"&lt;input file&gt;" </span><span class="rvts31">&nbsp;</span><span class="rvts47">-out uvm&nbsp; -bus &lt;bus name&gt;&nbsp; -third_party_rtl</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp; &nbsp; 37. IDS-Batch command to use </span><span class="rvts379">top_property switch</span><span class="rvts14">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts37">&nbsp; &nbsp; &nbsp;</span><span class="rvts376">%</span><span class="rvts380"> IDS-Batch "&lt;input_file&gt;" -out &lt;output&gt; -bus &lt;bus name&gt; +top_property</span></p>
+<p class="rvps2"><span class="rvts380"><br/></span></p>
+<p class="rvps2"><span class="rvts380">NOTE:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts76">A</span><span class="rvts37">: For the first iteration, user gives -top_property and in second and third iterations, user gives +top_property. In such case, all the values of all three top_property will be appended.</span></p>
+<p class="rvps2"><span class="rvts76">B</span><span class="rvts37">: For the first iteration, user gives -top_property, in second iteration, user gives -top_property and the third time user gives +top_property. In such case, the value of the second and third top_property will be appended because the second -top_property will override the first.</span></p>
+<p class="rvps2"><span class="rvts76">C:</span><span class="rvts37"> For the first iteration, the user gives -top_property and for the second iteration, user gives +top_property and for the third iteration, user gives -top_property. In such case, the value of only third top_property will be considered because the third -top_property will override the second.</span></p>
+<p class="rvps2"><span class="rvts37"><br/></span></p>
+<p class="rvps2"><span class="rvts76">Conclusion:</span><span class="rvts37"> Whenever there is "+" sign in top_property, then it appends but "-" sign in top_property switch overrides.</span></p>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts352">Environment variables&nbsp;</span></span></h1>
+<p class="rvps2"><span class="rvts14">Environment variables are used by IDS-Batch.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="1" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 320px;">
+   <p class="rvps3"><span class="rvts14">AGNI_LICENSE_FILE</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 732px;">
+   <p class="rvps3"><span class="rvts14">Path to the file containing license obtained from Agnisys®.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 320px;">
+   <p class="rvps3"><span class="rvts14">IDS_XFORM_PATH</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 732px;">
+   <p class="rvps3"><span class="rvts14">Path to directory containing TCL transformation files. This variable is required only if you are transforming&nbsp;</span></p>
+   <p class="rvps3"><span class="rvts14">input files using custom TCL file.&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts352">Troubleshooting&nbsp;</span></span></h1>
+<div class="rvps2">
+<table width="100%" cellpadding="1" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 293px;">
+   <p class="rvps3"><span class="rvts15">Error message</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 759px;">
+   <p class="rvps3"><span class="rvts15">&nbsp;What to do&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 293px;">
+   <p class="rvps3"><span class="rvts14">Word 2007 not found&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 759px;">
+   <p class="rvps3"><span class="rvts14">On Windows machine, indicates that you do not have Microsoft Word installed. Word 2007 is needed if Word 2007 files are generated.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 293px;">
+   <p class="rvps3"><span class="rvts14">IDSbatch not found</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 759px;">
+   <p class="rvps3"><span class="rvts14">Make sure the IDS-Batch installation directory is in your PATH. On Linux/Solaris machines, check the execute permission of IDS-Batch&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 293px; height: 33px;">
+   <p class="rvps3"><span class="rvts14">Word 2007 file not generated</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 759px; height: 33px;">
+   <p class="rvps3"><span class="rvts14">Make sure MSWord 2007 in installed on the machine.&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps87"><span class="rvts14"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/create-chm-help-files/">Elevate Your CHM Help Files with HelpNDoc's Advanced Customization Options</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

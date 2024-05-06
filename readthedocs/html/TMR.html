@@ -1,0 +1,1276 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>TMR</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Advanced Topics,Special Register">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TMR">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="TMR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="TMR"
+		  data-hnd-context="212"
+		  data-hnd-title="TMR"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AdvancedTopics.html">Advanced Topics</a></li><li><a href="SpecialQuirkyRegisters.html">Special / Quirky Registers</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="SpecialQuirkyRegisters.html" title="Special / Quirky Registers" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Read-WritepairRegister.html" title="Read-Write pair Register" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="VirtualRegister.html" title="Virtual Register" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>TMR</h2>
+
+            <div class="main-content">
+                
+<h1 class="rvps106"><span class="rvts0"><span class="rvts316">TMR(TRIPLE MODULAR REDUNDANCY)</span></span></h1>
+<p class="rvps2"><span class="rvts440"><br/></span></p>
+<p class="rvps2"><span class="rvts15">TMR </span><span class="rvts14">is a mitigation technique, for protecting digital logic from the </span><span class="rvts15">Single Event Update(SEU) </span><span class="rvts14">in space born application, communication, ECC memories.</span></p>
+<p class="rvps2"><span class="rvts15">Concept: </span><span class="rvts14">Uses </span><span class="rvts26">three identical logic circuits</span><span class="rvts14"> performing same task in parallel with corresponding output being comparing through a </span><span class="rvts26">majority voter circuit</span><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts930"><br/></span></p>
+<p class="rvps2"><span class="rvts1138">If any one of the three systems fail, the other two systems can correct and mask the fault.</span></p>
+<p class="rvps2"><span class="rvts1139"><br/></span></p>
+<p class="rvps2"><span class="rvts1139">Logic Diagram: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps130"><span class="rvts1139">&nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem3653.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Logic function: &nbsp;</span><span class="rvts25">Output </span><span class="rvts26">=</span><span class="rvts25"> I</span><span class="rvts1140">1</span><span class="rvts25">I</span><span class="rvts1140">2 </span><span class="rvts26">+</span><span class="rvts25"> I</span><span class="rvts1140">1</span><span class="rvts25">I</span><span class="rvts1140">3 </span><span class="rvts26">+</span><span class="rvts25"> I</span><span class="rvts1140">2</span><span class="rvts25">I</span><span class="rvts1140">3</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">TMR in IDS:&nbsp;</span></p>
+<p class="rvps22"><span class="rvts14">1. We use property “</span><span class="rvts25">tmr</span><span class="rvts14">” with ‘</span><span class="rvts26">true</span><span class="rvts14">’ or ‘</span><span class="rvts26">false</span><span class="rvts14">’.</span></p>
+<p class="rvps22"><span class="rvts14">2. Property “</span><span class="rvts25">tmr</span><span class="rvts14">” supports on Chip, Block, Register, Field.</span></p>
+<p class="rvps22"><span class="rvts392"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Example</span><span class="rvts15">: </span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/tmr/tmr.zip">IDS-NG</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/tmr/tmr.docx">IDS-Word</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/tmr/tmr.xlsx">IDS-Excel</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/tmr/tmr.rdl">SystemRDL</a></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Template view</span><span class="rvts14">:</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">IDS-NG Register view:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 593px; height : 224px; padding : 1px;" src="lib/NewItem%2041.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">IDS-NG Spreadsheet view:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 616px; height : 145px; padding : 1px;" src="lib/NewItem%2042.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts16">SystemRDL</span></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">property tmr {type = boolean ; component = addrmap|reg|field ;};</span></p>
+   <p class="rvps2"><span class="rvts356">addrmap top{</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;tmr = true;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;reg Reg1{</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;field {}fld;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;reg Reg2{</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;field {}fld;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;Reg1 Reg1 @0x0;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;Reg2 Reg2 @0x4;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Generated Verilog Code:</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; always @(posedge clk) &nbsp;begin</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; if (!reset_l)</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">Reg1_fld_0_q &lt;= 12'd0;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">Reg1_fld_1_q &lt;= 12'd0;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">Reg1_fld_2_q &lt;= 12'd0;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; if (Reg1_fld_in_enb)</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> //fld : HW Write</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">Reg1_fld_0_q &lt;= Reg1_fld_in;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">Reg1_fld_1_q &lt;= Reg1_fld_in;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">Reg1_fld_2_q &lt;= Reg1_fld_in;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (Reg1_wr_valid)</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> //FLD : SW Write</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">Reg1_fld_0_q &lt;= (wr_data [0] &nbsp;&amp; reg_enb &nbsp;[0] ) | (Reg1_fld_q &amp; (~reg_enb &nbsp;[0] ));</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">Reg1_fld_1_q &lt;= (wr_data [0] &nbsp;&amp; reg_enb &nbsp;[0] ) | (Reg1_fld_q &amp; (~reg_enb &nbsp;[0] ));</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">Reg1_fld_2_q &lt;= (wr_data [0] &nbsp;&amp; reg_enb &nbsp;[0] ) | (Reg1_fld_q &amp; (~reg_enb &nbsp;[0] ));</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp;end //end always</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts385">assign Reg1_fld_q = ( (Reg1_fld_0_q &amp; Reg1_fld_1_q) | (Reg1_fld_0_q &amp; Reg1_fld_2_q) | (Reg1_fld_1_q &amp; Reg1_fld_2_q) ); &nbsp; //TMR LOGIC</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">assign Reg1_fld_r = Reg1_fld_q; // Field : FLD</span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><a name="VHDL_86_vhdl"></a><span class="rvts15">Generated VHDL Code:</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts356">...</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; -- : Reg1 &nbsp;Register</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; signal q_Reg1_fld</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; : &nbsp;std_logic; -- FIELD : fld signal</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; </span><span class="rvts385">signal q_Reg1_fld_0 &nbsp;: std_logic;</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">signal q_Reg1_fld_1 &nbsp;: std_logic;</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">signal q_Reg1_fld_2 &nbsp;: std_logic</span><span class="rvts356">;</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; -- : Reg2 &nbsp;Register</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; signal q_Reg2_fld</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">: &nbsp;std_logic; &nbsp; &nbsp; -- FIELD : fld signal</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; </span><span class="rvts385">signal q_Reg2_fld_0 &nbsp;: std_logic;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; </span><span class="rvts385">signal q_Reg2_fld_1 &nbsp;: std_logic;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; </span><span class="rvts385">signal q_Reg2_fld_2 &nbsp;: std_logic;</span></p>
+<p class="rvps2"><span class="rvts356">...</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356">&nbsp;Reg1_fld : &nbsp;process (clk)</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp;begin</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;if &nbsp;rising_edge (clk) then</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if reset_l = '0' then</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">q_Reg1_fld_0</span><span class="rvts385"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">&lt;= default_Reg1_fld;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">q_Reg1_fld_1</span><span class="rvts385"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">&lt;= default_Reg1_fld;</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">q_Reg1_fld_2</span><span class="rvts385"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">&lt;= default_Reg1_fld;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;else</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (reg_in_enb.Reg1_fld = '1') &nbsp;then &nbsp; -- &nbsp;HW write</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">q_Reg1_fld_0</span><span class="rvts385"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">&lt;= reg_in.Reg1_fld;</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp;</span><span class="rvts385">q_Reg1_fld_1</span><span class="rvts385"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">&lt;= reg_in.Reg1_fld;</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp;</span><span class="rvts385">q_Reg1_fld_2</span><span class="rvts385"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">&lt;= reg_in.Reg1_fld</span><span class="rvts356">;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (wr_valid_Reg1 = '1') then &nbsp; &nbsp; -- &nbsp;SW Write</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">q_Reg1_fld_0</span><span class="rvts385"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">&lt;= ( wr_data(0) and reg_enb(0) ) or ( q_Reg1_fld and (not(reg_enb(0))) );</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">q_Reg1_fld_1</span><span class="rvts385"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">&lt;= ( wr_data(0) and reg_enb(0) ) or ( q_Reg1_fld and (not(reg_enb(0))) );</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; </span><span class="rvts385">q_Reg1_fld_2</span><span class="rvts385"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts385">&lt;= ( wr_data(0) and reg_enb(0) ) or ( q_Reg1_fld and (not(reg_enb(0))) );</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end if;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end if;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end if;-- reset</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;end if;-- clock edge</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; end process Reg1_fld;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -- End REG1_FLD process</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;...</span></p>
+<p class="rvps2"><span class="rvts356">...</span></p>
+<p class="rvps2"><span class="rvts356">------------------------------------------</span></p>
+<p class="rvps2"><span class="rvts356">-- signal/output assignment</span></p>
+<p class="rvps2"><span class="rvts356">------------------------------------------</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts385">q_Reg1_fld &nbsp;&lt;=((q_Reg1_fld_0 and q_Reg1_fld_1) or (q_Reg1_fld_0 and q_Reg1_fld_2) or (q_Reg1_fld_1 and q_Reg1_fld_2)); -- TMR LOGIC</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">...</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...</span></p>
+<p class="rvps2"><span class="rvts198"><br/></span></p>
+<p class="rvps2"><a name="TMR_ERROR"></a><span class="rvts198">TMR Error</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Current TMR implementation silently corrects errors. It has ability for the following:</span></p>
+<p class="rvps2"><span class="rvts14">1. If an error is detected, flag tmr_error is detected.</span></p>
+<p class="rvps2"><span class="rvts14">2. The bit that got flipped is auto corrected in the next cycle.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Example</span><span class="rvts15">: </span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/tmr_error/tmr_error.zip">IDS-NG</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/tmr_error/tmr_error.docx">IDS-Word</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/tmr_error/tmr_error.xlsx">IDS-Excel</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/tmr_error/tmr_error.rdl">SystemRDL</a></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 649px; height : 316px; padding : 1px;" src="lib/NewItem5122.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 824px; height : 209px; padding : 1px;" src="lib/NewItem5123.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">SystemRDL</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">property tmr_error { type = string; component = addrmap|reg|field; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; property tmr {type = boolean ; component = addrmap|reg|field; }; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">addrmap Block1 {</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; reg configure {&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } status[31:16] = 16'h064;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } control[15:0] = 16'h0;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; reg control {&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;tmr_error = "true";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;tmr = true;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } Fld[31:0] = 32'h01;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; configure configure @0x0;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; control control @0x4;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts356">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15">Generated RTL Output (Verilog)</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">output Control_Fld_tmr_error; //TMR ERROR SIGNAL</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">if (control_wr_valid)</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> //FLD : SW Write</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; control_Fld_0_q &lt;= (wr_data [31 : 0] &nbsp;&amp; reg_enb &nbsp;[31 : 0] ) | (control_Fld_q &amp; (~reg_enb &nbsp;[31 : 0] ));</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; control_Fld_1_q &lt;= (wr_data [31 : 0] &nbsp;&amp; reg_enb &nbsp;[31 : 0] ) | (control_Fld_q &amp; (~reg_enb &nbsp;[31 : 0] ));</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; control_Fld_2_q &lt;= (wr_data [31 : 0] &nbsp;&amp; reg_enb &nbsp;[31 : 0] ) | (control_Fld_q &amp; (~reg_enb &nbsp;[31 : 0] ));</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else if (!control_Fld_tmr_error)</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; control_Fld_0_q &lt;= control_Fld_q;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; control_Fld_1_q &lt;= control_Fld_q;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; control_Fld_2_q &lt;= control_Fld_q;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">assign Control_Fld_tmr_error = ( ~ ( | ( (Control_Fld_0_q ^ Control_Fld_1_q ) | (Control_Fld_1_q ^</span></p>
+   <p class="rvps2"><span class="rvts356">Control_Fld_2_q ) | (Control_Fld_2_q ^ Control_Fld_0_q ) ))); // TMR ERROR LOGIC</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Generated RTL Output (SystemVerilog)</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts15">Wrapper file</span><span class="rvts14">:</span></p>
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">module Block1_IDS_wrapper</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; #(</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; // &nbsp;PARAMETERS</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; parameter bus_width &nbsp; = 32,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; )</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; ( &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Block1_Configure_interface.mp &nbsp; Block1_Configure_if,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Block1_Control_interface.mp &nbsp; Block1_Control_if,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">. &nbsp; &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; );</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; // Module Instantiation</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; Block1_IDS #(.addr_width(addr_width), .bus_width(bus_width), .block_offset(block_offset)) Block1IDS (</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; //Block1_IDS</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .Control_Fld_in(Block1_Control_if.Control_Fld_in),</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; </span><span class="rvts385">.Control_Fld_tmr_error(Block1_Control_if.Control_Fld_tmr_error),</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; // Instantiation End</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">endmodule</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts15">Interface:</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">// INTERFACE : CONTROL</span></p>
+   <p class="rvps2"><span class="rvts356">interface Block1_Control_interface # (</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; parameter bus_width &nbsp; = 32,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; );</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; logic Control_enb;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; .</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; logic &nbsp;</span><span class="rvts385">Control_Fld_tmr_error</span><span class="rvts356"> ;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; modport mp (</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; input Control_Fld_in_enb, Control_Fld_in,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; output Control_enb, Control_Fld_r, </span><span class="rvts385">Control_Fld_tmr_error</span><span class="rvts356">);</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; modport op (</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; output Control_Fld_in_enb, Control_Fld_in,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; input Control_enb, Control_Fld_r, </span><span class="rvts385">Control_Fld_tmr_error</span><span class="rvts356">);</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">endinterface</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Note</span><span class="rvts14">: tmr_error act as active low.</span></p>
+<p class="rvps2"><a name="TMR_ERROR_INJECTION"></a><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts126">TMR Error Injection</span></p>
+<p class="rvps12"><span class="rvts36"><br/></span></p>
+<p class="rvps12"><span class="rvts36">The TMR register can completely mask the failure of only one hardware unit. TMR is particularly suitable for transient faults, because in the basic TMR the voter does not "remove" the faulty unit after an error occurs. Due to this, the reliability of the TMR system becomes lower once a failure occurs. Therefore, some enhancements have been made in TMR for error injection as well as detection and correction, which are much needed in this model for having a more reliable system.</span></p>
+<p class="rvps12"><span class="rvts36"><br/></span></p>
+<p class="rvps12"><span class="rvts31">TMR error:</span></p>
+<p class="rvps12"><span class="rvts31"><br/></span></p>
+<p class="rvps12"><span class="rvts36">The TMR register described so far silently corrects the errors. With the IDS property ‘</span><span class="rvts31">tmr_error</span><span class="rvts36">’ the user can also detect an error, and an active low signal is generated to indicate the presence of an error. This error is corrected in the next cycle where the bit flipped is auto corrected.</span></p>
+<p class="rvps2"><span class="rvts60"></span><br/><span class="rvts31">TMR error logic: </span><span class="rvts47">Output = ( ~ ( | (I</span><span class="rvts1141">1</span><span class="rvts47"> ^ I</span><span class="rvts1141">2</span><span class="rvts47">) | (I</span><span class="rvts1141">1</span><span class="rvts47"> ^ I</span><span class="rvts1141">3</span><span class="rvts47">) | (I</span><span class="rvts1141">2</span><span class="rvts47"> ^ I</span><span class="rvts1141">3</span><span class="rvts47">) ));</span></p>
+<p class="rvps2"><span class="rvts47"><br/></span></p>
+<p class="rvps12"><span class="rvts31">TMR error injection requirement and solution:</span></p>
+<p class="rvps12"><span class="rvts31"><br/></span></p>
+<p class="rvps12"><span class="rvts36">Another IDS property ‘</span><span class="rvts31">tmr_error_inject</span><span class="rvts36">’ can perform error injection so as to check for faults during functional mode of the chip. The error can be injected based on an additional input signal, where one of three systems is injected with an error. This error can be detected and corrected in the next clock cycle with the tmr_error logic.</span></p>
+<p class="rvps2"><span class="rvts36">A new property as shown below for tmr_error_injection has been introduced for IDS implementation. This property can take any signal value currently, similar to </span><span class="rvts55">parity_error_inject</span><span class="rvts36">.</span></p>
+<p class="rvps2"><span class="rvts36"><br/></span></p>
+<p class="rvps2"><span class="rvts27">SystemRDL Example</span></p>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts430">property tmr { type = boolean; component = addrmap|regfile|reg|field; };</span></p>
+   <p class="rvps2"><span class="rvts430">property tmr_error { type = string; component = addrmap|regfile|reg|field; };</span></p>
+   <p class="rvps2"><span class="rvts451">addrmap Chip1 {</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;addrmap Block1 {</span></p>
+   <p class="rvps2"><span class="rvts451">signal</span><span class="rvts573"> </span><span class="rvts451">{} S1;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp; {</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts1060">&nbsp;&nbsp;tmr= “true”;</span></p>
+   <p class="rvps2"><span class="rvts1060">&nbsp;&nbsp;tmr_error = “true:S1”;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = na;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} F1[31:0] = 32'h0C;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;}Reg1;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;Block1&nbsp; Block1 @0x00;</span></p>
+   <p class="rvps2"><span class="rvts451">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts27"><br/></span></p>
+<p class="rvps2"><span class="rvts27">IDS-Word Example:</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem3619.png"></p>
+<p class="rvps2"><span class="rvts36"><br/></span></p>
+<p class="rvps2"><span class="rvts36">Below, if the signal S2 is high, the data from the bus interface to be written in the third buffer is flipped in order to introduce an error.</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Verilog Code</span><span class="rvts34">:</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts451">always @(posedge clk)&nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;if (!reset_l)</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_0_q &lt;= 32'd0;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_1_q &lt;= 32'd0;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_2_q &lt;= 32'd0;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;else</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Reg1_F1_in_enb) //F1 : HW Write</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_0_q &lt;= Reg1_F1_in;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_1_q &lt;= Reg1_F1_in;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_2_q &lt;= Reg1_F1_in;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Reg1_wr_valid) //F1 : SW Write</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_0_q &lt;= (wr_data [31 : 0]&nbsp; &amp; reg_enb&nbsp; [31 : 0] ) | (Reg1_F1_q &amp; (~reg_enb&nbsp; [31 : 0] ));</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_1_q &lt;= (wr_data [31 : 0]&nbsp; &amp; reg_enb&nbsp; [31 : 0] ) | (Reg1_F1_q &amp; (~reg_enb&nbsp; [31 : 0] ));</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts1060">&nbsp;if(S2)</span></p>
+   <p class="rvps2"><span class="rvts1060">&nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts1060">&nbsp; Reg1_F1_2_q &lt;= ~((wr_data [31 : 0]&nbsp; &amp; reg_enb&nbsp; [31 : 0] ) | (Reg1_F1_q &amp; (~reg_enb&nbsp; [31 : 0] ))); //TMR ERROR INJECT</span></p>
+   <p class="rvps2"><span class="rvts1060">&nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts1060">else</span></p>
+   <p class="rvps2"><span class="rvts1060">&nbsp; begin</span></p>
+   <p class="rvps2"><span class="rvts1060">&nbsp; &nbsp; Reg1_F1_2_q &lt;= (wr_data [31 : 0]&nbsp; &amp; reg_enb&nbsp; [31 : 0] ) | (Reg1_F1_q &amp; (~reg_enb&nbsp; [31 : 0] ));</span></p>
+   <p class="rvps2"><span class="rvts1060">&nbsp; end</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else if (!Reg1_F1_tmr_error)</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_0_q &lt;= Reg1_F1_q;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_1_q &lt;= Reg1_F1_q;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_2_q &lt;= Reg1_F1_q;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;end //end always</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;assign Reg1_F1_q = ( (Reg1_F1_0_q &amp; Reg1_F1_1_q) | (Reg1_F1_0_q &amp; Reg1_F1_2_q) | (Reg1_F1_1_q &amp; Reg1_F1_2_q) ); &nbsp; //TMR LOGIC</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts451">&nbsp;&nbsp;&nbsp;</span><span class="rvts1060">&nbsp;assign Reg1_F1_tmr_error = ( ~ ( | (Reg1_F1_0_q ^ Reg1_F1_1_q) | (Reg1_F1_0_q ^ Reg1_F1_2_q) | (Reg1_F1_1_q ^ Reg1_F1_2_q) )); &nbsp; //TMR ERROR LOGIC</span><span class="rvts29">&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps456"><span class="rvts1142">Enhancement in tmr_error</span></p>
+<p class="rvps456"><a name="tmr_error_enh"></a><span class="rvts42">The property</span><span class="rvts191"> </span><span class="rvts636">tmr_error</span><span class="rvts191"> </span><span class="rvts42">has been enhanced to take a third argument 'activehigh' to make the tmr_error signal as activehigh i.e., </span><span class="rvts755">tmr_error=true:signal_name:activehigh</span></p>
+<p class="rvps456"><span class="rvts42">where,</span></p>
+<p class="rvps456"><span class="rvts755">signal_name</span><span class="rvts42">: signifies the name of error injection signal</span></p>
+<p class="rvps456"><span class="rvts755">activehigh</span><span class="rvts42">: signifies the tmr_error signal is active high</span></p>
+<p class="rvps456"><span class="rvts1143">SystemRDL Example</span><span class="rvts1144">&nbsp;</span></p>
+<div class="rvps456">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps14"><span class="rvts370">property tmr { type = boolean; component = addrmap|regfile|reg|field; };</span></p>
+   <p class="rvps14"><span class="rvts370">property tmr_error { type = string; component = addrmap|regfile|reg|field; };</span></p>
+   <p class="rvps14"><span class="rvts451">addrmap Chip1 {</span></p>
+   <p class="rvps14"><span class="rvts451">&nbsp;&nbsp;addrmap Block1 {</span></p>
+   <p class="rvps14"><span class="rvts451">signal</span><span class="rvts573"> </span><span class="rvts451">{} S1;</span></p>
+   <p class="rvps14"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;reg&nbsp; {</span></p>
+   <p class="rvps14"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps14"><span class="rvts1060">&nbsp;&nbsp;tmr= “true”;</span></p>
+   <p class="rvps14"><span class="rvts1060">&nbsp;&nbsp;tmr_error = “true:S1:activehigh”;</span></p>
+   <p class="rvps14"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps14"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = na;</span></p>
+   <p class="rvps14"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps14"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} F1[31:0] = 32'h0C;</span></p>
+   <p class="rvps14"><span class="rvts451">&nbsp;&nbsp;&nbsp;&nbsp;}Reg1;</span></p>
+   <p class="rvps14"><span class="rvts451">&nbsp;&nbsp;};</span></p>
+   <p class="rvps14"><span class="rvts451">&nbsp;&nbsp;Block1&nbsp; Block1 @0x00;</span></p>
+   <p class="rvps14"><span class="rvts451">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps456"><span class="rvts1143">IDS-NG Example</span></p>
+<p class="rvps191"><img alt="" style="width : 770px; height : 172px; padding : 1px;" src="lib/NewItem3805.png"></p>
+<p class="rvps191"><span class="rvts14"><br/></span></p>
+<p class="rvps456"><span class="rvts1143">IDS-Excel Example</span></p>
+<p class="rvps457"><img alt="" style="width : 770px; height : 143px; padding : 1px;" src="lib/NewItem3806.png"></p>
+<p class="rvps14"><span class="rvts1144">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts35">Generated Verilog Output</span></p>
+<p class="rvps14"><span class="rvts35"><br/></span></p>
+<div class="rvps14">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps14"><span class="rvts451">.&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts451">.&nbsp; &nbsp; .</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts373">else if (Reg1_F1_tmr_error)</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_0_q &lt;= Reg1_F1_q;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_1_q &lt;= Reg1_F1_q;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_F1_2_q &lt;= Reg1_F1_q;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;end //end always</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;assign Reg1_F1_q = ( (Reg1_F1_0_q &amp; Reg1_F1_1_q) | (Reg1_F1_0_q &amp; Reg1_F1_2_q) | (Reg1_F1_1_q &amp; Reg1_F1_2_q) ); &nbsp; //TMR LOGIC</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;</span><span class="rvts373">&nbsp;assign Reg1_F1_tmr_error = ( ( | (Reg1_F1_0_q ^ Reg1_F1_1_q) | (Reg1_F1_0_q ^ Reg1_F1_2_q) | (Reg1_F1_1_q ^ Reg1_F1_2_q) )); &nbsp; //TMR ERROR LOGIC</span><span class="rvts1145">&nbsp;</span></p>
+   <p class="rvps14"><span class="rvts632">. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .</span></p>
+   <p class="rvps14"><span class="rvts632">. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps14"><span class="rvts74">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts126">Support for T</span><a name="TMR_REG"></a><span class="rvts126">MR Error signal at Register Level</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts36">Currently in TMR the flagged tmr error indicates whether an error was discovered and if so, the bit that was flipped is immediately corrected in the subsequent cycle. Moreover, mistakes can be recognized by the user using the IDS property "tmr_error," and an active low signal is produced to do so. Now enhancements have been done to introduce TMR error logic for the register as well. This functionality is generated upon the usage of the </span><span class="rvts31">“tmr_error = true::reg”</span><span class="rvts36"> property.</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps460"><img alt="" style="width : 602px; height : 197px;" src="lib/NewItem5196.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">IDS-NG Spreadsheet View</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps460"><img alt="" style="width : 602px; height : 163px;" src="lib/NewItem5195.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps2"><span class="rvts31">SystemRDL</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts877">property default_reset{type=boolean;component=addrmap;};</span></p>
+   <p class="rvps2"><span class="rvts877">property tmr{type=boolean;component=reg;};</span></p>
+   <p class="rvps2"><span class="rvts877">property tmr_error{type=string;component=reg;};</span></p>
+   <p class="rvps2"><span class="rvts877"><br/></span></p>
+   <p class="rvps2"><span class="rvts877">addrmap block1 {</span></p>
+   <p class="rvps2"><span class="rvts877">&nbsp;default_reset=0;</span></p>
+   <p class="rvps2"><span class="rvts877"><br/></span></p>
+   <p class="rvps22"><span class="rvts877">reg reg1 {</span></p>
+   <p class="rvps22"><span class="rvts877">&nbsp; tmr=true;</span></p>
+   <p class="rvps22"><span class="rvts1148">&nbsp; tmr_error="true::reg";</span></p>
+   <p class="rvps2"><span class="rvts877"><br/></span></p>
+   <p class="rvps129"><span class="rvts877">field field1{</span></p>
+   <p class="rvps129"><span class="rvts877">&nbsp;&nbsp;hw=rw;</span></p>
+   <p class="rvps129"><span class="rvts877">&nbsp;&nbsp;sw=rw;</span></p>
+   <p class="rvps129"><span class="rvts877">};field1 f1[31:25];</span></p>
+   <p class="rvps22"><span class="rvts877"><br/></span></p>
+   <p class="rvps129"><span class="rvts877">field1 f2[24:0];</span></p>
+   <p class="rvps22"><span class="rvts877">};reg1 reg1;</span></p>
+   <p class="rvps2"><span class="rvts877">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<p class="rvps2"><span class="rvts31">Generated RTL Output</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts1149">module</span><span class="rvts817"> block1_ids</span><span class="rvts1150">(</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// REGISTER : REG_1 PORT SIGNAL</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="rvts1148">reg1_tmr_error</span><span class="rvts877">,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_enb,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f2_in,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f2_in_enb,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f2_tmr_error,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f2_r,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f1_in,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f1_in_enb,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f1_tmr_error,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f1_r,</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// PARAMETERS</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">parameter</span><span class="rvts877"> bus_width </span><span class="rvts1152">=</span><span class="rvts877"> </span><span class="rvts1153">32</span><span class="rvts877">;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">parameter</span><span class="rvts877"> addr_width </span><span class="rvts1152">=</span><span class="rvts877"> </span><span class="rvts1153">2</span><span class="rvts877">;&nbsp;&nbsp;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">parameter</span><span class="rvts877"> block_size&nbsp; </span><span class="rvts1152">=</span><span class="rvts877"> </span><span class="rvts1153">'h4</span><span class="rvts877">;&nbsp;&nbsp;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">parameter</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts877">addr_width</span><span class="rvts1152">-</span><span class="rvts1153">1</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> block_offset </span><span class="rvts1152">=</span><span class="rvts877"> </span><span class="rvts1154">{(</span><span class="rvts877">addr_width</span><span class="rvts1154">){</span><span class="rvts1153">1'b0</span><span class="rvts1154">}}</span><span class="rvts877">;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts304">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts370">// REGISTER : REG_1 SIGNALS</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> reg1_decode;&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts1155">// Write Decode</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> reg1_wr_valid;&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts1155">// Write Valid</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">63</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_offset;&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts1155">// Offset</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> reg1_rd_valid;&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts1155">// Read Valid</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts877">bus_width</span><span class="rvts1152">-</span><span class="rvts1153">1</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_rd_data;&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts1155">// Read Data</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">output</span><span class="rvts1148"> reg1_tmr_error; </span><span class="rvts1157">// REGISTER TMR ERROR SIGNAL</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">output</span><span class="rvts877"> reg1_enb; </span><span class="rvts1155">// REGISTER ENABLE</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">24</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f2_q; </span><span class="rvts1155">// FIELD : f2</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">input</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">25</span><span class="rvts1152">-</span><span class="rvts877"> </span><span class="rvts1153">1</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f2_in;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">input</span><span class="rvts877"> reg1_f2_in_enb;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">24</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f2_0_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f2</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">24</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f2_1_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f2</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">24</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f2_2_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f2</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">output</span><span class="rvts1148"> reg1_f2_tmr_error;&nbsp; &nbsp; </span><span class="rvts1157">// TMR ERROR SIGNAL</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">output</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">24</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f2_r;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">6</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f1_q; </span><span class="rvts1155">// FIELD : f1</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">input</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">7</span><span class="rvts1152">-</span><span class="rvts877"> </span><span class="rvts1153">1</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f1_in;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">input</span><span class="rvts877"> reg1_f1_in_enb;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">6</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f1_0_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f1</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">6</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f1_1_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f1</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">6</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f1_2_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f1</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">output</span><span class="rvts1148"> reg1_f1_tmr_error;&nbsp; &nbsp; </span><span class="rvts1157">// TMR ERROR SIGNAL</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">output</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">6</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f1_r;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts29"></span><br/><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts304">assign reg_1_F2_tmr_error = ( ~ ( | ( (reg_1_F2_0_q ^ reg_1_F2_1_q) | (reg_1_F2_0_q ^ reg_1_F2_2_q) | (reg_1_F2_1_q ^ reg_1_F2_2_q) ))); &nbsp; //TMR ERROR LOGIC</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts1156">assign</span><span class="rvts1148"> reg1_tmr_error </span><span class="rvts1160">=</span><span class="rvts1148"> reg1_f2_tmr_error </span><span class="rvts1160">|</span><span class="rvts1148"> reg1_f1_tmr_error;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">assign rd_data_vld = rd_stb;</span></p>
+   <p class="rvps2"><span class="rvts370">assign rd_data = reg_1_rd_data ;</span></p>
+   <p class="rvps2"><span class="rvts370">assign request = 1'b1;</span></p>
+   <p class="rvps2"><span class="rvts370">assign rd_wait = 1'b1;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">endmodule</span><span class="rvts632"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps14"><span class="rvts632"><br/></span></p>
+<p class="rvps35"><span class="rvts214">T</span><a name="TMR_lock"></a><span class="rvts214">MR with lock support</span></p>
+<p class="rvps8"><span class="rvts36">The write access of a register from the software side is </span><span class="rvts34">blocked </span><span class="rvts36">based on the value of another register field or based on an expression consisting of different register fields or some external signal declared as input in the signals table. Such a register for which the write access is</span><span class="rvts34"> locked is a "lock register". </span><span class="rvts36">The Write operation on the locking register occurs only when the lock control condition is false. Whereas </span><span class="rvts31">TMR,</span><span class="rvts36"> a mitigation technique,&nbsp; uses three identical logic circuits performing the same task in parallel producing output while comparing it through a majority voter circuit.</span></p>
+<p class="rvps58"><span class="rvts36">Using both features on the same field/register enhances the tool performance and the interoperation between these properties.</span><span class="rvts34"> Let's take a look at an example to understand, Consider the following input:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts31">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 628px; height : 358px; padding : 1px;" src="lib/NewItem5209.png"></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<p class="rvps2"><span class="rvts31">IDS-NG Spreadsheet View</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 900px; height : 173px; padding : 1px;" src="lib/NewItem5210.png"></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<p class="rvps2"><span class="rvts31">SystemRDL:</span></p>
+<p class="rvps2"><span class="rvts31"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps8"><span class="rvts370">property tmr_error{type=string; component=reg|field;};</span></p>
+   <p class="rvps8"><span class="rvts370">property tmr{type=boolean; component=addrmap|reg|field;};</span></p>
+   <p class="rvps8"><span class="rvts370">property lock{type=string; component=reg|field;};</span></p>
+   <p class="rvps8"><span class="rvts370">addrmap block_1{</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg func_lock{</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field{</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw=rw;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw=rw;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onread=r;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onwrite=w;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}key[31:0]=0;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg reg1{</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field{</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts642">tmr_error="true";</span></p>
+   <p class="rvps8"><span class="rvts304">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts642">tmr=true;</span></p>
+   <p class="rvps8"><span class="rvts304">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts642">lock="func_lock.key!=0x55";</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw=r;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw=rw;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onread=r;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onwrite=w;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}module_rstn[0:0]=0;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field{</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw=rw;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw=r;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onread=r;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}Rst_sts[1:1]=0;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};func_lock func_lock;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg1 reg1;</span></p>
+   <p class="rvps8"><span class="rvts370">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps58"><span class="rvts31">Command line:&nbsp;</span></p>
+<div class="rvps58">
+<table width="100%" cellpadding="1" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px;">
+   <p class="rvps58"><span class="rvts36">idsbatch input.rdl -bus &lt;bus_name&gt; -out Verilog -dir &lt;directory_name&gt;</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps8"><span class="rvts35">Generated RTL code for above RDL input :&nbsp;</span></p>
+<div class="rvps8">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps8"><span class="rvts35">For lock :</span></p>
+   <p class="rvps8"><span class="rvts370">always @(posedge clk)&nbsp; begin</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;if (!reset_l)</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg1_modulerstn_0_q &lt;= 1'd0;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg1_modulerstn_1_q &lt;= 1'd0;</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg1_modulerstn_2_q &lt;= 1'd0;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;else</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps8"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts304">&nbsp;&nbsp;</span><span class="rvts642">if (reg1_wr_valid &amp;&amp; !((funclock_key_q) != 32'd85))&nbsp; &nbsp; &nbsp; //MODULERSTN : SW Write</span><span class="rvts1161"> </span><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_0_q &lt;= (wr_data [0]&nbsp; &amp; reg_enb&nbsp; [0] ) | (</span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_q &amp; (~reg_enb&nbsp; [0] ));</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_1_q &lt;= (wr_data [0]&nbsp; &amp; reg_enb&nbsp; [0] ) | (</span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_q &amp; (~reg_enb&nbsp; [0] ));</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_2_q &lt;= (wr_data [0]&nbsp; &amp; reg_enb&nbsp; [0] ) | (</span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_q &amp; (~reg_enb&nbsp; [0] ));</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else if (!</span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_tmr_error)</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_0_q &lt;= </span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_q;</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_1_q &lt;= </span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_q;</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_2_q &lt;= </span><span class="rvts370">reg1</span><span class="rvts428">_modulerstn_q;</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps8"><span class="rvts428">&nbsp;&nbsp;&nbsp;&nbsp;end //end always</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps8"><span class="rvts34">As we can see in above RTL code the desired lock expression is generated and also it does not affect the TMR functionality.</span></p>
+<p class="rvps28"><span class="rvts1147">Support of TMR in UVM</span></p>
+<p class="rvps2"><a name="TMR_UVM"></a><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts31">TMR</span><span class="rvts36"> stands for Triple Modular Redundancy. </span><span class="rvts1014">TMR</span><span class="rvts31"> </span><span class="rvts36">is a mitigation technique for protecting digital logic from the Single Event Update(SEU) in space born application, communication, and ECC memories. It uses three identical logic circuits performing the same task in parallel with corresponding outputs being&nbsp; compared through a majority voter circuit. If any one of the three systems fails, the other two systems can correct and mask the fault.</span></p>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<p class="rvps12"><span class="rvts34">To extend the support of TMR register functionality to the IDS generated UVM by modeling a RTL equivalent logic with the help of callbacks.</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><span class="rvts62">SystemRDL input:-</span><span class="rvts1146">&nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts1146"><br/></span></p>
+<div class="rvps12">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps12"><span class="rvts373">property tmr {type = boolean ; component = addrmap|reg|field; };&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">addrmap Block1 {</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;</span><span class="rvts373">&nbsp;tmr = true;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;addrmap Section {</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp; = "Section Address Map";</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;reg Reg1 {&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = rw;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = rw;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} f1[31:0] = 32'h0;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;Reg1 Reg1 @0x0;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;};</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;Section&nbsp; Section @0x0;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps12"><span class="rvts1146"><br/></span></p>
+<p class="rvps12"><span class="rvts126">IDS-NG input:</span><span class="rvts35">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps12"><img alt="" style="width : 624px; height : 279px;" src="lib/NewItem4674.png"></p>
+<p class="rvps12"><span class="rvts126">IDS-Excel input:</span><span class="rvts35">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts35"><br/></span></p>
+<p class="rvps12"><img alt="" style="padding : 1px;" src="lib/123.png" usemap="#0D08D08FC2784E549322F8902A807A75"><map name="0D08D08FC2784E549322F8902A807A75"></map></p>
+<p class="rvps12"><span class="rvts35"><br/></span></p>
+<p class="rvps12"><span class="rvts126">Output Code:</span></p>
+<p class="rvps12"><span class="rvts126"><br/></span></p>
+<div class="rvps12">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts370"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.f1.configure(.parent(this), .size(32), .lsb_pos(0), .access("RW"), .volatile(0), .reset(32'd0), .has_reset(1), .is_rand(1), .individually_accessible(0));</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps12"><span class="rvts370">endclass</span></p>
+   <p class="rvps12"><span class="rvts370">`endif</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">/*----------------------------------------------------------------------</span></p>
+   <p class="rvps12"><span class="rvts370">Class &nbsp; &nbsp; &nbsp; :</span><span class="rvts373"> Block1_Section_Reg1_tmr_1</span></p>
+   <p class="rvps12"><span class="rvts370">DESCRIPTION:-</span></p>
+   <p class="rvps12"><span class="rvts370">-----------------------------------------------------------------------*/</span></p>
+   <p class="rvps12"><span class="rvts373">`ifndef CLASS_Block1_Section_Reg1_tmr_1</span></p>
+   <p class="rvps12"><span class="rvts373">`define CLASS_Block1_Section_Reg1_tmr_1</span></p>
+   <p class="rvps12"><span class="rvts373">class Block1_Section_Reg1_tmr_1 extends uvm_reg;</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;`uvm_object_utils(Block1_Section_Reg1_tmr_1)</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;rand uvm_reg_field f1;/**/</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// Function : new</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;function new(string name = "Block1_Section_Reg1_tmr_1");</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super.new(name, 32, build_coverage(UVM_NO_COVERAGE));</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add_coverage(build_coverage(UVM_NO_COVERAGE));</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// Function : build</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;virtual function void build();</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;this.f1 = uvm_reg_field::type_id::create("f1");</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;this.f1.configure(.parent(this), .size(32), .lsb_pos(0), .access("RW"), .volatile(0), .reset(32'd0), .has_reset(1), .is_rand(1), .individually_accessible(0));</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps12"><span class="rvts370">endclass</span></p>
+   <p class="rvps12"><span class="rvts370">`endif</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">/*----------------------------------------------------------------------</span></p>
+   <p class="rvps12"><span class="rvts370">Class &nbsp; &nbsp; &nbsp; : </span><span class="rvts373">Block1_Section_Reg1_tmr_2</span></p>
+   <p class="rvps12"><span class="rvts370">DESCRIPTION:-</span></p>
+   <p class="rvps12"><span class="rvts370">-----------------------------------------------------------------------*/</span></p>
+   <p class="rvps12"><span class="rvts373">`ifndef CLASS_Block1_Section_Reg1_tmr_2</span></p>
+   <p class="rvps12"><span class="rvts373">`define CLASS_Block1_Section_Reg1_tmr_2</span></p>
+   <p class="rvps12"><span class="rvts373">class Block1_Section_Reg1_tmr_2 extends uvm_reg;</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;`uvm_object_utils(Block1_Section_Reg1_tmr_2)</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;rand uvm_reg_field f1;/**/</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// Function : new</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;function new(string name = "Block1_Section_Reg1_tmr_2");</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super.new(name, 32, build_coverage(UVM_NO_COVERAGE));</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add_coverage(build_coverage(UVM_NO_COVERAGE));</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// Function : build</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;virtual function void build();</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.f1 = uvm_reg_field::type_id::create("f1");</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.f1.configure(.parent(this), .size(32), .lsb_pos(0), .access("RW"), .volatile(0), .reset(32'd0), .has_reset(1), .is_rand(1), .individually_accessible(0));</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps12"><span class="rvts370">endclass</span></p>
+   <p class="rvps12"><span class="rvts370">`endif</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">/*----------------------------------------------------------------------</span></p>
+   <p class="rvps12"><span class="rvts370">Class &nbsp; &nbsp; &nbsp; : Block1_Section</span></p>
+   <p class="rvps12"><span class="rvts370">DESCRIPTION:-</span></p>
+   <p class="rvps12"><span class="rvts370">-----------------------------------------------------------------------*/</span></p>
+   <p class="rvps12"><span class="rvts370">`ifndef CLASS_Block1_Section</span></p>
+   <p class="rvps12"><span class="rvts370">`define CLASS_Block1_Section</span></p>
+   <p class="rvps12"><span class="rvts370">class Block1_Section extends uvm_reg_file;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;`uvm_object_utils(Block1_Section)</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;rand Block1_Section_Reg1 Reg1;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts373">rand Block1_Section_Reg1_tmr_0 Reg1_tmr_0;</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;rand Block1_Section_Reg1_tmr_1 Reg1_tmr_1;</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;rand Block1_Section_Reg1_tmr_2 Reg1_tmr_2;</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// Function : new</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;function new(string name = "Block1_Section");</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super.new(name);</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// Function : build</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;virtual function void build();</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//REG1</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1 = Block1_Section_Reg1::type_id::create("Reg1");</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1.configure(get_block(), this, "Reg1");</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1.build();</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts373">&nbsp;&nbsp;//Reg1_TMR_0</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_0 = Block1_Section_Reg1_tmr_0::type_id::create("Reg1_tmr_0");</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_0.configure(get_block(), this, "Reg1_tmr_0");</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_0.build();</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Reg1_TMR_1</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_1 = Block1_Section_Reg1_tmr_1::type_id::create("Reg1_tmr_1");</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_1.configure(get_block(), this, "Reg1_tmr_1");</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_1.build();</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Reg1_TMR_2</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_2 = Block1_Section_Reg1_tmr_2::type_id::create("Reg1_tmr_2");</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_2.configure(get_block(), this, "Reg1_tmr_2");</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_2.build();</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;virtual function void map(uvm_reg_map mp, uvm_reg_addr_t offset);</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//add reg and regfiles</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mp.add_reg(Reg1, offset + 'h0, "RW");</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mp.add_reg(Reg1_tmr_0, offset + 'h0, "RW");</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mp.add_reg(Reg1_tmr_1, offset + 'h0, "RW");</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mp.add_reg(Reg1_tmr_2, offset + 'h0, "RW");</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;virtual function void set_offset(uvm_reg_map mp, uvm_reg_addr_t offset);</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1.set_offset(mp, offset + 'h0 );</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_0.set_offset(mp, offset + 'h0 );</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_1.set_offset(mp, offset + 'h0 );</span></p>
+   <p class="rvps12"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reg1_tmr_2.set_offset(mp, offset + 'h0 );</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps12"><span class="rvts370">endclass : Block1_Section</span></p>
+   <p class="rvps12"><span class="rvts370">`endif</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">/*----------------------------------------------------------------------</span></p>
+   <p class="rvps12"><span class="rvts370">Class &nbsp; &nbsp; &nbsp; : Block1_block</span></p>
+   <p class="rvps12"><span class="rvts370">DESCRIPTION:-</span></p>
+   <p class="rvps12"><span class="rvts370">-----------------------------------------------------------------------*/</span></p>
+   <p class="rvps12"><span class="rvts370">`ifndef CLASS_Block1_block</span></p>
+   <p class="rvps12"><span class="rvts370">`define CLASS_Block1_block</span></p>
+   <p class="rvps12"><span class="rvts370">class Block1_block extends uvm_reg_block;</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;`uvm_object_utils(Block1_block)</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;rand Block1_Section Section;</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// Function : new</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;function new(string name = "Block1_block");</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super.new(name, UVM_NO_COVERAGE);</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// Function : build</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;virtual function void build();</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//define default map and add reg/regfiles</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default_map= create_map("default_map", 'h0, 4, UVM_BIG_ENDIAN, 1);</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//SECTION</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Section = Block1_Section::type_id::create("Section");</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Section.configure(this, null, "Section");</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Section.build();</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Section.map(default_map, 'h0);</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Registering callback class instances with register fields</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;begin</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmr_cb_class Block1_Section_Reg1_f1;</span></p>
+   <p class="rvps153"><span class="rvts373">Block1_Section_Reg1_f1=new(.estatus(Section.Reg1.f1),.tmr_0(Section.Reg1_tmr_0.f1),.tmr_1(Section.Reg1_tmr_1.f1),.tmr_2(Section.Reg1_tmr_2.f1),.mask(null));</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uvm_reg_field_cb::add(Section.Reg1.f1,Block1_Section_Reg1_f1);</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lock_model();</span></p>
+   <p class="rvps12"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps12"><span class="rvts370">endclass</span></p>
+   <p class="rvps12"><span class="rvts370">`endif</span></p>
+   <p class="rvps2"><span class="rvts387"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">..</span></p>
+   <p class="rvps12"><span class="rvts370">..</span></p>
+   <p class="rvps12"><span class="rvts370">..</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts387"><br/></span></p>
+<p class="rvps458"><span class="rvts126">Support for T</span><a name="TMR_66"></a><span class="rvts126">MR Error signal at Register Level</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps459"><span class="rvts36">Currently in TMR the flagged tmr error indicates whether an error was discovered and if so, the bit that was flipped is immediately corrected in the subsequent cycle. Moreover, mistakes can be recognized by the user using the IDS property "tmr_error," and an active low signal is produced to do so. Now enhancements have been done to introduce TMR error logic for the register as well. This functionality is generated upon the usage of the </span><span class="rvts31">“tmr_error = true::reg”</span><span class="rvts36"> property.</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps459"><span class="rvts31">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps460"><img alt="" style="width : 602px; height : 197px;" src="lib/NewItem5046.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps459"><span class="rvts31">IDS-NG Spreadsheet View</span></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps460"><img alt="" style="width : 602px; height : 163px;" src="lib/NewItem5045.png"></p>
+<p class="rvps2"><span class="rvts29"><br/></span></p>
+<p class="rvps459"><span class="rvts31">SystemRDL</span></p>
+<p class="rvps459"><span class="rvts31"><br/></span></p>
+<div class="rvps459">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps413"><span class="rvts877">property default_reset{type=boolean;component=addrmap;};</span></p>
+   <p class="rvps413"><span class="rvts877">property tmr{type=boolean;component=reg;};</span></p>
+   <p class="rvps413"><span class="rvts877">property tmr_error{type=string;component=reg;};</span></p>
+   <p class="rvps413"><span class="rvts877">addrmap block1 {</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;default_reset=0;</span></p>
+   <p class="rvps413"><span class="rvts877">reg reg1 {</span></p>
+   <p class="rvps413"><span class="rvts877">tmr=true;</span></p>
+   <p class="rvps413"><span class="rvts1148">tmr_error="true::reg";</span></p>
+   <p class="rvps413"><span class="rvts877">field field1{</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;hw=rw;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;sw=rw;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;};field1 f1[31:25];</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;field1 f2[24:0];</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;};reg1 reg1;</span></p>
+   <p class="rvps413"><span class="rvts877">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts877"><br/></span></p>
+<p class="rvps459"><span class="rvts31">Generated RTL Output</span></p>
+<p class="rvps459"><span class="rvts31"><br/></span></p>
+<div class="rvps459">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts1149">module</span><span class="rvts817"> block1_ids</span><span class="rvts1150">(</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// REGISTER : REG_1 PORT SIGNAL</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="rvts1148">reg1_tmr_error</span><span class="rvts877">,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_enb,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f2_in,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f2_in_enb,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f2_tmr_error,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f2_r,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f1_in,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f1_in_enb,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f1_tmr_error,</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;reg1_f1_r,</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;// PARAMETERS</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">parameter</span><span class="rvts877"> bus_width </span><span class="rvts1152">=</span><span class="rvts877"> </span><span class="rvts1153">32</span><span class="rvts877">;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">parameter</span><span class="rvts877"> addr_width </span><span class="rvts1152">=</span><span class="rvts877"> </span><span class="rvts1153">2</span><span class="rvts877">;&nbsp;&nbsp;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">parameter</span><span class="rvts877"> block_size&nbsp; </span><span class="rvts1152">=</span><span class="rvts877"> </span><span class="rvts1153">'h4</span><span class="rvts877">;&nbsp;&nbsp;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">parameter</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts877">addr_width</span><span class="rvts1152">-</span><span class="rvts1153">1</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> block_offset </span><span class="rvts1152">=</span><span class="rvts877"> </span><span class="rvts1154">{(</span><span class="rvts877">addr_width</span><span class="rvts1154">){</span><span class="rvts1153">1'b0</span><span class="rvts1154">}}</span><span class="rvts877">;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts304">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts370">// REGISTER : REG_1 SIGNALS</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> reg1_decode;&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts1155">// Write Decode</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> reg1_wr_valid;&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts1155">// Write Valid</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">63</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_offset;&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts1155">// Offset</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> reg1_rd_valid;&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts1155">// Read Valid</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts877">bus_width</span><span class="rvts1152">-</span><span class="rvts1153">1</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_rd_data;&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts1155">// Read Data</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">output</span><span class="rvts1148"> reg1_tmr_error; </span><span class="rvts1157">// REGISTER TMR ERROR SIGNAL</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">output</span><span class="rvts877"> reg1_enb; </span><span class="rvts1155">// REGISTER ENABLE</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">24</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f2_q; </span><span class="rvts1155">// FIELD : f2</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">input</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">25</span><span class="rvts1152">-</span><span class="rvts877"> </span><span class="rvts1153">1</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f2_in;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">input</span><span class="rvts877"> reg1_f2_in_enb;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">24</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f2_0_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f2</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">24</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f2_1_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f2</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">24</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f2_2_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f2</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">output</span><span class="rvts1148"> reg1_f2_tmr_error;&nbsp; &nbsp; </span><span class="rvts1157">// TMR ERROR SIGNAL</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">output</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">24</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f2_r;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">wire</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">6</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f1_q; </span><span class="rvts1155">// FIELD : f1</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">input</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">7</span><span class="rvts1152">-</span><span class="rvts877"> </span><span class="rvts1153">1</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f1_in;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">input</span><span class="rvts877"> reg1_f1_in_enb;</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">6</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f1_0_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f1</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">6</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f1_1_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f1</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">reg</span><span class="rvts1148"> </span><span class="rvts1158">[</span><span class="rvts1159">6</span><span class="rvts1148"> : </span><span class="rvts1159">0</span><span class="rvts1158">]</span><span class="rvts1148"> reg1_f1_2_q;&nbsp; &nbsp; </span><span class="rvts1157">// TMR BUFFER SIGNAL FIELD : f1</span></p>
+   <p class="rvps413"><span class="rvts1048">&nbsp;&nbsp;&nbsp;</span><span class="rvts1156">output</span><span class="rvts1148"> reg1_f1_tmr_error;&nbsp; &nbsp; </span><span class="rvts1157">// TMR ERROR SIGNAL</span></p>
+   <p class="rvps413"><span class="rvts877">&nbsp;&nbsp;&nbsp;</span><span class="rvts1151">output</span><span class="rvts877"> </span><span class="rvts1154">[</span><span class="rvts1153">6</span><span class="rvts877"> : </span><span class="rvts1153">0</span><span class="rvts1154">]</span><span class="rvts877"> reg1_f1_r;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts29"></span><br/><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts304">assign reg_1_F2_tmr_error = ( ~ ( | ( (reg_1_F2_0_q ^ reg_1_F2_1_q) | (reg_1_F2_0_q ^ reg_1_F2_2_q) | (reg_1_F2_1_q ^ reg_1_F2_2_q) ))); &nbsp; //TMR ERROR LOGIC</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts370">. . . . .</span></p>
+   <p class="rvps2"><span class="rvts1156">assign</span><span class="rvts1148"> reg1_tmr_error </span><span class="rvts1160">=</span><span class="rvts1148"> reg1_f2_tmr_error </span><span class="rvts1160">|</span><span class="rvts1148"> reg1_f1_tmr_error;</span></p>
+   <p class="rvps2"><span class="rvts29"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">assign rd_data_vld = rd_stb;</span></p>
+   <p class="rvps2"><span class="rvts370">assign rd_data = reg_1_rd_data ;</span></p>
+   <p class="rvps2"><span class="rvts370">assign request = 1'b1;</span></p>
+   <p class="rvps2"><span class="rvts370">assign rd_wait = 1'b1;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">endmodule</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts29"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/create-chm-help-files/">Revolutionize Your CHM Help File Output with HelpNDoc</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

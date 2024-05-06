@@ -1,0 +1,548 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Route the protection signal to the external interface</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="IDS Properties">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Route the protection signal to the external interface">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Route the protection signal to the external interface" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Routetheprotectionsignaltotheext"
+		  data-hnd-context="491"
+		  data-hnd-title="Route the protection signal to the external interface"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Properties.html">Properties</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Properties.html" title="Properties" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="avalon_noburst.html" title="avalon_noburst" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="sw_bit_enableproperty.html" title="sw_bit_enable property" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Route the protection signal to the external interface</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><a name="Route"></a><span class="rvts329"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Property name: </span><span class="rvts14">ext_signal = prot</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp;&nbsp;</span><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts15">Requirement:</span><span class="rvts14"> This property is used </span><span class="rvts37">to route the protection checks written in their external CSRs to the external interface through the widget's protection signal.</span></p>
+<p class="rvps2"><span class="rvts76"><br/></span></p>
+<p class="rvps2"><span class="rvts76">Applied on : </span><span class="rvts37">top element(chip/block).</span></p>
+<p class="rvps2"><span class="rvts37"><br/></span></p>
+<p class="rvps2"><span class="rvts37">Note :- This property is supported with&nbsp;</span><span class="rvts76"> AXI, Ambaahb3lite, AMBA, APB</span><span class="rvts37"> &nbsp;buses.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts37"><br/></span></p>
+<div class="rvps144">
+<table style="border-width: 0px; border-collapse: collapse;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts76">Bus Name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts76">Output width</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts76">Assigned as</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">AMBA-AHB</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">Output [3:0] ext_prot</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">assign ext_prot = hprot_i</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">AMBA3AHBLITE</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">Output [3:0] ext_prot</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">assign ext_prot = hprot_i</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">APB</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">Output [2:0] ext_prot</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">assign ext_prot = pprot_i</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">AXI</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">Output [2:0] ext_rd_prot</span></p>
+   <p class="rvps2"><span class="rvts37">Output [2:0] ext_wr_prot</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 193px;">
+   <p class="rvps2"><span class="rvts37">assign ext_rd_prot = arprot_i</span></p>
+   <p class="rvps2"><span class="rvts37">assign ext_wr_prot = awprot_i</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts629"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Example: </span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/ext_signal_prot/ext_signal_prot.zip">IDS-NG</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/ext_signal_prot/ext_signal_prot.docx">IDS-Word</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/ext_signal_prot/ext_signal_prot.xlsx">IDS-Excel</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/ext_signal_prot/ext_signal_prot.rdl">SystemRDL</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 701px; height : 624px; padding : 1px;" src="lib/NewItem5244.png"></p>
+<p class="rvps3"><img alt="" style="width : 695px; height : 569px; padding : 1px;" src="lib/NewItem5245.png"></p>
+<p class="rvps3"><img alt="" style="width : 696px; height : 419px; padding : 1px;" src="lib/NewItem5246.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">IDS-NG Spreadsheet View</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 903px; height : 552px; padding : 1px;" src="lib/NewItem5247.png"></p>
+<p class="rvps3"><img alt="" style="width : 903px; height : 318px; padding : 1px;" src="lib/NewItem5248.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">SystemRDL&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">property ext_signal { type=string; &nbsp;component=addrmap; };</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">addrmap chip {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; ext_signal="prot";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; addrmap block {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp;regfile &nbsp;{</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; field {}f1[31:0];</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}reg1;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; }sec1[2];</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;reg {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; field {}f1[31:0];</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}reg1[2];</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;regfile &nbsp;{</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; field {}f1[31:0];</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}reg2;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; }external sec2[2]; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; field {}f1[31:0];</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}external reg2[2];</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; mem &nbsp;{</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; mementries=16;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; memwidth=32;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }mem1;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; block block1[4];</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; addrmap block2 {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp;regfile &nbsp;{</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; field {}f1[31:0];</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}reg1;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; }sec1[2];</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;reg {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; field {}f1[31:0];</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}reg1[2];</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;regfile &nbsp;{</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; field {}f1[31:0];</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}reg2;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; }external sec2[2];</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; field {}f1[31:0];</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}external reg2[2];</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; mem &nbsp;{</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; mementries=16;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; memwidth=32;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }mem1;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; block2 block2[4];</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Verilog Output&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">module chip_IDS(</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; ext_prot,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; // REGISTER : REG1 PORT SIGNAL</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; block1_sec1_reg1_enb,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; block1_sec1_reg1_f1_in,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; block1_sec1_reg1_f1_in_enb,</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; block1_sec1_reg1_f1_r,</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps2"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; // REGISTER : MEM1</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; parameter block2_mem1_count &nbsp;= 16;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; parameter block2_mem1_address_width = addr_width - 6;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; output [ 2 : 0 ] ext_prot;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; // REGISTER &nbsp;: REG1 SIGNALS</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps2"><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">.</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; assign ext_rd_data = (external_rd_ack == 1'b1)? ( block1_sec2_rd_data | block1_reg2_rd_data_wire | block1_mem1_rd_data | block2_sec2_rd_data | block2_reg2_rd_data_wire | block2_mem1_rd_data): {bus_width{1'b0}} ;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; assign ext_prot = pprot_i ;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; assign external_rd_valid = block1_sec2_rd_valid | (|block1_reg2_rd_valid) | block1_mem1_rd_valid | block2_sec2_rd_valid | (|block2_reg2_rd_valid) | block2_mem1_rd_valid; // END external_rd_valid</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts126">Support of ext_si</span><a name="ext_signal_54"></a><span class="rvts126">gnal=prot in sv</span></p>
+<p class="rvps2"><span class="rvts126"><br/></span></p>
+<p class="rvps2"><span class="rvts175">SystemRDL Example</span></p>
+<p class="rvps2"><span class="rvts175"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts370">property ext_signal{ type = string; component = addrmap; };</span></p>
+   <p class="rvps2"><span class="rvts630"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">addrmap Chip1 {</span></p>
+   <p class="rvps2"><span class="rvts370">ext_signal = "prot";&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;addrmap Block1 {</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp; = "Block1 Address Map";</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;reg reg1{</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field {</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sw = r;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} f1[31:0] = 32'h0;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;external reg1 reg1 @0x00;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;Block1&nbsp; Block1 @0x00;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts175">IDS-NG Example:</span></p>
+<p class="rvps2"><span class="rvts175"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem4718.png"></p>
+<p class="rvps3"><span class="rvts175"><br/></span></p>
+<p class="rvps2"><span class="rvts35">Generated Output</span></p>
+<p class="rvps2"><span class="rvts35"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts370">..</span></p>
+   <p class="rvps2"><span class="rvts370">..</span></p>
+   <p class="rvps2"><span class="rvts370">..</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;//Chip1_ids</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.Block1_reg1_rd_ack_in(Chip1_Block1_reg1_if.Block1_reg1_rd_ack_in),</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.Block1_reg1_rd_data_in(Chip1_Block1_reg1_if.Block1_reg1_rd_data_in),</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.Block1_reg1_rd_valid_out(Chip1_Block1_reg1_if.Block1_reg1_rd_valid_out),</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;//APB signals</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.address_out(external_if.address_out),</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;.wr_data_out(external_if.wr_data_out),</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span><span class="rvts373">&nbsp;&nbsp;.ext_prot(external_if.ext_prot),</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..</span></p>
+   <p class="rvps2"><span class="rvts370">..</span></p>
+   <p class="rvps2"><span class="rvts370">..</span></p>
+   <p class="rvps2"><span class="rvts630"></span><br/><span class="rvts630"><br/></span></p>
+   <p class="rvps2"><span class="rvts370">interface external_interface #(</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;parameter bus_width &nbsp; = 32,</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;parameter addr_width&nbsp; = 2</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;logic [addr_width-1:0] address_out;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;logic [bus_width-1:0] wr_data_out;</span></p>
+   <p class="rvps2"><span class="rvts373">&nbsp;&nbsp;&nbsp;&nbsp;logic [2:0] ext_prot;</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;modport mp (</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;</span><span class="rvts373">&nbsp;&nbsp;output address_out , wr_data_out , ext_prot);</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;modport op (</span></p>
+   <p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;</span><span class="rvts373">&nbsp;input address_out , wr_data_out , ext_prot);</span></p>
+   <p class="rvps2"><span class="rvts370">endinterface // EXTERNAL</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/create-chm-help-files/">Transform Your CHM Help File Creation Process with HelpNDoc</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,789 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Python Interpreter</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Python Interpreter">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Python Interpreter" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="PythonInterpreter"
+		  data-hnd-context="593"
+		  data-hnd-title="Python Interpreter"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="OutputsExports.html">Outputs/Exports</a></li><li><a href="CustomXMLoutput.html">Custom XML output</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="CustomXMLoutput.html" title="Custom XML output" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="GenerateOutput.html" title="Generate Output" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="CustomCSVoutput.html" title="Custom CSV output" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Python Interpreter</h2>
+
+            <div class="main-content">
+                
+<p class="rvps8"><span class="rvts214">Python API for IDS-Interface</span></p>
+<p class="rvps2"><span class="rvts238">API version : Beta-0.2</span></p>
+<h2 class="rvps336"><span class="rvts0"><span class="rvts154">Introduction</span></span></h2>
+<h2 class="rvps336"><span class="rvts0"><span class="rvts34">IDesignSpec™ (IDS) enables users to customize and create new outputs using Python. This document describes the python script that works on the IDesignSpec™ documents. For example, “Templates” in IDS documents translate into “Objects” in python. The Python API introduces 7 object types, each corresponding to a document template, e.g., Property/Value pairs on the templates translate into ‘properties’ within Objects. So for a “block”, the value specified for offset can be accessed by getting the ‘offset’ property of the block object in python.</span></span></h2>
+<h2 class="rvps336"><span class="rvts0"><span class="rvts126">IDS Object Types and their Properties</span></span></h2>
+<h2 class="rvps336"><span class="rvts0"><span class="rvts36">The following types of Objects have been introduced in the Python API of IDS.</span></span></h2>
+<h2 class="rvps336"><span class="rvts0"><span class="rvts889">System</span></span></h2>
+<p class="rvps2"><span class="rvts34">System has following properties:-</span></p>
+<p class="rvps2"><span class="rvts620"><br/></span></p>
+<p class="rvps129"><span class="rvts62">name : </span><span class="rvts34">Name of the register after performing following actions:&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">If ‘Preserve name’ is set in the IDS Configuration, then all spaces are trimmed and then converted to “_” and everything other than underscore, numbers and alphabets is removed.</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">If ‘Preserve name’ is NOT set in the IDS Configuration, then everything except alphabets and numbers is removed.</span></li>
+</ul>
+<h3 class="rvps337"><span class="rvts0"><span class="rvts889">Board</span></span></h3>
+<p class="rvps129"><span class="rvts180">Board has following properties:-</span></p>
+<p class="rvps338"><span class="rvts60">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts890">name : </span><span class="rvts180">Name of the register after performing following actions:</span></p>
+<p class="rvps14"><span class="rvts180">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts180">If ‘Preserve name’ is set in the IDS Configuration, then all spaces are trimmed and then converted to “_” and everything other than underscore, numbers and alphabets is removed.</span></li>
+ <li class="rvps2 noindent"><span class="rvts180">If ‘Preserve name’ is NOT set in the IDS Configuration, then everything except alphabets and numbers is removed.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts60"><br/></span></p>
+<h3 class="rvps337"><span class="rvts0"><span class="rvts889">Chip</span></span></h3>
+<p class="rvps338"><span class="rvts34">Chip has following properties:-</span></p>
+<p class="rvps338"><span class="rvts620">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">name : </span><span class="rvts34">Name of the register after performing following actions:</span></p>
+<p class="rvps81"><span class="rvts620">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">If ‘Preserve name’ is set in the IDS Configuration, then all spaces are trimmed and then converted to “_” and everything other than underscore, numbers and alphabets is removed.</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">If ‘Preserve name’ is NOT set in the IDS Configuration, then everything except alphabets and numbers is removed.</span></li>
+</ul>
+<p class="rvps14"><span class="rvts620">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">offset : </span><span class="rvts34">&nbsp;Its value is in the same unit as defined by the settings in the IDS Configuration.</span></p>
+<p class="rvps85"><span class="rvts620">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">address : </span><span class="rvts34">&nbsp;byte address of the chip.</span></p>
+<p class="rvps85"><span class="rvts620">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">size :&nbsp; </span><span class="rvts34">Total size of the chip. Its value is in the same unit as defined by the settings in the IDS Configuration.</span></p>
+<p class="rvps85"><span class="rvts620">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">external : </span><span class="rvts34">true if the chip is external, else its value is false.</span></p>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts386">&nbsp;</span></span></h3>
+<h3 class="rvps337"><span class="rvts0"><span class="rvts889">Block</span></span></h3>
+<p class="rvps2"><span class="rvts34">Block has following properties:-</span></p>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts891">&nbsp;</span></span></h3>
+<p class="rvps81"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts62">&nbsp;name : </span><span class="rvts34">Name of the register after performing following actions:</span></p>
+<p class="rvps81"><span class="rvts34">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">If ‘Preserve name’ is set in the IDS Configuration, then all spaces are trimmed and then converted to “_” and everything other than underscore, numbers and alphabets is removed.</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">If ‘Preserve name’ is NOT set in the IDS Configuration, then everything except alphabets and numbers is removed.</span></li>
+</ul>
+<p class="rvps81"><span class="rvts620">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts620">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">offset : </span><span class="rvts34">&nbsp;Its value is in the same unit as defined by the settings in the IDS Configuration.</span></p>
+<p class="rvps81"><span class="rvts620">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts62">&nbsp;address : </span><span class="rvts34">&nbsp;byte address of the block.</span></p>
+<p class="rvps81"><span class="rvts620">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">size :&nbsp; </span><span class="rvts34">Total size of the block. Its value is in the same unit as defined by the settings in the IDS Configuration.</span></p>
+<p class="rvps81"><span class="rvts620">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts62">&nbsp;&nbsp;external : </span><span class="rvts34">true if the block is external, else its value is false.</span></p>
+<h3 class="rvps339"><span class="rvts0"><span class="rvts686">RegGroup</span></span></h3>
+<p class="rvps2"><span class="rvts460"><br/></span></p>
+<p class="rvps129"><span class="rvts238">RegGroup/ Section has following properties:-</span></p>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts887">&nbsp;</span></span></h3>
+<p class="rvps81"><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;name : </span><span class="rvts238">Name of the register after performing following actions:</span></p>
+<p class="rvps81"><span class="rvts238">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts238">If ‘Preserve name’ is set in the IDS Configuration, then all spaces are trimmed and then converted to “_” and everything other than underscore, numbers and alphabets is removed.</span></li>
+ <li class="rvps2 noindent"><span class="rvts238">If ‘Preserve name’ is NOT set in the IDS Configuration, then everything except alphabets and numbers is removed.</span></li>
+</ul>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts888">offset : </span><span class="rvts238">&nbsp;Its value is in the same unit as defined by the settings in the IDS Configuration.</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;address : </span><span class="rvts238">&nbsp;byte address of the RegGroup.</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts888">size :&nbsp; </span><span class="rvts238">Total size of the RegGroup per iteration. Its value is in the same unit as defined by the settings in the IDS Configuration.</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;&nbsp;external : </span><span class="rvts238">true if the RegGroup&nbsp; is external, else its value is false.</span></p>
+<p class="rvps81"><span class="rvts238">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;&nbsp;repeat/count : </span><span class="rvts238">&nbsp;Number of times the RegGroup is repeated.</span></p>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts887">&nbsp;</span></span></h3>
+<h3 class="rvps339"><span class="rvts0"><span class="rvts686">Reg</span></span></h3>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts887">&nbsp;</span></span></h3>
+<p class="rvps129"><span class="rvts238">Register has following properties:-</span></p>
+<p class="rvps14"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;name : </span><span class="rvts238">Name of the register after performing following actions:</span></p>
+<p class="rvps81"><span class="rvts238">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts238">If ‘Preserve name’ is set in the IDS Configuration, then all spaces are trimmed and then converted to “_” and everything other than underscore, numbers and alphabets is removed.</span></li>
+ <li class="rvps2 noindent"><span class="rvts238">If ‘Preserve name’ is NOT set in the IDS Configuration, then everything except alphabets and numbers is removed.</span></li>
+</ul>
+<p class="rvps14"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts888">offset : </span><span class="rvts238">&nbsp;Its value is in the same unit as defined by the settings in the IDS Configuration.</span></p>
+<p class="rvps14"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts888">address : </span><span class="rvts238">&nbsp;byte address of the RegGroup.</span></p>
+<p class="rvps14"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts888">external : </span><span class="rvts238">true if the RegGroup&nbsp; is external, else its value is false.</span></p>
+<p class="rvps14"><span class="rvts238">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts888">width : </span><span class="rvts238">&nbsp;width of the register i.e 8/16/ 32 / 64/128.</span></p>
+<p class="rvps14"><span class="rvts238">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts888">doc : </span><span class="rvts238">documentation specified for the register</span></p>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts887">&nbsp;</span></span></h3>
+<h3 class="rvps339"><span class="rvts0"><span class="rvts686">Fields</span></span></h3>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts887">&nbsp;</span></span></h3>
+<p class="rvps129"><span class="rvts238">Field has following properties:-</span></p>
+<p class="rvps14"><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps81"><span class="rvts888">&nbsp;</span><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;name : </span><span class="rvts238">Name of the register after performing following actions:</span></p>
+<p class="rvps81"><span class="rvts238">&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 27px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts238">If ‘Preserve name’ is set in the IDS Configuration, then all spaces are trimmed and then converted to “_” and everything other than underscore, numbers and alphabets is removed.</span></li>
+ <li class="rvps2 noindent"><span class="rvts238">If ‘Preserve name’ is NOT set in the IDS Configuration, then everything except alphabets and numbers is removed.</span></li>
+</ul>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts888">&nbsp;</span><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;bits :&nbsp; </span><span class="rvts238">As specified by the user.</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts888">&nbsp;</span><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;sw_access/sw : </span><span class="rvts238">Type of software access.</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts888">&nbsp;</span><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;hw_access/hw : </span><span class="rvts238">Type of hardware access.</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts888">&nbsp;</span><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;default/default : </span><span class="rvts238">Default value of the field.</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts888">&nbsp;</span><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;high_offset : </span><span class="rvts238">Value for the high offset</span><span class="rvts888">.</span></p>
+<p class="rvps81"><span class="rvts238">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts888">&nbsp;</span><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;low_offset : </span><span class="rvts238">Value for the low offset</span><span class="rvts888">.</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts888">&nbsp;&nbsp;</span><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;&nbsp;size :&nbsp; </span><span class="rvts238">Size of the field.</span></p>
+<p class="rvps81"><span class="rvts460">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts888">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts238">&nbsp;&nbsp;&nbsp;</span><span class="rvts888">&nbsp;&nbsp;doc :&nbsp; </span><span class="rvts238">Documentation specified for the register.</span></p>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts887">&nbsp;</span></span></h3>
+<h3 class="rvps339"><span class="rvts0"><span class="rvts686">Enum</span></span></h3>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts887">&nbsp;</span></span></h3>
+<p class="rvps85"><span class="rvts238">Enum is a simple list. It is not an IDS object. This API provides access to the ‘enum’ definitions and ‘enum’ values used in the register fields.</span></p>
+<p class="rvps85"><span class="rvts238">To access ‘enum’ definitions you can use the functions ‘get_enums’.</span></p>
+<p class="rvps85"><span class="rvts238">IDS enum is represented as a list in python, with the first index being the enum name and the second index has the list of enum fields. Each ‘enum’ field is further a list of mnemonic, value and optional description at indexes 0, 1 and 2 respectively.</span></p>
+<p class="rvps85"><span class="rvts238">Example of ‘enum’:</span></p>
+<p class="rvps85"><span class="rvts238">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{Enum1 {{ON 1 {1 is on}} {OFF 0 {0 is off}}}}</span></p>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts884">&nbsp;</span></span></h3>
+<h3 class="rvps339"><span class="rvts0"><span class="rvts686">Define</span></span></h3>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts180">Define is a simple list. It is not an IDS object.</span></p>
+<p class="rvps85"><span class="rvts180">This API provides access to the ‘define’ definitions. To access ‘define’ definitions you can use the functions ‘get_defines’.</span></p>
+<p class="rvps85"><span class="rvts180">IDS define is represented as a python list having define var, value and optional description at indexes 0,1 and 2 respectively.</span></p>
+<p class="rvps85"><span class="rvts180">Example of ‘define’:</span></p>
+<p class="rvps340"><span class="rvts180">{ON 1 {1 is ON}}</span></p>
+<p class="rvps340"><span class="rvts60">&nbsp;</span></p>
+<h2 class="rvps336"><span class="rvts0"><span class="rvts126">Supported Commands</span></span></h2>
+<h3 class="rvps341"><span class="rvts0"><span class="rvts686">get_IDS_version&nbsp;</span></span></h3>
+<p class="rvps85"><span class="rvts35">Usage: </span><span class="rvts858">get_IDS_version()</span></p>
+<p class="rvps226"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns</span><span class="rvts34">: String.</span></p>
+<p class="rvps81"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps342"><span class="rvts35">Description</span><span class="rvts34">:&nbsp; Return the version of IDesignSpec™.</span></p>
+<p class="rvps90"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps343"><span class="rvts0"><span class="rvts686">get_py_api_version</span></span></h3>
+<p class="rvps85"><span class="rvts35">Usage: </span><span class="rvts858">get_py_api_version()</span></p>
+<p class="rvps226"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns</span><span class="rvts34">: String.</span></p>
+<p class="rvps81"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps342"><span class="rvts35">Description</span><span class="rvts34">:&nbsp; Return the version of python API.</span></p>
+<p class="rvps90"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps344"><span class="rvts0"><span class="rvts686">get_system</span></span></h3>
+<p class="rvps81"><span class="rvts35">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Usage :&nbsp; get_system (obj)</span></p>
+<p class="rvps81"><span class="rvts35">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> Object of type: board, chip, block, reg, and field.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">Object of type: system</span><span class="rvts35">&nbsp;</span></p>
+<p class="rvps81"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description :&nbsp; </span><span class="rvts34">Get the enclosing system for a given board, chip, block, register or field. Returns a NULL* Object, in case a system doesn’t exist.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_board</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_board (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> Object of type: chip, block, reg, and field.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">Object of type: board</span></p>
+<p class="rvps85"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description :&nbsp; </span><span class="rvts34">Get the enclosing board for a given chip, block, register or field. Returns a NULL* Object, in case a board doesn’t exist.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_chip</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_chip (obj)</span></p>
+<p class="rvps14"><span class="rvts35">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> Object of type:&nbsp; block, reg, and field.</span></p>
+<p class="rvps14"><span class="rvts35">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts62">&nbsp;&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">Object of type: chip</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description :&nbsp; </span><span class="rvts34">Get the enclosing chip for a given block, register or field. Returns a NULL* Object, in case a chip doesn't exist.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_block</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_block (obj)</span></p>
+<p class="rvps14"><span class="rvts35">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> Object of type:&nbsp; reg, and field.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">Object of type: block</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description :&nbsp; </span><span class="rvts34">Get the enclosing block for a given register or field. Returns a NULL* Object, in case a block doesn't exist.</span></p>
+<h3 class="rvps66"><span class="rvts0"><span class="rvts884">&nbsp;</span></span></h3>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_all_sections</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_section (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Argument (obj): </span><span class="rvts34">object of system, board, chip, and block</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Returns :</span><span class="rvts34"> list of all sections</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description :</span><span class="rvts34"> Get the enclosing all sections for a given obj. Returns a NULL* Object, in case a section doesn't exist.</span></p>
+<p class="rvps85"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps346"><span class="rvts0"><span class="rvts686">get_fields</span></span></h3>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_fields (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> Object of type:&nbsp; reg</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">Object of type: field</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Description :</span><span class="rvts34">&nbsp; Returns a list of field Objects for a given register.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps346"><span class="rvts0"><span class="rvts686">get_objects</span></span></h3>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_objects (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> Object of type:&nbsp; system,board,chip,block.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">Object of type: system or board or chip or block or register</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Description :</span><span class="rvts34"> &nbsp; Get all objects inside a given object.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps346"><span class="rvts0"><span class="rvts686">get_object_by_name</span></span></h3>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_object_by_name (hierarchial_name)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">Arguments</span><span class="rvts35">: (hierarchial_name) :</span><span class="rvts34"> Complete name of the desired object separated with a “/” character specifying the complete hierarchy.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">Object of type: system or board or chip or block or reg or field.</span></p>
+<p class="rvps81"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Description :</span><span class="rvts34"> &nbsp; Get all objects inside a given object.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_top</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_top()</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">:</span><span class="rvts34"> None</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">:</span><span class="rvts34"> Object of type: system or board or chip or block.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Description :</span><span class="rvts34">&nbsp; Get the top most Object in the source document</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_property</span></span></h3>
+<p class="rvps342"><span class="rvts35">Usage: </span><span class="rvts859">get_property(obj, property_name)</span></p>
+<p class="rvps342"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps342"><span class="rvts62">Arguments</span><span class="rvts34">: (obj): Object of any valid type</span></p>
+<p class="rvps342"><span class="rvts34">(property_name) : Name of any valid property</span></p>
+<p class="rvps85"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">Returns</span><span class="rvts34">:&nbsp; String: Value of the property.</span></p>
+<p class="rvps85"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Example:</span></p>
+<p class="rvps85"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps347"><span class="rvts885">blockName = get_property(top_blk, 'name')</span></p>
+<p class="rvps347"><span class="rvts885">blockSize = get_property(top_blk, 'size')</span></p>
+<p class="rvps348"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps348"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description</span><span class="rvts34">:&nbsp; “property_name” is an optional argument for get_prop, when specified, returns the value of the specified property for the given object. Otherwise returns the list of all the available properties on the specified object.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps346"><span class="rvts0"><span class="rvts686">get_parent</span></span></h3>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_parent(obj)</span></p>
+<p class="rvps81"><span class="rvts35">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">:</span><span class="rvts34"> (obj):object of any valid type</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">:</span><span class="rvts34"> </span><span class="rvts128">Object of type</span><span class="rvts178">: System, board, chip, block , reggroup or reg</span></p>
+<p class="rvps81"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Example : </span><span class="rvts860">&nbsp;</span><span class="rvts861">&nbsp;</span></p>
+<p class="rvps340"><span class="rvts861">parent = get_parent (regObj)</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_type</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_type (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> (obj): Object of any valid type</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">String: Specifying any of the valid types.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description :</span><span class="rvts34">&nbsp; Returns the type of IDS object. One of “system”, “board”, “chip”, “block”, “reg”, “reggroup”, “field”. Note that enum and define are not objects but simple python lists.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps346"><span class="rvts0"><span class="rvts686">get_enums</span></span></h3>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_enums (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> (obj): Object of any valid type</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">List of all the ‘Enum’ definitions.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Description :</span><span class="rvts34"> Returns the list of all ‘Enum’ definitions for the given object.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps346"><span class="rvts0"><span class="rvts686">get_defines</span></span></h3>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_defines (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> (obj): Object of any valid type</span></p>
+<p class="rvps14"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts62">&nbsp;&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">List of all the ‘Define’ definitions.</span></p>
+<p class="rvps338"><span class="rvts862">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts861">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Description :</span><span class="rvts34">&nbsp; Returns the list of all ‘Define’ definitions for the given object.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps337"><span class="rvts0"><span class="rvts686">get_params</span></span><span class="rvts0"><span class="rvts883">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_params (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> (obj): Object of any valid type</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">List of all the ‘Parameters’ definitions.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description :</span><span class="rvts34">&nbsp; Returns the list of all ‘Parameters’ definitions for the given object.</span></p>
+<h3 class="rvps344"><span class="rvts0"><span class="rvts686">get_param_objects </span></span><span class="rvts0"><span class="rvts886">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_params_objects (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> (obj): Object of any valid type</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">List of all the nodes of the ‘Parameters’ definitions.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description :</span><span class="rvts34">&nbsp; Returns the list of all nodes of ‘Parameters’ definitions for the given object.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_variants</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_variants (obj)</span></p>
+<p class="rvps14"><span class="rvts35">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> (obj): Object of any valid type</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">List of all the ‘variant’ definitions.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Description :</span><span class="rvts34">&nbsp; Returns the list of all ‘Variants’ definitions for the given object.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps346"><span class="rvts0"><span class="rvts686">get_default_value_enum</span></span></h3>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_default_value_enum (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34"> (obj): Object of type: field</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">Returns </span><span class="rvts35">: </span><span class="rvts34">‘enum’ or an empty string (if no enum is used in the reg field’s default).</span></p>
+<p class="rvps14"><span class="rvts862">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts861">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Description :</span><span class="rvts34"> Returns the enum for the field’s default value.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps346"><span class="rvts0"><span class="rvts686">get_value_constraint</span></span></h3>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_value_constraint (obj)</span></p>
+<p class="rvps14"><span class="rvts35">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34">&nbsp; (obj): Object of type: field</span></p>
+<p class="rvps85"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">Returns </span><span class="rvts35">:</span><span class="rvts34"> List containing the min and max values defined in the user. It’s syntax is as follows: {{min &lt;min_value&gt;} {max &lt;max_value&gt;}}</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description : </span><span class="rvts34">Returns a list of set of min and max values for a given field. Returns an empty string if no constraint is defined.</span></p>
+<p class="rvps85"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps346"><span class="rvts0"><span class="rvts686">get_unique_name</span></span></h3>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_unique_name (obj, ref_obj, separator)</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">:&nbsp;</span></p>
+<p class="rvps338"><span class="rvts34">(obj): Object of any valid type.</span></p>
+<p class="rvps85"><span class="rvts34">&lt;ref_obj&gt;: This must be a valid parent of the (obj). Accepts, object of type: system, board, chip, block, section</span></p>
+<p class="rvps14"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts62">&nbsp;&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">:</span><span class="rvts34"> String</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description : </span><span class="rvts34">Returns a name for a given object which is unique in the complete hierarchy by default. The hierarchy can be limited by specifying a reference Object, which must be a valid parent of the ‘obj’.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_reg_width</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_reg_width (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34">&nbsp; (obj): Object of type: reg.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">:</span><span class="rvts34"> String</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Description : </span><span class="rvts34">Returns the register width for a given register object</span></p>
+<p class="rvps14"><span class="rvts29"><br/></span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_unit</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_unit (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34">&nbsp; (obj): Object of any valid type</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">:</span><span class="rvts34"> String</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts35">Description : </span><span class="rvts34">Returns the address unit for a given object.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">get_domains</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; get_domains (obj)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34">&nbsp; (obj): Object of any valid type</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">:</span><span class="rvts34"> List of bus domains</span></p>
+<p class="rvps85"><span class="rvts35">Description : </span><span class="rvts34">Returns the list of all bus domains on which the given object exists.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps349"><span class="rvts0"><span class="rvts686">get_id</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage: get_id (obj)</span></p>
+<p class="rvps85"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">Arguments</span><span class="rvts35">:</span><span class="rvts34"> (obj): Object of type: system, chip, block, memory, reggroup, memory, reg or field.</span></p>
+<p class="rvps85"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts62">Returns:</span><span class="rvts34">&nbsp; String</span></p>
+<p class="rvps85"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description</span><span class="rvts34">: Returns complete hierarchical path to the given object separated by slash “/”. Each node in the path will be a type of that node.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">is_equal</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; is_equal (obj1, obj2)</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34">&nbsp;&nbsp;</span></p>
+<p class="rvps340"><span class="rvts34">(obj1): Object of any valid type.</span></p>
+<p class="rvps14"><span class="rvts34">&nbsp; (obj2): Object of any valid type.</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">:</span><span class="rvts34"> true | false.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description : </span><span class="rvts34">Checks whether two Objects are equal. Returns true if both objects are equal. Objects are equal only if they refer to the same template in the IDS document.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<h3 class="rvps345"><span class="rvts0"><span class="rvts686">is_null</span></span></h3>
+<p class="rvps338"><span class="rvts35">Usage :&nbsp; is_null (obj)</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Arguments</span><span class="rvts35">: (obj) :</span><span class="rvts34">&nbsp; (obj): Object of any valid type</span></p>
+<p class="rvps338"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps338"><span class="rvts62">Returns </span><span class="rvts35">:</span><span class="rvts34"> true | false.</span></p>
+<p class="rvps266"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps85"><span class="rvts35">Description : </span><span class="rvts34">This check must be used to check if a returned IDS Object is NULL.</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts126">Example</span><span class="rvts34">:</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34">IDSbatch sample.rdl -py test.py -out “htmlalt2 verilog uvm” -dir IDS1&nbsp;</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts126">Python Script: test.py</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370"># ******** © 2021 Agnisys®, Inc.&nbsp; ALL RIGHTS RESERVED ********</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">ver = get_IDS_version()</span></p>
+<p class="rvps14"><span class="rvts370">print (ver)</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">ver = get_py_api_version()</span></p>
+<p class="rvps14"><span class="rvts370">print (ver)</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">top_blk = get_top()</span></p>
+<p class="rvps14"><span class="rvts370">print 'Top Object ::', get_property(top_blk, 'name')</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">block = get_property(top_blk, 'name')</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">#getting all the objects inside the "top_block"</span></p>
+<p class="rvps14"><span class="rvts370">blk_objects = get_objects(top_blk)</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">#Iterating over each object</span></p>
+<p class="rvps14"><span class="rvts370">for obj in blk_objects:</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;type = get_type(obj)</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;if type == "reg":</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg = get_property(obj, 'name')&nbsp;&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print 'Reg Name:: ', reg</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fields = get_fields(obj)</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for fld in fields:</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field = get_property(fld, 'name')&nbsp;&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;props = get_property(fld, '')</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for prop in props:</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print 'Field ', prop, ':: ', get_property(fld, prop)</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print '\n'</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print '\n'</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts126">Input: sample.rdl</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">reg regA{</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;field {}alpha1;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;field {}alpha2;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;field {}alpha3;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;field {}alpha4;</span></p>
+<p class="rvps14"><span class="rvts370">};</span></p>
+<p class="rvps14"><span class="rvts71">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">reg regB{</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;field {}beta1;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;field {}beta2;</span></p>
+<p class="rvps14"><span class="rvts370">};</span></p>
+<p class="rvps14"><span class="rvts71">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts370">addrmap BlockA{</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;regA regA;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;regB regB;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;reg regC{</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field{}f1;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field{}f2;</span></p>
+<p class="rvps14"><span class="rvts370">&nbsp;&nbsp;&nbsp;};</span></p>
+<p class="rvps14"><span class="rvts370">};</span></p>
+<p class="rvps14"><span class="rvts126">Output: sample.py</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34">7.30.0.0&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34">1.0</span></p>
+<p class="rvps14"><span class="rvts34">Top Object :: BlockA</span></p>
+<p class="rvps14"><span class="rvts34">Reg Name::&nbsp; regA</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; keypath ::&nbsp; BlockA.regA.alpha1,regA.alpha1,alpha1</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; name ::&nbsp; alpha1</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; offset ::&nbsp; 0:0</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; uid ::&nbsp; 2022-01-2508:39:46T1760cdae-9648-4a45-8dca-e43616bebc10</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; keypath ::&nbsp; BlockA.regA.alpha2,regA.alpha2,alpha2</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; name ::&nbsp; alpha2</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; offset ::&nbsp; 1:1</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; uid ::&nbsp; 2022-01-2508:39:46Tf2309866-d418-4d18-a331-4eb24164e2ba</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; keypath ::&nbsp; BlockA.regA.alpha3,regA.alpha3,alpha3</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; name ::&nbsp; alpha3</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; offset ::&nbsp; 2:2</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; uid ::&nbsp; 2022-01-2508:39:46T45e122ce-f308-4b84-bb38-c704959afb31</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; keypath ::&nbsp; BlockA.regA.alpha4,regA.alpha4,alpha4</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; name ::&nbsp; alpha4</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; offset ::&nbsp; 3:3</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; uid ::&nbsp; 2022-01-2508:39:46Tde4e54b1-136a-4c9f-a8ac-16c86c19e1ac</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34">Reg Name::&nbsp; regB</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; keypath ::&nbsp; BlockA.regB.beta1,regB.beta1,beta1</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; name ::&nbsp; beta1</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; offset ::&nbsp; 0:0</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; uid ::&nbsp; 2022-01-2508:39:46Te14ca13e-e216-4470-bc1f-ac178992e627</span></p>
+<p class="rvps14"><span class="rvts29">&nbsp;</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; keypath ::&nbsp; BlockA.regB.beta2,regB.beta2,beta2</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; name ::&nbsp; beta2</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; offset ::&nbsp; 1:1</span></p>
+<p class="rvps14"><span class="rvts34">Field&nbsp; uid ::&nbsp; 2022-01-2508:39:46T2b19ebca-2ff8-43fe-8c50-433760cd4bb8</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/iphone-website-generation">Create iPhone web-based documentation</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

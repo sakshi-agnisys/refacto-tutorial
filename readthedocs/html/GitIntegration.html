@@ -1,0 +1,373 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Git Integration</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="IDS-NG">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Git Integration">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Git Integration" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="GitIntegration"
+		  data-hnd-context="336"
+		  data-hnd-title="Git Integration"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="IDS-NGT.html">IDS-NG&trade;</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="IDS-NGT.html" title="IDS-NG&trade;" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="SpecialOutputs.html" title="Special Outputs" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="SpecialFeatures.html" title="Special Features" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Git Integration</h2>
+
+            <div class="main-content">
+                
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6 noindent"><span class="rvts14">IDS-NG provide user to integrate IDS-NG with their Git server. With basic Git integration, user can clone their project to the Git workspace.&nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6 noindent"><span class="rvts14">User can run basic Git commands like Commit, push, pull, switch/create branch. Along with this, user can also view git commit history and file changes.</span></li>
+</ul>
+<p class="rvps11"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><a name="Git"></a><span class="rvts16">1. Git</span></p>
+<p class="rvps2"><span class="rvts198"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Git has been introduced for tracking changes in source code during specification development. It is designed for coordinating work among engineer, but it can be used to track changes in any set of files. It's goal include speed, data integrity, and support for distributed, non-linear workflows.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">User can commit their code or discard the changes as shown below.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 881px; height : 438px; padding : 1px;" src="lib/NewItem4457.png"></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">User can clone their work environment from git in IDS-NG and start their developments simultaneously.</span></li>
+</ul>
+<p class="rvps75"><span class="rvts193"><br/></span></p>
+<p class="rvps721"><span class="rvts1415">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem4465.png"></p>
+<p class="rvps721"><span class="rvts193"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps75 noindent"><span class="rvts193">Branch can also be created as shown in the following console.</span></li>
+</ul>
+<p class="rvps110"><span class="rvts34"><br/></span></p>
+<p class="rvps110"><span class="rvts34"><br/></span></p>
+<p class="rvps724"><span class="rvts198">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="" style="width : 596px; height : 531px; padding : 1px;" src="lib/NewItem4648.png"></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">Created branches can also be managed, i.e., user can delete or checkout the corresponding branch.</span></li>
+</ul>
+<p class="rvps11"><span class="rvts34"><br/></span></p>
+<p class="rvps724"><span class="rvts198">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 603px; height : 553px; padding : 1px;" src="lib/NewItem4647.png"></p>
+<p class="rvps110"><span class="rvts34"><br/></span></p>
+<p class="rvps724"><span class="rvts198">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 601px; height : 451px; padding : 1px;" src="lib/NewItem4643.png"></p>
+<p class="rvps110"><span class="rvts34"><br/></span></p>
+<p class="rvps724"><span class="rvts198">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="" style="width : 598px; height : 448px; padding : 1px;" src="lib/NewItem4644.png"></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">User can commit their code or discard the changes as shown below.</span></li>
+</ul>
+<p class="rvps110"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">NOTE</span><span class="rvts14">: If user continues to pull without resolving the conflicts then local files will be updated to the remote repository.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps110"><span class="rvts34"><br/></span></p>
+<p class="rvps724"><span class="rvts198">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="" style="width : 589px; height : 447px; padding : 1px;" src="lib/NewItem4645.png"></p>
+<p class="rvps110"><span class="rvts34"><br/></span></p>
+<p class="rvps724"><span class="rvts198">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 580px; height : 438px; padding : 1px;" src="lib/NewItem4646.png"></p>
+<p class="rvps11"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">Branch from a remote repository can also be merged or be pulled.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts392">NOTE</span><span class="rvts14">: If user continues merge without resolving conflicts then local files will be updated to the remote repository.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts198">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="" style="width : 579px; height : 437px; padding : 1px;" src="lib/NewItem4649.png"></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts34">After entering the credentials, user can push the repository.</span></li>
+ <li class="rvps2 noindent"><span class="rvts34">History can also be tracked for the Git.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts393">Note</span><span class="rvts34">: If any conflict arises while merging IDS-NG code then we can resolve that from Git. For all the other conflicts in other files user has to resolve from github desktop.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps10"><span class="rvts16">2. </span><a name="diff"></a><span class="rvts126">Diff and Merge</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">In case two files exists for the same specification with variations, then user can view difference between them and merge both the files according to the desired functionality.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">The window will be divided into 3 views:</span></p>
+<p class="rvps2"><span class="rvts34">&nbsp; &nbsp; 1. Head File: This will display the file user is working on</span></p>
+<p class="rvps2"><span class="rvts34">&nbsp; &nbsp; 2. Target File: This will display the file user wants to compare with</span></p>
+<p class="rvps2"><span class="rvts34">&nbsp; &nbsp; 3. Merge File: It will display the final file which will be created after the amendments (it will be similar to head file after the changes)</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><span class="rvts34">&nbsp; </span><img alt="" style="width : 673px; height : 122px; padding : 1px;" src="lib/NewItem4473.png"></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><span class="rvts34">&nbsp; &nbsp; &nbsp; </span><img alt="" style="width : 668px; height : 476px; padding : 1px;" src="lib/NewItem3107.png"></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps11 noindent"><span class="rvts34">The merged file actually is the head file, we can incorporate changes from the target file and head file as depicted below:</span></li>
+</ul>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps723"><img alt="" style="width : 1244px; height : 463px; padding : 1px;" src="lib/NewItem3106.png"></p>
+<p class="rvps723"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps11 noindent"><span class="rvts34">The differences are shown in yellow color.</span></li>
+ <li class="rvps11 noindent"><span class="rvts34">User can reach each row one by one by clicking on next, and the red colored cursor will move in accordance to the differences between each file.</span></li>
+ <li class="rvps11 noindent"><span class="rvts34">User can also navigate through different windows by clicking on the checkbox provide above each testcase to be diffentiated.</span></li>
+ <li class="rvps11 noindent"><span class="rvts34">User can simplify and easily make changes in merged file.</span></li>
+ <li class="rvps11 noindent"><span class="rvts35">Shortcuts</span><span class="rvts34">: Ctrl+z -&gt; undo, Ctrl +y -&gt; redo.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts392">NOTE</span><span class="rvts14">: If user continues to pull without resolving the conflicts then local files will be updated to the remote repository.</span></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps11 noindent"><span class="rvts34">After entering the credentials, user can push the repository.</span></li>
+ <li class="rvps11 noindent"><span class="rvts34">History can also be tracked for the Git.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 705px; height : 531px; padding : 1px;" src="lib/NewItem4669.png"></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 652px; height : 411px; padding : 1px;" src="lib/NewItem3096.png"></p>
+<p class="rvps2"><span class="rvts393"><br/></span></p>
+<p class="rvps2"><span class="rvts393">Note</span><span class="rvts34">: If any conflict arises while merging IDS-NG code then we can resolve that from Git. For all the other conflicts in other files user has to resolve from github desktop.</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Revolutionize your documentation process with HelpNDoc's online capabilities</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

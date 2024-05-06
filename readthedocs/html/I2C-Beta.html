@@ -1,0 +1,531 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>I2C-Beta</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Outputs/Exports">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="I2C-Beta">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="I2C-Beta" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="I2C-Beta"
+		  data-hnd-context="229"
+		  data-hnd-title="I2C-Beta"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="OutputsExports.html">Outputs/Exports</a></li><li><a href="RTL.html">RTL</a></li><li><a href="BusSupportinIDS.html">Bus Support in IDS</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="BusSupportinIDS.html" title="Bus Support in IDS" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="TimingInformation.html" title="Timing Information" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="SPIBeta.html" title="SPI-Beta" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>I2C-Beta</h2>
+
+            <div class="main-content">
+                
+<p class="rvps113"><span class="rvts710">I2C (Inter Integrated Circuit) - Beta Version</span></p>
+<p class="rvps2"><span class="rvts606"><br/></span></p>
+<p class="rvps2"><span class="rvts34">IDS supports the I2C bus protocol. Various operating modes are implemented</span><span class="rvts632">.&nbsp;</span><span class="rvts34"> It contains a comprehensive introduction to the I2C-bus data transfer, handshaking and bus arbitration schemes.This provides an information about, How a user can easily communicate with IDS serially using I2C initiator at the software side. Off-course there are some initial configurations before starting with I2C: IDS provides a way to configure those initials at the beginning itself, It provides a user to configurable bus select option, if I2C then selecting device addressing mode and target address.&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">The I2C provides an interface between the initiator and other devices compliant with Philips Semiconductors Inter-IC bus (I2C-bus) specification version 2.1 and connected by way of an I2C-bus. </span><span class="rvts708">Most TI devices (c5000, c6000, OMAP, Davinci, etc.) use same underlying&nbsp;modules.</span></p>
+<p class="rvps12"><span class="rvts708"><br/></span></p>
+<p class="rvps12"><span class="rvts329">Supported Bus Features</span></p>
+<p class="rvps12"><span class="rvts329"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps127 noindent"><span class="rvts186">Compatible with Philips I2C Standard. </span><span class="rvts193">Only two bus lines are required; a serial data line (SDA) and a serial clock line (SCL).</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Single initiator operation.&nbsp;</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Software programmable clock frequency, Generally 3 Transmission speeds: Normal, Fast, and High Speed.</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Software programmable acknowledge bit.</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Interrupt or bit polling driven for each byte.</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Start, Stop, Repeated Start detection.</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Supports 7 bit addressing mode, with configurable address masking in target mode.</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Supports strict I2C reserved rule, Detects general call addresses.</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Support for IDS compatible byte format transfer for Register address.</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Bus busy detection.</span></li>
+</ul>
+<p class="rvps127"><span class="rvts186"><br/></span></p>
+<p class="rvps12"><span class="rvts329">Features Not Supporting</span></p>
+<p class="rvps12"><span class="rvts329"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps127 noindent"><span class="rvts186">High speed and Ultra fast- mode</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">CBUS Compatibility mode.</span></li>
+</ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps127 noindent"><span class="rvts186">Bus Arbitration</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Arbitration Lost interrupt</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">Multi initiator operation</span></li>
+ <li class="rvps127 noindent"><span class="rvts186">10 bit addressing mode.</span></li>
+</ul>
+<p class="rvps127"><span class="rvts186"><br/></span></p>
+<p class="rvps12"><span class="rvts329">IO Ports</span></p>
+<p class="rvps12"><span class="rvts329">IDS Interface Signals</span></p>
+<p class="rvps12"><span class="rvts329"><br/></span></p>
+<div class="rvps264">
+<table style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps281"><span class="rvts16">Port</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps281"><span class="rvts16">Width</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps281"><span class="rvts16">Direction</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps281"><span class="rvts16">Description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Scl</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">1</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Inout</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Serial clock</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Sda</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">1</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Inout</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Serial data</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">wr_stb</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">1</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">output</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">core select input, </span><span class="rvts36">High during data write and low during read operation</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">wr_data</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">8</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">output</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Parallel data after a byte</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Address</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">8</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">output</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Parallel Address after a byte transfer</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">rd_stb</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">1</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">output</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Strobe for read, </span><span class="rvts36">High during data read and low during write operation</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">rd_data</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">8</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">input</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Read data from target</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Req</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">1</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">input</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts36">It tells the bus when to write to the external registers. Request = wr_req in case of external available registers and tied to logic ‘1’ in case of internal registers implementation only.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Rd_data_valid</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">1</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">input</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts36">his signal signifies when the data is available for read by the bus</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">Rd_wait</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">1</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts14">input</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 0px 7px; vertical-align: top; width: 140px;">
+   <p class="rvps3"><span class="rvts36">This signal signifies when to read external registers. rd_wait = rd_ack in case of external available registers and tied to logic '1' in case of internal registers implementation</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps12"><span class="rvts709"><br/></span></p>
+<p class="rvps2"><span class="rvts329">SDA and SCL signals</span></p>
+<p class="rvps2"><span class="rvts329"></span><br/><span class="rvts34">The I2C interface uses bidirectional serial data line (SDA) and a serial clock line (SCL) for data transfers. All devices connected to these two signals must have open drain or open collector outputs. Both lines must be pulled-up to VCC by external resistors.</span></p>
+<p class="rvps12"><span class="rvts34">Data on the I2C-bus can be transferred at rates of up to 100 kbit/s in the Standard-mode, up to 400 kbit/s in the Fast-mode, up to 1 Mbit/s in Fast-mode Plus, or up to 3.4 Mbit/s in the High-speed mode. The bus capacitance limits the number of interfaces connected to the bus.</span></p>
+<p class="rvps12"><span class="rvts34">For a single initiator application, the initiator’s SCL output can be a push-pull driver design</span><br/><span class="rvts34">if there are no devices on the bus which would stretch the clock.</span></p>
+<p class="rvps12"><span class="rvts34">To solve that user needs to add tri-state buffers for the SCL and SDA lines at the top hierarchical level.</span></p>
+<p class="rvps12"><span class="rvts126">Verilog code:</span></p>
+<p class="rvps271"><span class="rvts34">assign scl = scl_padoen_oe ? 1’bz : scl_pad_o; assign sda = sda_padoen_oe ? 1’bz:&nbsp;</span></p>
+<p class="rvps271"><span class="rvts34">sda_pad_o; assign scl_pad_i = scl;&nbsp;</span></p>
+<p class="rvps271"><span class="rvts34">assign sda_pad_i = sda;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts34">(These are padding signals are the external port connections for inserting buffers.)</span></p>
+<p class="rvps12"><span class="rvts34"><br/></span></p>
+<p class="rvps12"><span class="rvts154">Prescaling of SCL line</span></p>
+<p class="rvps12"><span class="rvts34">Due to the structure of I2C interface, the core uses a 5*SCL clock internally. So the speed of the I2C bus must be programmed to this 5*SCL frequency (minus 1).&nbsp;</span></p>
+<p class="rvps3"><span class="rvts34">Prescale value = (input SCL MHz / 5*Desired SCL KHz) – 1</span></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<p class="rvps12"><span class="rvts35">I2C IDS:</span></p>
+<p class="rvps12"><span class="rvts708"><br/></span></p>
+<p class="rvps12"><span class="rvts708"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1722.png"></p>
+<p class="rvps12"><span class="rvts162"><br/></span></p>
+<p class="rvps12"><span class="rvts162"><br/></span></p>
+<p class="rvps273"><span class="rvts395">I2C with IDS internal signal connections</span></p>
+<p class="rvps273"><span class="rvts395"><br/></span></p>
+<p class="rvps12"><span class="rvts14">The I2C Widget provides an interface between I2C target (A Two wire information) and IDS internal signals. This widget can be used at software side of the IDS and provides &nbsp; a way of introducing serial communication channel for the clients.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps272"><span class="rvts16">FSM Diagram for I2C Widget</span></p>
+<p class="rvps272"><span class="rvts162"><br/></span></p>
+<p class="rvps273"><img alt="" style="padding : 1px;" src="lib/NewItem1723.png"></p>
+<p class="rvps272"><span class="rvts162"><br/></span></p>
+<p class="rvps280"><span class="rvts395">A finite state machine for I2C controller</span></p>
+<p class="rvps272"><span class="rvts162"><br/></span></p>
+<p class="rvps272"><span class="rvts162"><br/></span></p>
+<p class="rvps272"><span class="rvts16">Flow Chart of an I2C Bus Controller:</span></p>
+<p class="rvps274"><span class="rvts162"><br/></span></p>
+<p class="rvps275"><span class="rvts162"> &nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem1724.png"></p>
+<p class="rvps276"><span class="rvts162"><br/></span></p>
+<p class="rvps277"><span class="rvts329">Generate START/STOP condition</span></p>
+<p class="rvps277"><span class="rvts14">The start condition is generated by initiator. The logic for Start condition is generated by pulling SDA line low when SCL is high. This shows an I2C bus has been entered into busy mode and initiator now can send serial transactions to the target.</span></p>
+<p class="rvps277"><span class="rvts14">The stop condition is also generated by initiator, when it assumes that the serial data transaction has been completed by pulling SDA line high when the SCL is high. This indicates that an I2C bus now is in Free State any other initiator can communicate with the bus.</span></p>
+<p class="rvps278"><img alt="" style="width : 300px; height : 193px; padding : 1px;" src="lib/NewItem1721.png"></p>
+<p class="rvps277"><span class="rvts329">Data Validity</span></p>
+<p class="rvps277"><span class="rvts34">The data on the SDA line must be stable during the HIGH period of the clock. The HIGH or LOW state of the data line can only change when the clock signal on the SCL line is LOW.</span></p>
+<p class="rvps278"><img alt="" style="width : 479px; height : 123px; padding : 1px;" src="lib/NewItem1720.png"></p>
+<p class="rvps278"><span class="rvts392">DATA Validity</span></p>
+<p class="rvps277"><span class="rvts16"><br/></span></p>
+<p class="rvps277"><span class="rvts329">7-bit target Address and RD/WR bit Format</span></p>
+<p class="rvps279"><span class="rvts34">After the START condition (S), a target address is sent. This address is seven bits long followed by an eighth bit which is a data direction bit (R/W) — a ‘zero’ indicates a transmission (WRITE), a ‘one’ indicates a request for data (READ).</span></p>
+<p class="rvps277"><span class="rvts34">A data transfer is always terminated by a STOP condition (P) generated by the initiator. However, if a initiator still wishes to communicate on the bus, it can generate a repeated START condition (Sr) and address another target without first generating a STOP condition. Various combinations of read/write formats are then possible within such a transfer.</span></p>
+<p class="rvps277"><span class="rvts34"><br/></span></p>
+<p class="rvps278"><img alt="" style="width : 599px; height : 197px; padding : 1px;" src="lib/NewItem1719.png"></p>
+<p class="rvps278"><span class="rvts393">A complete Data Transmission by I2C</span></p>
+<p class="rvps277"><span class="rvts154"><br/></span></p>
+<p class="rvps277"><span class="rvts154">Configurable Addressing</span></p>
+<p class="rvps277"><span class="rvts34">IDS provide a facility to configure 7-bit addressing of a particular device before start generation of I2C Interface with IDS. This addressing follow all the rules and regulations complaint with </span><span class="rvts14">Philips Semiconductors Inter-IC bus (I2C-bus) specification version 2.1.&nbsp;</span></p>
+<p class="rvps277"><span class="rvts14">IDS can support target addressing formats: 7-bit &nbsp;</span></p>
+<p class="rvps277"><span class="rvts14">User needs to select a mode of target select first by just click an option available in IDS configure window or he/she may add an property to specify an mode of target address followed by a particular target address value.</span></p>
+<p class="rvps277"><span class="rvts14"><br/></span></p>
+<p class="rvps277"><span class="rvts329">Arbitration Procedure:</span></p>
+<p class="rvps277"><span class="rvts329">CLOCK Stretching:</span></p>
+<p class="rvps277"><span class="rvts34">Target devices can use the clock synchronization mechanism to slow down the transfer bit rate. After the initiator has driven SCL low, the target can drive SCL low for the required period and then release it. If the target’s SCL low period is greater than the initiator’s SCL low period, the resulting SCL bus signal low period is stretched, thus inserting wait states.</span></p>
+<p class="rvps277"><span class="rvts34">IDS widget can handle this condition if there is a wait state from an internal signal rd_wait during read operation, initiator will drive SCL low for required period of time.</span></p>
+<p class="rvps277"><span class="rvts338"><br/></span></p>
+<p class="rvps277"><span class="rvts338">&nbsp;</span><span class="rvts329">8-bit of Register Address:</span></p>
+<p class="rvps277"><span class="rvts14">After the target address being acknowledged, User needs to send a byte that is a specified IDS register address which is byte addressable by the increment of four bytes for each register.</span></p>
+<p class="rvps277"><span class="rvts14">If there is a memory specified, this controller will take care of an appropriate address calculation or an offset value compatible with IDS requirements.</span></p>
+<p class="rvps277"><span class="rvts14">Because the default address of an IDS registers is 32 bit, widget will split this address into separate bytes which are followed by one after one covering complete register by using repeated Start logic.&nbsp;</span></p>
+<p class="rvps277"><span class="rvts14">&nbsp; &nbsp;</span></p>
+<p class="rvps277"><span class="rvts329">Sending/Receiving Data Bytes:</span></p>
+<p class="rvps277"><span class="rvts14">Once a complete address has been acknowledge by the target then initiator can send the data into corresponding Register.</span></p>
+<p class="rvps277"><span class="rvts14">If the initiator initiates a read transaction and there is a case of latency from the target means IDS rd_wait signal is enable, then target can force initiator into wait state by holding SCL line Low until</span><span class="rvts34"> the target is ready for the next byte transfer in a type of</span><br/><span class="rvts34">handshake procedure</span><span class="rvts14">. This is also called Clock Stretching.</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/step-by-step-guides/how-to-generate-an-encrypted-password-protected-pdf-document/">How to Protect Your PDFs with Encryption and Passwords</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

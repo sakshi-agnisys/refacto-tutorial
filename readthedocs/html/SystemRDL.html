@@ -1,0 +1,949 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>SystemRDL</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Outputs/Exports">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SystemRDL">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="SystemRDL" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="SystemRDL"
+		  data-hnd-context="23"
+		  data-hnd-title="SystemRDL"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="OutputsExports.html">Outputs/Exports</a></li><li><a href="IndustryStandards.html">Industry Standards</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="IndustryStandards.html" title="Industry Standards" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="IDShandlingofIP-XACTfiles.html" title="IDS handling of IP-XACT files" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="XMLXRSL1.html" title="XML (XRSL)" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>SystemRDL</h2>
+
+            <div class="main-content">
+                
+<h1 class="rvps106"><span class="rvts0"><span class="rvts404">SystemRDL &nbsp;</span></span></h1>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps12"><span class="rvts205">SystemRDL is a language for the design and delivery of intellectual property (IP) products used in designs. SystemRDL semantics supports the entire life-cycle of registers from specification, model generation, and design verification, to maintenance and documentation. Registers are not just limited to traditional configuration registers, but can also refer to register arrays and memories.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts854"><br/></span></p>
+<p class="rvps2"><span class="rvts424">IDesignSpec</span><span class="rvts854">TM</span></p>
+<p class="rvps2"><span class="rvts424"><br/></span></p>
+<p class="rvps12"><span class="rvts205">IDesignSpec</span><span class="rvts853">TM</span><span class="rvts837"> </span><span class="rvts205">enables IP/SoC design teams to create code files from the register specification, saving time and producing consistent, quality results. IDesignSpec</span><span class="rvts853">TM</span><span class="rvts837"> </span><span class="rvts205">(IDS) generates System RDL registers right from the user's spec. This document describes what is generated and how the user can customize the generated output.</span></p>
+<p class="rvps12"><span class="rvts205">Note: Register Specification in word format or in SystemRDL format will generate the same outputs. It means either you can use SystemRDL or Word format to describe Register Spec. as an input to IDesignSpec™.</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1063.png"></p>
+<p class="rvps2"><span class="rvts205">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps12"><span class="rvts205">In the following sections you will see how to use word format to describe the Register Specification. Register specification in MS Word format is equivalent to that in SystemRDL format. Either format can be used to generate the other. &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">Chip</span></span></h3>
+<p class="rvps2"><span class="rvts349"><br/></span></p>
+<p class="rvps3"><span class="rvts205">&nbsp; &nbsp; &nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem372.png"></p>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps12"><span class="rvts205">Chip is the top level element of IDS, under which there is a hierarchy of blocks, which is explained below. The example above shows mapping of the IDS chip property to the corresponding system RDL addrmap. The properties offset, external and size are not used, as these don't have a corresponding mapping in System RDL, and therefore can be left empty.</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts842">Block</span><span class="rvts668">&nbsp;</span></p>
+<p class="rvps12"><span class="rvts205"><br/></span></p>
+<p class="rvps12"><span class="rvts205">Block is the next level hierarchy under </span><span class="rvts483">chip</span><span class="rvts205">. Blocks can have offsets, and the user can define the size of the block. Under blocks one can define </span><span class="rvts483">regGroups</span><span class="rvts205">(an array of registers) and simple registers.</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><span class="rvts205">&nbsp; &nbsp; </span><img alt="" style="padding : 1px;" src="lib/NewItem373.png"></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205">The block entered in IDS results in an </span><span class="rvts483">addrmap </span><span class="rvts205">with a block name, e.g., ―ethernet‖ as shown:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts483">addrmap ethernet {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; name = "blockname Address Map";&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; reg regname {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; field {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; &nbsp; hw = w;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; &nbsp; sw = rw; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; } field1 [31:0] = 32'b00000000000000000000000000000110;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; };&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">};&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">ethernet ethernet @0x00000C;</span></p>
+<p class="rvps2"><span class="rvts716">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205">Blocks can be offset by putting in an offset value, and blocks can also have </span><span class="rvts376">size</span><span class="rvts205">. The block is instantiated, having Address </span><span class="rvts321">@0x00000C </span><span class="rvts205">generated from </span><span class="rvts376">offset </span><span class="rvts205">= 3 and +=0x800 generated from </span><span class="rvts376">size </span><span class="rvts205">=512 bytes in a 32-bit system.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205">The property </span><span class="rvts376">external </span><span class="rvts205">is not used, as it has no corresponding construct in system RDL.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts668"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">Register&nbsp;</span></span></h3>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205">Registers and RegGroups are defined in the hierarchy under blocks. </span><span class="rvts483">Register </span><span class="rvts205">is a combination of different fields. Fields can be defined as shown below. Fields have properties like </span><span class="rvts376">bits</span><span class="rvts205">, </span><span class="rvts376">name</span><span class="rvts205">,</span></p>
+<p class="rvps2"><span class="rvts376">sw access</span><span class="rvts205">, </span><span class="rvts376">hw access</span><span class="rvts205">, </span><span class="rvts376">default </span><span class="rvts205">and </span><span class="rvts376">description</span><span class="rvts205">. Registers have an </span><span class="rvts376">offset </span><span class="rvts205">property by which one can specify the offset with respect to </span><span class="rvts483">block </span><span class="rvts205">or </span><span class="rvts483">RegGroup</span><span class="rvts205">. The </span><span class="rvts376">external </span><span class="rvts205">property can be used during RTL transformation.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSWord</span></span></h3>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><span class="rvts205">&nbsp; </span><img alt="" style="width : 839px; height : 215px; padding : 1px;" src="lib/NewItem389.png"></p>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><span class="rvts486"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSExcel</span></span><span class="rvts0"><span class="rvts350"> &nbsp;</span></span></h3>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1064.png"></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts666"><br/></span></p>
+<p class="rvps2"><span class="rvts666"><br/></span></p>
+<p class="rvps2"><span class="rvts483">reg status_reg {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; field {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; hw = r;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; sw = rw;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; } field1[31:25] = 7'b0000111;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; field {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; hw = r;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; sw = rw;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; } field2[24:7] = 18'b000000000000000010;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; field {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; hw = rw;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; sw = r;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; reset = 3'b010;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; } field3[6:4];&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; field {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; hw = r;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; sw = w;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; } field4[3:0] = 4'b0001;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">};&nbsp;</span></p>
+<p class="rvps2"><span class="rvts666"><br/></span></p>
+<p class="rvps2"><span class="rvts668">Access Types&nbsp;</span></p>
+<p class="rvps2"><span class="rvts838">Register can support all the access types supported by System RDL.</span></p>
+<p class="rvps2"><span class="rvts838"><br/></span></p>
+<p class="rvps2"><span class="rvts483">property uvm_base_class { type = string; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts483"><br/></span></p>
+<p class="rvps2"><span class="rvts483">addrmap top {</span></p>
+<p class="rvps2"><span class="rvts483"><br/></span></p>
+<p class="rvps2"><span class="rvts483">&nbsp;uvm_base_class="my_base_class";&nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp;reg reg1 {</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp;field {</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; sw=rw;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp; hw=rw;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; &nbsp;} b [31:0]=5;</span></p>
+<p class="rvps2"><span class="rvts483">&nbsp;};</span></p>
+<p class="rvps2"><span class="rvts483"><br/></span></p>
+<p class="rvps2"><span class="rvts483">&nbsp; reg1 reg1; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts483">};&nbsp;</span></p>
+<p class="rvps2"><span class="rvts838"><br/></span></p>
+<p class="rvps2"><span class="rvts668">RegGroup&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205">The next level in the hierarchy is </span><span class="rvts483">RegGroup</span><span class="rvts205">, which represents repetition of the contents it contains. </span><span class="rvts483">RegGroup </span><span class="rvts205">has same properties as </span><span class="rvts483">register</span><span class="rvts205">, but accepts </span><span class="rvts376">repeat </span><span class="rvts205">and </span><span class="rvts376">size. </span><span class="rvts205">The mapping of </span><span class="rvts483">RegGroup </span><span class="rvts205">to System RDL is </span><span class="rvts483">addrmap. Addrmap </span><span class="rvts205">can be inside another </span><span class="rvts483">addrmap,</span><span class="rvts205">so </span><span class="rvts483">Regroup </span><span class="rvts205">can be inside another </span><span class="rvts483">RegGroup,</span><span class="rvts205">and can have multi-level hierarchy.</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSWord</span></span></h3>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem390.png"></p>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><span class="rvts486"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSExcel</span></span><span class="rvts0"><span class="rvts350"> &nbsp;</span></span></h3>
+<p class="rvps3"><span class="rvts723"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1065.png"></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205"></span><br/><span class="rvts579">&nbsp; </span><span class="rvts370">addrmap reggroupname {</span><br/><span class="rvts370">&nbsp; &nbsp; name = "reggroupname Address Map";</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; reg Reg1 {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; regwidth = 32;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; } Field1[31:0] = 32'b00000000000000000000000000000101;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; };</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; reg Reg2 {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; regwidth = 32;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; } Field2[31:0] = 32'b00000000000000000000000000000100;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; };</span><br/><span class="rvts370">&nbsp; &nbsp; Reg1 Reg1 @0x0008;</span><br/><span class="rvts370">&nbsp; &nbsp; Reg2 Reg2 @0x000C;</span><br/><span class="rvts370">&nbsp; };</span><br/><span class="rvts370">&nbsp; reggroupname &nbsp;reggroupname[2] @0x0000 += 0x80;</span><span class="rvts483">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts838">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205">The </span><span class="rvts376">Repeat </span><span class="rvts205">property tells that how many times a particular register is repeated. In above example a regGroup containing two registers is repeated 2 times, so the system RDL output will include the same. 0X80 defines the actual size of the RegGroup; alternatively, the user can explicitly specify </span><span class="rvts483">RegGroup </span><span class="rvts376">size </span><span class="rvts205">and the same appears inside the code.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205">Another case of </span><span class="rvts483">RegGroup </span><span class="rvts205">is when </span><span class="rvts483">RegGroup </span><span class="rvts205">has only one register and has no offset defined.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSWord</span></span></h3>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><span class="rvts205">&nbsp; </span><img alt="" style="padding : 1px;" src="lib/NewItem391.png"></p>
+<p class="rvps3"><span class="rvts486"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSExcel</span></span><span class="rvts0"><span class="rvts350"> &nbsp;</span></span></h3>
+<p class="rvps3"><span class="rvts723"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1066.png"></p>
+<p class="rvps3"><span class="rvts723"><br/></span></p>
+<p class="rvps2"><span class="rvts74">&nbsp; &nbsp; &nbsp;</span><br/><span class="rvts74">&nbsp; </span><span class="rvts370">reg regname {</span><br/><span class="rvts370">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; fieldwidth = 32;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span><br/><span class="rvts370">&nbsp; &nbsp; } Field1 = 32'b00000000000000000000000000000001;&nbsp;</span><br/><span class="rvts370">&nbsp; };</span><br/><span class="rvts370">&nbsp;</span><br/><span class="rvts370">&nbsp; regname regname[3] @0x0000 +=0x4;</span></p>
+<p class="rvps2"><span class="rvts561"><br/></span></p>
+<p class="rvps2"><span class="rvts205">In this special case no addrmap is generated, so a register array is generated in system RDL. But if offset is defined in a single register then addrmap is generated.</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts752">Counter</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts14">When a </span><span class="rvts15">field </span><span class="rvts14">is defined as a </span><span class="rvts15">counter</span><span class="rvts14">, the value stored by the field is the counter’s current value. There is an implication of an additional input which shall increment/decrement the counter when asserted.</span></p>
+<p class="rvps2"><span class="rvts14">By default counters are incremented/decremented by one (1), but developers can specify another increment/decrement value. Since the validity or feasibility of an increment/decrement value is determined</span></p>
+<p class="rvps2"><span class="rvts14">by the field’s width (valid increment values can be of equal or smaller width than the field itself),</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSWord</span></span></h3>
+<p class="rvps3"><span class="rvts632">&nbsp; &nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem393.png"></p>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSExcel</span></span></h3>
+<p class="rvps3"><span class="rvts561"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1067.png"></p>
+<p class="rvps2"><span class="rvts632"><br/></span></p>
+<p class="rvps2"><span class="rvts632">&nbsp;&nbsp;</span><br/><span class="rvts579">&nbsp; </span><span class="rvts370">reg regname {</span></p>
+<p class="rvps2"><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = na;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; counter = true;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; incrvalue = 15;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; incrsaturate = 5;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; incrthreshold = 4;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; } Statusreg[31:0] = 32'b00000000000000000000000000000010;&nbsp;</span><br/><span class="rvts370">&nbsp; };</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; regname regname @0x0000;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205">In the above example field is defined as increment counter by property {counter=incr;}, other counter properties and there effects can be seen from the Properties section of this Document.</span></p>
+<p class="rvps2"><span class="rvts205">note:When field is defined as counter,h/w access must be na in IDS.</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts752">Interrupt</span></p>
+<p class="rvps2"><span class="rvts840">I</span><span class="rvts205">nterrupts can be used by properties such as intr.status, intr.enable, intr.detect, mask.enable. The information about these properties can be referred from the property section of this document.</span><span class="rvts841"> &nbsp;</span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts411">Example:</span></span></h2>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSWord</span></span></h3>
+<h3 class="rvps254"><span class="rvts0"><span class="rvts540">&nbsp;</span></span><img alt="" style="padding : 1px;" src="lib/NewItem394.png"></h3>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSExcel</span></span><span class="rvts0"><span class="rvts350"> &nbsp;</span></span></h3>
+<p class="rvps3"><span class="rvts561"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1068.png"></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts393">Note:</span><span class="rvts34"> s/w access of register declared as status must be r/w1c.</span></p>
+<p class="rvps2"><span class="rvts34"></span><br/><span class="rvts370">addrmap blockname {</span><br/><span class="rvts579">&nbsp; </span><span class="rvts370">name = "blockname Address Map";</span><br/><span class="rvts370">&nbsp; reg statusreg {</span><br/><span class="rvts370">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; sw=rw;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; woclr = true;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; hw=rw;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; intr;</span><br/><span class="rvts370">&nbsp; &nbsp; } F1[31:0] = 32'b00000000000000000000000000000010;&nbsp;</span><br/><span class="rvts370">&nbsp; };</span><br/><span class="rvts370">&nbsp; reg enablereg {</span><br/><span class="rvts370">&nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span><br/><span class="rvts370">&nbsp; &nbsp; } F2[31:0] = 32'b00000000000000000000000000000101;&nbsp;</span><br/><span class="rvts370">&nbsp; };</span><br/><span class="rvts370">&nbsp; statusreg statusreg @0x0000;</span><br/><span class="rvts370">&nbsp; enablereg enablereg @0x0004;</span><br/><span class="rvts370">&nbsp; statusreg.F1 -&gt; enable = enablereg.F2;</span><br/><span class="rvts370">};</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts718">Mask Interrupt</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts411">Example:</span></span></h2>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSWord</span></span></h3>
+<p class="rvps3"><span class="rvts205">&nbsp; </span><img alt="" style="padding : 1px;" src="lib/NewItem396.png"></p>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><span class="rvts486"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSExcel</span></span><span class="rvts0"><span class="rvts350"> &nbsp;</span></span></h3>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1072.png"></p>
+<p class="rvps3"><span class="rvts561"><br/></span></p>
+<p class="rvps3"><span class="rvts561"><br/></span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts370">addrmap blockname {</span><br/><span class="rvts370">&nbsp; name = "blockname Address Map";</span><br/><span class="rvts370">&nbsp; reg statusreg {</span><br/><span class="rvts370">&nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; sw=rw;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; woclr = true;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; intr;</span><br/><span class="rvts370">&nbsp; &nbsp; } F1[31:0] = 32'b00000000000000000000000000000010;&nbsp;</span><br/><span class="rvts370">&nbsp; };</span><br/><span class="rvts370">&nbsp; reg maskreg {</span><br/><span class="rvts370">&nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; hw = rw;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; sw = rw;</span><br/><span class="rvts370">&nbsp; &nbsp; } F2[31:0] = 32'b00000000000000000000000000000101;&nbsp;</span><br/><span class="rvts370">&nbsp; };</span><br/><span class="rvts370">&nbsp; statusreg statusreg @0x0000;</span><br/><span class="rvts370">&nbsp; maskreg maskreg @0x0004;</span><br/><span class="rvts370">&nbsp; statusreg.F1 -&gt; mask = maskreg.F2;</span><br/><span class="rvts370">};</span></p>
+<p class="rvps2"><span class="rvts839"><br/></span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts349">External</span></p>
+<p class="rvps2"><span class="rvts205">The register can be declared as external by writing true in external column. By default it is false.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts843">Example:</span></span></h2>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSWord</span></span></h3>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem397.png"></p>
+<p class="rvps3"><span class="rvts486"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSExcel</span></span><span class="rvts0"><span class="rvts350"> &nbsp;</span></span></h3>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1071.png"></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts34">external regname regname @0x0000;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts424">UDP</span></p>
+<p class="rvps2"><span class="rvts205">All the IDesignSpec™ properties are supported into SystemRDL by making UDP in SystemRDL.</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts669">Example:</span></span></h2>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSWord</span></span></h3>
+<p class="rvps3"><span class="rvts424">&nbsp; &nbsp; &nbsp;</span><img alt="" style="padding : 1px;" src="lib/NewItem398.png"></p>
+<p class="rvps3"><span class="rvts424">&nbsp; &nbsp; &nbsp; </span><img alt="" style="padding : 1px;" src="lib/NewItem399.png"></p>
+<p class="rvps3"><span class="rvts424"><br/></span></p>
+<h3 class="rvps254"><span class="rvts0"><span class="rvts350">&nbsp; </span></span><img alt="" style="padding : 1px;" src="lib/NewItem400.png"></h3>
+<p class="rvps3"><span class="rvts486"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts540">IDSExcel</span></span><span class="rvts0"><span class="rvts350"> &nbsp;&nbsp;</span></span></h3>
+<p class="rvps3"><span class="rvts561"><br/></span></p>
+<p class="rvps3"><span class="rvts561"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1073.png"></p>
+<p class="rvps3"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts349">Output generated :</span></p>
+<p class="rvps2"><span class="rvts579"><br/></span></p>
+<p class="rvps2"><span class="rvts579">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370"> &nbsp;property constraint { type = string; component = reg|field; };</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;property coverage { type = string; component = addrmap | regfile | reg; };</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp;</span><br/><span class="rvts370">// board : boardname</span><br/><span class="rvts370">&nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">// chip : chip1</span><br/><span class="rvts370"></span><br/><span class="rvts370">addrmap chip1 {</span><br/><span class="rvts370">&nbsp; name = "chip1 Address Map";</span><br/><span class="rvts370">&nbsp; &nbsp; coverage = "a";</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; addrmap block1 {</span><br/><span class="rvts370">&nbsp; &nbsp; name = "block1 Address Map";</span><br/><span class="rvts370">&nbsp; &nbsp; coverage = "abf";</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; reg reg1 {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;regwidth = 16;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; constraint = "const{100 - 10};const";</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; } Fld1[15:0] = 16'b0000000000001100;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; };</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; reg reg2 {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;regwidth = 32;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; sw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; } Fld2[31:0] = 32'b00000000000000000000000000001100;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; };</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; reg1 reg1 @0x00000;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; reg2 reg2 @0x00002;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; };</span><br/><span class="rvts370">&nbsp; block1 &nbsp;block1 @0x00000;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">}; &nbsp; &nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">// chip : chip2</span><br/><span class="rvts370"></span><br/><span class="rvts370">addrmap chip2 {</span><br/><span class="rvts370">&nbsp; name = "chip2 Address Map";</span><br/><span class="rvts370">&nbsp; &nbsp; coverage = "abf";</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; addrmap block2 {</span><br/><span class="rvts370">&nbsp; &nbsp; name = "block2 Address Map";</span><br/><span class="rvts370">&nbsp; &nbsp; coverage = "a";</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; reg reg3 {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;coverage = "f";</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;regwidth = 16;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; desc = "&nbsp;";&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; } Fld3[15:0] = 16'b0000000000001100;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; };</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; reg reg4 {</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; desc = " [vmm]#Comment: # VMM CODE [/vmm] #Comment: # VMM CODE";</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;coverage = "b";</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;regwidth = 32;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; sw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; } Fld4[31:0] = 32'b00000000000000000000000000001100;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; };</span><br/><span class="rvts370">&nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; reg3 reg3 @0x00000;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; reg4 reg4 @0x00002;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; };</span><br/><span class="rvts370">&nbsp; addrmap block3 {</span><br/><span class="rvts370">&nbsp; &nbsp; name = "block3 Address Map";</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; reg reg5 {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;regwidth = 64;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; sw = w;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; } Fld5[63:0] = 64'b0000000000000000000000000000000000000000000000000000000000001100;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; };</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; addrmap reggroup1 {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; name = "reggroup1 Address Map";</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; coverage = "af";</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; reg reg6 {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;regwidth = 128;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sw = w;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; } Fld6[127:0] = 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; };</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; reg reg7 {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;coverage = "b";</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;regwidth = 16;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; field {</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hw = r;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sw = w;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; } Fld7[15:0] = 16'b0000000000001100;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; };</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; reg6 reg6 @0x00000;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; reg7 reg7 @0x00010;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; };</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; &nbsp; reg5 reg5 @0x00000;</span><br/><span class="rvts370"></span><br/><span class="rvts370">&nbsp; &nbsp; reggroup1 &nbsp;reggroup1[4];</span><br/><span class="rvts370">&nbsp; };</span><br/><span class="rvts370">&nbsp; block2 &nbsp;block2 @0x00000;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">&nbsp; block3 &nbsp;block3 @0x01000;</span><br/><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts370">}; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><a name="Unknown"></a><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts126">Unkonwn Default Reset Value of Register Field</span></p>
+<p class="rvps2"><span class="rvts852"><br/></span></p>
+<p class="rvps2"><span class="rvts60">By default, the reset value of fields shall be unknown, e.g., x in Verilog i.e </span><span class="rvts34">the default value is unknown(X) when no reset is specified in the rdl specification.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Example :&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts370">addrmap block1 {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; reg reg1 {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; }f1=1'b0;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;}f2 = 1'b1;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;field {</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hw = rw;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; &nbsp; &nbsp; &nbsp;}f3 ;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts370">reg1 reg1;</span></p>
+<p class="rvps2"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts370">};</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">for the above example the reset value of field f1,f2,f3 are 0,1 and x respectively.</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts370"><br/></span></p>
+<p class="rvps2"><span class="rvts579"><br/></span></p>
+<p class="rvps2"><span class="rvts35">CheatSheet :</span></p>
+<p class="rvps2"><span class="rvts34">User can specify what will be the top level during import by specify in top element column as chip:top_level_name or block:top_level_name.</span></p>
+<p class="rvps2"><span class="rvts34">&nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts176">&nbsp; &nbsp; IDesignSpec™ Word Templates &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SystemRDL Components</span></p>
+<p class="rvps2"><span class="rvts180">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Chip &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;addrmap</span></p>
+<p class="rvps2"><span class="rvts180">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Block &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; addrmap</span></p>
+<p class="rvps2"><span class="rvts180">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; RegGroup &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;regfile</span></p>
+<p class="rvps2"><span class="rvts180">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Register &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;reg</span></p>
+<p class="rvps2"><span class="rvts180">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Field &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;field</span></p>
+<p class="rvps2"><span class="rvts180">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enum &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;enum&nbsp;</span></p>
+<p class="rvps2"><span class="rvts180">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; All IDesginSpec properties &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;udp</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">IDesignSpec™ support multiple properties for registers, which are currently not supported by SystemRDL. To Support these properties multiple </span><span class="rvts15">UDP</span><span class="rvts14"> are given by Agnisys®, which can be used to add this functionality. </span><a class="rvts23" href="SystemRDLUDPs.html">Click here</a><span class="rvts14"> for the list and use of all these UDPs.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><a name="SystemRDL v2.0"></a><span class="rvts849">SystemRDL v2.0 </span><span class="rvts848">:</span></p>
+<p class="rvps3"><span class="rvts848"><br/></span></p>
+<p class="rvps2"><span class="rvts14">IDS supports systemRDL 2.0 in output. Features such as :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts14">Constraints</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">Memory</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">Software access</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">Parameters</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">Enum</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">HDL Path</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">have been implemented as per the systemRDL 2.0 standard.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">IDS also supports SystemRDL 2.0 as input. The following features are supported in systemRDL 2.0 as input:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Features:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+ <li class="rvps72 noindent"><span class="rvts186">Parameterized documentation can be created. The parameters can be resolved at the documentation level.</span></li>
+</ol>
+<p class="rvps6"><span class="rvts14">For example</span><span class="rvts374">:&nbsp;</span></p>
+<p class="rvps6"><span class="rvts374"><br/></span></p>
+<p class="rvps6"><span class="rvts356">reg myReg </span><span class="rvts385">#(longint unsigned SIZE = 32, boolean REGISTERED = true)</span><span class="rvts356"> {</span></p>
+<p class="rvps6"><span class="rvts356">regwidth = SIZE;</span></p>
+<p class="rvps6"><span class="rvts356">registered = REGISTERED;</span></p>
+<p class="rvps6"><span class="rvts356">field {} data[SIZE];</span></p>
+<p class="rvps6"><span class="rvts356">};</span></p>
+<p class="rvps6"><span class="rvts356">addrmap myAmap {</span></p>
+<p class="rvps6"><span class="rvts356">myReg reg32;</span></p>
+<p class="rvps6"><span class="rvts356">myReg reg32_arr[8];</span></p>
+<p class="rvps6"><span class="rvts356">myReg #(.SIZE(16)) reg16;</span></p>
+<p class="rvps6"><span class="rvts356">myReg #(.SIZE(8), .REGISTERED(false)) reg8;</span></p>
+<p class="rvps6"><span class="rvts356">};</span></p>
+<p class="rvps6"><span class="rvts356"><br/></span></p>
+<p class="rvps6"><span class="rvts356"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+ <li value="2" class="rvps72 noindent"><span class="rvts186">Structures are supported at documentation level:</span></li>
+</ol>
+<p class="rvps72"><span class="rvts186">&nbsp; &nbsp; &nbsp;For example:</span></p>
+<p class="rvps72"><span class="rvts850">struct my_struct</span><span class="rvts469"> {</span></p>
+<p class="rvps72"><span class="rvts469">string foo ;</span></p>
+<p class="rvps72"><span class="rvts469">string desc1;</span></p>
+<p class="rvps72"><span class="rvts469">} ;</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469">addrmap top {</span></p>
+<p class="rvps72"><span class="rvts469">regfile some_regfile #( my_struct arg ) {</span></p>
+<p class="rvps72"><span class="rvts469">reg {</span></p>
+<p class="rvps72"><span class="rvts469">desc = arg.foo ;</span></p>
+<p class="rvps72"><span class="rvts469">field {</span></p>
+<p class="rvps72"><span class="rvts469">desc = arg.desc1;</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469">} a ;</span></p>
+<p class="rvps72"><span class="rvts469">} regA ;</span></p>
+<p class="rvps72"><span class="rvts469">} ;</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469">some_regfile #(.arg( my_struct'{ foo: "reg desc", desc1:"field desc" })) regFA ;</span></p>
+<p class="rvps72"><span class="rvts469">some_regfile #(.arg( my_struct'{ foo: "reg2 desc", desc1:"field2 desc" })) reggrp2 ;</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469">} ;</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+ <li value="3" class="rvps72 noindent"><span class="rvts186">Expressions are supported now with logical operations such as || , &amp;&amp;, ! &nbsp;etc.</span></li>
+</ol>
+<p class="rvps22"><span class="rvts14">For example:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps22"><span class="rvts356">reg some_reg #(boolean BYTEENB = false) {</span></p>
+<p class="rvps22"><span class="rvts356">ext_b</span><a name="ext_byte_enb"></a><span class="rvts356">yte_enb = </span><span class="rvts385">!BYTEENB</span><span class="rvts356"> ; //expression</span></p>
+<p class="rvps22"><span class="rvts356">field {} b;</span></p>
+<p class="rvps22"><span class="rvts356">b -&gt; ispresent = false ;</span></p>
+<p class="rvps22"><span class="rvts356">field { ispresent = false ; } d ;</span></p>
+<p class="rvps22"><span class="rvts356">} ;</span></p>
+<p class="rvps22"><span class="rvts356">some_reg #(.BYTEENB(true)) reserved_reg ;</span></p>
+<p class="rvps22"><span class="rvts356">some_reg partially_reserved_reg ;</span></p>
+<p class="rvps22"><span class="rvts356">some_reg not_reserved_reg ;</span></p>
+<p class="rvps22"><span class="rvts356">not_reserved_reg.b -&gt; ext_byte_enb = true ;</span></p>
+<p class="rvps22"><span class="rvts356">not_reserved_reg.d -&gt; ext_byte_enb = true ;</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+ <li value="4" class="rvps72 noindent"><span class="rvts186">Values can be post assigned during declaration and values can be given in an array form:</span></li>
+</ol>
+<p class="rvps22"><span class="rvts14">For example:</span></p>
+<p class="rvps2"><span class="rvts374"><br/></span></p>
+<p class="rvps22"><span class="rvts356">addrmap block_def {</span></p>
+<p class="rvps22"><span class="rvts356">hdl_path = "int_block" ;</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps22"><span class="rvts356">reg {</span></p>
+<p class="rvps22"><span class="rvts356">hdl_path = </span><span class="rvts385">{ “ext_hdl_path”, "externl_reg" } ;</span></p>
+<p class="rvps22"><span class="rvts356">field {} f1 ;</span></p>
+<p class="rvps22"><span class="rvts356">} external_reg ;</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps22"><span class="rvts356">reg {</span></p>
+<p class="rvps22"><span class="rvts356">hdl_path = "int_reg" ;</span></p>
+<p class="rvps22"><span class="rvts356">field {} f1 ;</span></p>
+<p class="rvps22"><span class="rvts356">} internal_reg ;</span></p>
+<p class="rvps22"><span class="rvts356">} ;</span></p>
+<p class="rvps22"><span class="rvts356">addrmap top {</span></p>
+<p class="rvps22"><span class="rvts356">hdl_path = "TOP" ;</span></p>
+<p class="rvps22"><span class="rvts356">block_def int_block0 ;</span></p>
+<p class="rvps22"><span class="rvts385">int_block0 -&gt; hdl_path = "int0" ;&nbsp;</span></p>
+<p class="rvps22"><span class="rvts356">block_def int_block1 ;</span></p>
+<p class="rvps22"><span class="rvts356">int_block1 -&gt; hdl_path = "int1" ;</span></p>
+<p class="rvps22"><span class="rvts356">};</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+ <li value="5" class="rvps72 noindent"><span class="rvts186">Memory can be defined using the keyword ‘mem’ as shown below :</span></li>
+</ol>
+<p class="rvps22"><span class="rvts14">For example:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps22"><span class="rvts385">mem</span><span class="rvts356"> fixed_mem #(longint unsigned &nbsp;word_size = 32, &nbsp; //mem keyword</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp;</span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356">unsigned longint &nbsp;</span><span class="rvts385">memory_size = word_size * 4096)</span><span class="rvts356"> {</span></p>
+<p class="rvps22"><span class="rvts356">mementries = </span><span class="rvts385">memory_size / word_size</span><span class="rvts356"> ; &nbsp; &nbsp; //complex expressions supported</span></p>
+<p class="rvps22"><span class="rvts356">memwidth = word_size ;</span></p>
+<p class="rvps22"><span class="rvts356">} ;</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+ <li value="6" class="rvps72 noindent"><span class="rvts186">Different data types are supported and such as &nbsp;longint unsigned, Boolean, string etc.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+ <li value="7" class="rvps72 noindent"><span class="rvts186">Constraints are now supported in systemRDL 2.0 format</span></li>
+</ol>
+<p class="rvps22"><span class="rvts14">For example:</span></p>
+<p class="rvps72"><span class="rvts469">addrmap Admap {</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; name = "Admap Address Map";</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; reg &nbsp;{</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; field {</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; </span><span class="rvts850">constraint { this &lt;=10; } Reg21_F1_constraint;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; } F1[16:0] = 17'h0;</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; }Reg21;</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; reg &nbsp;{</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp;regwidth = 8;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; field {</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; </span><span class="rvts850">constraint { this == 8; } Reg32_F1_constraint;</span></p>
+<p class="rvps72"><span class="rvts469"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts469"> &nbsp;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; onread=r;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; &nbsp; onwrite=w;</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; &nbsp; } F1[6:0] = 7'h0;</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; }Reg32;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp;&nbsp;</span></p>
+<p class="rvps72"><span class="rvts469">&nbsp; };</span></p>
+<p class="rvps72"><span class="rvts469"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+ <li value="8" class="rvps72 noindent"><span class="rvts186">Enums are supported:</span></li>
+</ol>
+<p class="rvps2"><span class="rvts14">For example:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts356">addrmap Admap {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; name = "Admap Address Map";</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; </span><span class="rvts385">enum enum_name {</span></p>
+<p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; red=0 { desc = "abc";} ;</span></p>
+<p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; blue=2 { desc = "xyz";} ;</span></p>
+<p class="rvps2"><span class="rvts385">&nbsp; &nbsp; &nbsp; yellow=3 { desc = "123";} ;</span></p>
+<p class="rvps2"><span class="rvts385">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; reg &nbsp;{</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; encode=enum_name;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } F1[16:0] = 17'h0;</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; }Reg21;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts209">Note:</span><span class="rvts186"> By default, new SystemRDL compiler will work which is compliant to all the SystemRDL 2.0 standard .&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps72 noindent"><span class="rvts186">This compiler is very powerful and error messaging has been improved in it.&nbsp;</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">The compiler is very fast, and the speed of generation has been improved upon.</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">The command for generation of the output is:</span></li>
+</ul>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts186">&nbsp;IDS-Batch &lt;filename.rdl&gt; -out "verilog uvm" -top &lt;topmodule_name&gt;</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts209">Backward Incompatibality:</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts186">1. Constraint and hdl_path are keywords in sysetmRDL 2.0, therefore UDP declaration should be removed.</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts186">2. The</span><span class="rvts193"> default reset value of the field is changed from 0 to unknown(x). For maintaining backward compatibility users may use -top_property “default_reset = 0” in the command line.</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts186">For running the old compiler, command for generation of the output is given below:</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts186">&nbsp; IDS-Batch &lt;filename.rdl&gt; -out "verilog uvm" -top &lt;topmodule_name&gt; </span><span class="rvts209">-rdl_version 1</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><a name="perl"></a><span class="rvts395">PERL PRE-PROCESSOR</span></p>
+<p class="rvps2"><span class="rvts395"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Method 1:</span><span class="rvts15">&nbsp;</span><span class="rvts14">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Following steps are must to be followed before running IDS-Batch:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">1. &nbsp; &nbsp;Update your PATH variable to include the path to asp-perl directory which is “&lt;IDS-install-path&gt;/apache-asp”</span></p>
+<p class="rvps2"><span class="rvts14">2. &nbsp; &nbsp;Issue the following command to set another environment variable:</span></p>
+<p class="rvps2"><span class="rvts14">export IDS_ASP_PERL_PATH=&lt;IDS-install-path&gt;/apache-asp</span></p>
+<p class="rvps2"><span class="rvts14">(assuming you are using bash shell, please change the syntax appropriately if you are using some other shell)</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">The above mentioned steps would set the required environment for asp-perl.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Example:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts356">addrmap top{</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field myField{};</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; reg &nbsp;myReg{ &lt;% for( $i = 0; $i &lt; 6; $i += 2 ) {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; %&gt; myField data&lt;%=$i%&gt; [&lt;%=$i+1%&gt;:&lt;%=$i%&gt;]; &lt;% } %&gt;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; };</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; myReg r1;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts611">Note</span><span class="rvts14">: In this method, normal IDS-Batch command line will be used with all the possible switches.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">OR</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Method 2:</span><span class="rvts15"> </span><span class="rvts14">To generate System RDL file from perl preprocessor, please follow the steps below:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; 1. Run "Perl Pre Processor" on the input rdl file.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; 2. Use output of "Perl Pre Processor" as input to IDS-Batch.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; 3. You can install the "Perl Pre Processor" utility from the link below:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps129"><span class="rvts342">http://pkgs.org/centos-5/repoforge-i386/perl-Apache-ASP-2.59-1.2.el5.rf.noarch.rpm.html</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">You can use the following command to run the perl preprocessor on System RDL file:</span></p>
+<p class="rvps129"><span class="rvts15">"asp-perl input_filename.rdl &gt; output_filename.rdl"</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">This output of Perl Preprocessor (output_filename.rdl) is given as input to IDS-Batch.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts851">Verilog-style preprocessor directives</span></p>
+<p class="rvps2"><span class="rvts851"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="1" style="border-color: canvastext; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 89px;">
+   <p class="rvps2"><span class="rvts386">Directive &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts386">Defining standard</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 399px;">
+   <p class="rvps2"><span class="rvts386">Description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 89px;">
+   <p class="rvps2"><span class="rvts60">`define</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts60">SystemVerilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 399px;">
+   <p class="rvps2"><span class="rvts60">Text macro definition</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 89px;">
+   <p class="rvps2"><span class="rvts60">`if</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts60">Verilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 399px;">
+   <p class="rvps2"><span class="rvts60">Conditional compilation</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 89px;">
+   <p class="rvps2"><span class="rvts60">`else</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts60">Verilog&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 399px;">
+   <p class="rvps2"><span class="rvts60">Conditional compilation</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 89px; height: 20px;">
+   <p class="rvps2"><span class="rvts60">`elsif</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 171px; height: 20px;">
+   <p class="rvps2"><span class="rvts60">Verilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 399px; height: 20px;">
+   <p class="rvps2"><span class="rvts60">Conditional compilation</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 89px;">
+   <p class="rvps2"><span class="rvts60">`endif</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts14">Verilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 399px;">
+   <p class="rvps2"><span class="rvts14">Conditional compilation&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 89px;">
+   <p class="rvps2"><span class="rvts14">`ifdef</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts14">Verilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 399px;">
+   <p class="rvps2"><span class="rvts14">Conditional compilation</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 89px;">
+   <p class="rvps2"><span class="rvts14">`ifndef</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts14">Verilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 399px;">
+   <p class="rvps2"><span class="rvts14">Conditional compilation</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 89px;">
+   <p class="rvps2"><span class="rvts14">`include</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts14">Verilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 399px;">
+   <p class="rvps2"><span class="rvts14">File inclusion&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 89px;">
+   <p class="rvps2"><span class="rvts14">`undef</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 171px;">
+   <p class="rvps2"><span class="rvts14">Verilog</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 1px; width: 399px;">
+   <p class="rvps2"><span class="rvts14">Undefine text macro</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Example :</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts356">`ifdef P1&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp;signal &nbsp;{activehigh; sync; signalwidth = 1; }S1 ;</span></p>
+<p class="rvps2"><span class="rvts356">`else&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp;signal &nbsp;{activelow; async; signalwidth = 1; }S1 ;</span></p>
+<p class="rvps2"><span class="rvts356">`endif</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356">addrmap block1 {</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp;reg reg1 {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;field {</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp;resetsignal = S1;</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp;sw = rw;</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts356"> &nbsp;hw = rw;</span></p>
+<p class="rvps2"><span class="rvts356"></span><span class="rvts356"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;}f1=1'b0;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp;};</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; reg1 reg1;</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts356">};</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts718">FURTHER READING&nbsp;</span></p>
+<p class="rvps2"><span class="rvts718"><br/></span></p>
+<p class="rvps2"><span class="rvts844">IDesignSpec™</span><span class="rvts845">:&nbsp;</span></p>
+<p class="rvps2"><a class="rvts847" href="GettingStartedwithSpecCreation.html">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a><a class="rvts846" href="GettingStartedwithSpecCreation.html">Getting Started</a><a class="rvts847" href="GettingStartedwithSpecCreation.html">&nbsp;</a><span class="rvts845">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts847">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts846">Getting Started with IDS-Word</span></p>
+<p class="rvps2"><span class="rvts847">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts846">Sample</span></p>
+<p class="rvps2"><span class="rvts847">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts846">Getting Started with IDS-Excel&nbsp;</span></p>
+<p class="rvps2"><a class="rvts847" href="SpecificationCreation.html">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a><a class="rvts846" href="SpecificationCreation.html">Specification Creations</a><a class="rvts847" href="SpecificationCreation.html">&nbsp;</a></p>
+<p class="rvps2"><a class="rvts847" href="UVM.html#Usage%20Of%20Register%20Model%20">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a><a class="rvts846" href="UVM.html#Usage%20Of%20Register%20Model%20">UVM RegModel</a><a class="rvts847" href="UVM.html#Usage%20Of%20Register%20Model%20">&nbsp;</a></p>
+<p class="rvps2"><span class="rvts845"><br/></span></p>
+<p class="rvps2"><span class="rvts844">App Notes</span><span class="rvts845">: </span><a class="rvts846" href="Interrupts.html">Interrupts in IDesignSpec™</a><span class="rvts845">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts845">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts846" href="DefiningUVMCoverage.html">Defining UVM Coverage in IDesignSpec™</a><span class="rvts845">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts845">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><a class="rvts846" href="DefiningUVMHDL_PATH.html"> Defining UVM HDL_Path in IDesignSpec™</a><span class="rvts845">&nbsp;</span></p>
+<p class="rvps2"><a class="rvts847" href="Parameterization.html">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a><a class="rvts846" href="Parameterization.html"> Parameters in IDesignSpec™</a><a class="rvts847" href="Parameterization.html">&nbsp;</a></p>
+<p class="rvps2"><span class="rvts844"><br/></span></p>
+<p class="rvps2"><span class="rvts844">ALM: </span><a class="rvts846" href="FloatingLicense.html">Agnisys® License Manager&nbsp;</a></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts392">Note</span><span class="rvts14">: For more information, check the following SystemRDL Accellera link:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><a class="rvts169" href="https://www.accellera.org/images/downloads/standards/systemrdl/SystemRDL_2.0_Jan2018.pdf">https://www.accellera.org/images/downloads/standards/systemrdl/SystemRDL_2.0_Jan2018.pdf</a><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/create-epub-ebooks">Free EPub producer</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

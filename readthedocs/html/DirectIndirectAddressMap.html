@@ -1,0 +1,399 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Direct Indirect Address Map</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Advanced Topics,Special Register">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Direct Indirect Address Map">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Direct Indirect Address Map" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="DirectIndirectAddressMap"
+		  data-hnd-context="190"
+		  data-hnd-title="Direct Indirect Address Map"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AdvancedTopics.html">Advanced Topics</a></li><li><a href="SpecialQuirkyRegisters.html">Special / Quirky Registers</a></li><li><a href="IndirectRegisters.html">Indirect Registers</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="IndirectRegisters.html" title="Indirect Registers" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="IndirectRegisters.html" title="Indirect Registers" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="IndirectIndexedRegister.html" title="Indirect Indexed Register" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Direct Indirect Address Map</h2>
+
+            <div class="main-content">
+                
+<h1 class="rvps106"><span class="rvts0"><span class="rvts316">Communication between an 8-bit direct mapped registers and 32-bit wide indirect map registers</span></span></h1>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts1081">(Compatible with IDS version 5.20.30.0 and above)</span></span></h1>
+<p class="rvps2"><span class="rvts533"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In certain applications the bus communicates directly with a bank of 8 bit registers. There may be another block of wider registers say 32-bit which is accessed indirectly through the 8-bit registers. This can be represented in IDS by the following example</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts533"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1452.png"></p>
+<p class="rvps2"><span class="rvts15">Example: </span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/datagroup/datagroup.zip">IDS-NG</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/datagroup/datagroup.docx">IDS-Word</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/datagroup/datagroup.xlsx">IDS-Excel</a><span class="rvts15"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts302" href="https://www.portal.agnisys.com/release/idsdocs/examples/properties/datagroup/datagroup.rdl">SystemRDL</a></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">IDS-NG Register View</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 749px; height : 310px; padding : 1px;" src="lib/NewItem5310.png"></p>
+<p class="rvps3"><img alt="" style="width : 743px; height : 279px; padding : 1px;" src="lib/NewItem5311.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">IDS-NG Spreadsheet View</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 642px; height : 354px; padding : 1px;" src="lib/NewItem5312.png"></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">SystemRDL</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<div class="rvps2">
+<table width="100%" cellpadding="10" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: canvastext; border-style: solid; padding: 10px;">
+   <p class="rvps2"><span class="rvts356">property indirect_map {type = string; component = reg; &nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts356">property datagroup {type = string; component = reg; &nbsp;}; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">property hw_rd_trigger {type = string; component = reg; &nbsp;}; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">property hw_wr_trigger {type = string; component = reg; &nbsp;}; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">property datagroup_order {type = string; component = reg; &nbsp;};</span></p>
+   <p class="rvps2"><span class="rvts356">property index_reg { type = string; component = reg; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">addrmap datagroup {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; name &nbsp;= "datagroup Address Map";</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; reg index {&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } Findx[7:0] = 8'h0;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; reg Data3 {&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;indirect_map = "Group1";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;datagroup = "A";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;hw_rd_trigger = "index,wr";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;hw_wr_trigger = "Data3,wr";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;datagroup_order = "Data0,Data1,Data2,Data3";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;index_reg = "index";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } f0[7:0] = 8'h0;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; reg Data2 {&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;datagroup = "A";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } f1[7:0] = 8'h0;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; reg Data1 {&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;datagroup = "A";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } f2[7:0] = 8'h0;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; reg Data0 {&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;datagroup = "A";</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 32;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } f3[7:0] = 8'h0;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; index index @0x00;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; Data3 Data3 @0x04;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; Data2 Data2 @0x08;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; Data1 Data1 @0x0C;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">&nbsp; Data0 Data0 @0x10;</span></p>
+   <p class="rvps2"><span class="rvts356"><br/></span></p>
+   <p class="rvps2"><span class="rvts356">};</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps96 noindent"><span class="rvts186">Four 8-bit registers (Data0, Data1, Data2, Data3) are grouped together by specifying the property “datagroup = A” on each of them. Where the value “A” is the group name.</span></li>
+ <li class="rvps96 noindent"><span class="rvts186">The property "</span><span class="rvts1084">indirect_map=Group1</span><span class="rvts186">” is used to specify the indirect register arrays(32-bit in the indirect map), which is accessed by the index and (Data3 to Data0) data registers in the direct map. The value of indirect_map property can be a reggroup name which contains the indirect register array definitions in register templates. This is not a normal regroup, it has a property “virtual = true”, which implies that the registers inside this regroup are excluded from the address map.</span></li>
+</ol>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li value="3" class="rvps424 noindent"><span class="rvts360">Implicitly a write/read on Data3 triggers write/read to the indirect registers in the Indirect_map. You could also explicitly specify properties to trigger read/write to indirect registers by following properties:-</span></li>
+</ol>
+<p class="rvps424"><span class="rvts1083">hw_rd_trigger = Index, wr</span></p>
+<p class="rvps424"><span class="rvts360">Where a write to the “Index” register (8bit) triggers read from the indirect register (32bit)</span></p>
+<p class="rvps424"><span class="rvts1083">hw_wr_trigger=Data3, wr</span><span class="rvts1082">&nbsp;</span></p>
+<p class="rvps424"><span class="rvts360">Where a write to the “Data3” register (8bit) triggers write to the indirect register (32bit)</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li value="4" class="rvps424 noindent"><span class="rvts360">The property “</span><span class="rvts1083">datagroup.order= Data0, Data1, Data2, Data3</span><span class="rvts360">” specifies the order, where Data0 is MSB.</span></li>
+</ol>
+<p class="rvps424"><span class="rvts360"><br/></span></p>
+<p class="rvps28"><span class="rvts360">Note:</span></p>
+<p class="rvps424"><span class="rvts360">The properties in 2 to 4 can be used only on data register with "index_reg" property</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1454.png"></p>
+<p class="rvps2"><span class="rvts14">IDS will also generate the indirect register model and rtl Verilog file for that indirect register section or referred document which is having “virtual=true” property</span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1455.png"><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Effortlessly bring your documentation online with HelpNDoc</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

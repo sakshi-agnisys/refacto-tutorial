@@ -1,0 +1,1177 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Parameterization</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Advanced Topics">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Parameterization">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Parameterization" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Parameterization"
+		  data-hnd-context="25"
+		  data-hnd-title="Parameterization"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="AdvancedTopics.html">Advanced Topics</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="AdvancedTopics.html" title="Advanced Topics" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="MultipleFilesGeneration.html" title="Multiple Files Generation" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ParityWidget.html" title="Parity Widget" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Parameterization</h2>
+
+            <div class="main-content">
+                
+<h1 class="rvps106"><span class="rvts0"><span class="rvts316">Parameterization</span></span></h1>
+<p class="rvps2"><span class="rvts26">(Compatible with IDS-Word version 3.14.0 and above)</span></p>
+<p class="rvps2"><span class="rvts26">(Compatible with IDS-Excel version 5.14.18 and above</span><span class="rvts14">)</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In IDS, user is able to specify various parameters in a define template typically at the top of the document and use them as macros at different places in spec.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">For example : default values, repeat, offset and hdl_path etc. These parameters specified in the document will be reflected in the outputs.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Note that the earlier (prior to version 3.14) mechanism of creating defines will still work. So if ‘$’ is not used in the define table then ‘define is formed in the output and no parameter is created.</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps2"><span class="rvts14">The following paragraphs show sample Parameterization in the spec and the generated outputs.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Parameter Creation</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">For details on parameter creation </span><a class="rvts23" href="DefineParametersDependency.html">refer here</a><span class="rvts14">.</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Following example shows a define table with parameters. Note that parameters start with the ‘$’ character.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts273">IDSWord</span></span></h3>
+<p class="rvps407"><img alt="" style="padding : 1px;" src="lib/NewItem992.png"></p>
+<p class="rvps407"><span class="rvts15"><br/></span></p>
+<h3 class="rvps105"><span class="rvts0"><span class="rvts273">IDSExcel</span></span></h3>
+<p class="rvps407"><span class="rvts14"><br/></span></p>
+<p class="rvps407"><img alt="" style="padding : 1px;" src="lib/NewItem991.png"></p>
+<p class="rvps407"><span class="rvts151"><br/></span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts641">NOTE:&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts144">The define template in</span><span class="rvts167">IDS</span><span class="rvts144"> </span><span class="rvts167">Word</span><span class="rvts144"> must have a root template, in other words, a block or chip, or board or system template must precede the define template. This tells the parser the scope of the parameters.</span></li>
+ <li class="rvps2 noindent"><span class="rvts641">There shouldn't be any empty ROW between defines and params.</span></li>
+ <li class="rvps2 noindent"><span class="rvts641">Define table must be on the top in Excel sheet before creating register specification.</span></li>
+ <li class="rvps2 noindent"><span class="rvts641">All the four columns " define name, define value, define description and private" (as defined in the IDS_template sheet) are must with define table to generate defines and parameters.</span></li>
+ <li class="rvps2 noindent"><span class="rvts144">Size of the parameters can be specified by declaring the name of parameter as $paramName[32] where $paramName is the name of the parameter and 32 is the desired width of the parameter</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Output Of the Define Template</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li style="text-indent: 0px" class="rvps114 noindent"><span class="rvts190">Parameters are created as follows:</span></li>
+</ul>
+<p class="rvps114"><span class="rvts190"><br/></span></p>
+<p class="rvps2"><span class="rvts151">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; parameter &nbsp;num1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= &nbsp;'h1000 ; &nbsp;&nbsp;</span><br/><span class="rvts151">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; parameter &nbsp;str2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = &nbsp;“/root”; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts151">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; parameter &nbsp;num3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= &nbsp;45 ; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts151"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li style="text-indent: 0px" class="rvps114 noindent"><span class="rvts190">Non-parameters (defines) are created as follows:</span></li>
+</ul>
+<p class="rvps114"><span class="rvts190"><br/></span></p>
+<p class="rvps114"><span class="rvts190"><br/></span></p>
+<p class="rvps6"><span class="rvts151">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `define &nbsp;num5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0x70 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps6"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts151">`define &nbsp;str5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/top &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts151">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `define &nbsp;num6 &nbsp; &nbsp;</span><span class="rvts1193"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts151"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;16 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts151"><br/></span></p>
+<p class="rvps2"><span class="rvts151"><br/></span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts312">Parameter specifications in IDS-Word</span></span></h2>
+<p class="rvps2"><span class="rvts1196"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Note : &nbsp;Use parameter in offset, repeat, hdl_path and default</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps376"><img alt="" style="padding : 1px;" src="lib/NewItem175.png"></p>
+<p class="rvps172"><span class="rvts151"><br/></span></p>
+<p class="rvps172"><span class="rvts151"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Note</span><span class="rvts14"> that the define template is used after the chip template. The define template can be placed anywhere in the document, not necessarily immediately following the chip template.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps407"><span class="rvts14"><br/></span></p>
+<p class="rvps407"><img alt="" style="padding : 1px;" src="lib/NewItem973.png"></p>
+<p class="rvps489"><span class="rvts6"><br/></span></p>
+<p class="rvps489"><span class="rvts14"><br/></span></p>
+<p class="rvps489"><span class="rvts14">&nbsp;&nbsp;</span></p>
+<p class="rvps407"><img alt="" style="padding : 1px;" src="lib/NewItem177.png"></p>
+<p class="rvps407"><span class="rvts14"><br/></span></p>
+<p class="rvps407"><span class="rvts6"><br/></span></p>
+<p class="rvps407"><span class="rvts6"><br/></span></p>
+<p class="rvps376"><img alt="" style="padding : 1px;" src="lib/NewItem178.png"></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<p class="rvps376"><img alt="" style="padding : 1px;" src="lib/NewItem179.png"></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<p class="rvps376"><img alt="" style="padding : 1px;" src="lib/NewItem180.png"></p>
+<p class="rvps376"><span class="rvts14"><br/></span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts312">Parameter specifications in IDS-Excel</span></span></h2>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1173.png"></p>
+<p class="rvps3"><span class="rvts34"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1174.png"></p>
+<p class="rvps376"><span class="rvts14"><br/></span></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<p class="rvps489"><span class="rvts6">&nbsp;U&nbsp;</span><span class="rvts351"> UVM Output</span></p>
+<p class="rvps489"><span class="rvts6"><br/></span></p>
+<p class="rvps489"><span class="rvts6">&nbsp; &nbsp; &nbsp; </span><span class="rvts916">`ifndef CHIP_NAME_REGMEM</span><br/><span class="rvts916">`define CHIP_NAME_REGMEM</span></p>
+<p class="rvps2"><span class="rvts916">package chip_name_regmem_pkg;</span></p>
+<p class="rvps2"><span class="rvts916">import uvm_pkg::*;</span></p>
+<p class="rvps2"><span class="rvts916">`include "uvm_macros.svh"</span><span class="rvts1194"> &nbsp;</span><span class="rvts916">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">// block-name: block_name</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span></p>
+<p class="rvps2"><span class="rvts916">class block_name_Reg1 </span><span class="rvts1194">#(parameter Chip_off='h1000, parameter Block_off='h100, parameter Reg1_off='h10, parameter Reg_group1_off='h400, parameter Reg1_1_off='h40, parameter Reg_def1='h70, parameter Reg_def2='h17, parameter Register_width=16, parameter Num_lanes=16, parameter NUM_CHANNELS=80)</span><span class="rvts916"> extends uvm_reg;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">rand uvm_reg_field Fld1;</span></p>
+<p class="rvps2"><span class="rvts916">rand uvm_reg_field Fld2;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; virtual function void build();</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; this.Fld1 = uvm_reg_field::type_id::create("Fld1");</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; this.Fld2 = uvm_reg_field::type_id::create("Fld2");</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; this.Fld1.configure(this, 12, &nbsp;0, "RW", 0, </span><span class="rvts1194">Reg_def1 + 4</span><span class="rvts916">, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; this.Fld2.configure(this, 20, &nbsp;12, "RW", 0, </span><span class="rvts1194">Reg_def2 * 2</span><span class="rvts916">, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; endfunction</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">`uvm_object_param_utils(block_name_Reg1</span><span class="rvts1194">#(Chip_off,Block_off,Reg1_off,Reg_group1_off,Reg1_1_off,Reg_def1,Reg_def2,Register_width,Num_lanes,NUM_CHANNELS)</span><span class="rvts916">) &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endclass</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">class block_name_Reg_group1_Reg1_1 </span><span class="rvts1194">#(parameter Chip_off='h1000, parameter Block_off='h100, parameter Reg1_off='h10, parameter Reg_group1_off='h400, parameter Reg1_1_off='h40, parameter Reg_def1='h70, parameter Reg_def2='h17, parameter Register_width=16, parameter Num_lanes=16, parameter NUM_CHANNELS=80)</span><span class="rvts916"> extends uvm_reg;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">rand uvm_reg_field Fld1;</span></p>
+<p class="rvps2"><span class="rvts916">rand uvm_reg_field Fld2;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; virtual function void build();</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; this.Fld1 = uvm_reg_field::type_id::create("Fld1");</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; this.Fld2 = uvm_reg_field::type_id::create("Fld2");</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; this.Fld1.configure(this, 20, &nbsp;12, "RW", 0, </span><span class="rvts1194">Reg_def1 &lt;&lt; 2</span><span class="rvts916">, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; this.Fld2.configure(this, 12, &nbsp;0, "RW", 0, </span><span class="rvts1194">Reg_def2 &gt;&gt; 1</span><span class="rvts916">, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; endfunction</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">`uvm_object_param_utils(block_name_Reg_group1_Reg1_1</span><span class="rvts1194">#(Chip_off,Block_off,Reg1_off,Reg_group1_off,Reg1_1_off,Reg_def1,Reg_def2,Register_width,Num_lanes,NUM_CHANNELS)</span><span class="rvts916">) &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endclass</span></p>
+<p class="rvps2"><span class="rvts916">`endif</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">class block_name_block </span><span class="rvts1194">#(parameter Chip_off='h1000, parameter Block_off='h100, parameter Reg1_off='h10, parameter Reg_group1_off='h400, parameter Reg1_1_off='h40, parameter Reg_def1='h70, parameter Reg_def2='h17, parameter Register_width=16, parameter Num_lanes=16, parameter NUM_CHANNELS=80)</span><span class="rvts916"> extends uvm_reg_block;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; rand block_name_Reg1</span><span class="rvts1194">#()</span><span class="rvts916"> Reg1[</span><span class="rvts1194">NUM_CHANNELS % Register_width == 0 ? NUM_CHANNELS/Register_width : NUM_CHANNELS/Register_width + 1</span><span class="rvts916">];</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; rand block_name_Reg_group1_Reg1_1</span><span class="rvts1194">#()</span><span class="rvts916"> Reg1_1[</span><span class="rvts1194">Num_lanes</span><span class="rvts916">];</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">virtual function void build();</span></p>
+<p class="rvps2"><span class="rvts916">//create</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;foreach (Reg1[Reg1_i])</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;Reg1[Reg1_i] = block_name_Reg1</span><span class="rvts1194">#()</span><span class="rvts916">::type_id::create($sformatf("Reg1[%0x]", Reg1_i));</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;foreach (Reg1_1[Reg_group1_i])</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;Reg1_1[Reg_group1_i] = block_name_Reg_group1_Reg1_1</span><span class="rvts1194">#()</span><span class="rvts916">::type_id::create($sformatf("Reg1_1[%0x]", Reg_group1_i));</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">//define default map and add reg/regfiles</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;//define default map and add reg/regfiles</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;default_map= create_map("default_map", </span><span class="rvts1194">(Block_off + 40) </span><span class="rvts916">* 1, 4, UVM_BIG_ENDIAN, 0);</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;foreach (Reg1[Reg1_i])</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;default_map.add_reg(Reg1[Reg1_i], </span><span class="rvts1194">(Reg1_off) </span><span class="rvts916">* 1 + Reg1_i * 'h4, "RW");</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;foreach (Reg1_1[Reg_group1_i])</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;default_map.add_reg(Reg1_1[Reg_group1_i], </span><span class="rvts1194">(Reg_group1_off) </span><span class="rvts916">* 1 + Reg_group1_i * 'h44 + </span><span class="rvts1194">(Reg1_1_off) </span><span class="rvts916">* 1, "RW");</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;lock_model();</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endfunction</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">`uvm_object_param_utils(block_name_block</span><span class="rvts1194">#(Chip_off,Block_off,Reg1_off,Reg_group1_off,Reg1_1_off,Reg_def1,Reg_def2,Register_width,Num_lanes,NUM_CHANNELS)</span><span class="rvts916">) &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endclass : block_name_block</span></p>
+<p class="rvps2"><span class="rvts916">`endif</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">class chip_name_block</span><span class="rvts1194">#(parameter Chip_off='h1000, parameter Block_off='h100, parameter Reg1_off='h10, parameter Reg_group1_off='h400, parameter Reg1_1_off='h40, parameter Reg_def1='h70, parameter Reg_def2='h17, parameter Register_width=16, parameter Num_lanes=16, parameter NUM_CHANNELS=80)</span><span class="rvts916"> extends uvm_reg_block;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; rand block_name_block</span><span class="rvts1194">#()</span><span class="rvts916"> block_name;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; function new(string name = "chip_name_block");</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; super.new(name, UVM_NO_COVERAGE);</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; endfunction</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">virtual function void build();</span></p>
+<p class="rvps2"><span class="rvts916">//create</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;block_name &nbsp; = &nbsp; block_name_block</span><span class="rvts1194">#()</span><span class="rvts916">::type_id::create("block_name");</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">//config</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;block_name.configure(this, "block_name");</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">//build</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;block_name.build();</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">//define default map and add reg/regfiles</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;default_map= create_map("default_map", </span><span class="rvts1194">(Chip_off) </span><span class="rvts916">* 1, 4, UVM_BIG_ENDIAN, 1);</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;default_map.add_submap(block_name.default_map, </span><span class="rvts1194">(Block_off + 40) </span><span class="rvts916">* 1);</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;lock_model();</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endfunction</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">`uvm_object_param_utils(chip_name_block</span><span class="rvts1194">#(Chip_off,Block_off,Reg1_off,Reg_group1_off,Reg1_1_off,Reg_def1,Reg_def2,Register_width,Num_lanes,NUM_CHANNELS)</span><span class="rvts916">) &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endclass : chip_name_block</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts351">&nbsp;Verilog Output</span></p>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<p class="rvps2"><span class="rvts916">module chip_name_IDS (</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; block_name_IDSReg1_enb,</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; block_name_IDSReg1_Fld1_in,</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; </span><span class="rvts1194">parameter &nbsp;Chip_off &nbsp; &nbsp; &nbsp; &nbsp; = &nbsp;'h1000 ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Block_off &nbsp; &nbsp; &nbsp; &nbsp;= &nbsp;'h100 &nbsp;; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg1_off &nbsp; &nbsp; &nbsp; &nbsp; = &nbsp;'h10 &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg_group1_off &nbsp; = &nbsp;'h400 &nbsp;; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg1_1_off &nbsp; &nbsp; &nbsp; = &nbsp;'h40 &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg_def1 &nbsp; &nbsp; &nbsp; &nbsp; = &nbsp;'h70 &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg_def2 &nbsp; &nbsp; &nbsp; &nbsp; = &nbsp;'h17 &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Register_width &nbsp; = &nbsp;16 &nbsp; &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Num_lanes &nbsp; &nbsp; &nbsp; &nbsp;= &nbsp;16 &nbsp; &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;NUM_CHANNELS &nbsp; &nbsp; = &nbsp;80 &nbsp; &nbsp; ; &nbsp;//</span><span class="rvts916"> &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter block_name_IDSReg_group1_count &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = </span><span class="rvts1194">Num_lanes</span><span class="rvts916">; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter block_name_IDSReg_group1_address_width &nbsp; &nbsp; &nbsp; = addr_width; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter block_name_IDSReg1_count &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = </span><span class="rvts1194">NUM_CHANNELS % Register_width == 0 ? NUM_CHANNELS/Register_width : NUM_CHANNELS/Register_width + 1</span><span class="rvts916">; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter block_name_IDSReg1_address_width &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = addr_width; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">block_name_IDS #(.addr_width(addr_width),.block_offset(</span><span class="rvts1194">(Block_off + 40) </span><span class="rvts916">* 1)) block_name_IDSinst(</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; .Reg1_enb(block_name_IDSReg1_enb),</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; .Reg1_Fld1_in(block_name_IDSReg1_Fld1_in),</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endmodule</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">module block_name_IDS (</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; Reg1_enb,</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; Reg1_Fld1_in,</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Chip_off &nbsp; &nbsp; &nbsp; &nbsp;= &nbsp;'h1000 ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Block_off &nbsp; &nbsp; &nbsp; = &nbsp;'h100 &nbsp;; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg1_off &nbsp; &nbsp; &nbsp; &nbsp;= &nbsp;'h10 &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg_group1_off &nbsp;= &nbsp;'h400 &nbsp;; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg1_1_off &nbsp; &nbsp; &nbsp;= &nbsp;'h40 &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg_def1 &nbsp; &nbsp; &nbsp; &nbsp;= &nbsp;'h70 &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg_def2 &nbsp; &nbsp; &nbsp; &nbsp;= &nbsp;'h17 &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Register_width &nbsp;= &nbsp;16 &nbsp; &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Num_lanes &nbsp; &nbsp; &nbsp; = &nbsp;16 &nbsp; &nbsp; ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;NUM_CHANNELS &nbsp; &nbsp;= &nbsp;80 &nbsp; &nbsp; ; &nbsp;// &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter Reg_group1_count &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= </span><span class="rvts1194">Num_lanes;</span><span class="rvts916"> &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter Reg_group1_address_width &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 5; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter Reg1_count &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= </span><span class="rvts1194">NUM_CHANNELS % Register_width == 0 ? NUM_CHANNELS/Register_width : NUM_CHANNELS/Register_width + 1;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter Reg1_address_width &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 11; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;generate</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; genvar Reg1_i;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; for( Reg1_i = 0; Reg1_i &lt; Reg1_count; Reg1_i = Reg1_i + 1)</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; begin : Reg1_gen</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; assign Reg1_offset[Reg1_i] = block_offset+</span><span class="rvts1194">(Reg1_off) </span><span class="rvts916">* 1 + Reg1_i * 'h4;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; assign Reg1_decode[Reg1_i] = (address[Reg1_address_width-1 : 0] ===Reg1_offset[Reg1_i]) ? 1'b1 : 1'b0;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;always @(posedge clk)&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;begin &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(!reset_l) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reg1_Fld1_q[Reg1_i] &lt;= </span><span class="rvts1194">Reg_def1 + 4;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . .</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(!reset_l) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reg1_Fld2_q[Reg1_i] &lt;= </span><span class="rvts1194">Reg_def2 *2;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. .</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; end //Reg1_gen</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; endgenerate</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; generate</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; genvar Reg_group1_i;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; for( Reg_group1_i = 0; Reg_group1_i &lt; Reg_group1_count; Reg_group1_i = Reg_group1_i + 1)</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; begin : Reg_group1_gen</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; . .</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;assign Reg_group1_Reg1_1_offset[Reg_group1_i] = block_offset+</span><span class="rvts1194">(Reg_group1_off) </span><span class="rvts916">* 1 + Reg_group1_i * 'h44 + </span><span class="rvts1194">(Reg1_1_off) </span><span class="rvts916">* 1;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; assign Reg_group1_Reg1_1_decode[Reg_group1_i] = (address[Reg_group1_address_width-1 : 0] ===Reg_group1_Reg1_1_offset[Reg_group1_i]) ? 1'b1 : 1'b0;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;always @(posedge clk)&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;begin &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(!reset_l) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reg_group1_Reg1_1_Fld1_q[Reg_group1_i] &lt;= </span><span class="rvts1194">Reg_def1 &lt;&lt; 2;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. .</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(!reset_l) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reg_group1_Reg1_1_Fld2_q[Reg_group1_i] &lt;= </span><span class="rvts1194">Reg_def2 &gt;&gt;1;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. .</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; end //Reg_group1_gen</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; endgenerate</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; assign rd_data = Reg1_rd_data_wor | Reg_group1_Reg1_1_rd_data_wor;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; assign request &nbsp; &nbsp; &nbsp; = &nbsp;1;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; assign rd_data_vld &nbsp; = &nbsp;rd_stb;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; assign rd_wait &nbsp; &nbsp; &nbsp; = &nbsp;1;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endmodule</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps12"><a name="Parameter Passing"></a><span class="rvts154">Parameter Passing via Array</span></p>
+<p class="rvps12"><span class="rvts154"><br/></span></p>
+<p class="rvps12"><span class="rvts14">In the following example parameter is defined in 2-D format which is used in reg_name template later.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">The parameter are defined in the define table in the following manner:</span></p>
+<p class="rvps12"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 621px; height : 41px; padding : 1px;" src="lib/NewItem1712.png"></p>
+<p class="rvps12"><span class="rvts14">Where $P1= name of the parameter</span></p>
+<p class="rvps12"><span class="rvts14">[32] = is the width of the parameter</span></p>
+<p class="rvps12"><span class="rvts14">[4] = is the depth of the parameter</span></p>
+<p class="rvps12"><span class="rvts14">{0,1,2,3,4] = are the value of the depth of the parameter</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">Top level can be a System/Board/Chip or Block. Top level block has been used in the following example</span><span class="rvts6">:</span></p>
+<p class="rvps12"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 622px; height : 70px; padding : 1px;" src="lib/NewItem1713.png"></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">Below is the representation of how the parameters are used in a register:</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 622px; height : 93px; padding : 1px;" src="lib/NewItem1711.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">Where the parameter name is given in the default value of the field and repeat property has been defined on the register with repeat value equal to the depth of the parameter.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts392">Verilog Code:</span></p>
+<p class="rvps12"><span class="rvts14">module block_name_IDS(</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; reg_name_enb,</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; reg_name_fld_in,</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; reg_name_fld_in_enb,</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; reg_name_fld_r,</span></p>
+<p class="rvps12"><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp;</span><span class="rvts348">parameter reg [31:0] P1 [3:0] &nbsp;= &nbsp;'{0,1,2,3,4} ;</span><span class="rvts14"> &nbsp; //</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; // REGISTER : REG_NAME</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; </span><span class="rvts348">parameter reg_name_count</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp; = 4;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; parameter reg_name_address_width = addr_width;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14">assign reg_name_wr_valid[reg_name_i] = reg_name_decode[reg_name_i] &amp;&amp; wr_stb;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; assign reg_name_rd_valid[reg_name_i] = reg_name_decode[reg_name_i] &amp;&amp; rd_stb;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; assign reg_name_enb[reg_name_i] &nbsp; &nbsp; &nbsp;= reg_name_wr_valid[reg_name_i];</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts348">assign reg_name_offset[reg_name_i] = block_offset+'h0 + reg_name_i * 'h4;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; assign reg_name_decode[reg_name_i] &nbsp;= (address[reg_name_address_width-1 : 0] &nbsp; &nbsp;== reg_name_offset[reg_name_i][reg_name_address_width-1 : 0</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; always @(posedge clk)</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts348">reg_name_fld_q[reg_name_i] &nbsp;&lt;= P1[reg_name_i];</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14">if (reg_name_fld_in_enb[reg_name_i]) &nbsp; // FLD : HW Write</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg_name_fld_q[reg_name_i] &lt;= reg_name_fld_in[(reg_name_i) *32+31 : &nbsp;(reg_name_i) *32 ];</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (reg_name_wr_valid[reg_name_i]) &nbsp; // FLD : SW Write</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reg_name_fld_q[reg_name_i] &lt;= ( wr_data[31 : 0] &amp; reg_enb[31 : 0] ) | (reg_name_fld_q[reg_name_i] &amp; (~reg_enb[31 : 0]));</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;end &nbsp;// sw_write_close</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end // always clk</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; endgenerate</span></p>
+<p class="rvps12"><span class="rvts14">assign reg_name_rd_data_wire = reg_name_rd_data[0] | reg_name_rd_data[1] | reg_name_rd_data[2] | reg_name_rd_data[3];</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; assign rd_data = reg_name_rd_data_wire ;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; assign error = 0;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; assign request &nbsp; &nbsp; &nbsp;= &nbsp;1;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; assign rd_data_vld &nbsp; = &nbsp;rd_stb;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; assign rd_wait &nbsp; &nbsp; &nbsp; = &nbsp;1;</span></p>
+<p class="rvps12"><span class="rvts14">endmodule</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<h1 class="rvps106"><a name="Bit Slicing"></a><span class="rvts0"><span class="rvts1200">Bit Slicing in Parameter</span></span></h1>
+<p class="rvps12"><span class="rvts154"><br/></span></p>
+<p class="rvps12"><span class="rvts14">In the following example parameter is defined using the bit slicing format which is used in Register1 template later.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">Top level can be a System/Board/Chip or Block. Top level block has been used in the following example:</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 622px; height : 68px; padding : 1px;" src="lib/NewItem1716.png"></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">The parameters are defined in the define table in the following manner:</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 619px; height : 105px; padding : 1px;" src="lib/NewItem1715.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">Where,</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp;$param1, $param2, $param3, $param4= name of the parameter</span></p>
+<p class="rvps12"><span class="rvts14">[32]= is the width of the parameter</span></p>
+<p class="rvps12"><span class="rvts14">0xABCDEF = is the value of the first parameter</span></p>
+<p class="rvps12"><span class="rvts14">“$param1[23:16]” = where $param3 is assigned the [23:16] values of $param1</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14">These values can later be used in the register fields by declaring them in the register field in the default value part:</span></p>
+<p class="rvps3"><img alt="" style="width : 620px; height : 248px; padding : 1px;" src="lib/NewItem1714.png"></p>
+<p class="rvps12"><span class="rvts14">Here, the field is assigned the value of the parameter.</span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts14"><br/></span></p>
+<p class="rvps12"><span class="rvts392">Verilog Code:</span></p>
+<p class="rvps12"><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts392"><br/></span></p>
+<p class="rvps12"><span class="rvts14">parameter Block1_IDS_offset = 'h0;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; parameter Block2_IDS_offset = 'h8;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; parameter &nbsp;[31:0] param1 &nbsp;= &nbsp;'hABCDEF ; &nbsp; //</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; parameter &nbsp;[7:0] param2 &nbsp;= &nbsp;param1[23:16] ; &nbsp; //</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; parameter &nbsp;[7:0] param3 &nbsp;= &nbsp;param1[15:8] ; &nbsp; //</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; parameter &nbsp;[7:0] param4 &nbsp;= &nbsp;param1[7:0] ; &nbsp; //</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; parameter addr_width &nbsp;= 4;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; parameter bus_width &nbsp; = 32;</span></p>
+<p class="rvps12"><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14">.</span><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts14">.</span></p>
+<p class="rvps12"><span class="rvts14">always @(posedge clk)</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; if (!reset_l)</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section1_f1_F1_q &lt;= param2;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (Section1_f1_F1_in_enb) &nbsp; // F1 : HW Write</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section1_f1_F1_q &lt;= Section1_f1_F1_in;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (Section1_f1_wr_valid) &nbsp; // F1 : SW Write</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; begin</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Section1_f1_F1_q &lt;= ( wr_data[7 : 0] &amp; reg_enb[7 : 0] ) | (Section1_f1_F1_q &amp; (~reg_enb[7 : 0]));</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end &nbsp;// sw_write_close</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end</span></p>
+<p class="rvps12"><span class="rvts14">&nbsp; &nbsp; end // always clk</span></p>
+<p class="rvps12"><span class="rvts14"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts310">.</span><span class="rvts310"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts310">.</span><span class="rvts310"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts310">.</span><span class="rvts310"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts310">.</span></p>
+<p class="rvps2"><span class="rvts310">.</span><span class="rvts310"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts310">.</span></p>
+<p class="rvps2"><span class="rvts310"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<h3 class="rvps105"><a name="hdl_path params"></a><span class="rvts0"><span class="rvts816">Parameters in hdl_path</span></span></h3>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem121.png"></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem974.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 706px; height : 86px; padding : 1px;" src="lib/NewItem124.png"></p>
+<p class="rvps489"><span class="rvts6"><br/></span></p>
+<p class="rvps489"><span class="rvts6"><br/></span></p>
+<p class="rvps407"><span class="rvts6">&nbsp; &nbsp; &nbsp;</span><img alt="" style="width : 716px; height : 85px; padding : 1px;" src="lib/NewItem125.png"></p>
+<p class="rvps407"><span class="rvts6"><br/></span></p>
+<p class="rvps407"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp;</span><img alt="" style="width : 729px; height : 211px; padding : 1px;" src="lib/NewItem126.png"></p>
+<p class="rvps407"><span class="rvts6"><br/></span></p>
+<p class="rvps407"><span class="rvts6"><br/></span></p>
+<p class="rvps407"><span class="rvts6">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps376"><span class="rvts6">&nbsp; &nbsp; &nbsp;</span><img alt="" style="width : 731px; height : 265px; padding : 1px;" src="lib/NewItem128.png"></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<p class="rvps376"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">The hdl_path property can be set to any string value&nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; Example : &nbsp;{hdl_path = /top/dut/regA}</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">Sometimes it is necessary to use parameters in the hdl_path, in that case, define parameters and use the string concatenation operator ‘+’.&nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; Example : &nbsp;{hdl_path = $Top + /dut/regA}</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">Hdl path in IDesignSpec™ can handle register arrays and register files.&nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">By default if hdl_path property is set to string, automatically the appropriate number of iterators are added to the end of the string.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; Example : &nbsp;if this hdl_path property is attached to a register with a repeat (register array) {hdl_path = /top/dut/regA} then it will translate into /top/dut/regA[%d]&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp;For complex multi-dimensional registers user can specify the location of the iterators using special ‘#n’ syntax. When n starts from the outer most repeating structure.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; Example : &nbsp;if this hdl_path property is attached to a register inside a register Groups (register array) {hdl_path = /top/dut/regGroup[#1]/regA[#2]} then it will translate into /top/dut/regGroup[%d]/regA[%d]</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">Params and iterators can be mixed to create virtually any complex hdl_path</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Example : &nbsp;{hdl_path = $top + /dut/regA[#1][#2] + _rd_data }</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts351">UVM Output</span></p>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<p class="rvps2"><span class="rvts916">package IDS_block_regmem_pkg;</span><br/><span class="rvts916">import uvm_pkg::*;</span><br/><span class="rvts916">`include "uvm_macros.svh</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">class IDS_block_block</span><span class="rvts1194">#(parameter HDL_level=1, parameter Gate_root="/top/gate", parameter RTL_root="/top/rtl", parameter HDL_PATH_root=HDL_level == 0 ? Gate_root : RTL_root, parameter Level="gate", parameter Top="top", parameter Root=level == "gate" ? "/root/top/gate" : "/root/top/rtl", parameter hdl1="group2", parameter hdl2="_rd_")</span><span class="rvts916"> extends uvm_reg_block;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; rand IDS_block_reggroup2_reg12#() reg12[10][10];</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; rand IDS_block_Reg1#() Reg1;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; rand IDS_block_Reg2#() Reg2;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; . .</span><br/><span class="rvts916">&nbsp;&nbsp;</span><br/><span class="rvts916">Reg1.clear_hdl_path();</span><br/><span class="rvts916">Reg1.add_hdl_path_slice</span><span class="rvts1194">(HDL_level == 0 &nbsp;? $sformatf("%s", Gate_root) : $sformatf("%s", RTL_root)</span><span class="rvts916">, 0, 32); &nbsp;</span><br/><span class="rvts916">&nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">Reg2.clear_hdl_path();</span><br/><span class="rvts916">Reg2.add_hdl_path_slice(</span><span class="rvts1194">Level == "gate" ? $sformatf("%sreg_gate%s", Root, HDL_PATH_root) : $sformatf("%sreg_rtl%s", Root, HDL_PATH_root)</span><span class="rvts916">, 0, 32); &nbsp;</span><br/><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">foreach (reg12[reggroup1_i, reggroup2_i])</span><br/><span class="rvts916">&nbsp;begin</span><br/><span class="rvts916">&nbsp; reg12[reggroup1_i][reggroup2_i].clear_hdl_path();</span><br/><span class="rvts916">&nbsp; reg12[reggroup1_i][reggroup2_i].add_hdl_path_slice</span><span class="rvts1194">($sformatf("reg%s_reg12%sdata[%0d][%0d]", hdl1, hdl2, reggroup1_i, reggroup2_i)</span><span class="rvts916">, 0, 32);</span><br/><span class="rvts916">&nbsp;end &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">lock_model();</span><br/><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endfunction</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">`uvm_object_param_utils(IDS_block_block</span><span class="rvts1194">#(HDL_level,Gate_root,RTL_root,HDL_PATH_root,Level,Top,Root,hdl1,hdl2)</span><span class="rvts916">) &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endclass : IDS_block_block</span></p>
+<p class="rvps2"><span class="rvts916">`endif</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h3 class="rvps105"><a name="parameter_override"></a><span class="rvts0"><span class="rvts816">Parameters in Reference to document</span></span></h3>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts260">Example in IDS-Word</span></p>
+<p class="rvps2"><span class="rvts260"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In this example, three parameter have been declared in the define table and used in the “Reg1” register template.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Let us considered this as an IP level document.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem749.png"></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Let us consider this a Top level document</span></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem750.png"></p>
+<p class="rvps489"><span class="rvts14"><br/></span></p>
+<p class="rvps407"><span class="rvts14">&nbsp;</span></p>
+<p class="rvps407"><span class="rvts14"><br/></span></p>
+<p class="rvps489"><span class="rvts14"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts14">Now ref the above “block_1” block template of IP level document in the ref template and Use the property {$Num_lanes=$Num}.</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">Where $Num used in TOP level document is 32 and the $Num_lanes used in the “Block_1” block template of ip level document is 16 so that using this property, override the Parameter of the “Block_1” by 32 in the top level document.</span></li>
+ <li class="rvps2 noindent"><span class="rvts14">So that the user can override the parameter of the IP level document to the top level parameter by using the property</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">&lt;overrided_parameter&gt;=&lt;value(which_can_be_the_another_parameter)&gt;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts260">Example in IDS-Excel</span></p>
+<p class="rvps2"><span class="rvts260"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Let us consider following as IP level document in Excel-</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1007.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Let following be the top level document-</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1008.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts14">Only following properties can be overridden while instancing an element-</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps11 noindent"><span class="rvts14">repeat</span></li>
+   <li class="rvps11 noindent"><span class="rvts14">default</span></li>
+   <li class="rvps11 noindent"><span class="rvts14">offset</span></li>
+   <li class="rvps11 noindent"><span class="rvts14">hdl_path</span></li>
+  </ul>
+ </ul>
+</ul>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<p class="rvps2"><span class="rvts351">UVM Output</span></p>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<p class="rvps2"><span class="rvts916">package chip_regmem_pkg;</span></p>
+<p class="rvps2"><span class="rvts916">import uvm_pkg::*;</span></p>
+<p class="rvps2"><span class="rvts916">`include "uvm_macros.svh"</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">class Instance1_Reg1 </span><span class="rvts1194">#(parameter Reg_def1='h70, parameter Reg_def2='h17, parameter Num_lanes=16)</span><span class="rvts916"> extends uvm_reg;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">rand uvm_reg_field Fld1;</span></p>
+<p class="rvps2"><span class="rvts916">rand uvm_reg_field Fld2;</span></p>
+<p class="rvps2"><span class="rvts916">. . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">. .</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; this.Fld1.configure(this, 20, &nbsp;12, "RW", 0, </span><span class="rvts1194">Reg_def1 &lt;&lt; 2</span><span class="rvts916">, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; this.Fld2.configure(this, 12, &nbsp;0, "RW", 0, </span><span class="rvts1194">Reg_def2 &gt;&gt;1</span><span class="rvts916">, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; endfunction</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">`uvm_object_param_utils(Instance1_Reg1</span><span class="rvts1194">#(Num,Reg_def1,Reg_def2,Num_lanes)</span><span class="rvts701">)</span><span class="rvts916"> &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endclass</span></p>
+<p class="rvps2"><span class="rvts916">`endif</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">class Instance1_block</span><span class="rvts1194">#(parameter Reg_def1='h70, parameter Reg_def2='h17, parameter Num_lanes=16)</span><span class="rvts916"> extends uvm_reg_block;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; rand Instance1_Reg1</span><span class="rvts1194">#()</span><span class="rvts916"> Reg1[</span><span class="rvts1194">Num_lanes</span><span class="rvts916">];</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span><br/><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">virtual function void build();</span></p>
+<p class="rvps2"><span class="rvts916">//create</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;foreach (Reg1[Reg1_i])</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;Reg1[Reg1_i] = Instance1_Reg1</span><span class="rvts1195">#()</span><span class="rvts916">::type_id::create($sformatf("Reg1[%0x]", Reg1_i));</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span><br/><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">`uvm_object_param_utils(Instance1_block</span><span class="rvts1195">#(Reg_def1,Reg_def2,Num_lanes)</span><span class="rvts916">) &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endclass : Instance1_block</span></p>
+<p class="rvps2"><span class="rvts916">`endif</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">class chip_block</span><span class="rvts1195">#(parameter Num=32, parameter Reg_def1='h70, parameter Reg_def2='h17, parameter Num_lanes=16)</span><span class="rvts916"> extends uvm_reg_block;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; rand Instance1_block</span><span class="rvts1195">#(.Num_lanes(Num))</span><span class="rvts916"> Instance1;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span><br/><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">virtual function void build();</span></p>
+<p class="rvps2"><span class="rvts916">//create</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp;Instance1 &nbsp; = &nbsp; Instance1_block</span><span class="rvts1195">#()</span><span class="rvts916">::type_id::create("Instance1");</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span><br/><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">`uvm_object_param_utils(chip_block</span><span class="rvts1195">#(Num,Reg_def1,Reg_def2,Num_lanes)</span><span class="rvts916">) &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endclass : chip_block</span></p>
+<p class="rvps2"><span class="rvts916">`endif</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">endpackage</span></p>
+<p class="rvps2"><span class="rvts916">`endif</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts351">Verilog Output</span></p>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<p class="rvps2"><span class="rvts351"><br/></span></p>
+<p class="rvps2"><span class="rvts916">module chip_IDS (</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; Instance1_IDSReg1_enb,</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; Instance1_IDSReg1_Fld1_in,</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span><br/><span class="rvts916">&nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Num &nbsp;= &nbsp;32 ; &nbsp;// &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter Instance1_IDSReg1_count &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= </span><span class="rvts1194">Num</span><span class="rvts916">; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter Instance1_IDSReg1_address_width &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= addr_width; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span><br/><span class="rvts916">&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; Instance1_IDS #(.addr_width(addr_width),.block_offset('h0),</span><span class="rvts1194">.Num_lanes(Num)</span><span class="rvts916">) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; Instance1_IDSinst(</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; .Reg1_enb(Instance1_IDSReg1_enb),</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; .Reg1_Fld1_in(Instance1_IDSReg1_Fld1_in),</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; . .</span><br/><span class="rvts916">&nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; assign hrdata = &nbsp;Instance1_IDS_hrdata ;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; assign hready = &nbsp;Instance1_IDS_hready ; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">endmodule</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">module Instance1_IDS (</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; Reg1_enb,</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; . .</span><br/><span class="rvts916">&nbsp; &nbsp; </span><span class="rvts1194">parameter &nbsp;Reg_def1 &nbsp;= &nbsp;'h70 ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Reg_def2 &nbsp;= &nbsp;'h17 ; &nbsp;// &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts1194">&nbsp; &nbsp; parameter &nbsp;Num_lanes &nbsp;= &nbsp;16 ; &nbsp;// &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter Reg1_count &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= </span><span class="rvts1194">Num_lanes</span><span class="rvts916">;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; parameter Reg1_address_width &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= addr_width; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span><br/><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; generate</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; genvar Reg1_i;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; for( Reg1_i = 0; Reg1_i &lt; Reg1_count; Reg1_i = Reg1_i + 1)</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; begin : Reg1_gen</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; . .</span></p>
+<p class="rvps2"><span class="rvts916"></span><br/><span class="rvts916">&nbsp; &nbsp; always @(posedge clk)&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; begin&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (!reset_l)&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;begin&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reg1_Fld1_q[Reg1_i] &lt;= </span><span class="rvts1194">Reg_def1 &lt;&lt; 2;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Reg1_Fld2_q[Reg1_i] &lt;= </span><span class="rvts1194">Reg_def2 &gt;&gt; 1;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . . .&nbsp;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; &nbsp; . .</span></p>
+<p class="rvps2"><span class="rvts916"></span><br/><span class="rvts916">&nbsp; assign rd_data_vld &nbsp; = &nbsp;rd_stb;</span></p>
+<p class="rvps2"><span class="rvts916">&nbsp; assign rd_wait &nbsp; &nbsp; &nbsp; = &nbsp;1;</span></p>
+<p class="rvps2"><span class="rvts916">endmodule</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Setting Parameter as Private in define template</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Parameter's can be made privately accessible by setting the define template's private column as '1' &nbsp;for that particular parameter as shown below. By default all parameters are publicly modified.</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem751.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Here $Num_lanes parameters has been defined to be private. This prevents modifying the parameter's value by top level document in the above example.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps490"><span class="rvts1197">Pass/Override parameters&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">The way to pass/override the parameter is, you need to specify the define/parameter in the same way as normal define/parameter we are using in the ref document. Consider the following example-</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Let this be reference document whose name is "block1.xlsx"&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem998.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Let this be the top level document</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 868px; height : 183px; padding : 1px;" src="lib/NewItem996.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">&nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts14">&nbsp;Using private we can override the referred document's parameter.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps11 noindent"><span class="rvts14">If it's true(1), means that particular parameter is local in the same sheet/document, and it cannot be overridden.</span></li>
+   <li class="rvps11 noindent"><span class="rvts14">If it's false(0), means it can be overridden.&nbsp;</span></li>
+   <li class="rvps11 noindent"><span class="rvts14">By default, it is publicly modified.</span></li>
+  </ul>
+ </ul>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Override Property</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts14">The override property set to '0' prevents overriding of all parameters in referred document by top level document.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem752.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<h2 class="rvps111"><span class="rvts0"><span class="rvts1198">Parameterize Register Field</span></span></h2>
+<p class="rvps2"><span class="rvts26">(Compatible with IDS-Word version 6.0 and above)</span></p>
+<p class="rvps2"><a name="register field"></a><span class="rvts1199"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Register Fields can be now made generic using parameters.</span></p>
+<p class="rvps2"><span class="rvts1199"><br/></span></p>
+<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/NewItem1435.png"></p>
+<p class="rvps3"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><a name="Field Parameterization"></a><span class="rvts198">Field Parameterization</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">To enable parameterized field bit offset &nbsp;for repeat value greater than 1 in IDS, user have to use the property ‘fld_genvar=true’ otherwise field having repeat value greater than 1 will be flattern. This proprty is hierarchical &nbsp;and can be used at block, reggroup, register and field. </span><span class="rvts36">For details on field parameterization </span><a class="rvts109" href="FieldParameterization.html#Field%20Parameterization">refer here</a><span class="rvts36">.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts310"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Changing the parameter at run time</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts14">The main idea of using parameters is to have the ability to change the parameters at run-time. How exactly that is done is specific to the different vendors.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Mentor Graphics</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps72"><span class="rvts186">User can change the parameter at run time by using the option –g (parameter default) and –G (parameter override) through the command line.&nbsp;</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps11"><span class="rvts14">% vsim -c –g&lt;name&gt;=&lt;value&gt; [working library].[file name]</span></p>
+<p class="rvps11"><span class="rvts14">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Or</span></p>
+<p class="rvps11"><span class="rvts14">% vsim -c –G&lt;name&gt;=&lt;value&gt; [working library].[file name]</span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Synopsys</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps72"><span class="rvts186">User can change the parameter at run time by using the option</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps11"><span class="rvts14">-pvalues+&lt;hierarchical_path_to_parameter&gt;=&lt;value&gt; through the command line.</span></p>
+<p class="rvps11"><span class="rvts14"><br/></span></p>
+<p class="rvps84"><span class="rvts14">*Note -path must be slash("/") saperated</span></p>
+<p class="rvps84"><span class="rvts14"><br/></span></p>
+<p class="rvps11"><span class="rvts14">% vcs -pvalue+&lt;hierarchical_path_to_parameter&gt;=&lt;value&gt; [file name]</span></p>
+<p class="rvps11"><span class="rvts14"><br/></span></p>
+<p class="rvps11"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Cadence</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps72"><span class="rvts186">User can change the parameter at run time by using the option</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps72"><span class="rvts186">&nbsp; &nbsp; &nbsp;-defparam &lt;hierarchical_path_to_parameter&gt;=&lt;value&gt; through the command line.&nbsp;</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps11"><span class="rvts14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Note -path must be dot(".") saparated.</span></p>
+<p class="rvps11"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts14">% irun -defparam&lt;hierarchical_path_to_parameter&gt;=&lt;value&gt; [file name]</span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps6"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts713">Future&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205"><br/></span></p>
+<p class="rvps2"><span class="rvts205">We have embarked on this exciting journey of parameterized outputs. There is much more to be explored and we request your help in determining the direction that we take. Here is our current TODO list in this area :&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205">1. Add parameterized outputs for VHDL, C-header and SystemVerilog header, IP-XACT etc.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts721"><br/></span></p>
+<p class="rvps2"><span class="rvts1122">Use </span><a name="parameter_reg_field"></a><span class="rvts1122">of ‘parameter’ to update</span><span class="rvts524"> the register field access, at run time</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">We have</span><span class="rvts379"> default existing sw and hw accesses for field definition</span><span class="rvts14">. But they are statically unchanged but now we can overwrite our software access on run time using parameter.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp;</span><span class="rvts16">SystemRDL Example</span></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<p class="rvps2"><span class="rvts356">`ifndef IDS_UDP</span></p>
+<p class="rvps2"><span class="rvts356">property coverage { type = string; component = addrmap | regfile | reg; };</span></p>
+<p class="rvps2"><span class="rvts356">`endif</span></p>
+<p class="rvps2"><span class="rvts356">addrmap Block #( boolean $My_val=1) {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; name &nbsp;= "Block Address Map";</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; coverage = "on";</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; reg Reg {&nbsp;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;regwidth = 16;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = na;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = r;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } f6[15:8] = 8'h0;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = na;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = r;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } F5[7:7] = 1'h0;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = na;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp;</span><span class="rvts385"> sw = $My_val?rw:r;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } F4[6:6] = 1'h1;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = na;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = r;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } F3[5:4] = 2'h0;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; field {</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; hw = na;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; &nbsp; sw = rw;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; &nbsp; } F2[3:3] = 1'h0;</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; };</span></p>
+<p class="rvps2"><span class="rvts356">&nbsp; Reg Reg @0x00;</span></p>
+<p class="rvps2"><span class="rvts356">};</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts16">IDSWord Example</span></p>
+<p class="rvps2"><span class="rvts16"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 853px; height : 539px; padding : 1px;" src="lib/NewItem3655.png"></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts178">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts633">&nbsp;</span><span class="rvts128">figure 1.0 : Expression on field</span></p>
+<p class="rvps491"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts34">In above specification in figure 1.0 there is a parameter in the define table “My_val” and we are using this variable on field F4 of the register Reg as “My_val&gt;0 ? rw : ro”</span><span class="rvts35">.</span></p>
+<p class="rvps2"><span class="rvts379">As mentioned in figure 1.0 we will override the access according to the parameter value given by the customer. That parameter value will decide which access is to be selected.</span></p>
+<p class="rvps2"><span class="rvts379"><br/></span></p>
+<p class="rvps2"><span class="rvts1201">UVM Code:</span></p>
+<p class="rvps2"><span class="rvts1201"><br/></span></p>
+<p class="rvps2"><span class="rvts697">class Block_Reg extends uvm_reg;</span></p>
+<p class="rvps2"><span class="rvts697">&nbsp;&nbsp;&nbsp;&nbsp;`uvm_object_utils(Block_Reg)</span></p>
+<p class="rvps2"><span class="rvts356">….</span></p>
+<p class="rvps2"><span class="rvts356">…..</span></p>
+<p class="rvps2"><span class="rvts356">…..</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts370">// Function : build</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;virtual function void build();</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F6 = uvm_reg_field::type_id::create("F6");</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F5 = uvm_reg_field::type_id::create("F5");</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F4 = uvm_reg_field::type_id::create("F4");</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F3 = uvm_reg_field::type_id::create("F3");</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F2 = uvm_reg_field::type_id::create("F2");</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F1 = uvm_reg_field::type_id::create("F1");</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F6.configure(this, 8,&nbsp; 8, "RO", 0, 8'd0, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F5.configure(this, 1,&nbsp; 7, "RO", 0, 1'd0, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts370"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts373">&nbsp;this.F4.configure(this, 1,&nbsp; 6, $sformatf("%s",(My_val &gt; 0) ? "rw" : "ro"), 0, 1'd1, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F3.configure(this, 2,&nbsp; 4, "RO", 0, 2'd0, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F2.configure(this, 1,&nbsp; 3, "WC", 0, 1'd0, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.F1.configure(this, 1,&nbsp; 2, "RW", 0, 1'd1, 1, 1, 0);</span></p>
+<p class="rvps2"><span class="rvts356"><br/></span></p>
+<p class="rvps2"><span class="rvts370">&nbsp;&nbsp;&nbsp;&nbsp;endfunction</span></p>
+<p class="rvps2"><span class="rvts370">endclass</span></p>
+<p class="rvps2"><span class="rvts370">`endif</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Note: </span><span class="rvts44">This feature is supported only for rw, ro, wo accesses&nbsp;</span><span class="rvts116">and for coverage 'on/b/f'.</span><span class="rvts44">&nbsp;User can apply only above type of ternary expression. It is only supported for UVM output.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts713">Conclusion</span></p>
+<p class="rvps2"><span class="rvts666"><br/></span></p>
+<p class="rvps2"><span class="rvts205">IDesignSpec™ enables users to add parameters in the specification and generate parameterizable outputs in the most flexible manner.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts205">For more information, contact Agnisys® Support Team at </span><a class="rvts405" href="mailto:support@agnisys.com">support@agnisys.com</a><span class="rvts205">.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts916"><br/></span></p>
+<p class="rvps489"><span class="rvts14"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/advanced-project-analyzer/">Transform Your Documentation Process with HelpNDoc's Project Analyzer</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

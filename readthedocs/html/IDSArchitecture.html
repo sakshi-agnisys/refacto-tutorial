@@ -1,0 +1,498 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 9.0.0.156">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>IDS Architecture</title>
+  <meta name="description" content="Complete documentation of IDesignSpec suite of products" /> 
+  <meta name="keywords" content="Application Notes">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IDS Architecture">
+  <meta name="twitter:description" content="Complete documentation of IDesignSpec suite of products">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="IDS Architecture" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Complete documentation of IDesignSpec suite of products" />
+  <meta property="og:site_name" content="IDesignSpec&trade;" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>IDesignSpec&trade;</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="IDSArchitecture"
+		  data-hnd-context="473"
+		  data-hnd-title="IDS Architecture"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="ApplicationNotes.html">Application Notes</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ApplicationNotes.html" title="Application Notes" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="UserSpecifiedErrorusingTCLonIDSD.html" title="User Specified Error using TCL on IDS Document" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="TCLbasedconfigurationofIDesignSp.html" title="TCL based configuration of IDesignSpec" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>IDS Architecture</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts198">IDS Architecture</span></p>
+<p class="rvps2"><span class="rvts198"><br/></span></p>
+<p class="rvps2"><span class="rvts14">This document shows how to create RTL at different hierarchy and structure by using IDesignSpec™ (IDS).</span></p>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts352">IDS Concepts</span></span></h1>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In IDS, we have introduced concepts like System, Board, Chip, Block, Subblock and Section/Reggroup. These are containers with a specific purpose. The purpose of each is described below:</span></p>
+<p class="rvps144"><span class="rvts14"><br/></span></p>
+<div class="rvps143">
+<table width="635" style="border-width: 0px; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 66px;">
+   <p class="rvps2"><span class="rvts14"><br/></span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 134px;">
+   <p class="rvps2"><span class="rvts14">Container for</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 394px;">
+   <p class="rvps2"><span class="rvts14">RTL implementation</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 66px;">
+   <p class="rvps2"><span class="rvts14">System</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 134px;">
+   <p class="rvps2"><span class="rvts14">Board</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 394px;">
+   <p class="rvps2"><span class="rvts14">System is just a container of multiple boards. No RTL is generated for it.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 66px;">
+   <p class="rvps2"><span class="rvts14">Board</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 134px;">
+   <p class="rvps2"><span class="rvts14">Chips</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 394px;">
+   <p class="rvps2"><span class="rvts14">Board is used as a container for all the Chips No RTL is generated for Board, though aggregation Logic is generated which can be used to aggregate all the chips under it.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 66px;">
+   <p class="rvps2"><span class="rvts14">Chip</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 134px;">
+   <p class="rvps2"><span class="rvts14">Blocks</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 394px;">
+   <p class="rvps2"><span class="rvts14">Chip module will be generated which will contain the wrapper logic for all the blocks, along with the aggregation logic module (in case user uses its own top wrapper).</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 66px;">
+   <p class="rvps2"><span class="rvts14">Block</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 134px;">
+   <p class="rvps2"><span class="rvts14">Registers, Reggroups, Memory, Subblocks</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 394px;">
+   <p class="rvps2"><span class="rvts14">A module will be generated for block which will contain bus widgets through which read/write operations are performed on registers, memory, etc.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 66px;">
+   <p class="rvps2"><span class="rvts14">Sub-block</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 134px;">
+   <p class="rvps2"><span class="rvts14">Registers, reggroup, Memory</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 394px;">
+   <p class="rvps2"><span class="rvts14">In case a block is referred under another block, then it will be treated as a sub-block which will act as a section/reggroup.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 66px;">
+   <p class="rvps2"><span class="rvts14">Section/Reggroup</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 134px;">
+   <p class="rvps2"><span class="rvts14">Registers, Reggroup, Memory</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 394px;">
+   <p class="rvps2"><span class="rvts14">Reggroup occurs inside a block. It can have nested Reggroups within for any level of hierarchy. The innermost reggroup should at least have one register or memory inside it.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 66px;">
+   <p class="rvps2"><span class="rvts14">Memory</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 134px;">
+   <p class="rvps2"><span class="rvts14">Memory locations</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; background-color: #fbe4d5; vertical-align: top; width: 394px;">
+   <p class="rvps2"><span class="rvts14">An external memory interface will be created along with a memory decode logic.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 66px;">
+   <p class="rvps2"><span class="rvts14">Register</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 134px;">
+   <p class="rvps2"><span class="rvts14">Fields</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #f4b083; border-style: solid; padding: 0px 7px; vertical-align: top; width: 394px;">
+   <p class="rvps2"><span class="rvts14">Register is a building block of register space, it can be encapsulated inside block, section/reggroup or sub-block.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts352">Block Level Design&nbsp;</span></span></h1>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In RTL, a module is created for block which is used to perform read/write operations based on a bus protocol and uses corresponding bus widgets. The bus widget translates the bus protocol transaction into the custom transaction to achieve same mechanism of read and write for different bus protocol. Currently widgets are supported for the following bus protocols:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps72 noindent"><span class="rvts186">AMBA-APB: Two flavors of APB widget are supported, one is flopped APB beneficial in case of timing analysis, other one is continuous APB widget in which less no. of flops are used occupying less space. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">AMBA-AHB: Based on AMBA AHB bus protocol</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">AMBA3AHBLite: Based on AMBA 3 AHB Lite Protocol</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">AXI4FULL: Two flavors of AXI4FULL widget are available, one is pipelined in which simultaneous read/write is supported and other is non-pipelined in which if a read and write transaction occurs together then it is broken into 2 transactions. First the write operation is completed and then read takes place.</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">AXI4Lite: Similarly, AXI4Lite widget also have pipelined and non-pipelined versions.</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">AVALON: Two Avalon widgets are available, with burst transfer and with no burst.</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">I2C: Based on I2C Protocol with 7-bit addressing</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">TileLink: Based on TileLink Protocol</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">SPI: Based on SPI Protocol</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">OCP: Based on OCP Protocol</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">Proprietary: Custom Bus Protocol</span></li>
+ <li class="rvps72 noindent"><span class="rvts186">WISHBONE: Based on Wishbone Protocol</span></li>
+</ul>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps3"><span class="rvts14">&nbsp;</span><img alt="" style="width : 622px; height : 359px; padding : 1px;" src="lib/NewItem3293.png"></p>
+<p class="rvps3"><span class="rvts15">Fig1: &nbsp;IDS generated Block</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Accessing internal registers:</span><span class="rvts15">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">By default, there is one cycle response of read/write operations on internal register. User can add stages to improve timing by using the following properties:&nbsp;</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 96px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps101 noindent"><span class="rvts209">addr_decode_stages,&nbsp;</span></li>
+ <li class="rvps101 noindent"><span class="rvts209">wr_stb_stages,&nbsp;</span></li>
+ <li class="rvps101 noindent"><span class="rvts209">rd_stb_stages,&nbsp;</span></li>
+ <li class="rvps101 noindent"><span class="rvts209">rd_valid_stages,&nbsp;</span></li>
+ <li class="rvps101 noindent"><span class="rvts209">rd_data_stages&nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14">These properties add additional flops based on the numeric value given to these properties. Few dependencies should be taken care while using these properties, for example, adding 3 stages in address decode by using </span><span class="rvts15">addr_decode_stages</span><span class="rvts14"> property same no. of stages should be added in </span><span class="rvts15">wr_stb_stages</span><span class="rvts14"> and </span><span class="rvts15">rd_stb_stages</span><span class="rvts14"> as well.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">More Details: </span><a class="rvts23" href="https://www.agnisys.com/release/docs/ids/InsertingdelaysinRTL.html">https://www.agnisys.com/release/docs/IDS/InsertingdelaysinRTL.html</a></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps577"><img alt="" style="width : 733px; height : 341px; padding : 1px;" src="lib/NewItem3292.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Error handling for internal register:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">For internal registers based on the software access appropriate error is generated, for example, if a register has only write permission from software side (which is the bus interface), and in case software tries to perform a read operation on it then it will generate an error, similarly for read only permission it will give an error on write operation. Apart from it, few bus protocols support protection in transaction. Therefore, if a register is declared protected and software tries to perform unprotected read/write operation then it will generate an error.</span></p>
+<p class="rvps2"><span class="rvts14">More Details:&nbsp;</span><span class="rvts15"> </span><a class="rvts23" href="https://www.agnisys.com/release/docs/ids/ProtectionPropertiesforAXIandAPB.html">https://www.agnisys.com/release/docs/IDS/ProtectionPropertiesforAXIandAPB.html</a></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Accessing external register/section/memory:&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">For external register/section/memory ports are created by which software can perform read and write operation. The decode takes place in one clock cycle and in case any error in decoding occurs, error response will be generated in one cycle but the delay in read/write response will depend on the external register/section/memory. Request will be derived low until the transaction gets completed. Above mentioned stages properties are also applicable for external register/section/memory.</span></p>
+<p class="rvps2"><span class="rvts14">More Details:&nbsp;</span></p>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;">
+ <li class="rvps72 noindent"><span class="rvts186">External Registers: </span><a class="rvts185" href="https://www.agnisys.com/release/docs/ids/ExternalRegisters.html">https://www.agnisys.com/release/docs/IDS/ExternalRegisters.html</a></li>
+ <li class="rvps72 noindent"><span class="rvts186">External RegGroups: </span><a class="rvts185" href="https://www.agnisys.com/release/docs/ids/ExternalRegGroups.html">https://www.agnisys.com/release/docs/IDS/ExternalRegGroups.html</a></li>
+ <li class="rvps72 noindent"><span class="rvts186">Memory: </span><a class="rvts185" href="https://www.agnisys.com/release/docs/ids/Memory.html">https://www.agnisys.com/release/docs/IDS/Memory.html</a></li>
+ <li class="rvps72 noindent"><span class="rvts186">Types of External: </span><a class="rvts185" href="https://www.agnisys.com/release/docs/ids/TypesofExternal.html">https://www.agnisys.com/release/docs/IDS/TypesofExternal.html</a></li>
+ <li class="rvps72 noindent"><span class="rvts186">Interface External Memory/Section: </span><a class="rvts185" href="https://www.agnisys.com/release/docs/ids/InterfaceExternalMemorySection.html">https://www.agnisys.com/release/docs/IDS/InterfaceExternalMemorySection.html</a></li>
+</ol>
+<p class="rvps72"><span class="rvts186"><br/></span></p>
+<p class="rvps576"><img alt="" style="width : 381px; height : 398px; padding : 1px;" src="lib/NewItem3291.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Error handling for external register/section/memory:</span><span class="rvts15">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">Similar to internal registers, external registers also generates error based on software access, except for external sections. By default, memory has software access read, therefore write error is generated for it. The memory access can be changed by using the property </span><span class="rvts15">“sw_access”.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts16">List of Important properties:</span><span class="rvts15">&nbsp;</span></p>
+<p class="rvps72"><span class="rvts209"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps72 noindent"><span class="rvts209">“external_ack = true”: &nbsp;</span><span class="rvts186">By default, it is expected that all the external register/memory/section should request for write transaction then only IDS will generate a write transaction on it. In case, instead of request for write transaction, it is required that external should be acknowledging the transaction then this property can be applied at the top level component of the specification.</span></li>
+ <li class="rvps72 noindent"><span class="rvts209">“external_ack = apb_widget_ff”: </span><span class="rvts186">In case, flopped APB widget is used and some external register, section or memory is present then this property should be applied, otherwise there are chances of &nbsp;block being hang during read or write operation on external.</span></li>
+ <li class="rvps72 noindent"><span class="rvts209">rtl_no_error: </span><span class="rvts1357">This command line switch disables all the errors generated by the IDS block including empty address errors as well as read/write access errors.</span></li>
+</ul>
+<p class="rvps11"><span class="rvts14">More Details: </span><a class="rvts23" href="https://www.agnisys.com/release/docs/ids/IDesignSpec%20(c)%202007-2018%20Agnisys">https://www.agnisys.com/release/docs/IDS/ExternalRegProperties.html</a></p>
+<h1 class="rvps106"><span class="rvts0"><span class="rvts352">Chip Level Design:</span></span><span class="rvts0"><span class="rvts988">&nbsp;</span></span></h1>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In IDS, for chip level design a module is created which contains logic to aggregate between different blocks.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 616px; height : 355px; padding : 1px;" src="lib/NewItem3290.png"></p>
+<p class="rvps3"><span class="rvts15">Fig2: IDS generated Chip&nbsp;</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">In case, a user does not want to use IDS generated file for implementation of chip, instead wants to create its own RTL for chip, a separate aggregation module is generated which a user can use to aggregate between different IDS generated blocks.</span></p>
+<p class="rvps2"><span class="rvts14">More Details: </span><a class="rvts23" href="https://www.agnisys.com/release/docs/ids/AggregationLogic1.html">https://www.agnisys.com/release/docs/IDS/AggregationLogic1.html</a></p>
+<p class="rvps3"><img alt="" style="width : 660px; height : 503px; padding : 1px;" src="lib/NewItem3289.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Bridges:</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Bridges are an interface which are used to connect two components. In SOC, different blocks work on different buses. Therefore, to have a transaction from one block to another an intermediate module is required. One bus act as a initiator and the other one acts as a target in the bridge.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 526px; height : 285px; padding : 1px;" src="lib/NewItem3288.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts16">Layered Structure in IDS</span><span class="rvts162">:</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">In IDS sub-block is treated as a section and separate module is not created for sub-block. In layered structure external ports are used as custom and then RTL for that external is generated.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts34"><br/></span></p>
+<p class="rvps2"><span class="rvts34">Layered structure is a structure in which a hierarchy of layered blocks communication is created using a bus protocol rather than creation of a flattened RTL.</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 448px; height : 338px; padding : 1px;" src="lib/NewItem3287.png"></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps2"><span class="rvts16">RTL Wrapper</span></p>
+<p class="rvps10"><span class="rvts14"><br/></span></p>
+<p class="rvps10"><span class="rvts14">In IDS the user can generate a&nbsp;top-level&nbsp;wrapper block which instantiates both the Register block and a the user Application logic block. The Register HW ports, external register/Memory ports and Register block signals are all available to the User Application logic block as SV interfaces which allows user to write application logic for the register block. The user can write the application logic for the register block.</span></p>
+<p class="rvps14"><span class="rvts14">This architecture is supported in IDS with property “rtl_wrapper”.</span></p>
+<p class="rvps14"><span class="rvts14">Register HW ports, external register/memory ports and register block signals are all available to the user block as SV interfaces which allows user to write application logic for the register block.</span></p>
+<p class="rvps2"><span class="rvts15"><br/></span></p>
+<p class="rvps3"><img alt="" style="width : 623px; height : 300px; padding : 1px;" src="lib/NewItem3286.png"></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">More Details: </span><a class="rvts23" href="https://www.agnisys.com/release/docs/ids/RTLWrapper.html">https://www.agnisys.com/release/docs/IDS/RTLWrapper.html</a></p>
+<p class="rvps2"><span class="rvts1356"><br/></span></p>
+<p class="rvps2"><span class="rvts126">Board Level Design:</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts14">When the top-level component is taken as a board and various chips exists under it, an aggregation logic file is generated to aggregate between various chips. User can further use this aggregation logic in its top module.</span></p>
+<p class="rvps191"><img alt="" style="width : 302px; height : 331px; padding : 1px;" src="lib/NewItem3285.png"></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps99 noindent"><span class="rvts15">glob</span><a name="global_addressing"></a><span class="rvts15">al_addressing :</span><span class="rvts14"> This property will generate relative addresses with respective to board. Please find below documentation link for more details:</span></li>
+</ul>
+<p class="rvps72"><span class="rvts194"><br/></span></p>
+<p class="rvps75"><span class="rvts194">Documentation Link: </span><a class="rvts185" href="https://www.agnisys.com/release/docs/ids/ToplevelRegisterSpecificationfor.html">https://www.agnisys.com/release/docs/IDS/ToplevelRegisterSpecificationfor.html</a></p>
+<p class="rvps81"><span class="rvts15"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps81 noindent"><span class="rvts15">-if switch:</span><span class="rvts14"> In IDS-Batch the “-if” option will generate the individual files for RTL/UVM/Header output generation.</span></li>
+</ul>
+<p class="rvps81"><span class="rvts14"><br/></span></p>
+<p class="rvps81"><span class="rvts14">Example: &nbsp;&nbsp;IDSbatch &lt;file_name&gt;&nbsp;-if&nbsp;–out “verilog” &nbsp;-dir &lt;output directory name&gt;</span></p>
+<p class="rvps81"><span class="rvts14"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Experience the power of a responsive website for your documentation</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&copy; 2007 - 2023 Agnisys&reg; Inc. All Rights Reserved.                                         https://www.agnisys.com/submit-feedback/                 </div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
